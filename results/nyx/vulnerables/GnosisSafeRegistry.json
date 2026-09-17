@@ -1,0 +1,13 @@
+{
+  "functions": [
+    "GnosisSafeRegistry.initialize(IAugur)",
+    "GnosisSafeRegistry.callRegister(address,address,address,address,IERC20,IERC1155,IAffiliates,bytes32,address)",
+    "GnosisSafeRegistry.register()",
+    "GnosisSafeRegistry.deRegister()"
+  ],
+  "phase0": 10,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

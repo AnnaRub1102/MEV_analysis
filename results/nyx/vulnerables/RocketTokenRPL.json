@@ -1,0 +1,24 @@
+{
+  "functions": [
+    "ERC20.constructor(string,string)",
+    "ERC20.transfer(address,uint256)",
+    "ERC20.approve(address,uint256)",
+    "ERC20.transferFrom(address,address,uint256)",
+    "ERC20.increaseAllowance(address,uint256)",
+    "ERC20.decreaseAllowance(address,uint256)",
+    "ERC20.constructor(string,string)",
+    "ERC20.transfer(address,uint256)",
+    "ERC20.approve(address,uint256)",
+    "ERC20.transferFrom(address,address,uint256)",
+    "ERC20.increaseAllowance(address,uint256)",
+    "ERC20.decreaseAllowance(address,uint256)",
+    "RocketTokenRPL.constructor(address,address)",
+    "RocketTokenRPL.inflationMintTokens()",
+    "RocketTokenRPL.swapTokens(uint256)"
+  ],
+  "phase0": 120,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

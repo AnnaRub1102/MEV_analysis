@@ -1,0 +1,270 @@
+[INFO] | 2026-09-17 11:15:43 AM | analyzer.AccountingEngine_fix | Analysis started at: 2026-09-17 11:15:43 AM
+[INFO] | 2026-09-17 11:15:46 AM | analyzer.AccountingEngine_fix | Version constraints: ['^0.6.7', '^0.6.7']
+[INFO] | 2026-09-17 11:15:46 AM | analyzer.AccountingEngine_fix | solc version: v0.6.7
+[INFO] | 2026-09-17 11:15:47 AM | analyzer.AccountingEngine_fix | Callgraph generation started!
+[INFO] | 2026-09-17 11:15:47 AM | analyzer.AccountingEngine_fix | Callgraph generation finished!
+[INFO] | 2026-09-17 11:15:47 AM | analyzer.AccountingEngine_fix | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Storage dependency graph generation started!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Value Range Analysis started
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function startAuction
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function protocolToken
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function contractEnabled
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for approveSAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for approveSAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function approveSAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for denySAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for denySAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function denySAFEModification
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function multiply
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for either
+[WARNING] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for either
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function either
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for both
+[WARNING] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for both
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function both
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for authorizedAccounts
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for authorizedAccounts
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function authorizedAccounts
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addition
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function subtract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for minimum
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for minimum
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function minimum
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function isAuthorized
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function constructor
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifyCollateralBalance
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifyCollateralBalance
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifyCollateralBalance
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for confiscateSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for confiscateSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function confiscateSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for updateAccumulatedRate
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for updateAccumulatedRate
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function updateAccumulatedRate
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for createUnbackedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for createUnbackedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function createUnbackedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for canModifySAFE
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for canModifySAFE
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function canModifySAFE
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for initializeCollateralType
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for initializeCollateralType
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function initializeCollateralType
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for unqueuedUnauctionedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for unqueuedUnauctionedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function unqueuedUnauctionedDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for pushDebtToQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for pushDebtToQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function pushDebtToQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for popDebtFromQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for popDebtFromQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function popDebtFromQueue
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function addAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function removeAuthorization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for cancelAuctionedDebtWithSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for cancelAuctionedDebtWithSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function cancelAuctionedDebtWithSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function disableContract
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for transferCollateral
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for transferCollateral
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function transferCollateral
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for transferInternalCoins
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for transferInternalCoins
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function transferInternalCoins
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for modifySAFECollateralization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for modifySAFECollateralization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function modifySAFECollateralization
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for transferSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for transferSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function transferSAFECollateralAndDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function settleDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for auctionSurplus
+[WARNING] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for auctionSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function auctionSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for transferPostSettlementSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for transferPostSettlementSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function transferPostSettlementSurplus
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Generating return summary for auctionDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Return summary generated for auctionDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Range graph generated
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Processed function auctionDebt
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Value Range Analysis took 0.114305 seconds
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Value Range Analysis finished
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | Dependency detection started!
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and modifyParameters
+[INFO] | 2026-09-17 11:15:48 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and modifyParameters
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and modifyParameters
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and modifyParameters
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and unqueuedUnauctionedDebt
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and unqueuedUnauctionedDebt
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and settleDebt
+[INFO] | 2026-09-17 11:15:49 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and settleDebt
+[INFO] | 2026-09-17 11:15:50 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and cancelAuctionedDebtWithSurplus
+[INFO] | 2026-09-17 11:15:50 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and cancelAuctionedDebtWithSurplus
+[INFO] | 2026-09-17 11:15:51 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and auctionDebt
+[INFO] | 2026-09-17 11:15:52 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and auctionDebt
+[INFO] | 2026-09-17 11:15:52 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and auctionSurplus
+[INFO] | 2026-09-17 11:15:53 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and auctionSurplus
+[INFO] | 2026-09-17 11:15:53 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and disableContract
+[INFO] | 2026-09-17 11:15:53 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionDebt and disableContract
+[INFO] | 2026-09-17 11:15:53 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionSurplus and modifyParameters
+[INFO] | 2026-09-17 11:15:53 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionSurplus and modifyParameters
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions auctionSurplus and auctionSurplus
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | DAO dependency detected in file AccountingEngine_fix.sol in contract AccountingEngine in by composing functions disableContract and modifyParameters
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | Dependency detection finished!
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | Static Analysis took 10.169307 seconds
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | Dependency exists
+[INFO] | 2026-09-17 11:15:54 AM | analyzer.AccountingEngine_fix | Invoking symbolic executor!

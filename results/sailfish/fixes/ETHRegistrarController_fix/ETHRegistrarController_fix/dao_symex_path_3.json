@@ -1,0 +1,1665 @@
+{
+    "file": "ETHRegistrarController_fix.sol",
+    "global_structs": [
+        {
+            "name": "struct_Mode",
+            "fields": {
+                "Open": [
+                    "integer"
+                ],
+                "Auction": [
+                    "integer"
+                ],
+                "Owned": [
+                    "integer"
+                ],
+                "Forbidden": [
+                    "integer"
+                ],
+                "Reveal": [
+                    "integer"
+                ],
+                "NotYetAvailable": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_Mode",
+            "fields": {
+                "Open": [
+                    "integer"
+                ],
+                "Auction": [
+                    "integer"
+                ],
+                "Owned": [
+                    "integer"
+                ],
+                "Forbidden": [
+                    "integer"
+                ],
+                "Reveal": [
+                    "integer"
+                ],
+                "NotYetAvailable": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Counter",
+            "fields": {
+                "_value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Entry",
+            "fields": {
+                "deed": [
+                    "integer"
+                ],
+                "registrationDate": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ],
+                "highestBid": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "Mode",
+            "type": [
+                "struct_Mode"
+            ],
+            "init": [
+                "0xEnumInit_Mode"
+            ]
+        },
+        {
+            "name": "Mode",
+            "type": [
+                "struct_Mode"
+            ],
+            "init": [
+                "0xEnumInit_Mode"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0xaa"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0xab"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xac"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalAuctionLength",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x8"
+            ]
+        },
+        {
+            "name": "revealPeriod",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "launchLength",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xa"
+            ]
+        },
+        {
+            "name": "minPrice",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x9"
+            ]
+        },
+        {
+            "name": "_INTERFACE_ID_ERC165",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_supportedInterfaces",
+            "type": [
+                "array",
+                "integer",
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "_ERC721_RECEIVED",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_tokenOwner",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_tokenApprovals",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_ownedTokensCount",
+            "type": [
+                "array",
+                "integer",
+                "Counter"
+            ],
+            "init": []
+        },
+        {
+            "name": "_operatorApprovals",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "boolean"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "_INTERFACE_ID_ERC721",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "burn",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_owner",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_previousOwner",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_registrar",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_creationDate",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_value",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "active",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "_entries",
+            "type": [
+                "array",
+                "integer",
+                "Entry"
+            ],
+            "init": []
+        },
+        {
+            "name": "sealedBids",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "GRACE_PERIOD",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "transferPeriodEnds",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "baseNode",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "previousRegistrar",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "controllers",
+            "type": [
+                "array",
+                "integer",
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "MIN_COMMITMENT_AGE",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_COMMITMENT_AGE",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "MIN_REGISTRATION_DURATION",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "INTERFACE_META_ID",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "COMMITMENT_CONTROLLER_ID",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "base",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "prices",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "commitments",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "registryStarted",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1d",
+                "0x1e"
+            ]
+        },
+        {
+            "name": "ens",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1b"
+            ]
+        },
+        {
+            "name": "rootNode",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1c"
+            ]
+        },
+        {
+            "name": "IERC165",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC721",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC721Receiver",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Address",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Counters",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC165",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC721",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ENS",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Deed",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "DeedImplementation",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Registrar",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "HashRegistrar",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Ownable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "BaseRegistrar",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "StringUtils",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "PriceOracle",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ETHRegistrarController",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Mode",
+            "instructions": [
+                "Mode.Open = 0",
+                "Mode.Auction = 1",
+                "Mode.Owned = 2",
+                "Mode.Forbidden = 3",
+                "Mode.Reveal = 4",
+                "Mode.NotYetAvailable = 5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Mode",
+            "instructions": [
+                "Mode.Open = 0",
+                "Mode.Auction = 1",
+                "Mode.Owned = 2",
+                "Mode.Forbidden = 3",
+                "Mode.Reveal = 4",
+                "Mode.NotYetAvailable = 5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "totalAuctionLength = 432000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "minPrice = 10000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "launchLength = 4838400"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "revealPeriod = 172800"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1b",
+            "instructions": [
+                "ens = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1c",
+            "instructions": [
+                "rootNode = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1d",
+            "instructions": [
+                "registryStarted = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1e",
+            "instructions": [
+                "registryStarted = now"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x61",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x62",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x63",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x73",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x74",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x75",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xaa",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xab",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xac",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "sealedBids",
+            "addrs": [
+                "0x2",
+                "0x2e",
+                "0x3c",
+                "0x4e",
+                "0x5c"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2e",
+            "instructions": [
+                "CLR_0 = sealedBids[U]",
+                "REF_239 = CLR_0",
+                "CLR_1 = REF_239[U]",
+                "REF_240 = CLR_1",
+                "RTMP_693 = REF_240 != 0",
+                "CONDITION RTMP_693 0x2d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2d",
+            "instructions": [
+                "CLR_2 = sealedBids[U]",
+                "REF_237 = CLR_2",
+                "CLR_3 = REF_237[U]",
+                "REF_238 = CLR_3",
+                "REF_237[0] = 0",
+                "REF_237[1] = 0",
+                "REF_237[2] = 0",
+                "REF_237[3] = 0",
+                "REF_237[4] = 0",
+                "REF_237[5] = 0",
+                "REF_237[6] = 0",
+                "REF_237[7] = 0",
+                "REF_237[8] = 0",
+                "REF_237[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "CLR_5 = sealedBids[CLR_4]",
+                "REF_224 = CLR_5",
+                "CLR_6 = REF_224[U]",
+                "REF_225 = CLR_6",
+                "RTMP_677 = REF_225 == 0",
+                "CONDITION RTMP_677 0x3d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3d",
+            "instructions": [
+                "CLR_7 = msg.value",
+                "RTMP_678 = CLR_7 >= 10000000000000000",
+                "CONDITION RTMP_678 0x3b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3b",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = sealedBids[CLR_8]",
+                "REF_222 = CLR_9",
+                "CLR_10 = REF_222[U]",
+                "REF_223 = CLR_10",
+                "REF_222[0] = U",
+                "REF_222[1] = U",
+                "REF_222[2] = U",
+                "REF_222[3] = U",
+                "REF_222[4] = U",
+                "REF_222[5] = U",
+                "REF_222[6] = U",
+                "REF_222[7] = U",
+                "REF_222[8] = U",
+                "REF_222[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4e",
+            "instructions": [
+                "CLR_11 = msg.sender",
+                "CLR_12 = sealedBids[CLR_11]",
+                "REF_249 = CLR_12",
+                "CLR_13 = REF_249[U]",
+                "REF_250 = CLR_13",
+                "RTMP_703 = REF_250 != 0",
+                "CONDITION RTMP_703 0x4d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4d",
+            "instructions": [
+                "CLR_14 = msg.sender",
+                "CLR_15 = sealedBids[CLR_14]",
+                "REF_247 = CLR_15",
+                "CLR_16 = REF_247[U]",
+                "REF_248 = CLR_16",
+                "REF_247[0] = 0",
+                "REF_247[1] = 0",
+                "REF_247[2] = 0",
+                "REF_247[3] = 0",
+                "REF_247[4] = 0",
+                "REF_247[5] = 0",
+                "REF_247[6] = 0",
+                "REF_247[7] = 0",
+                "REF_247[8] = 0",
+                "REF_247[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5c",
+            "instructions": [
+                "CLR_17 = msg.sender",
+                "CLR_18 = sealedBids[CLR_17]",
+                "REF_224 = CLR_18",
+                "CLR_19 = REF_224[U]",
+                "REF_225 = CLR_19",
+                "RTMP_677 = REF_225 == 0",
+                "CONDITION RTMP_677 0x5d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5d",
+            "instructions": [
+                "CLR_20 = msg.value",
+                "RTMP_678 = CLR_20 >= 10000000000000000",
+                "CONDITION RTMP_678 0x5b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5b",
+            "instructions": [
+                "CLR_21 = msg.sender",
+                "CLR_22 = sealedBids[CLR_21]",
+                "REF_222 = CLR_22",
+                "CLR_23 = REF_222[U]",
+                "REF_223 = CLR_23",
+                "REF_222[0] = U",
+                "REF_222[1] = U",
+                "REF_222[2] = U",
+                "REF_222[3] = U",
+                "REF_222[4] = U",
+                "REF_222[5] = U",
+                "REF_222[6] = U",
+                "REF_222[7] = U",
+                "REF_222[8] = U",
+                "REF_222[9] = U"
+            ]
+        }
+    ],
+    "root_addr": "0xad",
+    "dest_addrs": [
+        "0xc0"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "newBid",
+            "addr": "0xad",
+            "instructions": [
+                "NOP",
+                "sealedBid = NEW_VAL integer",
+                "bid = NEW_VAL integer",
+                "sealedBid = NEW_VAL integer",
+                "JUMP 0xae"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xaf",
+            "instructions": [
+                "NOP",
+                "JUMP 0xb0"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xb0",
+            "instructions": [
+                "CLR_24 = msg.sender",
+                "CLR_25 = sealedBids[CLR_24]",
+                "REF_154 = CLR_25",
+                "CLR_26 = REF_154[sealedBid]",
+                "REF_155 = CLR_26",
+                "TMP_283 = NEW_VAL unknown",
+                "TMP_284 = 0",
+                "TMP_285 = TMP_283 == TMP_284",
+                "CONDITION TMP_285 0xb0_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xb0_r0",
+            "instructions": [
+                "JUMP 0xb1"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xb1",
+            "instructions": [
+                "CLR_27 = msg.value",
+                "TMP_287 = CLR_27 >= minPrice",
+                "CONDITION TMP_287 0xb1_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xb1_r0",
+            "instructions": [
+                "JUMP 0xb2"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xb2",
+            "instructions": [
+                "ATTACK",
+                "TMP_291 = NEW_VAL integer",
+                "JUMP 0xb3"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xae",
+            "instructions": [
+                "sealedBid = sealedBid",
+                "JUMP 0xaf"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb3",
+            "instructions": [
+                "NOP",
+                "_hash = NEW_VAL integer",
+                "value = NEW_VAL integer",
+                "seal = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "_hash = NEW_VAL integer",
+                "h = NEW_VAL Entry",
+                "hash = NEW_VAL integer",
+                "_value = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "owner = NEW_VAL integer",
+                "salt = NEW_VAL integer",
+                "auctionState = NEW_VAL unknown",
+                "_salt = NEW_VAL integer",
+                "_hash = NEW_VAL integer",
+                "_hash = NEW_VAL integer",
+                "previousWinner = NEW_VAL integer",
+                "value = NEW_VAL integer",
+                "bid = NEW_VAL integer",
+                "_timestamp = NEW_VAL integer",
+                "entry = NEW_VAL Entry",
+                "JUMP 0xb4"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb5",
+            "instructions": [
+                "seal = TMP_140",
+                "CLR_28 = msg.sender",
+                "CLR_29 = sealedBids[CLR_28]",
+                "REF_40 = CLR_29",
+                "CLR_30 = REF_40[seal]",
+                "REF_41 = CLR_30",
+                "bid = REF_41",
+                "TMP_141 = NEW_VAL unknown",
+                "TMP_142 = 0",
+                "TMP_143 = TMP_141 != TMP_142",
+                "CONDITION TMP_143 0xb5_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb5_r0",
+            "instructions": [
+                "JUMP 0xb6"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb6",
+            "instructions": [
+                "CLR_31 = msg.sender",
+                "CLR_32 = sealedBids[CLR_31]",
+                "REF_42 = CLR_32",
+                "CLR_33 = REF_42[seal]",
+                "REF_43 = CLR_33",
+                "TMP_145 = 0",
+                "TMP_146 = NEW_VAL unknown",
+                "REF_42[seal] = TMP_146",
+                "CLR_34 = _entries[_hash]",
+                "REF_44 = CLR_34",
+                "h = REF_44",
+                "TMP_147 = NEW_VAL integer",
+                "JUMP 0xb7"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb8",
+            "instructions": [
+                "value = TMP_148",
+                "NOP",
+                "JUMP 0xb9"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xba",
+            "instructions": [
+                "auctionState = TMP_150",
+                "CLR_35 = Mode.Owned",
+                "REF_47 = CLR_35",
+                "TMP_151 = auctionState == REF_47",
+                "CONDITION TMP_151 0xbb 0xbc"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xbb",
+            "instructions": [
+                "NOP",
+                "JUMP 0xbd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xbc",
+            "instructions": [
+                "CLR_36 = Mode.Reveal",
+                "REF_49 = CLR_36",
+                "TMP_153 = auctionState != REF_49",
+                "CONDITION TMP_153 0xbe 0xbf"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xbe",
+            "instructions": [
+                "TMP_154 = NEW_VAL integer",
+                "JUMP 0xc0"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xbf",
+            "instructions": [
+                "TMP_155 = value < minPrice",
+                "TMP_156 = NEW_VAL integer",
+                "JUMP 0xc1"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc1",
+            "instructions": [
+                "CLR_37 = h.registrationDate",
+                "REF_51 = CLR_37",
+                "TMP_157 = REF_51 - revealPeriod",
+                "TMP_158 = TMP_156 > TMP_157",
+                "TMP_159 = TMP_155 || TMP_158",
+                "CONDITION TMP_159 0xc2 0xc3"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xc4"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc3",
+            "instructions": [
+                "CLR_38 = h.highestBid",
+                "REF_53 = CLR_38",
+                "TMP_161 = value > REF_53",
+                "CONDITION TMP_161 0xc5 0xc6"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc5",
+            "instructions": [
+                "CLR_39 = h.deed",
+                "REF_54 = CLR_39",
+                "TMP_162 = NEW_VAL unknown",
+                "TMP_163 = 0",
+                "TMP_164 = TMP_162 != TMP_163",
+                "CONDITION TMP_164 0xc7 0xc8"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc6",
+            "instructions": [
+                "CLR_40 = h.value",
+                "REF_61 = CLR_40",
+                "TMP_166 = value > REF_61",
+                "CONDITION TMP_166 0xc9 0xca"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc9",
+            "instructions": [
+                "CLR_41 = h.value",
+                "REF_62 = CLR_41",
+                "h.value = value",
+                "NOP",
+                "JUMP 0xcb"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xca",
+            "instructions": [
+                "NOP",
+                "JUMP 0xcb"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xcb",
+            "instructions": [
+                "NOP",
+                "JUMP 0xcc"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xcc",
+            "instructions": [
+                "NOP",
+                "JUMP 0xc4"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc4",
+            "instructions": [
+                "NOP",
+                "JUMP 0xcd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xcd",
+            "instructions": [
+                "NOP",
+                "JUMP 0xbd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xbd",
+            "instructions": [
+                "NOP",
+                "JUMP 0xc0"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xc7",
+            "instructions": [
+                "CLR_42 = h.deed",
+                "REF_55 = CLR_42",
+                "previousWinner = REF_55",
+                "NOP",
+                "JUMP 0xce"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xce",
+            "instructions": [
+                "NOP",
+                "JUMP 0xcf"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xcf",
+            "instructions": [
+                "CLR_43 = h.value",
+                "REF_57 = CLR_43",
+                "CLR_44 = h.highestBid",
+                "REF_58 = CLR_44",
+                "h.value = REF_58",
+                "CLR_45 = h.highestBid",
+                "REF_59 = CLR_45",
+                "h.highestBid = value",
+                "CLR_46 = h.deed",
+                "REF_60 = CLR_46",
+                "h.deed = bid",
+                "JUMP 0xcc"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd0",
+            "instructions": [
+                "NOP",
+                "JUMP 0xd1"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd1",
+            "instructions": [
+                "TMP_260 = NEW_VAL integer",
+                "TMP_261 = CALL1 keccak TMP_260",
+                "TMP_608 = TMP_261",
+                "JUMP 0xd2"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb4",
+            "instructions": [
+                "hash = _hash",
+                "CLR_47 = msg.sender",
+                "owner = CLR_47",
+                "value = _value",
+                "salt = _salt",
+                "JUMP 0xd0"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd2",
+            "instructions": [
+                "TMP_140 = TMP_608",
+                "JUMP 0xb5"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd3",
+            "instructions": [
+                "NOP",
+                "JUMP 0xd4"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd4",
+            "instructions": [
+                "TMP_308 = a < b",
+                "CONDITION TMP_308 0xd5 0xd6"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd5",
+            "instructions": [
+                "TMP_616 = a",
+                "JUMP 0xd7"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd6",
+            "instructions": [
+                "TMP_616 = b",
+                "JUMP 0xd7"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb7",
+            "instructions": [
+                "a = _value",
+                "b = TMP_147",
+                "JUMP 0xd3"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd7",
+            "instructions": [
+                "TMP_148 = TMP_616",
+                "JUMP 0xb8"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd8",
+            "instructions": [
+                "NOP",
+                "JUMP 0xd9"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xda",
+            "instructions": [
+                "TMP_248 = ! TMP_247",
+                "CONDITION TMP_248 0xdb 0xdc"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xdb",
+            "instructions": [
+                "CLR_48 = Mode.NotYetAvailable",
+                "REF_132 = CLR_48",
+                "TMP_605 = REF_132",
+                "JUMP 0xdd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xdc",
+            "instructions": [
+                "CLR_49 = entry.registrationDate",
+                "REF_133 = CLR_49",
+                "TMP_249 = now < REF_133",
+                "CONDITION TMP_249 0xde 0xdf"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xde",
+            "instructions": [
+                "CLR_50 = entry.registrationDate",
+                "REF_134 = CLR_50",
+                "TMP_250 = REF_134 - revealPeriod",
+                "TMP_251 = now < TMP_250",
+                "CONDITION TMP_251 0xe0 0xe1"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xdf",
+            "instructions": [
+                "CLR_51 = entry.highestBid",
+                "REF_137 = CLR_51",
+                "TMP_252 = REF_137 == 0",
+                "CONDITION TMP_252 0xe2 0xe3"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe2",
+            "instructions": [
+                "CLR_52 = Mode.Open",
+                "REF_138 = CLR_52",
+                "TMP_605 = REF_138",
+                "JUMP 0xdd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe3",
+            "instructions": [
+                "CLR_53 = Mode.Owned",
+                "REF_139 = CLR_53",
+                "TMP_605 = REF_139",
+                "JUMP 0xdd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe0",
+            "instructions": [
+                "CLR_54 = Mode.Auction",
+                "REF_135 = CLR_54",
+                "TMP_605 = REF_135",
+                "JUMP 0xdd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe1",
+            "instructions": [
+                "CLR_55 = Mode.Reveal",
+                "REF_136 = CLR_55",
+                "TMP_605 = REF_136",
+                "JUMP 0xdd"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe4",
+            "instructions": [
+                "NOP",
+                "JUMP 0xe5"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe6",
+            "instructions": [
+                "TMP_254 = _timestamp > TMP_253",
+                "TMP_533 = TMP_254",
+                "JUMP 0xe7"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe8",
+            "instructions": [
+                "NOP",
+                "JUMP 0xe9"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe9",
+            "instructions": [
+                "TMP_255 = NEW_VAL unknown",
+                "TMP_256 = TMP_255 >> 128",
+                "TMP_257 = launchLength * TMP_256",
+                "TMP_258 = TMP_257 >> 128",
+                "TMP_259 = registryStarted + TMP_258",
+                "TMP_534 = TMP_259",
+                "JUMP 0xea"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe5",
+            "instructions": [
+                "_hash = _hash",
+                "JUMP 0xe8"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xea",
+            "instructions": [
+                "TMP_253 = TMP_534",
+                "JUMP 0xe6"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xd9",
+            "instructions": [
+                "CLR_56 = _entries[_hash]",
+                "REF_131 = CLR_56",
+                "entry = REF_131",
+                "_hash = _hash",
+                "_timestamp = now",
+                "JUMP 0xe4"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xe7",
+            "instructions": [
+                "TMP_247 = TMP_533",
+                "JUMP 0xda"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xb9",
+            "instructions": [
+                "_hash = _hash",
+                "JUMP 0xd8"
+            ]
+        },
+        {
+            "scope": "unsealBid",
+            "addr": "0xdd",
+            "instructions": [
+                "TMP_150 = TMP_605",
+                "JUMP 0xba"
+            ]
+        },
+        {
+            "scope": "newBid",
+            "addr": "0xc0",
+            "instructions": [
+                "bid = TMP_291",
+                "CLR_57 = msg.sender",
+                "CLR_58 = sealedBids[CLR_57]",
+                "REF_157 = CLR_58",
+                "CLR_59 = REF_157[sealedBid]",
+                "REF_158 = CLR_59",
+                "REF_157[sealedBid] = bid"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0xc8",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

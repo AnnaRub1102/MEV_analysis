@@ -1,0 +1,959 @@
+{
+    "Governance.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "submitProposal"
+            ],
+            "from_function": "submitProposal",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 720\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 588\nFunction: submitProposal\nNode: \nEXPRESSION proposals[newProposalId] = Proposal(newProposalId,proposer,block.number,_targetContractRegistryKey,targetContractAddress,_callValue,_signature,_callData,Outcome.InProgress,0,0,0)\nIRS: \nREF_203 := TMP_422\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 725\nFunction: submitProposal\nNode: \nEXPRESSION proposals[newProposalId] = Proposal(newProposalId,proposer,block.number,_targetContractRegistryKey,targetContractAddress,_callValue,_signature,_callData,Outcome.InProgress,0,0,0)\nIRS: \nREF_203 := TMP_422\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "submitProposalVote"
+            ],
+            "from_function": "submitProposalVote",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 590\nFunction: submitProposalVote\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Must provide valid non-zero _proposalId)\nIRS: \nTMP_428 = SOLIDITY_CALL require(bool,string)(TMP_427,Must provide valid non-zero _proposalId)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 592\nFunction: submitProposalVote\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::submitProposalVote: Cannot vote on inactive proposal.)\nIRS: \nTMP_434 = SOLIDITY_CALL require(bool,string)(TMP_433,Governance::submitProposalVote: Cannot vote on inactive proposal.)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 593\nFunction: submitProposalVote\nNode: \nEXPRESSION require(bool,string)(block.number > startBlockNumber && block.number <= endBlockNumber,Governance::submitProposalVote: Proposal votingPeriod has ended)\nIRS: \nTMP_439 = SOLIDITY_CALL require(bool,string)(TMP_438,Governance::submitProposalVote: Proposal votingPeriod has ended)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 596\nFunction: submitProposalVote\nNode: \nIF previousVote == Vote.None\nIRS: \nCONDITION TMP_444\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 598\nFunction: submitProposalVote\nNode: \nIF previousVote == Vote.Yes && _vote == Vote.No\nIRS: \nCONDITION TMP_451\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 599\nFunction: submitProposalVote\nNode: \nIF previousVote == Vote.No && _vote == Vote.Yes\nIRS: \nCONDITION TMP_456\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 603\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.sub(voterStake))\nIRS: \nREF_260 := TMP_458\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 604\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_248 := TMP_453\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 605\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_231 := TMP_447\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 607\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].numVotes = proposals[_proposalId].numVotes.add(1)\nIRS: \nREF_236 := TMP_448\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 608\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_226 := TMP_446\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 623\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_255 := TMP_457\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 625\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.sub(voterStake))\nIRS: \nREF_243 := TMP_452\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "evaluateProposalOutcome"
+            ],
+            "from_function": "evaluateProposalOutcome",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 630\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Governance::evaluateProposalOutcome: Must provide valid non-zero _proposalId.)\nIRS: \nTMP_463 = SOLIDITY_CALL require(bool,string)(TMP_462,Governance::evaluateProposalOutcome: Must provide valid non-zero _proposalId.)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 633\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(block.number > endBlockNumber,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\nIRS: \nTMP_472 = SOLIDITY_CALL require(bool,string)(TMP_471,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 634\nFunction: evaluateProposalOutcome\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(proposals[_proposalId].targetContractRegistryKey)\nIRS: \nTMP_473(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['REF_278']  \"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 635\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(targetContractAddress == proposals[_proposalId].targetContractAddress,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\nIRS: \nTMP_475 = SOLIDITY_CALL require(bool,string)(TMP_474,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 642\nFunction: evaluateProposalOutcome\nNode: \nIF success\nIRS: \nCONDITION success\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 655\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 656\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 657\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "vetoProposal"
+            ],
+            "from_function": "vetoProposal",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 660\nFunction: vetoProposal\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Governance::vetoProposal: Must provide valid non-zero _proposalId.)\nIRS: \nTMP_485 = SOLIDITY_CALL require(bool,string)(TMP_484,Governance::vetoProposal: Must provide valid non-zero _proposalId.)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "getProposalById"
+            ],
+            "from_function": "getProposalById",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 695\nFunction: getProposalById\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Must provide valid non-zero _proposalId)\nIRS: \nTMP_525 = SOLIDITY_CALL require(bool,string)(TMP_524,Must provide valid non-zero _proposalId)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "submitProposal",
+                "getVoteByProposalAndVoter"
+            ],
+            "from_function": "getVoteByProposalAndVoter",
+            "to_function": "submitProposal",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 697\nFunction: getVoteByProposalAndVoter\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Must provide valid non-zero _proposalId)\nIRS: \nTMP_529 = SOLIDITY_CALL require(bool,string)(TMP_528,Must provide valid non-zero _proposalId)\"",
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 557\nFunction: initialize\nNode: \nEXPRESSION votingQuorum = _votingQuorum\nIRS: \nvotingQuorum := _votingQuorum\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "votingQuorum"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "submitProposalVote"
+            ],
+            "from_function": "submitProposalVote",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 592\nFunction: submitProposalVote\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::submitProposalVote: Cannot vote on inactive proposal.)\nIRS: \nTMP_434 = SOLIDITY_CALL require(bool,string)(TMP_433,Governance::submitProposalVote: Cannot vote on inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 607\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].numVotes = proposals[_proposalId].numVotes.add(1)\nIRS: \nREF_236 := TMP_448\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "proposals.numVotes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 608\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_226 := TMP_446\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 623\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_255 := TMP_457\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 625\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.sub(voterStake))\nIRS: \nREF_243 := TMP_452\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 603\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.sub(voterStake))\nIRS: \nREF_260 := TMP_458\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 604\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_248 := TMP_453\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 605\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_231 := TMP_447\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "submitProposalVote"
+            ],
+            "from_function": "submitProposalVote",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 592\nFunction: submitProposalVote\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::submitProposalVote: Cannot vote on inactive proposal.)\nIRS: \nTMP_434 = SOLIDITY_CALL require(bool,string)(TMP_433,Governance::submitProposalVote: Cannot vote on inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "evaluateProposalOutcome"
+            ],
+            "from_function": "evaluateProposalOutcome",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 728\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\nIRS: \nTMP_465 = SOLIDITY_CALL require(bool,string)(TMP_464,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "evaluateProposalOutcome"
+            ],
+            "from_function": "evaluateProposalOutcome",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 757\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\nIRS: \nTMP_465 = SOLIDITY_CALL require(bool,string)(TMP_464,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "vetoProposal"
+            ],
+            "from_function": "vetoProposal",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 661\nFunction: vetoProposal\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::vetoProposal: Cannot veto inactive proposal.)\nIRS: \nTMP_487 = SOLIDITY_CALL require(bool,string)(TMP_486,Governance::vetoProposal: Cannot veto inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "vetoProposal"
+            ],
+            "from_function": "vetoProposal",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 661\nFunction: vetoProposal\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::vetoProposal: Cannot veto inactive proposal.)\nIRS: \nTMP_487 = SOLIDITY_CALL require(bool,string)(TMP_486,Governance::vetoProposal: Cannot veto inactive proposal.)\"",
+                        "\"BlockID: 640\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "setVotingQuorum"
+            ],
+            "from_function": "setVotingQuorum",
+            "to_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 674\nFunction: setVotingQuorum\nNode: \nEXPRESSION votingQuorum = _votingQuorum\nIRS: \nvotingQuorum := _votingQuorum\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "votingQuorum"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "initialize"
+            ],
+            "First_function": "initialize",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 541\nFunction: initialize\nNode: \nEXPRESSION isInitialized = true\nIRS: \nisInitialized := true\"",
+                        "\"BlockID: 643\nFunction: _requireIsInitialized\nNode: \nEXPRESSION require(bool,string)(isInitialized == true,ERROR_NOT_INITIALIZED)\nIRS: \nTMP_394 = SOLIDITY_CALL require(bool,string)(TMP_393,ERROR_NOT_INITIALIZED)\""
+                    ],
+                    "state_variable": "isInitialized"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "initialize"
+            ],
+            "First_function": "initialize",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 555\nFunction: initialize\nNode: \nEXPRESSION votingPeriod = _votingPeriod\nIRS: \nvotingPeriod := _votingPeriod\"",
+                        "\"BlockID: 633\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(block.number > endBlockNumber,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\nIRS: \nTMP_472 = SOLIDITY_CALL require(bool,string)(TMP_471,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\""
+                    ],
+                    "state_variable": "votingPeriod"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 634\nFunction: evaluateProposalOutcome\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(proposals[_proposalId].targetContractRegistryKey)\nIRS: \nTMP_473(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['REF_278']  \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 635\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(targetContractAddress == proposals[_proposalId].targetContractAddress,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\nIRS: \nTMP_475 = SOLIDITY_CALL require(bool,string)(TMP_474,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 655\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 656\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 657\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 557\nFunction: initialize\nNode: \nEXPRESSION votingQuorum = _votingQuorum\nIRS: \nvotingQuorum := _votingQuorum\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "votingQuorum"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 568\nFunction: initialize\nNode: \nEXPRESSION isInitialized = true\nIRS: \nisInitialized := true\"",
+                        "\"BlockID: 643\nFunction: _requireIsInitialized\nNode: \nEXPRESSION require(bool,string)(isInitialized == true,ERROR_NOT_INITIALIZED)\nIRS: \nTMP_394 = SOLIDITY_CALL require(bool,string)(TMP_393,ERROR_NOT_INITIALIZED)\""
+                    ],
+                    "state_variable": "isInitialized"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "submitProposal"
+            ],
+            "First_function": "submitProposal",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 630\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(_proposalId <= lastProposalId && _proposalId > 0,Governance::evaluateProposalOutcome: Must provide valid non-zero _proposalId.)\nIRS: \nTMP_463 = SOLIDITY_CALL require(bool,string)(TMP_462,Governance::evaluateProposalOutcome: Must provide valid non-zero _proposalId.)\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 633\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(block.number > endBlockNumber,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\nIRS: \nTMP_472 = SOLIDITY_CALL require(bool,string)(TMP_471,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 634\nFunction: evaluateProposalOutcome\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(proposals[_proposalId].targetContractRegistryKey)\nIRS: \nTMP_473(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['REF_278']  \""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 635\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(targetContractAddress == proposals[_proposalId].targetContractAddress,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\nIRS: \nTMP_475 = SOLIDITY_CALL require(bool,string)(TMP_474,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 655\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 656\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\""
+                    ],
+                    "state_variable": "lastProposalId"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 583\nFunction: submitProposal\nNode: \nEXPRESSION lastProposalId = lastProposalId.add(1)\nIRS: \nlastProposalId := TMP_423\"",
+                        "\"BlockID: 657\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \""
+                    ],
+                    "state_variable": "lastProposalId"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "submitProposalVote"
+            ],
+            "First_function": "submitProposalVote",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 607\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].numVotes = proposals[_proposalId].numVotes.add(1)\nIRS: \nREF_236 := TMP_448\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "proposals.numVotes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 608\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_226 := TMP_446\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 623\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.add(voterStake))\nIRS: \nREF_255 := TMP_457\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 625\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeYes = (proposals[_proposalId].voteMagnitudeYes.sub(voterStake))\nIRS: \nREF_243 := TMP_452\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeYes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 603\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.sub(voterStake))\nIRS: \nREF_260 := TMP_458\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 604\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_248 := TMP_453\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 605\nFunction: submitProposalVote\nNode: \nEXPRESSION proposals[_proposalId].voteMagnitudeNo = (proposals[_proposalId].voteMagnitudeNo.add(voterStake))\nIRS: \nREF_231 := TMP_447\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "proposals.voteMagnitudeNo"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "evaluateProposalOutcome"
+            ],
+            "First_function": "evaluateProposalOutcome",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 795\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = outcome\nIRS: \nREF_298 := outcome\"",
+                        "\"BlockID: 631\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\nIRS: \nTMP_465 = SOLIDITY_CALL require(bool,string)(TMP_464,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 808\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION proposals[_proposalId].outcome = Outcome.Evaluating\nIRS: \nREF_268 := REF_269\"",
+                        "\"BlockID: 631\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\nIRS: \nTMP_465 = SOLIDITY_CALL require(bool,string)(TMP_464,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "vetoProposal"
+            ],
+            "First_function": "vetoProposal",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 662\nFunction: vetoProposal\nNode: \nEXPRESSION proposals[_proposalId].outcome = Outcome.No\nIRS: \nREF_309 := REF_310\"",
+                        "\"BlockID: 631\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(proposals[_proposalId].outcome == Outcome.InProgress,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\nIRS: \nTMP_465 = SOLIDITY_CALL require(bool,string)(TMP_464,Governance::evaluateProposalOutcome: Cannot evaluate inactive proposal.)\""
+                    ],
+                    "state_variable": "proposals.outcome"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "setVotingPeriod"
+            ],
+            "First_function": "setVotingPeriod",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 671\nFunction: setVotingPeriod\nNode: \nEXPRESSION votingPeriod = _votingPeriod\nIRS: \nvotingPeriod := _votingPeriod\"",
+                        "\"BlockID: 633\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(block.number > endBlockNumber,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\nIRS: \nTMP_472 = SOLIDITY_CALL require(bool,string)(TMP_471,Governance::evaluateProposalOutcome: Proposal votingPeriod must end before evaluation.)\""
+                    ],
+                    "state_variable": "votingPeriod"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "setVotingQuorum"
+            ],
+            "First_function": "setVotingQuorum",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 674\nFunction: setVotingQuorum\nNode: \nEXPRESSION votingQuorum = _votingQuorum\nIRS: \nvotingQuorum := _votingQuorum\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "votingQuorum"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "evaluateProposalOutcome",
+                "setRegistryAddress"
+            ],
+            "First_function": "setRegistryAddress",
+            "Second_function": "evaluateProposalOutcome",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 634\nFunction: evaluateProposalOutcome\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(proposals[_proposalId].targetContractRegistryKey)\nIRS: \nTMP_473(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['REF_278']  \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 635\nFunction: evaluateProposalOutcome\nNode: \nEXPRESSION require(bool,string)(targetContractAddress == proposals[_proposalId].targetContractAddress,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\nIRS: \nTMP_475 = SOLIDITY_CALL require(bool,string)(TMP_474,Governance::evaluateProposalOutcome: Registered contract address for targetContractRegistryKey has changed)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 636\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].numVotes < votingQuorum\nIRS: \nCONDITION TMP_476\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 637\nFunction: evaluateProposalOutcome\nNode: \nIF proposals[_proposalId].voteMagnitudeYes >= proposals[_proposalId].voteMagnitudeNo\nIRS: \nCONDITION TMP_477\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 655\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 656\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 657\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \""
+                    ],
+                    "state_variable": "registry"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "guardianExecuteTransaction",
+                "initialize"
+            ],
+            "First_function": "initialize",
+            "Second_function": "guardianExecuteTransaction",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 541\nFunction: initialize\nNode: \nEXPRESSION isInitialized = true\nIRS: \nisInitialized := true\"",
+                        "\"BlockID: 686\nFunction: _requireIsInitialized\nNode: \nEXPRESSION require(bool,string)(isInitialized == true,ERROR_NOT_INITIALIZED)\nIRS: \nTMP_394 = SOLIDITY_CALL require(bool,string)(TMP_393,ERROR_NOT_INITIALIZED)\""
+                    ],
+                    "state_variable": "isInitialized"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "guardianExecuteTransaction",
+                "initialize"
+            ],
+            "First_function": "initialize",
+            "Second_function": "guardianExecuteTransaction",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 577\nFunction: initialize\nNode: \nEXPRESSION guardianAddress = _guardianAddress\nIRS: \nguardianAddress := _guardianAddress\"",
+                        "\"BlockID: 681\nFunction: guardianExecuteTransaction\nNode: \nEXPRESSION require(bool,string)(msg.sender == guardianAddress,Governance::guardianExecuteTransaction: Only guardian.)\nIRS: \nTMP_510 = SOLIDITY_CALL require(bool,string)(TMP_509,Governance::guardianExecuteTransaction: Only guardian.)\""
+                    ],
+                    "state_variable": "guardianAddress"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 682\nFunction: guardianExecuteTransaction\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(_targetContractRegistryKey)\nIRS: \nTMP_511(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['_targetContractRegistryKey']  \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 687\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 688\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 553\nFunction: initialize\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_398\"",
+                        "\"BlockID: 689\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 568\nFunction: initialize\nNode: \nEXPRESSION isInitialized = true\nIRS: \nisInitialized := true\"",
+                        "\"BlockID: 686\nFunction: _requireIsInitialized\nNode: \nEXPRESSION require(bool,string)(isInitialized == true,ERROR_NOT_INITIALIZED)\nIRS: \nTMP_394 = SOLIDITY_CALL require(bool,string)(TMP_393,ERROR_NOT_INITIALIZED)\""
+                    ],
+                    "state_variable": "isInitialized"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "guardianExecuteTransaction",
+                "setRegistryAddress"
+            ],
+            "First_function": "setRegistryAddress",
+            "Second_function": "guardianExecuteTransaction",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 682\nFunction: guardianExecuteTransaction\nNode: \nNEW VARIABLE targetContractAddress = registry.getContract(_targetContractRegistryKey)\nIRS: \nTMP_511(address) = HIGH_LEVEL_CALL, dest:registry(Registry), function:getContract, arguments:['_targetContractRegistryKey']  \""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 687\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_534 = SOLIDITY_CALL keccak256(bytes)(TMP_533)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 688\nFunction: _executeTransaction\nNode: \nNEW VARIABLE encodedCallData = abi.encodePacked(bytes4(keccak256(bytes)(bytes(_signature))),_callData)\nIRS: \nTMP_536 = SOLIDITY_CALL abi.encodePacked()(TMP_535,_callData)\""
+                    ],
+                    "state_variable": "registry"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 679\nFunction: setRegistryAddress\nNode: \nEXPRESSION registry = Registry(_registryAddress)\nIRS: \nregistry := TMP_507\"",
+                        "\"BlockID: 689\nFunction: _executeTransaction\nNode: \nEXPRESSION (success,returnData) = (_targetContractAddress.call.value(_callValue)(encodedCallData))\nIRS: \nTUPLE_3(bool,bytes) = LOW_LEVEL_CALL, dest:_targetContractAddress, function:call, arguments:['encodedCallData'] value:_callValue \""
+                    ],
+                    "state_variable": "registry"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "guardianExecuteTransaction",
+                "transferGuardianship"
+            ],
+            "First_function": "transferGuardianship",
+            "Second_function": "guardianExecuteTransaction",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 692\nFunction: transferGuardianship\nNode: \nEXPRESSION guardianAddress = _newGuardianAddress\nIRS: \nguardianAddress := _newGuardianAddress\"",
+                        "\"BlockID: 681\nFunction: guardianExecuteTransaction\nNode: \nEXPRESSION require(bool,string)(msg.sender == guardianAddress,Governance::guardianExecuteTransaction: Only guardian.)\nIRS: \nTMP_510 = SOLIDITY_CALL require(bool,string)(TMP_509,Governance::guardianExecuteTransaction: Only guardian.)\""
+                    ],
+                    "state_variable": "guardianAddress"
+                }
+            ]
+        }
+    ]
+}

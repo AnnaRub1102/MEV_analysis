@@ -1,0 +1,1033 @@
+[INFO] | 2026-09-17 11:57:06 AM | analyzer.KeepRandomBeaconOperator_fix | Analysis started at: 2026-09-17 11:57:06 AM
+[INFO] | 2026-09-17 11:57:13 AM | analyzer.KeepRandomBeaconOperator_fix | Version constraints: ['^0.5.0', '^0.5.0', '^0.5.0', '^0.5.0', '^0.5.0', '^0.5.0', '^0.5.5', '^0.5.0', '^0.5.10', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.4', '^0.5.0', '^0.5.4', '^0.5.4', '^0.5.4']
+[INFO] | 2026-09-17 11:57:13 AM | analyzer.KeepRandomBeaconOperator_fix | solc version: v0.5.10
+[INFO] | 2026-09-17 11:57:25 AM | analyzer.KeepRandomBeaconOperator_fix | Callgraph generation started!
+[INFO] | 2026-09-17 11:57:25 AM | analyzer.KeepRandomBeaconOperator_fix | Callgraph generation finished!
+[INFO] | 2026-09-17 11:57:25 AM | analyzer.KeepRandomBeaconOperator_fix | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Storage dependency graph generation started!
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Issues with getting the high level call destination address
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Value Range Analysis started
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgSender
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _msgData
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isContract
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toPayable
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toPayable
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toPayable
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for sendValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for sendValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function sendValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for concat
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | We should not consider this kind of return values!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for concat
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function concat
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for concatStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for concatStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function concatStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | We should not consider this kind of return values!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toUint8
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | We should not consider this kind of return values!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toUint8
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toUint8
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toUint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | We should not consider this kind of return values!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toUint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toUint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for equal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for equal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function equal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for equalStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for equalStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function equalStorage
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toBytes32
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toBytes32
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toBytes32
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for keccak256Slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for keccak256Slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function keccak256Slice
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for contains
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for contains
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function contains
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for removeAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for removeAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function removeAddress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for pack
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for pack
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function pack
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for removeValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for removeValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function removeValue
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isNewOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isNewOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isNewOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for operatorContractUpgraderFor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for operatorContractUpgraderFor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function operatorContractUpgraderFor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function operatorsOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function ownerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function magpieOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function authorizerOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isAuthorizedForOperator
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isAuthorizedForOperator
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isAuthorizedForOperator
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyApprovedOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyOperatorAuthorizer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyOperatorAuthorizer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyOperatorAuthorizer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for modExp
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for modExp
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function modExp
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getP
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getP
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getP
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for twistB
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for twistB
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function twistB
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for hexRoot
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for hexRoot
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function hexRoot
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for parity
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for parity
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function parity
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1Unmarshal
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1Unmarshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1Unmarshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1Marshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1Marshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1Marshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2Unmarshal
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2Unmarshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2Unmarshal
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for gfP2Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for gfP2Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function gfP2Add
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for gfP2Multiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for gfP2Multiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function gfP2Multiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for scalarMultiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for scalarMultiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function scalarMultiply
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for pairing
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for pairing
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function pairing
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isTicketValid
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isTicketValid
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isTicketValid
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for findReplacementIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for findReplacementIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function findReplacementIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for readPreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for readPreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function readPreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for storePreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for storePreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function storePreviousTicketIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getTicketValueOrderedIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getTicketValueOrderedIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getTicketValueOrderedIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for cleanupTickets
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for cleanupTickets
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function cleanupTickets
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for cleanupCandidates
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for cleanupCandidates
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function cleanupCandidates
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for addGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for addGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function addGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMember
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMember
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMember
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for terminateGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for terminateGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function terminateGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isGroupTerminated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isGroupTerminated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isGroupTerminated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for shiftByTerminatedGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for shiftByTerminatedGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function shiftByTerminatedGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function membersOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for recover
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for recover
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function recover
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for toEthSignedMessageHash
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for toEthSignedMessageHash
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function toEthSignedMessageHash
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for entryCreated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for entryCreated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function entryCreated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for fundRequestSubsidyFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for fundRequestSubsidyFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function fundRequestSubsidyFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for fundDkgFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for fundDkgFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function fundDkgFeePool
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isGroupSelectionPossible
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isGroupSelectionPossible
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isGroupSelectionPossible
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for ticketSubmissionTimeout
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for ticketSubmissionTimeout
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function ticketSubmissionTimeout
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for submittedTicketsCount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for submittedTicketsCount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function submittedTicketsCount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isEntryInProgress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isEntryInProgress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isEntryInProgress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for hasEntryTimedOut
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for hasEntryTimedOut
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function hasEntryTimedOut
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMemberRewards
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getFirstActiveGroupIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getFirstActiveGroupIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getFirstActiveGroupIndex
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyOwner
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for onlyServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for onlyServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function onlyServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for nonReentrant
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for nonReentrant
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function nonReentrant
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function increaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _mint
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for eligibleStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for eligibleStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function eligibleStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for activeStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for activeStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function activeStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for addGroupMemberReward
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for addGroupMemberReward
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function addGroupMemberReward
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for groupActiveTimeOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for groupActiveTimeOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function groupActiveTimeOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for shiftByExpiredGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for shiftByExpiredGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function shiftByExpiredGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for groupCreationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for groupCreationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function groupCreationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function decreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for groupProfitFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for groupProfitFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function groupProfitFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for entryVerificationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for entryVerificationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function entryVerificationFee
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function div
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function mod
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for callOptionalReturn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for callOptionalReturn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function callOptionalReturn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for removeServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for removeServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function removeServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setAmount
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setCreationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setUndelegationBlock
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for unpack
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for unpack
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function unpack
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for approveOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for approveOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function approveOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for disableOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for disableOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function disableOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setGovernance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setRegistryKeeper
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setPanicButton
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for setOperatorContractUpgrader
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for setOperatorContractUpgrader
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function setOperatorContractUpgrader
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for authorizeOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for authorizeOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function authorizeOperatorContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for legendre
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for legendre
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function legendre
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isG1PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isG1PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isG1PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function verify
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2Compress
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for gfP2Pow
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for gfP2Pow
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function gfP2Pow
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for addTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for addTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function addTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for start
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for start
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function start
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for stop
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for stop
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function stop
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupPublicKey
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMemberIndices
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getGroupMembers
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for addServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for addServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function addServiceContract
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function selectedParticipants
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for groupStaleTime
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for groupStaleTime
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function groupStaleTime
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for expireOldGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for expireOldGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function expireOldGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _burn
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for numberOfGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for numberOfGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function numberOfGroups
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for reimburseCallback
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for reimburseCallback
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function reimburseCallback
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for reimburseDkgSubmitter
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for reimburseDkgSubmitter
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function reimburseDkgSubmitter
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for percent
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for percent
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function percent
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for asPercentOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for asPercentOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function asPercentOf
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getDelayFactor
+[WARNING] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getDelayFactor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getDelayFactor
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for safeTransfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for safeTransfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function safeTransfer
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function safeTransferFrom
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for safeApprove
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for safeApprove
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function safeApprove
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for safeIncreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for safeIncreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function safeIncreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for safeDecreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for safeDecreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function safeDecreaseAllowance
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isGroupRegistered
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for undelegateAt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for undelegateAt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function undelegateAt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for getDelegationInfo
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for getDelegationInfo
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function getDelegationInfo
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for modSqrt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for modSqrt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function modSqrt
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2X2y
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2X2y
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2X2y
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isG2PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isG2PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isG2PointOnCurve
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for submitTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for submitTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function submitTicket
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for startGroupSelection
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for startGroupSelection
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function startGroupSelection
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function hasMinimumStake
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isStaleGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isStaleGroup
+[INFO] | 2026-09-17 11:57:26 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function _burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for burn
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for burn
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function burn
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for selectGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for selectGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function selectGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for numberOfGroups
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for numberOfGroups
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function numberOfGroups
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for executeCallback
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for executeCallback
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function executeCallback
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for submitDkgResult
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for submitDkgResult
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function submitDkgResult
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for newEntryRewardsBreakdown
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for newEntryRewardsBreakdown
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function newEntryRewardsBreakdown
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for cancelStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for cancelStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function cancelStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for recoverStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for recoverStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function recoverStake
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for receiveApproval
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for receiveApproval
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function receiveApproval
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for undelegate
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for undelegate
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function undelegate
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2YFromX
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for createGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for createGroup
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function createGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function isStaleGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for withdrawFromGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for withdrawFromGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function withdrawFromGroup
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function burnFrom
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for slash
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for slash
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function slash
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for seize
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for seize
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function seize
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for signRelayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for signRelayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function signRelayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for genesis
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for genesis
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function genesis
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for relayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for relayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function relayEntry
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1HashToPoint
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1HashToPoint
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1HashToPoint
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g1Decompress
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g1Decompress
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g1Decompress
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for g2Decompress
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[WARNING] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Can there be this kind of variables
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for g2Decompress
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function g2Decompress
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Processed function submitTicket
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Generating return summary for withdrawGroupMemberRewards
+[INFO] | 2026-09-17 11:57:27 AM | analyzer.KeepRandomBeaconOperator_fix | Return summary generated for withdrawGroupMemberRewards

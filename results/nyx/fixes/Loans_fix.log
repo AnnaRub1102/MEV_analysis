@@ -1,0 +1,35 @@
+[2m2026-09-17T11:42:21.717051[0m [[32m[1minfo     [0m] [1mCommand-line arguments        [0m [36mfocus[0m=[35m[][0m [36mlog_file[0m=[35mNone[0m [36mname[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m [36mrepos[0m=[35m['/dataset/fixes/Loans_fix/'][0m
+[2m2026-09-17T11:42:21.723787[0m [[32m[1minfo     [0m] [1mAnalysis configuration        [0m [36mfunction_timeout[0m=[35minfs[0m [36mpair_timeout[0m=[35minfs[0m [36msolver_timeout[0m=[35m60.00s[0m
+[2m2026-09-17T11:42:21.724504[0m [[32m[1minfo     [0m] [1mAnalysis started              [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:42:21.728061[0m [[32m[1minfo     [0m] [1mPhase 0 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:42:21.728216[0m [[32m[1minfo     [0m] [1mCompiling and analyzing contracts using Slither...[0m [36mgroup[0m=[35mContracts[0m [36mpath[0m=[35m/dataset/fixes/Loans_fix[0m [36mphase[0m=[35m0[0m [36mrepo[0m=[35mLoans_fix[0m
+[2m2026-09-17T11:42:21.730037[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.5.8/solc-0.5.8 --version' running[0m
+[2m2026-09-17T11:42:21.761110[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.5.8/solc-0.5.8 Loans_fix.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --optimize --allow-paths .,/nyx' running[0m
+[2m2026-09-17T11:42:24.782818[0m [[32m[1minfo     [0m] [1mPhase 0 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m1596[0m [36mtime[0m=[35m3.05s[0m
+[2m2026-09-17T11:42:24.783227[0m [[32m[1minfo     [0m] [1mPhase 1 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+Traceback (most recent call last):
+  File "/nyx/nyx/main.py", line 214, in <module>
+    analyze_one(args)
+  File "/nyx/nyx/main.py", line 84, in analyze_one
+    output = analyze_single(group, observer, config)
+  File "/nyx/nyx/analyze/__init__.py", line 82, in analyze_single
+    hfg = HybridFlowGraph(g.all_contracts, g.analyze_contracts)
+  File "/nyx/nyx/hfg/hybrid_flow_graph.py", line 177, in __init__
+    entry, returns, _, _ = self.__process_fn([], fn)
+  File "/nyx/nyx/hfg/hybrid_flow_graph.py", line 393, in __process_fn
+    entry, return_bbs, _, callee_bbs = self.__process_fn(
+  File "/nyx/nyx/hfg/hybrid_flow_graph.py", line 338, in __process_fn
+    self.__summarize_fn(_fn)
+  File "/nyx/nyx/hfg/hybrid_flow_graph.py", line 219, in __summarize_fn
+    summarize_intra_procedural_data_flow(fn)
+  File "/nyx/nyx/hfg/intra_contract.py", line 397, in summarize_intra_procedural_data_flow
+    summarize_call_arg_sink(op)
+  File "/nyx/nyx/hfg/intra_contract.py", line 366, in summarize_call_arg_sink
+    CallArgSinkSummary(_op, arg, i + 1)
+  File "/nyx/nyx/hfg/intra_contract.py", line 236, in __init__
+    self._resolve_sources(arg)
+  File "/nyx/nyx/hfg/intra_contract.py", line 114, in _resolve_sources
+    self.__resolve_sources(self.function.context[SSA_VAR_DEF_MAP_KEY], sink_var)
+  File "/nyx/nyx/hfg/intra_contract.py", line 164, in __resolve_sources
+    if dep in ssa_var_def_map:
+TypeError: unhashable type: 'list'

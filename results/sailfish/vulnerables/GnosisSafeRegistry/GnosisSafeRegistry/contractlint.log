@@ -1,0 +1,1407 @@
+[INFO] | 2026-09-17 12:49:59 PM | analyzer.GnosisSafeRegistry | Analysis started at: 2026-09-17 12:49:59 PM
+[INFO] | 2026-09-17 12:50:01 PM | analyzer.GnosisSafeRegistry | Version constraints: ['0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10']
+[INFO] | 2026-09-17 12:50:01 PM | analyzer.GnosisSafeRegistry | solc version: v0.5.10
+[INFO] | 2026-09-17 12:50:02 PM | analyzer.GnosisSafeRegistry | Callgraph generation started!
+[INFO] | 2026-09-17 12:50:02 PM | analyzer.GnosisSafeRegistry | Callgraph generation finished!
+[INFO] | 2026-09-17 12:50:02 PM | analyzer.GnosisSafeRegistry | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 12:50:02 PM | analyzer.GnosisSafeRegistry | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 12:50:02 PM | analyzer.GnosisSafeRegistry | Storage dependency graph generation started!
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Value Range Analysis started
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function noHooksTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateOutByPayout
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedReportingParticipantTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedMarketTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedUniverseTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedDisputeWindowTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTotalMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTotalTheoreticalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function mintForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for burnForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for burnForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function burnForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for mintForWarpSync
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for mintForWarpSync
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function mintForWarpSync
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for joinMint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for joinMint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function joinMint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for joinBurn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for joinBurn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function joinBurn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function safeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOfBatch
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initializeMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initializeMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initializeMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for unsafeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for unsafeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function unsafeTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for unsafeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for unsafeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function unsafeBatchTransferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for claimTradingProceeds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for claimTradingProceeds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function claimTradingProceeds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTokenId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTokenId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTokenId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTokenIds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTokenIds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTokenIds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for buyCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for buyCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function buyCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for buyCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for buyCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function buyCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for sellCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for sellCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function sellCompleteSets
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for sellCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for sellCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function sellCompleteSetsForTrade
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupplyForMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupplyForMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupplyForMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOfMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOfMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOfMarketOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for lowestBalanceOfMarketOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for lowestBalanceOfMarketOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function lowestBalanceOfMarketOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function liquidateLosing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getSize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for report
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for report
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function report
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReportTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReportTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReportTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateToNewUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateToNewUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateToNewUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for returnRepFromDisavow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for returnRepFromDisavow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function returnRepFromDisavow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for validateReference
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for validateReference
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function validateReference
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOwner
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferOwnership
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for doInitialReport
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for doInitialReport
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function doInitialReport
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getNumberOfOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getNumberOfOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getNumberOfOutcomes
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getNumTicks
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getNumTicks
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getNumTicks
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMarketCreatorSettlementFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMarketCreatorSettlementFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMarketCreatorSettlementFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWinningPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWinningPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWinningPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWinningPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWinningPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWinningPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWinningReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWinningReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWinningReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getFinalizationTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getFinalizationTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getFinalizationTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getInitialReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getInitialReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getInitialReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDesignatedReportingEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDesignatedReportingEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDesignatedReportingEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getValidityBondAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getValidityBondAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getValidityBondAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getAffiliateFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getAffiliateFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getAffiliateFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getNumParticipants
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getNumParticipants
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getNumParticipants
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDesignatedReporter
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputePacingOn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputePacingOn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputePacingOn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for deriveMarketCreatorFeeAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for deriveMarketCreatorFeeAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function deriveMarketCreatorFeeAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for recordMarketCreatorFees
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for recordMarketCreatorFees
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function recordMarketCreatorFees
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isInvalid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isInvalid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isInvalid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for finalize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for finalize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function finalize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function designatedReporterWasCorrect
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function designatedReporterShowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for assertBalances
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for assertBalances
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function assertBalances
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function totalSupply
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function balanceOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function transferFrom
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function approve
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function allowance
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTypeName
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedBuy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedBuy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedBuy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getStartTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getStartTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getStartTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWindowId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWindowId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWindowId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isActive
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isActive
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isActive
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isOver
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isOver
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isOver
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for onMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for onMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function onMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function redeem
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for fork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for fork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function fork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for updateForkValues
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for updateForkValues
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function updateForkValues
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getParentUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getParentUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getParentUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReputationToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getForkEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getForkEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getForkEndTime
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getForkReputationGoal
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getForkReputationGoal
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getForkReputationGoal
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getParentPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getParentPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getParentPayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputeRoundDurationInSeconds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputeRoundDurationInSeconds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputeRoundDurationInSeconds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCreateDisputeWindowByTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCreateDisputeWindowByTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCreateDisputeWindowByTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCreateCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCreateCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCreateCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCreateNextDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCreateNextDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCreateNextDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCreatePreviousDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCreatePreviousDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCreatePreviousDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOpenInterestInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOpenInterestInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOpenInterestInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTargetRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTargetRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTargetRepMarketCapInAttoCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCacheValidityBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCacheValidityBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCacheValidityBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCacheDesignatedReportStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCacheDesignatedReportStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCacheDesignatedReportStake
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCacheDesignatedReportNoShowBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCacheDesignatedReportNoShowBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCacheDesignatedReportNoShowBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCacheMarketRepBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCacheMarketRepBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCacheMarketRepBond
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrCacheReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrCacheReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrCacheReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputeThresholdForFork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputeThresholdForFork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputeThresholdForFork
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputeThresholdForDisputePacing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputeThresholdForDisputePacing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputeThresholdForDisputePacing
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getInitialReportMinValue
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getInitialReportMinValue
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getInitialReportMinValue
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerators
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReportingFeeDivisor
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWinningChildPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWinningChildPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWinningChildPayoutNumerator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isOpenInterestCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isOpenInterestCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isOpenInterestCash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isForkingMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getCurrentDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getDisputeWindowStartTimeAndDuration
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getDisputeWindowStartTimeAndDuration
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getDisputeWindowStartTimeAndDuration
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isParentOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isParentOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isParentOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for updateTentativeWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for updateTentativeWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function updateTentativeWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isContainerForDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isContainerForDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isContainerForDisputeWindow
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isContainerForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isContainerForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isContainerForMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isContainerForReportingParticipant
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateMarketOut
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateMarketOut
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateMarketOut
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for migrateMarketIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for migrateMarketIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function migrateMarketIn
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for decrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for decrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function decrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for decrementOpenInterestFromMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for decrementOpenInterestFromMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function decrementOpenInterestFromMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for incrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for incrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function incrementOpenInterest
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWinningChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isForking
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isForking
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isForking
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for deposit
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for deposit
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function deposit
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for withdraw
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for withdraw
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function withdraw
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for createScalarMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for createScalarMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function createScalarMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for mul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for mul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function mul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for div
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for div
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function div
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for sub
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for sub
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function sub
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for add
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for add
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function add
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUint256Min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUint256Min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUint256Min
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUint256Max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUint256Max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUint256Max
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isMultipleOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isMultipleOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isMultipleOf
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logProfitLossChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logProfitLossChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logProfitLossChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logOrderCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logOrderCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logOrderCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logOrderCanceled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logOrderCanceled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logOrderCanceled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketVolumeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketVolumeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketVolumeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logZeroXOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logZeroXOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logZeroXOrderFilled
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for removeOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for removeOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function removeOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderType
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderType
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderType
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOutcome
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getAmount
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderCreator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderCreator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderCreator
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderSharesEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderSharesEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderSharesEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderMoneyEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderMoneyEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderMoneyEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderDataForCancel
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderDataForCancel
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderDataForCancel
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderDataForLogs
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderDataForLogs
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderDataForLogs
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getBetterOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getBetterOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getBetterOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWorseOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWorseOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWorseOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getKYCToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getKYCToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getKYCToken
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getBestOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getBestOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getBestOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getWorstOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getWorstOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getWorstOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getLastOutcomePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getLastOutcomePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getLastOutcomePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTotalEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTotalEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTotalEscrowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for assertIsNotBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for assertIsNotBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function assertIsNotBetterPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for assertIsNotWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for assertIsNotWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function assertIsNotWorsePrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for recordFillOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for recordFillOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function recordFillOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for setPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for setPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function setPrice
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for calculateOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for calculateOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function calculateOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderTradingTypeFromMakerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderTradingTypeFromMakerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderTradingTypeFromMakerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderTradingTypeFromFillerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderTradingTypeFromFillerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderTradingTypeFromFillerDirection
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function lookup
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function createChildUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isKnownUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isKnownUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isKnownUniverse
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for trustedTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for trustedTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function trustedTransfer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isTrustedSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isTrustedSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isTrustedSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logCategoricalMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logCategoricalMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logCategoricalMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logYesNoMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logYesNoMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logYesNoMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logScalarMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logScalarMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logScalarMarketCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logInitialReportSubmitted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logInitialReportSubmitted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logInitialReportSubmitted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for disputeCrowdsourcerCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for disputeCrowdsourcerCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function disputeCrowdsourcerCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerContribution
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerContribution
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerContribution
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerCompleted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerCompleted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerCompleted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logInitialReporterRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logInitialReporterRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logInitialReporterRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketFinalized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketMigrated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logReportingParticipantDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logReportingParticipantDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logReportingParticipantDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketParticipantsDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketParticipantsDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketParticipantsDisavowed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logCompleteSetsPurchased
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logCompleteSetsPurchased
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logCompleteSetsPurchased
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logCompleteSetsSold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logCompleteSetsSold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logCompleteSetsSold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketOIChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketOIChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketOIChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logTradingProceedsClaimed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logTradingProceedsClaimed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logTradingProceedsClaimed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logUniverseForked
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logUniverseForked
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logUniverseForked
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logReputationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logReputationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logReputationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logReputationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logReputationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logReputationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logReputationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logReputationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logReputationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logShareTokensBalanceChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logShareTokensBalanceChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logShareTokensBalanceChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeCrowdsourcerTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeCrowdsourcerTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeCrowdsourcerTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDisputeWindowCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDisputeWindowCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDisputeWindowCreated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logParticipationTokensRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logParticipationTokensRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logParticipationTokensRedeemed
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logTimestampSet
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logTimestampSet
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logTimestampSet
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logInitialReporterTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logInitialReporterTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logInitialReporterTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logMarketTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logMarketTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logMarketTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logParticipationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logParticipationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logParticipationTokensTransferred
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logParticipationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logParticipationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logParticipationTokensBurned
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logParticipationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logParticipationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logParticipationTokensMinted
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isKnownFeeSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isKnownFeeSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isKnownFeeSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getTimestamp
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getMaximumMarketEndDate
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getMaximumMarketEndDate
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getMaximumMarketEndDate
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for isKnownMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for isKnownMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function isKnownMarket
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function derivePayoutDistributionHash
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logValidityBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logValidityBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logValidityBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logDesignatedReportStakeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logDesignatedReportStakeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logDesignatedReportStakeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logNoShowBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logNoShowBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logNoShowBondChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for logReportingFeeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for logReportingFeeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function logReportingFeeChanged
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getUniverseForkIndex
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getUniverseForkIndex
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getUniverseForkIndex
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getThreshold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getThreshold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getThreshold
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOwners
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOwners
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOwners
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for proxyRuntimeCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for proxyRuntimeCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function proxyRuntimeCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for proxyCreationCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for proxyCreationCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function proxyCreationCode
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for masterCopy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for masterCopy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function masterCopy
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for setFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for setFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function setFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for setReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for setReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function setReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getAccountFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getAccountFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getAccountFingerprint
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getAndValidateReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getAndValidateReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getAndValidateReferrer
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getSafe
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getSafe
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getSafe
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function beforeInitialized
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for escrowFundsForBid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for escrowFundsForBid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function escrowFundsForBid
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for escrowFundsForAsk
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for escrowFundsForAsk
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function escrowFundsForAsk
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for create
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for create
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function create
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for fxpMul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for fxpMul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function fxpMul
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for fxpDiv
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for fxpDiv
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function fxpDiv
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getOrderId
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for getAndValidateSafeFromSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for getAndValidateSafeFromSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function getAndValidateSafeFromSender
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function endInitialization
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for escrowFunds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for escrowFunds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function escrowFunds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | State variable assignement do not exist
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function saveOrder
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for deRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for deRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function deRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function initialize
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Generating return summary for callRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Return summary generated for callRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Range graph generated
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Processed function callRegister
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Value Range Analysis took 0.567492 seconds
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Value Range Analysis finished
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | Dependency detection started!
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and register
+[INFO] | 2026-09-17 12:50:03 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions initialize and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and initialize
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and deRegister
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and getSafe
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and getSafe
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and getSafe
+[INFO] | 2026-09-17 12:50:04 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions register and getSafe
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and initialize
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and register
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and register
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and register
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and register
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and deRegister
+[INFO] | 2026-09-17 12:50:05 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and deRegister
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and deRegister
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and deRegister
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and getSafe
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and getSafe
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and getSafe
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | DAO dependency detected in file GnosisSafeRegistry.sol in contract GnosisSafeRegistry in by composing functions deRegister and getSafe
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | Dependency detection finished!
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | Static Analysis took 7.039408 seconds
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | Dependency exists
+[INFO] | 2026-09-17 12:50:06 PM | analyzer.GnosisSafeRegistry | Invoking symbolic executor!

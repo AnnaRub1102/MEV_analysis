@@ -1,0 +1,22 @@
+{
+  "functions": [
+    "Owned.constructor()",
+    "Owned.transferOwnership(address)",
+    "Owned.acceptOwnership()",
+    "ArroToken.constructor()",
+    "ArroToken.transfer(address,uint256)",
+    "ArroToken.approve(address,uint256)",
+    "ArroToken.transferFrom(address,address,uint256)",
+    "ArroToken.approveAndCall(address,uint256,bytes)",
+    "ArroToken.fallback()",
+    "ArroToken.transferAnyERC20Token(address,uint256)",
+    "Owned.constructor()",
+    "Owned.transferOwnership(address)",
+    "Owned.acceptOwnership()"
+  ],
+  "phase0": 91,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

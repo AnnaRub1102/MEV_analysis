@@ -1,0 +1,182 @@
+[INFO] | 2026-09-17 12:29:08 PM | analyzer.ArroToken | Analysis started at: 2026-09-17 12:29:08 PM
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Version constraints: ['^0.4.24']
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | solc version: v0.4.24
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Callgraph generation started!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Callgraph generation finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Storage dependency graph generation started!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Value Range Analysis started
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeSub
+[WARNING] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeSub
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeSub
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeDiv
+[WARNING] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeDiv
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeDiv
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for receiveApproval
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for receiveApproval
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function receiveApproval
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeAdd
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeSub
+[WARNING] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeSub
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeSub
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeMul
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for safeDiv
+[WARNING] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for safeDiv
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function safeDiv
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function acceptOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function constructor
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function totalSupply
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function balanceOf
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function approve
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function allowance
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for fallback
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for fallback
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function fallback
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function onlyOwner
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferAnyERC20Token
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferAnyERC20Token
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | State variable assignement do not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferAnyERC20Token
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for approveAndCall
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for approveAndCall
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function approveAndCall
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transfer
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferFrom
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Range graph generated
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Processed function transferOwnership
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Value Range Analysis took 0.125795 seconds
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Value Range Analysis finished
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Dependency detection started!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Dependency detection finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Static Analysis took 1.859360 seconds
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Dependency does not exist
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Symbolic execution is not needed!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Analysis finished!
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Analysis took 1.862544 seconds
+[INFO] | 2026-09-17 12:29:10 PM | analyzer.ArroToken | Analysis finished at: 2026-09-17 12:29:10 PM

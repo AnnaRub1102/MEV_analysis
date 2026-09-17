@@ -1,0 +1,1015 @@
+[INFO] | 2026-09-17 11:57:33 AM | analyzer.Loans_fix | Analysis started at: 2026-09-17 11:57:33 AM
+[INFO] | 2026-09-17 11:57:37 AM | analyzer.Loans_fix | Version constraints: ['^0.5.0', '^0.5.0', '^0.5.0', '^0.5.0', '^0.5.8', '^0.5.8', '^0.5.8', '^0.5.8', '^0.5.8', '^0.5.8', '^0.5.8']
+[INFO] | 2026-09-17 11:57:37 AM | analyzer.Loans_fix | solc version: v0.5.8
+[INFO] | 2026-09-17 11:57:41 AM | analyzer.Loans_fix | Callgraph generation started!
+[INFO] | 2026-09-17 11:57:41 AM | analyzer.Loans_fix | Callgraph generation finished!
+[INFO] | 2026-09-17 11:57:41 AM | analyzer.Loans_fix | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Storage dependency graph generation started!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Value Range Analysis started
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _msgSender
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _msgData
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function totalSupply
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function balanceOf
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function allowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for COL
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for COL
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function COL
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for name
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for name
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function name
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for cmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for cmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function cmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for cdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for cdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function cdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for APEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for APEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function APEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for ACEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for ACEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function ACEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for BIEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for BIEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function BIEXT
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for SALEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for SALEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function SALEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for SETEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for SETEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function SETEX
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for MINBI
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for MINBI
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function MINBI
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for setLoans
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for setLoans
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function setLoans
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mila
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mila
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mila
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mala
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mala
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mala
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mild
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mild
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mild
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mald
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mald
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mald
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for bal
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for bal
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function bal
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for tok
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for tok
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function tok
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for cur
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for cur
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function cur
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for vars
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for vars
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function vars
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for gen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for gen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function gen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for setSechs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for setSechs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function setSechs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for peek
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for peek
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function peek
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for read
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for read
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function read
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for poke
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for poke
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function poke
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for void
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for void
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function void
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for push
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for push
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function push
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for bid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for bid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function bid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for bidr
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for bidr
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function bidr
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for salex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for salex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function salex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for setex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for setex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function setex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for pbkh
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for pbkh
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function pbkh
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sechA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sechA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sechA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for secA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for secA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function secA
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sechB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sechB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sechB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for secB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for secB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function secB
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sechC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sechC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sechC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for secC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for secC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function secC
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sechD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sechD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sechD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for secD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for secD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function secD
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for next
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for next
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function next
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sign
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sign
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sign
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sec
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sec
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sec
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for hasSecs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for hasSecs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function hasSecs
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lpen
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lfee
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for back
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for back
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function back
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function add
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function max
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function imax
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function bor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lend
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function agent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for prin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for prin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function prin
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for col
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for col
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function col
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rat
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for pushed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for pushed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function pushed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for marked
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for marked
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function marked
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function taken
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sale
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sale
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sale
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for paid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for paid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function paid
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function off
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function constructor
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for setSales
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for setSales
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function setSales
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function increaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _mint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _mint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _mint
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sub
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function decreaseAllowance
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function div
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mod
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function approve
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for colv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for colv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function colv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for apex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for apex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function apex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for acex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for acex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function acex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for biex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for biex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function biex
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for gsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for gsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function gsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function set
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for sechi
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for sechi
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function sechi
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rmul
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rmul
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for wdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function wdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rdiv
+[WARNING] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rdiv
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lent
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transfer
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function transferFrom
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for _burn
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for _burn
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function _burn
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function open
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for mark
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for mark
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function mark
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lsech
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function rpow
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function min
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for lentb
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for lentb
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function lentb
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for owed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for owed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function owed
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Generating return summary for pull
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Return summary generated for pull
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:42 AM | analyzer.Loans_fix | Processed function pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for unpush
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for unpush
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function unpush
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function push
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function _burnFrom
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for calc
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for calc
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function calc
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for safe
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for safe
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function safe
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for owedb
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for owedb
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function owedb
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for dedu
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for dedu
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function dedu
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for pay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for pay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function pay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for unpay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for unpay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function unpay
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for lopen
+[WARNING] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | No lvalue eligible assignment, is this some bug!
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for lopen
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function lopen
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for sell
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for sell
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function sell
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for dedub
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for dedub
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function dedub
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function pull
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for req
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for req
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function req
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Generating return summary for take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Return summary generated for take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Range graph generated
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Processed function take
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Value Range Analysis took 0.604930 seconds
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Value Range Analysis finished
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 11:57:43 AM | analyzer.Loans_fix | Dependency detection started!
+[INFO] | 2026-09-17 11:57:44 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Funds in by composing functions open and open
+[INFO] | 2026-09-17 11:57:45 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Funds in by composing functions req and setLoans
+[INFO] | 2026-09-17 11:57:45 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Funds in by composing functions req and setLoans
+[INFO] | 2026-09-17 11:57:46 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Funds in by composing functions req and set
+[INFO] | 2026-09-17 11:58:19 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Funds in by composing functions req and req
+[INFO] | 2026-09-17 11:58:21 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and push
+[INFO] | 2026-09-17 11:58:22 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and push
+[INFO] | 2026-09-17 11:58:24 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and push
+[INFO] | 2026-09-17 11:58:24 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sign
+[INFO] | 2026-09-17 11:58:25 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sign
+[INFO] | 2026-09-17 11:58:25 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sign
+[INFO] | 2026-09-17 11:58:27 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sec
+[INFO] | 2026-09-17 11:58:28 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sec
+[INFO] | 2026-09-17 11:58:29 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and sec
+[INFO] | 2026-09-17 11:58:30 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and hasSecs
+[INFO] | 2026-09-17 11:58:31 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and hasSecs
+[INFO] | 2026-09-17 11:58:31 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and hasSecs
+[INFO] | 2026-09-17 11:58:38 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and take
+[INFO] | 2026-09-17 11:58:42 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and take
+[INFO] | 2026-09-17 11:58:45 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and take
+[INFO] | 2026-09-17 11:58:46 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and unpush
+[INFO] | 2026-09-17 11:58:47 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and unpush
+[INFO] | 2026-09-17 11:58:47 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions open and unpush
+[INFO] | 2026-09-17 11:58:48 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and open
+[INFO] | 2026-09-17 11:58:54 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and push
+[INFO] | 2026-09-17 11:58:58 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and push
+[INFO] | 2026-09-17 11:58:58 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and sec
+[INFO] | 2026-09-17 11:58:59 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and sec
+[INFO] | 2026-09-17 11:59:01 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and take
+[INFO] | 2026-09-17 11:59:03 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and take
+[INFO] | 2026-09-17 11:59:03 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and unpush
+[INFO] | 2026-09-17 11:59:04 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions push and unpush
+[INFO] | 2026-09-17 11:59:11 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions take and open
+[INFO] | 2026-09-17 11:59:16 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions take and open
+[INFO] | 2026-09-17 11:59:17 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions take and push
+[INFO] | 2026-09-17 11:59:17 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Sales in by composing functions take and push
+[INFO] | 2026-09-17 11:59:18 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions apex and open
+[INFO] | 2026-09-17 11:59:18 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions acex and open
+[INFO] | 2026-09-17 11:59:19 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions biex and open
+[INFO] | 2026-09-17 11:59:20 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions safe and open
+[INFO] | 2026-09-17 11:59:21 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions safe and pay
+[INFO] | 2026-09-17 11:59:22 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions open and open
+[INFO] | 2026-09-17 11:59:22 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions push and push
+[INFO] | 2026-09-17 11:59:23 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions push and mark
+[INFO] | 2026-09-17 11:59:23 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions push and take
+[INFO] | 2026-09-17 11:59:24 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions mark and open
+[INFO] | 2026-09-17 11:59:24 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions mark and take
+[INFO] | 2026-09-17 11:59:29 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and open
+[INFO] | 2026-09-17 11:59:29 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and take
+[INFO] | 2026-09-17 11:59:31 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and pay
+[INFO] | 2026-09-17 11:59:32 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and unpay
+[INFO] | 2026-09-17 11:59:32 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and pull
+[INFO] | 2026-09-17 11:59:33 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and pull
+[INFO] | 2026-09-17 11:59:34 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions unpay and sell
+[INFO] | 2026-09-17 11:59:42 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and open
+[INFO] | 2026-09-17 11:59:45 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and take
+[INFO] | 2026-09-17 11:59:45 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pay
+[INFO] | 2026-09-17 11:59:46 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and unpay
+[INFO] | 2026-09-17 11:59:47 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pull
+[INFO] | 2026-09-17 11:59:48 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pull
+[INFO] | 2026-09-17 11:59:49 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and sell
+[INFO] | 2026-09-17 11:59:58 AM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and open
+[INFO] | 2026-09-17 12:00:01 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and take
+[INFO] | 2026-09-17 12:00:02 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pay
+[INFO] | 2026-09-17 12:00:04 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and unpay
+[INFO] | 2026-09-17 12:00:06 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pull
+[INFO] | 2026-09-17 12:00:07 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and pull
+[INFO] | 2026-09-17 12:00:10 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions pull and sell
+[INFO] | 2026-09-17 12:00:22 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:00:32 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:00:45 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:00:57 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:01:13 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:01:28 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:01:41 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:01:52 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:01:53 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:03 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:12 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:21 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:27 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:33 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:43 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:45 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:48 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:02:51 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:03:03 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and setSales
+[INFO] | 2026-09-17 12:03:23 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:03:33 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:03:40 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:03:47 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:03:54 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:01 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:09 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:17 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:18 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:27 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:34 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:42 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:51 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:04:58 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:07 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:16 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:25 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:33 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:45 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and open
+[INFO] | 2026-09-17 12:05:52 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:05:55 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:05:58 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:02 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:05 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:08 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:12 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:15 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:17 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:18 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:20 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:22 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:24 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:26 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:27 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:29 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:30 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:32 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:33 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:40 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pay
+[INFO] | 2026-09-17 12:06:41 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:42 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:44 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:45 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:47 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:48 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:50 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:51 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:53 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:54 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:56 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:57 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:06:59 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:00 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:02 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:04 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:05 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:07 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:09 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:10 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and unpay
+[INFO] | 2026-09-17 12:07:12 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:13 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:15 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:17 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:18 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:20 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:22 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:23 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:25 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:27 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:28 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull
+[INFO] | 2026-09-17 12:07:30 PM | analyzer.Loans_fix | DAO dependency detected in file Loans_fix.sol in contract Loans in by composing functions sell and pull

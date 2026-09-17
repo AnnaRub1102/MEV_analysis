@@ -1,0 +1,4464 @@
+{
+    "file": "OptionsContract_fix.sol",
+    "global_structs": [
+        {
+            "name": "Number",
+            "fields": {
+                "value": [
+                    "integer"
+                ],
+                "exponent": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Vault",
+            "fields": {
+                "collateral": [
+                    "integer"
+                ],
+                "oTokensIssued": [
+                    "integer"
+                ],
+                "underlying": [
+                    "integer"
+                ],
+                "owned": [
+                    "boolean"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0xebf"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0xec0"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xec1"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "name",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "symbol",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "decimals",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "exchangeTemplate",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tokenCount",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "UNISWAP_FACTORY",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "LARGE_BLOCK_SIZE",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "LARGE_APPROVAL_NUMBER",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_allowances",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "_totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "vaults",
+            "type": [
+                "array",
+                "integer",
+                "Vault"
+            ],
+            "init": []
+        },
+        {
+            "name": "vaultOwners",
+            "type": [
+                "array",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalFee",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "windowSize",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x38"
+            ]
+        },
+        {
+            "name": "COMPOUND_ORACLE",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x36"
+            ]
+        },
+        {
+            "name": "optionsExchange",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x37"
+            ]
+        },
+        {
+            "name": "expiry",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x35"
+            ]
+        },
+        {
+            "name": "strike",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x34"
+            ]
+        },
+        {
+            "name": "_owner",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1d"
+            ]
+        },
+        {
+            "name": "liquidationIncentive",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0xa",
+                "0xb"
+            ]
+        },
+        {
+            "name": "transactionFee",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0x12",
+                "0x13"
+            ]
+        },
+        {
+            "name": "underlying",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x30"
+            ]
+        },
+        {
+            "name": "strikePrice",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0x33"
+            ]
+        },
+        {
+            "name": "collateral",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x2e"
+            ]
+        },
+        {
+            "name": "oTokenExchangeRate",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0x32"
+            ]
+        },
+        {
+            "name": "liquidationFactor",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0x10",
+                "0x11"
+            ]
+        },
+        {
+            "name": "minCollateralizationRatio",
+            "type": [
+                "Number"
+            ],
+            "init": [
+                "0xe",
+                "0xf"
+            ]
+        },
+        {
+            "name": "collateralExp",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xd",
+                "0x2f"
+            ]
+        },
+        {
+            "name": "underlyingExp",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc",
+                "0x31"
+            ]
+        },
+        {
+            "name": "CompoundOracleInterface",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "UniswapExchangeInterface",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "UniswapFactoryInterface",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "OptionsUtils",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "OptionsExchange",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Context",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Ownable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "OptionsContract",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "CLR_0 = liquidationIncentive.value",
+                "REF_204 = CLR_0",
+                "liquidationIncentive.value = 10"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "CLR_1 = liquidationIncentive.exponent",
+                "REF_205 = CLR_1",
+                "liquidationIncentive.exponent = -3"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "underlyingExp = -18"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "collateralExp = -18"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_2 = minCollateralizationRatio.value",
+                "REF_206 = CLR_2",
+                "minCollateralizationRatio.value = 16"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_3 = minCollateralizationRatio.exponent",
+                "REF_207 = CLR_3",
+                "minCollateralizationRatio.exponent = -1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_4 = liquidationFactor.value",
+                "REF_208 = CLR_4",
+                "liquidationFactor.value = 500"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_5 = liquidationFactor.exponent",
+                "REF_209 = CLR_5",
+                "liquidationFactor.exponent = -3"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_6 = transactionFee.value",
+                "REF_210 = CLR_6",
+                "transactionFee.value = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_7 = transactionFee.exponent",
+                "REF_211 = CLR_7",
+                "transactionFee.exponent = -3"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1d",
+            "instructions": [
+                "_owner = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2e",
+            "instructions": [
+                "collateral = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2f",
+            "instructions": [
+                "collateralExp = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x30",
+            "instructions": [
+                "underlying = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31",
+            "instructions": [
+                "underlyingExp = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x32",
+            "instructions": [
+                "oTokenExchangeRate = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x33",
+            "instructions": [
+                "strikePrice = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x34",
+            "instructions": [
+                "strike = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x35",
+            "instructions": [
+                "expiry = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x36",
+            "instructions": [
+                "COMPOUND_ORACLE = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x37",
+            "instructions": [
+                "optionsExchange = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38",
+            "instructions": [
+                "windowSize = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xebf",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xec0",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xec1",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "_allowances",
+            "addrs": [
+                "0x2",
+                "0x15",
+                "0x17",
+                "0x1c",
+                "0x48"
+            ]
+        },
+        {
+            "name": "_owner",
+            "addrs": [
+                "0x2",
+                "0x1e",
+                "0x39"
+            ]
+        },
+        {
+            "name": "vaults",
+            "addrs": [
+                "0x2",
+                "0x20",
+                "0x23",
+                "0x26",
+                "0x29"
+            ]
+        },
+        {
+            "name": "vaultOwners",
+            "addrs": [
+                "0x2",
+                "0x2c"
+            ]
+        },
+        {
+            "name": "liquidationIncentive",
+            "addrs": [
+                "0x2",
+                "0x3a"
+            ]
+        },
+        {
+            "name": "liquidationFactor",
+            "addrs": [
+                "0x2",
+                "0x3b"
+            ]
+        },
+        {
+            "name": "transactionFee",
+            "addrs": [
+                "0x2",
+                "0x3c"
+            ]
+        },
+        {
+            "name": "minCollateralizationRatio",
+            "addrs": [
+                "0x2",
+                "0x3d"
+            ]
+        },
+        {
+            "name": "totalFee",
+            "addrs": [
+                "0x2",
+                "0x3e",
+                "0x55",
+                "0x56"
+            ]
+        },
+        {
+            "name": "_balances",
+            "addrs": [
+                "0x2",
+                "0x44",
+                "0x45",
+                "0x46",
+                "0x47",
+                "0x4a",
+                "0x50",
+                "0x51",
+                "0x52",
+                "0x58"
+            ]
+        },
+        {
+            "name": "_totalSupply",
+            "addrs": [
+                "0x2",
+                "0x4c",
+                "0x4e",
+                "0x53",
+                "0x54",
+                "0x5a"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_8 = _allowances[U]",
+                "REF_202 = CLR_8",
+                "CLR_9 = REF_202[U]",
+                "REF_203 = CLR_9",
+                "REF_202[0] = U",
+                "REF_202[1] = U",
+                "REF_202[2] = U",
+                "REF_202[3] = U",
+                "REF_202[4] = U",
+                "REF_202[5] = U",
+                "REF_202[6] = U",
+                "REF_202[7] = U",
+                "REF_202[8] = U",
+                "REF_202[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_10 = _allowances[U]",
+                "REF_202 = CLR_10",
+                "CLR_11 = REF_202[U]",
+                "REF_203 = CLR_11",
+                "REF_202[0] = U",
+                "REF_202[1] = U",
+                "REF_202[2] = U",
+                "REF_202[3] = U",
+                "REF_202[4] = U",
+                "REF_202[5] = U",
+                "REF_202[6] = U",
+                "REF_202[7] = U",
+                "REF_202[8] = U",
+                "REF_202[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_12 = _allowances[U]",
+                "REF_202 = CLR_12",
+                "CLR_13 = REF_202[U]",
+                "REF_203 = CLR_13",
+                "REF_202[0] = U",
+                "REF_202[1] = U",
+                "REF_202[2] = U",
+                "REF_202[3] = U",
+                "REF_202[4] = U",
+                "REF_202[5] = U",
+                "REF_202[6] = U",
+                "REF_202[7] = U",
+                "REF_202[8] = U",
+                "REF_202[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "_owner = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "RTMP_599 = ! false",
+                "RTMP_600 = ! false",
+                "RTMP_601 = RTMP_599 || RTMP_600",
+                "CONDITION RTMP_601 0x2a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "CLR_14 = vaults[U]",
+                "REF_232 = CLR_14",
+                "CLR_15 = REF_232.owned",
+                "REF_233 = CLR_15",
+                "RTMP_602 = ! REF_233",
+                "CONDITION RTMP_602 0x28 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_16 = msg.sender",
+                "CLR_17 = vaults[CLR_16]",
+                "REF_224 = CLR_17",
+                "CLR_18 = REF_224.owned",
+                "REF_225 = CLR_18",
+                "REF_224.owned = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2c",
+            "instructions": [
+                "RTMP_603 = ! false",
+                "RTMP_604 = ! false",
+                "RTMP_605 = RTMP_603 || RTMP_604",
+                "CONDITION RTMP_605 0x2d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2d",
+            "instructions": [
+                "CLR_19 = vaults[U]",
+                "REF_234 = CLR_19",
+                "CLR_20 = REF_234.owned",
+                "REF_235 = CLR_20",
+                "RTMP_606 = ! REF_235",
+                "CONDITION RTMP_606 0x2b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "CLR_21 = msg.sender",
+                "vaultOwners = CLR_21"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x39",
+            "instructions": [
+                "_owner = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3a",
+            "instructions": [
+                "CLR_22 = liquidationIncentive.value",
+                "REF_236 = CLR_22",
+                "liquidationIncentive.value = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3b",
+            "instructions": [
+                "CLR_23 = liquidationFactor.value",
+                "REF_237 = CLR_23",
+                "liquidationFactor.value = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_24 = transactionFee.value",
+                "REF_238 = CLR_24",
+                "transactionFee.value = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3d",
+            "instructions": [
+                "CLR_25 = minCollateralizationRatio.value",
+                "REF_239 = CLR_25",
+                "minCollateralizationRatio.value = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3e",
+            "instructions": [
+                "totalFee = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44",
+            "instructions": [
+                "CLR_26 = _balances[U]",
+                "REF_215 = CLR_26",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x45",
+            "instructions": [
+                "CLR_27 = _balances[U]",
+                "REF_216 = CLR_27",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x46",
+            "instructions": [
+                "CLR_28 = _balances[U]",
+                "REF_215 = CLR_28",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47",
+            "instructions": [
+                "CLR_29 = _balances[U]",
+                "REF_216 = CLR_29",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48",
+            "instructions": [
+                "CLR_30 = _allowances[U]",
+                "REF_202 = CLR_30",
+                "CLR_31 = REF_202[U]",
+                "REF_203 = CLR_31",
+                "REF_202[0] = U",
+                "REF_202[1] = U",
+                "REF_202[2] = U",
+                "REF_202[3] = U",
+                "REF_202[4] = U",
+                "REF_202[5] = U",
+                "REF_202[6] = U",
+                "REF_202[7] = U",
+                "REF_202[8] = U",
+                "REF_202[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4a",
+            "instructions": [
+                "RTMP_607 = ! false",
+                "RTMP_608 = ! false",
+                "RTMP_609 = RTMP_607 || RTMP_608",
+                "CONDITION RTMP_609 0x49 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x49",
+            "instructions": [
+                "CLR_32 = _balances[U]",
+                "REF_241 = CLR_32",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4c",
+            "instructions": [
+                "RTMP_610 = ! false",
+                "RTMP_611 = ! false",
+                "RTMP_612 = RTMP_610 || RTMP_611",
+                "CONDITION RTMP_612 0x4b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4b",
+            "instructions": [
+                "_totalSupply = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4e",
+            "instructions": [
+                "RTMP_613 = ! false",
+                "RTMP_614 = ! false",
+                "RTMP_615 = RTMP_613 || RTMP_614",
+                "CONDITION RTMP_615 0x4d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4d",
+            "instructions": [
+                "_totalSupply = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x50",
+            "instructions": [
+                "RTMP_616 = ! false",
+                "RTMP_617 = ! false",
+                "RTMP_618 = RTMP_616 || RTMP_617",
+                "CONDITION RTMP_618 0x4f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4f",
+            "instructions": [
+                "CLR_33 = _balances[U]",
+                "REF_217 = CLR_33",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x52",
+            "instructions": [
+                "CLR_34 = _balances[U]",
+                "REF_241 = CLR_34",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x54",
+            "instructions": [
+                "_totalSupply = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x56",
+            "instructions": [
+                "totalFee = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x58",
+            "instructions": [
+                "RTMP_619 = ! false",
+                "RTMP_620 = ! false",
+                "RTMP_621 = RTMP_619 || RTMP_620",
+                "CONDITION RTMP_621 0x57 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x57",
+            "instructions": [
+                "CLR_35 = _balances[U]",
+                "REF_241 = CLR_35",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5a",
+            "instructions": [
+                "RTMP_622 = ! false",
+                "RTMP_623 = ! false",
+                "RTMP_624 = RTMP_622 || RTMP_623",
+                "CONDITION RTMP_624 0x59 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x59",
+            "instructions": [
+                "_totalSupply = U"
+            ]
+        }
+    ],
+    "root_addr": "0xec2",
+    "dest_addrs": [
+        "0xeda"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "exercise",
+            "addr": "0xec2",
+            "instructions": [
+                "NOP",
+                "oTokensToExercise = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "amtCollateralToPayExp = NEW_VAL integer",
+                "vaultToExerciseFrom = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "account = NEW_VAL integer",
+                "amtCollateralToPay = NEW_VAL integer",
+                "errorMessage = NEW_VAL unknown",
+                "amount = NEW_VAL integer",
+                "asset = NEW_VAL integer",
+                "exp = NEW_VAL integer",
+                "exp_scope_0 = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "underlyingPerOTokenExp = NEW_VAL integer",
+                "oTokensToExercise = NEW_VAL integer",
+                "vault = NEW_VAL Vault",
+                "a = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "_ierc20 = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "_oTokens = NEW_VAL integer",
+                "vault = NEW_VAL Vault",
+                "amtUnderlyingToPay = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "proportion = NEW_VAL Number",
+                "amtCollateralToPay = NEW_VAL integer",
+                "owner = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "i = NEW_VAL integer",
+                "amtFee = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "oTokensToExercise = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "ethToCollateralPrice = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "_addr = NEW_VAL integer",
+                "errorMessage = NEW_VAL unknown",
+                "vaultsToExerciseFrom = NEW_COL integer",
+                "totalCollateralToPay = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "vaultOwner = NEW_VAL integer",
+                "account = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "ethToStrikePrice = NEW_VAL integer",
+                "_amt = NEW_VAL integer",
+                "amtCollateralToPayInEthNum = NEW_VAL integer",
+                "JUMP 0xec3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec3",
+            "instructions": [
+                "i = 0",
+                "JUMP 0xec4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec4",
+            "instructions": [
+                "NOP",
+                "REF_97 = LENGTH vaultsToExerciseFrom",
+                "TMP_285 = i < REF_97",
+                "CONDITION TMP_285 0xec5 0xec6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec7",
+            "instructions": [
+                "CONDITION TMP_286 0xec7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec7_r0",
+            "instructions": [
+                "JUMP 0xec8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec8",
+            "instructions": [
+                "CLR_36 = vaults[vaultOwner]",
+                "REF_99 = CLR_36",
+                "vault = REF_99",
+                "TMP_288 = oTokensToExercise == 0",
+                "CONDITION TMP_288 0xec6 0xec9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec9",
+            "instructions": [
+                "CLR_37 = vault.oTokensIssued",
+                "REF_100 = CLR_37",
+                "TMP_289 = REF_100 >= oTokensToExercise",
+                "CONDITION TMP_289 0xeca 0xecb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xecc",
+            "instructions": [
+                "NOP",
+                "JUMP 0xecd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xecd",
+            "instructions": [
+                "NOP",
+                "JUMP 0xece"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xece",
+            "instructions": [
+                "TMP_293 = i",
+                "i = i + 1",
+                "JUMP 0xec4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xecf",
+            "instructions": [
+                "NOP",
+                "JUMP 0xed0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed0",
+            "instructions": [
+                "CLR_38 = vaults[owner]",
+                "REF_89 = CLR_38",
+                "CLR_39 = REF_89.owned",
+                "REF_90 = CLR_39",
+                "TMP_558 = REF_90",
+                "JUMP 0xed1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec5",
+            "instructions": [
+                "CLR_40 = vaultsToExerciseFrom[i]",
+                "REF_98 = CLR_40",
+                "vaultOwner = REF_98",
+                "owner = vaultOwner",
+                "JUMP 0xecf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed1",
+            "instructions": [
+                "TMP_286 = TMP_558",
+                "JUMP 0xec7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xed3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed4",
+            "instructions": [
+                "CONDITION TMP_374 0xed4_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed4_r0",
+            "instructions": [
+                "JUMP 0xed5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed6",
+            "instructions": [
+                "CONDITION TMP_376 0xed6_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed6_r0",
+            "instructions": [
+                "JUMP 0xed7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed7",
+            "instructions": [
+                "CLR_41 = vaults[vaultToExerciseFrom]",
+                "REF_154 = CLR_41",
+                "vault = REF_154",
+                "TMP_378 = oTokensToExercise > 0",
+                "CONDITION TMP_378 0xed7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed7_r0",
+            "instructions": [
+                "JUMP 0xed8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed8",
+            "instructions": [
+                "CLR_42 = vault.oTokensIssued",
+                "REF_155 = CLR_42",
+                "TMP_380 = oTokensToExercise <= REF_155",
+                "CONDITION TMP_380 0xed8_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed8_r0",
+            "instructions": [
+                "JUMP 0xed9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeda",
+            "instructions": [
+                "TMP_383 = TMP_382 >= oTokensToExercise",
+                "CONDITION TMP_383 0xeda_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeda_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed3",
+            "instructions": [
+                "NOP",
+                "JUMP 0xedb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xedc",
+            "instructions": [
+                "CLR_43 = block.timestamp",
+                "TMP_281 = CLR_43 >= TMP_280",
+                "CLR_44 = block.timestamp",
+                "TMP_282 = CLR_44 < expiry",
+                "TMP_283 = TMP_281 && TMP_282",
+                "TMP_563 = TMP_283",
+                "JUMP 0xedd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xede",
+            "instructions": [
+                "NOP",
+                "JUMP 0xedf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee0",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xee1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xee3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee3",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xee3_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee3_r0",
+            "instructions": [
+                "JUMP 0xee4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee4",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xee5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xedf",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xee2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee5",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xee0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xedb",
+            "instructions": [
+                "a = expiry",
+                "b = windowSize",
+                "JUMP 0xede"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee1",
+            "instructions": [
+                "TMP_280 = TMP_500",
+                "JUMP 0xedc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xedd",
+            "instructions": [
+                "TMP_374 = TMP_563",
+                "JUMP 0xed4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee6",
+            "instructions": [
+                "NOP",
+                "JUMP 0xee7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee7",
+            "instructions": [
+                "CLR_45 = vaults[owner]",
+                "REF_89 = CLR_45",
+                "CLR_46 = REF_89.owned",
+                "REF_90 = CLR_46",
+                "TMP_558 = REF_90",
+                "JUMP 0xee8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed5",
+            "instructions": [
+                "owner = vaultToExerciseFrom",
+                "JUMP 0xee6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee8",
+            "instructions": [
+                "TMP_376 = TMP_558",
+                "JUMP 0xed6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xee9",
+            "instructions": [
+                "NOP",
+                "JUMP 0xeea"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeea",
+            "instructions": [
+                "CLR_47 = _balances[account]",
+                "REF_50 = CLR_47",
+                "TMP_536 = REF_50",
+                "JUMP 0xeeb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xed9",
+            "instructions": [
+                "CLR_48 = msg.sender",
+                "account = CLR_48",
+                "JUMP 0xee9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeeb",
+            "instructions": [
+                "TMP_382 = TMP_536",
+                "JUMP 0xeda"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeca",
+            "instructions": [
+                "oTokensToExercise = oTokensToExercise",
+                "vaultToExerciseFrom = vaultOwner",
+                "JUMP 0xed2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeec",
+            "instructions": [
+                "NOP",
+                "JUMP 0xeed"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeee",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xeef"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef0",
+            "instructions": [
+                "NOP",
+                "JUMP 0xef1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef1",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xef1_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef1_r0",
+            "instructions": [
+                "JUMP 0xef2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef2",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xef3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeed",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xef0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef3",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xeee"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xecb",
+            "instructions": [
+                "CLR_49 = vault.oTokensIssued",
+                "REF_102 = CLR_49",
+                "a = oTokensToExercise",
+                "b = REF_102",
+                "JUMP 0xeec"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeef",
+            "instructions": [
+                "TMP_291 = TMP_500",
+                "JUMP 0xef4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef5",
+            "instructions": [
+                "NOP",
+                "JUMP 0xef6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef7",
+            "instructions": [
+                "CONDITION TMP_374 0xef7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef7_r0",
+            "instructions": [
+                "JUMP 0xef8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef9",
+            "instructions": [
+                "CONDITION TMP_376 0xef9_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef9_r0",
+            "instructions": [
+                "JUMP 0xefa"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefa",
+            "instructions": [
+                "CLR_50 = vaults[vaultToExerciseFrom]",
+                "REF_154 = CLR_50",
+                "vault = REF_154",
+                "TMP_378 = oTokensToExercise > 0",
+                "CONDITION TMP_378 0xefa_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefa_r0",
+            "instructions": [
+                "JUMP 0xefb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefb",
+            "instructions": [
+                "CLR_51 = vault.oTokensIssued",
+                "REF_155 = CLR_51",
+                "TMP_380 = oTokensToExercise <= REF_155",
+                "CONDITION TMP_380 0xefb_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefb_r0",
+            "instructions": [
+                "JUMP 0xefc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefd",
+            "instructions": [
+                "TMP_383 = TMP_382 >= oTokensToExercise",
+                "CONDITION TMP_383 0xefd_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefd_r0",
+            "instructions": [
+                "JUMP 0xefe"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeff",
+            "instructions": [
+                "totalCollateralToPay = TMP_391",
+                "CLR_52 = vault.collateral",
+                "REF_161 = CLR_52",
+                "TMP_392 = totalCollateralToPay <= REF_161",
+                "CONDITION TMP_392 0xeff_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xeff_r0",
+            "instructions": [
+                "JUMP 0xf00"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf01",
+            "instructions": [
+                "CONDITION TMP_396 0xf02 0xf03"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf02",
+            "instructions": [
+                "CLR_53 = msg.value",
+                "TMP_397 = CLR_53 == amtUnderlyingToPay",
+                "CONDITION TMP_397 0xf02_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf02_r0",
+            "instructions": [
+                "JUMP 0xf04"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf03",
+            "instructions": [
+                "TMP_399 = NEW_VAL unknown",
+                "TMP_400 = NEW_VAL boolean",
+                "JUMP 0xf05"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf05",
+            "instructions": [
+                "CONDITION TMP_400 0xf05_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf05_r0",
+            "instructions": [
+                "JUMP 0xf04"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf04",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf06"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef6",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf07"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf08",
+            "instructions": [
+                "CLR_54 = block.timestamp",
+                "TMP_281 = CLR_54 >= TMP_280",
+                "CLR_55 = block.timestamp",
+                "TMP_282 = CLR_55 < expiry",
+                "TMP_283 = TMP_281 && TMP_282",
+                "TMP_563 = TMP_283",
+                "JUMP 0xf09"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0a",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf0b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0c",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xf0d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0e",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf0f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0f",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xf0f_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0f_r0",
+            "instructions": [
+                "JUMP 0xf10"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf10",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xf11"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0b",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xf0e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf11",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xf0c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf07",
+            "instructions": [
+                "a = expiry",
+                "b = windowSize",
+                "JUMP 0xf0a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf0d",
+            "instructions": [
+                "TMP_280 = TMP_500",
+                "JUMP 0xf08"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf09",
+            "instructions": [
+                "TMP_374 = TMP_563",
+                "JUMP 0xef7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf12",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf13"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf13",
+            "instructions": [
+                "CLR_56 = vaults[owner]",
+                "REF_89 = CLR_56",
+                "CLR_57 = REF_89.owned",
+                "REF_90 = CLR_57",
+                "TMP_558 = REF_90",
+                "JUMP 0xf14"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef8",
+            "instructions": [
+                "owner = vaultToExerciseFrom",
+                "JUMP 0xf12"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf14",
+            "instructions": [
+                "TMP_376 = TMP_558",
+                "JUMP 0xef9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf15",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf16"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf16",
+            "instructions": [
+                "CLR_58 = _balances[account]",
+                "REF_50 = CLR_58",
+                "TMP_536 = REF_50",
+                "JUMP 0xf17"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefc",
+            "instructions": [
+                "CLR_59 = msg.sender",
+                "account = CLR_59",
+                "JUMP 0xf15"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf17",
+            "instructions": [
+                "TMP_382 = TMP_536",
+                "JUMP 0xefd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf18",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf19"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1a",
+            "instructions": [
+                "TMP_562 = TMP_279",
+                "JUMP 0xf1b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1c",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf1d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1d",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf1e 0xf1f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1e",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf20"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1f",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf21"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf21",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf21_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf21_r0",
+            "instructions": [
+                "JUMP 0xf22"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf22",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf20"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf19",
+            "instructions": [
+                "CLR_60 = oTokenExchangeRate.exponent",
+                "REF_94 = CLR_60",
+                "TMP_276 = REF_94 - underlyingExp",
+                "TMP_277 = NEW_VAL unknown",
+                "underlyingPerOTokenExp = TMP_277",
+                "TMP_278 = 10 ** underlyingPerOTokenExp",
+                "a = oTokensToExercise",
+                "b = TMP_278",
+                "JUMP 0xf1c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf20",
+            "instructions": [
+                "TMP_279 = TMP_502",
+                "JUMP 0xf1a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xefe",
+            "instructions": [
+                "oTokensToExercise = oTokensToExercise",
+                "JUMP 0xf18"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf1b",
+            "instructions": [
+                "TMP_385 = TMP_562",
+                "JUMP 0xf23"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf24",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf25"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf25",
+            "instructions": [
+                "TMP_80 = a + b",
+                "c = TMP_80",
+                "TMP_81 = c >= a",
+                "CONDITION TMP_81 0xf25_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf25_r0",
+            "instructions": [
+                "JUMP 0xf26"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf26",
+            "instructions": [
+                "TMP_499 = c",
+                "JUMP 0xf27"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf23",
+            "instructions": [
+                "amtUnderlyingToPay = TMP_385",
+                "CLR_61 = vault.underlying",
+                "REF_156 = CLR_61",
+                "CLR_62 = vault.underlying",
+                "REF_157 = CLR_62",
+                "a = REF_157",
+                "b = amtUnderlyingToPay",
+                "JUMP 0xf24"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf27",
+            "instructions": [
+                "TMP_386 = TMP_499",
+                "JUMP 0xf28"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf29",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf2a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2b",
+            "instructions": [
+                "amtCollateralToPayInEthNum = TMP_433",
+                "CLR_63 = strikePrice.exponent",
+                "REF_189 = CLR_63",
+                "CLR_64 = proportion.exponent",
+                "REF_190 = CLR_64",
+                "TMP_434 = REF_189 + REF_190",
+                "TMP_435 = TMP_434 - collateralExp",
+                "amtCollateralToPayExp = TMP_435",
+                "amtCollateralToPay = 0",
+                "TMP_436 = amtCollateralToPayExp > 0",
+                "CONDITION TMP_436 0xf2d 0xf2c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2e",
+            "instructions": [
+                "amtCollateralToPay = TMP_446",
+                "JUMP 0xf2f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2f",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf30"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf30",
+            "instructions": [
+                "TMP_582 = amtCollateralToPay",
+                "JUMP 0xf31"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf32",
+            "instructions": [
+                "amtCollateralToPay = TMP_440",
+                "JUMP 0xf2f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf33",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf34"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf34",
+            "instructions": [
+                "TMP_453 = 0",
+                "TMP_454 = asset == TMP_453",
+                "CONDITION TMP_454 0xf35 0xf36"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf35",
+            "instructions": [
+                "TMP_455 = 10 ** 18",
+                "TMP_585 = TMP_455",
+                "JUMP 0xf37"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf36",
+            "instructions": [
+                "TMP_456 = NEW_VAL integer",
+                "JUMP 0xf38"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf38",
+            "instructions": [
+                "TMP_585 = TMP_456",
+                "JUMP 0xf37"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2a",
+            "instructions": [
+                "TMP_427 = NEW_VAL unknown",
+                "asset = TMP_427",
+                "JUMP 0xf33"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf37",
+            "instructions": [
+                "TMP_428 = TMP_585",
+                "JUMP 0xf39"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3a",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf3b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3b",
+            "instructions": [
+                "TMP_453 = 0",
+                "TMP_454 = asset == TMP_453",
+                "CONDITION TMP_454 0xf3c 0xf3d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3c",
+            "instructions": [
+                "TMP_455 = 10 ** 18",
+                "TMP_585 = TMP_455",
+                "JUMP 0xf3e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3d",
+            "instructions": [
+                "TMP_456 = NEW_VAL integer",
+                "JUMP 0xf3f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3f",
+            "instructions": [
+                "TMP_585 = TMP_456",
+                "JUMP 0xf3e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf39",
+            "instructions": [
+                "ethToCollateralPrice = TMP_428",
+                "TMP_429 = NEW_VAL unknown",
+                "asset = TMP_429",
+                "JUMP 0xf3a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf3e",
+            "instructions": [
+                "TMP_430 = TMP_585",
+                "JUMP 0xf40"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf41",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf42"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf42",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf43 0xf44"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf43",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf45"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf44",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf46"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf46",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf46_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf46_r0",
+            "instructions": [
+                "JUMP 0xf47"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf47",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf45"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf40",
+            "instructions": [
+                "ethToStrikePrice = TMP_430",
+                "CLR_65 = strikePrice.value",
+                "REF_185 = CLR_65",
+                "a = _oTokens",
+                "b = REF_185",
+                "JUMP 0xf41"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf45",
+            "instructions": [
+                "TMP_431 = TMP_502",
+                "JUMP 0xf48"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf49",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf4a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4a",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf4b 0xf4c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4b",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf4d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4c",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf4e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4e",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf4e_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4e_r0",
+            "instructions": [
+                "JUMP 0xf4f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4f",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf4d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf48",
+            "instructions": [
+                "CLR_66 = proportion.value",
+                "REF_187 = CLR_66",
+                "a = TMP_431",
+                "b = REF_187",
+                "JUMP 0xf49"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf4d",
+            "instructions": [
+                "TMP_432 = TMP_502",
+                "JUMP 0xf50"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf51",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf52"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf52",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf53 0xf54"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf53",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf55"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf54",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf56"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf56",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf56_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf56_r0",
+            "instructions": [
+                "JUMP 0xf57"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf57",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf55"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf50",
+            "instructions": [
+                "a = TMP_432",
+                "b = ethToCollateralPrice",
+                "JUMP 0xf51"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf55",
+            "instructions": [
+                "TMP_433 = TMP_502",
+                "JUMP 0xf2b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf58",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf59"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5a",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xf5b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5c",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf5d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5d",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xf5d_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5d_r0",
+            "instructions": [
+                "JUMP 0xf5e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5e",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xf5f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf59",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xf5c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5f",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xf5a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2c",
+            "instructions": [
+                "TMP_441 = 0 - 1",
+                "TMP_442 = TMP_441 * amtCollateralToPayExp",
+                "TMP_443 = NEW_VAL unknown",
+                "exp_scope_0 = TMP_443",
+                "TMP_444 = 10 ** exp_scope_0",
+                "a = amtCollateralToPayInEthNum",
+                "b = TMP_444",
+                "JUMP 0xf58"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf5b",
+            "instructions": [
+                "TMP_445 = TMP_503",
+                "JUMP 0xf60"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf61",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf62"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf63",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xf64"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf65",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf66"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf66",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xf66_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf66_r0",
+            "instructions": [
+                "JUMP 0xf67"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf67",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xf68"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf62",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xf65"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf68",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xf63"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf60",
+            "instructions": [
+                "a = TMP_445",
+                "b = ethToStrikePrice",
+                "JUMP 0xf61"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf64",
+            "instructions": [
+                "TMP_446 = TMP_503",
+                "JUMP 0xf2e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf69",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf6a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6a",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf6b 0xf6c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6b",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf6d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6c",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf6e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6e",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf6e_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6e_r0",
+            "instructions": [
+                "JUMP 0xf6f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6f",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf6d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf2d",
+            "instructions": [
+                "TMP_437 = NEW_VAL unknown",
+                "exp = TMP_437",
+                "TMP_438 = 10 ** exp",
+                "a = amtCollateralToPayInEthNum",
+                "b = TMP_438",
+                "JUMP 0xf69"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf6d",
+            "instructions": [
+                "TMP_439 = TMP_502",
+                "JUMP 0xf70"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf71",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf72"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf73",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xf74"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf75",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf76"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf76",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xf76_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf76_r0",
+            "instructions": [
+                "JUMP 0xf77"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf77",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xf78"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf72",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xf75"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf78",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xf73"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf70",
+            "instructions": [
+                "a = TMP_439",
+                "b = ethToStrikePrice",
+                "JUMP 0xf71"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf74",
+            "instructions": [
+                "TMP_440 = TMP_503",
+                "JUMP 0xf32"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf28",
+            "instructions": [
+                "vault.underlying = TMP_386",
+                "TMP_387 = NEW_VAL Number",
+                "_oTokens = oTokensToExercise",
+                "proportion = TMP_387",
+                "JUMP 0xf29"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf31",
+            "instructions": [
+                "TMP_388 = TMP_582",
+                "JUMP 0xf79"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7a",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf7b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7c",
+            "instructions": [
+                "amtCollateralToPayInEthNum = TMP_433",
+                "CLR_67 = strikePrice.exponent",
+                "REF_189 = CLR_67",
+                "CLR_68 = proportion.exponent",
+                "REF_190 = CLR_68",
+                "TMP_434 = REF_189 + REF_190",
+                "TMP_435 = TMP_434 - collateralExp",
+                "amtCollateralToPayExp = TMP_435",
+                "amtCollateralToPay = 0",
+                "TMP_436 = amtCollateralToPayExp > 0",
+                "CONDITION TMP_436 0xf7e 0xf7d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7f",
+            "instructions": [
+                "amtCollateralToPay = TMP_446",
+                "JUMP 0xf80"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf80",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf81"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf81",
+            "instructions": [
+                "TMP_582 = amtCollateralToPay",
+                "JUMP 0xf82"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf83",
+            "instructions": [
+                "amtCollateralToPay = TMP_440",
+                "JUMP 0xf80"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf84",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf85"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf85",
+            "instructions": [
+                "TMP_453 = 0",
+                "TMP_454 = asset == TMP_453",
+                "CONDITION TMP_454 0xf86 0xf87"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf86",
+            "instructions": [
+                "TMP_455 = 10 ** 18",
+                "TMP_585 = TMP_455",
+                "JUMP 0xf88"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf87",
+            "instructions": [
+                "TMP_456 = NEW_VAL integer",
+                "JUMP 0xf89"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf89",
+            "instructions": [
+                "TMP_585 = TMP_456",
+                "JUMP 0xf88"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7b",
+            "instructions": [
+                "TMP_427 = NEW_VAL unknown",
+                "asset = TMP_427",
+                "JUMP 0xf84"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf88",
+            "instructions": [
+                "TMP_428 = TMP_585",
+                "JUMP 0xf8a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8b",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf8c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8c",
+            "instructions": [
+                "TMP_453 = 0",
+                "TMP_454 = asset == TMP_453",
+                "CONDITION TMP_454 0xf8d 0xf8e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8d",
+            "instructions": [
+                "TMP_455 = 10 ** 18",
+                "TMP_585 = TMP_455",
+                "JUMP 0xf8f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8e",
+            "instructions": [
+                "TMP_456 = NEW_VAL integer",
+                "JUMP 0xf90"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf90",
+            "instructions": [
+                "TMP_585 = TMP_456",
+                "JUMP 0xf8f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8a",
+            "instructions": [
+                "ethToCollateralPrice = TMP_428",
+                "TMP_429 = NEW_VAL unknown",
+                "asset = TMP_429",
+                "JUMP 0xf8b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf8f",
+            "instructions": [
+                "TMP_430 = TMP_585",
+                "JUMP 0xf91"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf92",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf93"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf93",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf94 0xf95"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf94",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf96"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf95",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf97"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf97",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf97_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf97_r0",
+            "instructions": [
+                "JUMP 0xf98"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf98",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf96"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf91",
+            "instructions": [
+                "ethToStrikePrice = TMP_430",
+                "CLR_69 = strikePrice.value",
+                "REF_185 = CLR_69",
+                "a = _oTokens",
+                "b = REF_185",
+                "JUMP 0xf92"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf96",
+            "instructions": [
+                "TMP_431 = TMP_502",
+                "JUMP 0xf99"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9a",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf9b"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9b",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xf9c 0xf9d"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9c",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xf9e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9d",
+            "instructions": [
+                "NOP",
+                "JUMP 0xf9f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9f",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xf9f_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9f_r0",
+            "instructions": [
+                "JUMP 0xfa0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa0",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xf9e"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf99",
+            "instructions": [
+                "CLR_70 = proportion.value",
+                "REF_187 = CLR_70",
+                "a = TMP_431",
+                "b = REF_187",
+                "JUMP 0xf9a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf9e",
+            "instructions": [
+                "TMP_432 = TMP_502",
+                "JUMP 0xfa1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfa3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa3",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xfa4 0xfa5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa4",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xfa6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa5",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfa7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa7",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xfa7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa7_r0",
+            "instructions": [
+                "JUMP 0xfa8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa8",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xfa6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa1",
+            "instructions": [
+                "a = TMP_432",
+                "b = ethToCollateralPrice",
+                "JUMP 0xfa2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa6",
+            "instructions": [
+                "TMP_433 = TMP_502",
+                "JUMP 0xf7c"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfa9",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfaa"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfab",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xfac"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfad",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfae"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfae",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xfae_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfae_r0",
+            "instructions": [
+                "JUMP 0xfaf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfaf",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xfb0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfaa",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfad"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb0",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xfab"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7d",
+            "instructions": [
+                "TMP_441 = 0 - 1",
+                "TMP_442 = TMP_441 * amtCollateralToPayExp",
+                "TMP_443 = NEW_VAL unknown",
+                "exp_scope_0 = TMP_443",
+                "TMP_444 = 10 ** exp_scope_0",
+                "a = amtCollateralToPayInEthNum",
+                "b = TMP_444",
+                "JUMP 0xfa9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfac",
+            "instructions": [
+                "TMP_445 = TMP_503",
+                "JUMP 0xfb1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfb3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb4",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xfb5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb6",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfb7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb7",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xfb7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb7_r0",
+            "instructions": [
+                "JUMP 0xfb8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb8",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xfb9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb3",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfb6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb9",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xfb4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb1",
+            "instructions": [
+                "a = TMP_445",
+                "b = ethToStrikePrice",
+                "JUMP 0xfb2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfb5",
+            "instructions": [
+                "TMP_446 = TMP_503",
+                "JUMP 0xf7f"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfba",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfbb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbb",
+            "instructions": [
+                "TMP_87 = a == 0",
+                "CONDITION TMP_87 0xfbc 0xfbd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbc",
+            "instructions": [
+                "TMP_502 = 0",
+                "JUMP 0xfbe"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbd",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfbf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbf",
+            "instructions": [
+                "TMP_88 = a * b",
+                "c = TMP_88",
+                "TMP_89 = c \/ a",
+                "TMP_90 = TMP_89 == b",
+                "CONDITION TMP_90 0xfbf_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbf_r0",
+            "instructions": [
+                "JUMP 0xfc0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc0",
+            "instructions": [
+                "TMP_502 = c",
+                "JUMP 0xfbe"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf7e",
+            "instructions": [
+                "TMP_437 = NEW_VAL unknown",
+                "exp = TMP_437",
+                "TMP_438 = 10 ** exp",
+                "a = amtCollateralToPayInEthNum",
+                "b = TMP_438",
+                "JUMP 0xfba"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfbe",
+            "instructions": [
+                "TMP_439 = TMP_502",
+                "JUMP 0xfc1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc2",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfc3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc4",
+            "instructions": [
+                "TMP_503 = TMP_92",
+                "JUMP 0xfc5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc6",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfc7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc7",
+            "instructions": [
+                "TMP_93 = b > 0",
+                "CONDITION TMP_93 0xfc7_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc7_r0",
+            "instructions": [
+                "JUMP 0xfc8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc8",
+            "instructions": [
+                "TMP_95 = a \/ b",
+                "c = TMP_95",
+                "TMP_504 = c",
+                "JUMP 0xfc9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc3",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfc6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc9",
+            "instructions": [
+                "TMP_92 = TMP_504",
+                "JUMP 0xfc4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc1",
+            "instructions": [
+                "a = TMP_439",
+                "b = ethToStrikePrice",
+                "JUMP 0xfc2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfc5",
+            "instructions": [
+                "TMP_440 = TMP_503",
+                "JUMP 0xf83"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf79",
+            "instructions": [
+                "amtCollateralToPay = TMP_388",
+                "_oTokens = oTokensToExercise",
+                "proportion = transactionFee",
+                "JUMP 0xf7a"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf82",
+            "instructions": [
+                "TMP_389 = TMP_582",
+                "JUMP 0xfca"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfcb",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfcc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfcc",
+            "instructions": [
+                "TMP_80 = a + b",
+                "c = TMP_80",
+                "TMP_81 = c >= a",
+                "CONDITION TMP_81 0xfcc_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfcc_r0",
+            "instructions": [
+                "JUMP 0xfcd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfcd",
+            "instructions": [
+                "TMP_499 = c",
+                "JUMP 0xfce"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfca",
+            "instructions": [
+                "amtFee = TMP_389",
+                "a = totalFee",
+                "b = amtFee",
+                "JUMP 0xfcb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfce",
+            "instructions": [
+                "TMP_390 = TMP_499",
+                "JUMP 0xfcf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd0",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfd1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd1",
+            "instructions": [
+                "TMP_80 = a + b",
+                "c = TMP_80",
+                "TMP_81 = c >= a",
+                "CONDITION TMP_81 0xfd1_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd1_r0",
+            "instructions": [
+                "JUMP 0xfd2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd2",
+            "instructions": [
+                "TMP_499 = c",
+                "JUMP 0xfd3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfcf",
+            "instructions": [
+                "totalFee = TMP_390",
+                "a = amtCollateralToPay",
+                "b = amtFee",
+                "JUMP 0xfd0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd3",
+            "instructions": [
+                "TMP_391 = TMP_499",
+                "JUMP 0xeff"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd4",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfd5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd6",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xfd7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd8",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfd9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd9",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xfd9_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd9_r0",
+            "instructions": [
+                "JUMP 0xfda"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfda",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xfdb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd5",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfd8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfdb",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xfd6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf00",
+            "instructions": [
+                "CLR_71 = vault.collateral",
+                "REF_162 = CLR_71",
+                "CLR_72 = vault.collateral",
+                "REF_163 = CLR_72",
+                "a = REF_163",
+                "b = totalCollateralToPay",
+                "JUMP 0xfd4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfd7",
+            "instructions": [
+                "TMP_394 = TMP_500",
+                "JUMP 0xfdc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfdd",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfde"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfdf",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xfe0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe1",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfe2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe2",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xfe2_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe2_r0",
+            "instructions": [
+                "JUMP 0xfe3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe3",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xfe4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfde",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfe1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe4",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xfdf"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfdc",
+            "instructions": [
+                "vault.collateral = TMP_394",
+                "CLR_73 = vault.oTokensIssued",
+                "REF_165 = CLR_73",
+                "CLR_74 = vault.oTokensIssued",
+                "REF_166 = CLR_74",
+                "a = REF_166",
+                "b = oTokensToExercise",
+                "JUMP 0xfdd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe0",
+            "instructions": [
+                "TMP_395 = TMP_500",
+                "JUMP 0xfe5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe6",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfe7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe7",
+            "instructions": [
+                "TMP_309 = 0",
+                "TMP_310 = _ierc20 == TMP_309",
+                "TMP_569 = TMP_310",
+                "JUMP 0xfe8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe5",
+            "instructions": [
+                "vault.oTokensIssued = TMP_395",
+                "_ierc20 = underlying",
+                "JUMP 0xfe6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe8",
+            "instructions": [
+                "TMP_396 = TMP_569",
+                "JUMP 0xf01"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfe9",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfea"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfea",
+            "instructions": [
+                "TMP_192 = 0",
+                "TMP_193 = account != TMP_192",
+                "CONDITION TMP_193 0xfea_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfea_r0",
+            "instructions": [
+                "JUMP 0xfeb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfec",
+            "instructions": [
+                "_totalSupply = TMP_196",
+                "JUMP 0xfed"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfee",
+            "instructions": [
+                "NOP",
+                "JUMP 0xfef"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfef",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xfef_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfef_r0",
+            "instructions": [
+                "JUMP 0xff0"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff0",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xff1"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfeb",
+            "instructions": [
+                "CLR_75 = _balances[account]",
+                "REF_72 = CLR_75",
+                "CLR_76 = _balances[account]",
+                "REF_73 = CLR_76",
+                "a = REF_73",
+                "b = amount",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xfee"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff1",
+            "instructions": [
+                "TMP_195 = TMP_501",
+                "JUMP 0xff2"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff3",
+            "instructions": [
+                "NOP",
+                "JUMP 0xff4"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff5",
+            "instructions": [
+                "TMP_500 = TMP_83",
+                "JUMP 0xff6"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff7",
+            "instructions": [
+                "NOP",
+                "JUMP 0xff8"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff8",
+            "instructions": [
+                "TMP_84 = b <= a",
+                "CONDITION TMP_84 0xff8_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff8_r0",
+            "instructions": [
+                "JUMP 0xff9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff9",
+            "instructions": [
+                "TMP_86 = a - b",
+                "c = TMP_86",
+                "TMP_501 = c",
+                "JUMP 0xffa"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff4",
+            "instructions": [
+                "a = a",
+                "b = b",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0xff7"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xffa",
+            "instructions": [
+                "TMP_83 = TMP_501",
+                "JUMP 0xff5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff2",
+            "instructions": [
+                "_balances[account] = TMP_195",
+                "a = _totalSupply",
+                "b = amount",
+                "JUMP 0xff3"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xff6",
+            "instructions": [
+                "TMP_196 = TMP_500",
+                "JUMP 0xfec"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xf06",
+            "instructions": [
+                "CLR_77 = msg.sender",
+                "account = CLR_77",
+                "amount = oTokensToExercise",
+                "JUMP 0xfe9"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xffb",
+            "instructions": [
+                "NOP",
+                "JUMP 0xffc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xffd",
+            "instructions": [
+                "CONDITION TMP_447 0xffe 0xfff"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xffe",
+            "instructions": [
+                "CLR_78 = this.balance",
+                "WRP_0 = CLR_78 - _amt",
+                "this.balance = WRP_0",
+                "JUMP 0x1000"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfff",
+            "instructions": [
+                "TMP_449 = NEW_VAL boolean",
+                "JUMP 0x1000"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0x1000",
+            "instructions": [
+                "NOP",
+                "JUMP 0xecc"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0x1001",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1002"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0x1002",
+            "instructions": [
+                "TMP_309 = 0",
+                "TMP_310 = _ierc20 == TMP_309",
+                "TMP_569 = TMP_310",
+                "JUMP 0x1003"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xffc",
+            "instructions": [
+                "_ierc20 = collateral",
+                "JUMP 0x1001"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0x1003",
+            "instructions": [
+                "TMP_447 = TMP_569",
+                "JUMP 0xffd"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xfed",
+            "instructions": [
+                "CLR_79 = msg.sender",
+                "_addr = CLR_79",
+                "_amt = amtCollateralToPay",
+                "JUMP 0xffb"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xef4",
+            "instructions": [
+                "oTokensToExercise = TMP_291",
+                "CLR_80 = vault.oTokensIssued",
+                "REF_103 = CLR_80",
+                "oTokensToExercise = REF_103",
+                "vaultToExerciseFrom = vaultOwner",
+                "JUMP 0xef5"
+            ]
+        },
+        {
+            "scope": "exercise",
+            "addr": "0xec6",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

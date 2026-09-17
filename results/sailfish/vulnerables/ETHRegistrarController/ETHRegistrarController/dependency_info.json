@@ -1,0 +1,444 @@
+{
+    "ETHRegistrarController.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "newBid",
+                "newBid"
+            ],
+            "from_function": "newBid",
+            "to_function": "newBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 540\nFunction: _newBid\nNode: \nEXPRESSION require(bool)(address(sealedBids[msg.sender][sealedBid]) == address(0x0))\nIRS: \nTMP_286 = SOLIDITY_CALL require(bool)(TMP_285)\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "newBid",
+                "startAuctionsAndBid"
+            ],
+            "from_function": "startAuctionsAndBid",
+            "to_function": "newBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: _newBid\nNode: \nEXPRESSION require(bool)(address(sealedBids[msg.sender][sealedBid]) == address(0x0))\nIRS: \nTMP_286 = SOLIDITY_CALL require(bool)(TMP_285)\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "newBid",
+                "unsealBid"
+            ],
+            "from_function": "unsealBid",
+            "to_function": "newBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 165\nFunction: unsealBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0))\nIRS: \nTMP_144 = SOLIDITY_CALL require(bool)(TMP_143)\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 167\nFunction: unsealBid\nNode: \nNEW VARIABLE value = min(_value,bid.value())\nIRS: \nTMP_147(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:value, arguments:[]  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: unsealBid\nNode: \nEXPRESSION bid.setBalance(value,true)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:setBalance, arguments:['value', 'true']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(5)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['5']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 173\nFunction: unsealBid\nNode: \nIF value < minPrice || bid.creationDate() > h.registrationDate - revealPeriod\nIRS: \nTMP_156(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:creationDate, arguments:[]  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: unsealBid\nNode: \nIF value < minPrice || bid.creationDate() > h.registrationDate - revealPeriod\nIRS: \nCONDITION TMP_159\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: unsealBid\nNode: \nIF value > h.highestBid\nIRS: \nCONDITION TMP_161\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 178\nFunction: unsealBid\nNode: \nIF value > h.value\nIRS: \nCONDITION TMP_166\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 179\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 180\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 189\nFunction: min\nNode: \nIF a < b\nIRS: \nCONDITION TMP_308\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "newBid",
+                "cancelBid"
+            ],
+            "from_function": "cancelBid",
+            "to_function": "newBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 196\nFunction: cancelBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0) && now >= bid.creationDate() + totalAuctionLength + 1209600)\nIRS: \nTMP_172(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:creationDate, arguments:[]  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 197\nFunction: cancelBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0) && now >= bid.creationDate() + totalAuctionLength + 1209600)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: cancelBid\nNode: \nEXPRESSION bid.setOwner(msg.sender)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:setOwner, arguments:['msg.sender']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 199\nFunction: cancelBid\nNode: \nEXPRESSION bid.closeDeed(5)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['5']  \"",
+                        "\"BlockID: 147\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "startAuctionsAndBid",
+                "newBid"
+            ],
+            "from_function": "newBid",
+            "to_function": "startAuctionsAndBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 144\nFunction: _newBid\nNode: \nEXPRESSION require(bool)(address(sealedBids[msg.sender][sealedBid]) == address(0x0))\nIRS: \nTMP_286 = SOLIDITY_CALL require(bool)(TMP_285)\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "startAuctionsAndBid",
+                "startAuctionsAndBid"
+            ],
+            "from_function": "startAuctionsAndBid",
+            "to_function": "startAuctionsAndBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 556\nFunction: _newBid\nNode: \nEXPRESSION require(bool)(address(sealedBids[msg.sender][sealedBid]) == address(0x0))\nIRS: \nTMP_286 = SOLIDITY_CALL require(bool)(TMP_285)\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "startAuctionsAndBid",
+                "unsealBid"
+            ],
+            "from_function": "unsealBid",
+            "to_function": "startAuctionsAndBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 165\nFunction: unsealBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0))\nIRS: \nTMP_144 = SOLIDITY_CALL require(bool)(TMP_143)\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 167\nFunction: unsealBid\nNode: \nNEW VARIABLE value = min(_value,bid.value())\nIRS: \nTMP_147(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:value, arguments:[]  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 168\nFunction: unsealBid\nNode: \nEXPRESSION bid.setBalance(value,true)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:setBalance, arguments:['value', 'true']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 170\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(5)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['5']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 173\nFunction: unsealBid\nNode: \nIF value < minPrice || bid.creationDate() > h.registrationDate - revealPeriod\nIRS: \nTMP_156(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:creationDate, arguments:[]  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 174\nFunction: unsealBid\nNode: \nIF value < minPrice || bid.creationDate() > h.registrationDate - revealPeriod\nIRS: \nCONDITION TMP_159\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 175\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 176\nFunction: unsealBid\nNode: \nIF value > h.highestBid\nIRS: \nCONDITION TMP_161\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 178\nFunction: unsealBid\nNode: \nIF value > h.value\nIRS: \nCONDITION TMP_166\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 179\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 180\nFunction: unsealBid\nNode: \nEXPRESSION bid.closeDeed(995)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['995']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 189\nFunction: min\nNode: \nIF a < b\nIRS: \nCONDITION TMP_308\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "startAuctionsAndBid",
+                "cancelBid"
+            ],
+            "from_function": "cancelBid",
+            "to_function": "startAuctionsAndBid",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 196\nFunction: cancelBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0) && now >= bid.creationDate() + totalAuctionLength + 1209600)\nIRS: \nTMP_172(uint256) = HIGH_LEVEL_CALL, dest:bid(Deed), function:creationDate, arguments:[]  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 197\nFunction: cancelBid\nNode: \nEXPRESSION require(bool)(address(bid) != address(0x0) && now >= bid.creationDate() + totalAuctionLength + 1209600)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 198\nFunction: cancelBid\nNode: \nEXPRESSION bid.setOwner(msg.sender)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:setOwner, arguments:['msg.sender']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 199\nFunction: cancelBid\nNode: \nEXPRESSION bid.closeDeed(5)\nIRS: \nHIGH_LEVEL_CALL, dest:bid(Deed), function:closeDeed, arguments:['5']  \"",
+                        "\"BlockID: 163\nFunction: _newBid\nNode: \nEXPRESSION sealedBids[msg.sender][sealedBid] = bid\nIRS: \nREF_158 := bid\""
+                    ],
+                    "state_variable": "sealedBids"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "register",
+                "commit"
+            ],
+            "First_function": "commit",
+            "Second_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 481\nFunction: commit\nNode: \nEXPRESSION commitments[commitment] = now\nIRS: \nREF_205 := now\"",
+                        "\"BlockID: 484\nFunction: register\nNode: \nEXPRESSION require(bool)(commitments[commitment] + MIN_COMMITMENT_AGE <= now)\nIRS: \nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+                    ],
+                    "state_variable": "commitments"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 481\nFunction: commit\nNode: \nEXPRESSION commitments[commitment] = now\nIRS: \nREF_205 := now\"",
+                        "\"BlockID: 485\nFunction: register\nNode: \nIF commitments[commitment] + MAX_COMMITMENT_AGE < now || ! available(name)\nIRS: \nCONDITION TMP_479\""
+                    ],
+                    "state_variable": "commitments"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "register",
+                "commit"
+            ],
+            "First_function": "commit",
+            "Second_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 481\nFunction: commit\nNode: \nEXPRESSION commitments[commitment] = now\nIRS: \nREF_205 := now\"",
+                        "\"BlockID: 484\nFunction: register\nNode: \nEXPRESSION require(bool)(commitments[commitment] + MIN_COMMITMENT_AGE <= now)\nIRS: \nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+                    ],
+                    "state_variable": "commitments"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 481\nFunction: commit\nNode: \nEXPRESSION commitments[commitment] = now\nIRS: \nREF_205 := now\"",
+                        "\"BlockID: 485\nFunction: register\nNode: \nIF commitments[commitment] + MAX_COMMITMENT_AGE < now || ! available(name)\nIRS: \nCONDITION TMP_479\""
+                    ],
+                    "state_variable": "commitments"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "register",
+                "register"
+            ],
+            "First_function": "register",
+            "Second_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 591\nFunction: register\nNode: \nEXPRESSION delete (commitments[commitment])\nIRS: \nREF_209 = delete REF_209 \"",
+                        "\"BlockID: 484\nFunction: register\nNode: \nEXPRESSION require(bool)(commitments[commitment] + MIN_COMMITMENT_AGE <= now)\nIRS: \nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+                    ],
+                    "state_variable": "commitments"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 591\nFunction: register\nNode: \nEXPRESSION delete (commitments[commitment])\nIRS: \nREF_209 = delete REF_209 \"",
+                        "\"BlockID: 485\nFunction: register\nNode: \nIF commitments[commitment] + MAX_COMMITMENT_AGE < now || ! available(name)\nIRS: \nCONDITION TMP_479\""
+                    ],
+                    "state_variable": "commitments"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "register",
+                "register"
+            ],
+            "First_function": "register",
+            "Second_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 623\nFunction: register\nNode: \nEXPRESSION delete (commitments[commitment])\nIRS: \nREF_209 = delete REF_209 \"",
+                        "\"BlockID: 484\nFunction: register\nNode: \nEXPRESSION require(bool)(commitments[commitment] + MIN_COMMITMENT_AGE <= now)\nIRS: \nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+                    ],
+                    "state_variable": "commitments"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 623\nFunction: register\nNode: \nEXPRESSION delete (commitments[commitment])\nIRS: \nREF_209 = delete REF_209 \"",
+                        "\"BlockID: 485\nFunction: register\nNode: \nIF commitments[commitment] + MAX_COMMITMENT_AGE < now || ! available(name)\nIRS: \nCONDITION TMP_479\""
+                    ],
+                    "state_variable": "commitments"
+                }
+            ]
+        }
+    ]
+}

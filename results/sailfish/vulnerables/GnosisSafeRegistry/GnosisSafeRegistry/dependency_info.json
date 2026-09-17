@@ -1,0 +1,606 @@
+{
+    "GnosisSafeRegistry.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 33\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(IProxy(msg.sender).masterCopy() == gnosisSafeMasterCopy,Proxy master contract is not the Gnosis Safe)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Proxy master contract is not the Gnosis Safe)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 31\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(IProxy(msg.sender).masterCopy() == gnosisSafeMasterCopy,Proxy master contract is not the Gnosis Safe)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Proxy master contract is not the Gnosis Safe)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 42\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_137 = SOLIDITY_CALL require(bool,string)(TMP_136,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(_proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_112\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 33\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(IProxy(msg.sender).masterCopy() == gnosisSafeMasterCopy,Proxy master contract is not the Gnosis Safe)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Proxy master contract is not the Gnosis Safe)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "register",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "register",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 44\nFunction: getAndValidateSafeFromSender\nNode: \nEXPRESSION require(bool,string)(IProxy(msg.sender).masterCopy() == gnosisSafeMasterCopy,Proxy master contract is not the Gnosis Safe)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Proxy master contract is not the Gnosis Safe)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "register"
+            ],
+            "from_function": "register",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 40\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_134 = SOLIDITY_CALL require(bool,string)(TMP_133,Can only deRegister the current account safe)\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 29\nFunction: register\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_133\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 222\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 230\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 234\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 246\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 254\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 258\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\"",
+                        "\"BlockID: 49\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 266\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 51\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_149\"",
+                        "\"BlockID: 41\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_139 = REF_139 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        }
+    ]
+}

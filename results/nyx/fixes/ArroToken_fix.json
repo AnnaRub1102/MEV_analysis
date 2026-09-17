@@ -1,0 +1,32 @@
+{
+  "functions": [
+    "ERC20UpgradeSafe.transfer(address,uint256)",
+    "ERC20UpgradeSafe.approve(address,uint256)",
+    "ERC20UpgradeSafe.transferFrom(address,address,uint256)",
+    "ERC20UpgradeSafe.increaseAllowance(address,uint256)",
+    "ERC20UpgradeSafe.decreaseAllowance(address,uint256)",
+    "ERC20UpgradeSafe.transfer(address,uint256)",
+    "ERC20UpgradeSafe.approve(address,uint256)",
+    "ERC20UpgradeSafe.transferFrom(address,address,uint256)",
+    "ERC20UpgradeSafe.increaseAllowance(address,uint256)",
+    "ERC20UpgradeSafe.decreaseAllowance(address,uint256)",
+    "OwnableUpgradeSafe.renounceOwnership()",
+    "OwnableUpgradeSafe.transferOwnership(address)",
+    "ArroToken.initialize(address)",
+    "ArroToken.transferAnyERC20Token(address,uint256)",
+    "ArroToken.pause()",
+    "ArroToken.unpause()",
+    "OwnableUpgradeSafe.renounceOwnership()",
+    "OwnableUpgradeSafe.transferOwnership(address)",
+    "ERC20UpgradeSafe.transfer(address,uint256)",
+    "ERC20UpgradeSafe.approve(address,uint256)",
+    "ERC20UpgradeSafe.transferFrom(address,address,uint256)",
+    "ERC20UpgradeSafe.increaseAllowance(address,uint256)",
+    "ERC20UpgradeSafe.decreaseAllowance(address,uint256)"
+  ],
+  "phase0": 276,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

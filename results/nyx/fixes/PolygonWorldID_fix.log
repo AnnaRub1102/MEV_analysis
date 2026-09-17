@@ -1,0 +1,19 @@
+[2m2026-09-17T11:47:16.341831[0m [[32m[1minfo     [0m] [1mCommand-line arguments        [0m [36mfocus[0m=[35m[][0m [36mlog_file[0m=[35mNone[0m [36mname[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m [36mrepos[0m=[35m['/dataset/fixes/PolygonWorldID_fix/'][0m
+[2m2026-09-17T11:47:16.347701[0m [[32m[1minfo     [0m] [1mAnalysis configuration        [0m [36mfunction_timeout[0m=[35minfs[0m [36mpair_timeout[0m=[35minfs[0m [36msolver_timeout[0m=[35m60.00s[0m
+[2m2026-09-17T11:47:16.348311[0m [[32m[1minfo     [0m] [1mAnalysis started              [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:16.351248[0m [[32m[1minfo     [0m] [1mPhase 0 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:16.351385[0m [[32m[1minfo     [0m] [1mCompiling and analyzing contracts using Slither...[0m [36mgroup[0m=[35mContracts[0m [36mpath[0m=[35m/dataset/fixes/PolygonWorldID_fix[0m [36mphase[0m=[35m0[0m [36mrepo[0m=[35mPolygonWorldID_fix[0m
+Installing solc '0.8.16'...
+Version '0.8.16' installed.
+[2m2026-09-17T11:47:19.480102[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.8.16/solc-0.8.16 --version' running[0m
+[2m2026-09-17T11:47:19.536381[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.8.16/solc-0.8.16 PolygonWorldID_fix.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes --optimize --allow-paths .,/nyx' running[0m
+[2m2026-09-17T11:47:23.412379[0m [[32m[1minfo     [0m] [1mPhase 0 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m66[0m [36mtime[0m=[35m7.06s[0m
+[2m2026-09-17T11:47:23.412738[0m [[32m[1minfo     [0m] [1mPhase 1 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:23.542437[0m [[32m[1minfo     [0m] [1mHybrid flow graph built       [0m [36mgroup[0m=[35mContracts[0m [36mphase[0m=[35m1[0m [36mtime[0m=[35m0.13s[0m
+[2m2026-09-17T11:47:24.324325[0m [[32m[1minfo     [0m] [1mPotential vulnerable function pairs collected[0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mphase[0m=[35m1[0m [36mtime[0m=[35m0.78s[0m
+[2m2026-09-17T11:47:24.324632[0m [[32m[1minfo     [0m] [1mPhase 1 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mtime[0m=[35m0.91s[0m
+[2m2026-09-17T11:47:24.324812[0m [[32m[1minfo     [0m] [1mPhase 2 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:24.354002[0m [[32m[1minfo     [0m] [1mPhase 2 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mnegatives[0m=[35m0[0m [36mpositives[0m=[35m0[0m [36mtime[0m=[35m0.03s[0m [36munknowns[0m=[35m0[0m
+[2m2026-09-17T11:47:24.354656[0m [[32m[1minfo     [0m] [1mAnalysis result written       [0m [36mgroup[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m
+[2m2026-09-17T11:47:24.356270[0m [[32m[1minfo     [0m] [1mAnalysis finished             [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mtime[0m=[35m8.007987022399902[0m
+[2m2026-09-17T11:47:24.362072[0m [[32m[1minfo     [0m] [1mProfiling result              [0m [36mresult[0m=[35m'{"total_time": 8.012938022613525, "phase0_time": 7.060186147689819, "phase1_time": 0.9116590023040771, "phase2_time": 0.02771306037902832, "hfg_time": 0.13132357597351074, "prune_time": 0.7803301811218262, "summarization_time": 0, "application_time": 0, "solving_time": 0, "full_pairs": 66, "candidate_pairs": 0, "positives": 0, "negatives": 0, "unknowns": 0}'[0m

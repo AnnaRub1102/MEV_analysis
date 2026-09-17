@@ -1,0 +1,14 @@
+{
+  "functions": [
+    "FxBaseChildTunnel.setFxRootTunnel(address)",
+    "FxBaseChildTunnel.processMessageFromRoot(uint256,address,bytes)",
+    "ChildRegistrar.constructor(address,IAddressManager)",
+    "FxBaseChildTunnel.setFxRootTunnel(address)",
+    "FxBaseChildTunnel.processMessageFromRoot(uint256,address,bytes)"
+  ],
+  "phase0": 15,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

@@ -1,0 +1,952 @@
+[INFO] | 2026-09-17 12:29:55 PM | analyzer.ETHRegistrarController | Analysis started at: 2026-09-17 12:29:55 PM
+[INFO] | 2026-09-17 12:29:58 PM | analyzer.ETHRegistrarController | Version constraints: ['^0.5.0']
+[INFO] | 2026-09-17 12:29:58 PM | analyzer.ETHRegistrarController | solc version: v0.5.0
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Callgraph generation started!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Callgraph generation finished!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Storage dependency graph generation started!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Value Range Analysis started
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function transferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for approve
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for approve
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function approve
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for getApproved
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for getApproved
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function getApproved
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for onERC721Received
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for onERC721Received
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function onERC721Received
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for add
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for add
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function add
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for sub
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for sub
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function sub
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for mul
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for mul
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function mul
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for div
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for div
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function div
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for mod
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for mod
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function mod
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for isContract
+[WARNING] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Can there be this kind of variables
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for isContract
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function isContract
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for current
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for current
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function current
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for increment
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for increment
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function increment
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for _registerInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for _registerInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function _registerInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function balanceOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function ownerOf
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:30:01 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setResolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setResolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setResolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setTTL
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setTTL
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setTTL
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for resolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for resolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function resolver
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for ttl
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for ttl
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function ttl
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function previousOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function value
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function creationDate
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyActive
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyActive
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyActive
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function eraseNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for getAllowedTime
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for getAllowedTime
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function getAllowedTime
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for shaBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for shaBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function shaBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for max
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for max
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function max
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for min
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for min
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function min
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for inState
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for inState
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function inState
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for registryOpen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for registryOpen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function registryOpen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _registerInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function ownerOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setApprovalForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isApprovedForAll
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _exists
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _clearApproval
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for addController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for addController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function addController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for removeController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for removeController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function removeController
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for nameExpires
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for nameExpires
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function nameExpires
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for reclaim
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for reclaim
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function reclaim
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function acceptRegistrarTransfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function strlen
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for price
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for price
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function price
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function owner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for makeCommitment
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for makeCommitment
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function makeCommitment
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for commit
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for commit
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function commit
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function supportsInterface
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function onlyOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _checkOnERC721Received
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for decrement
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for decrement
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function decrement
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function balanceOf
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _mint
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _tryEraseSingleNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _tryEraseSingleNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _tryEraseSingleNode
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for trySetSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for trySetSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function trySetSubnodeOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferRegistrars
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function cancelBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function closeDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function destroyDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setRegistrar
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setBalance
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for isAllowed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for isAllowed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function isAllowed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function constructor
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function approve
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function getApproved
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for rentPrice
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for rentPrice
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function rentPrice
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for valid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for valid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function valid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function renounceOwnership
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for setPriceOracle
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for setPriceOracle
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function setPriceOracle
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for withdraw
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for withdraw
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function withdraw
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function releaseDeed
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function invalidateName
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function finalizeAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transfer
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for state
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for state
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function state
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _isApprovedOrOwner
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function renew
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function available
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _burn
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function unsealBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function entries
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function transferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function register
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuction
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for _startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for _startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function _startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | State variable assignement do not exist
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctions
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Range graph generated
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Processed function safeTransferFrom
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Value Range Analysis took 0.741081 seconds
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Value Range Analysis finished
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | Dependency detection started!
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions newBid and newBid
+[INFO] | 2026-09-17 12:30:02 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions newBid and startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:03 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions newBid and unsealBid
+[INFO] | 2026-09-17 12:30:04 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions newBid and cancelBid
+[INFO] | 2026-09-17 12:30:04 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions startAuctionsAndBid and newBid
+[INFO] | 2026-09-17 12:30:04 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions startAuctionsAndBid and startAuctionsAndBid
+[INFO] | 2026-09-17 12:30:07 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions startAuctionsAndBid and unsealBid
+[INFO] | 2026-09-17 12:30:07 PM | analyzer.ETHRegistrarController | DAO dependency detected in file ETHRegistrarController.sol in contract HashRegistrar in by composing functions startAuctionsAndBid and cancelBid
+[INFO] | 2026-09-17 12:30:07 PM | analyzer.ETHRegistrarController | TOD dependency detected in file ETHRegistrarController.sol in contract ETHRegistrarController in by composing functions register and commit
+[INFO] | 2026-09-17 12:30:07 PM | analyzer.ETHRegistrarController | TOD dependency detected in file ETHRegistrarController.sol in contract ETHRegistrarController in by composing functions register and commit
+[INFO] | 2026-09-17 12:30:07 PM | analyzer.ETHRegistrarController | TOD dependency detected in file ETHRegistrarController.sol in contract ETHRegistrarController in by composing functions register and register
+[INFO] | 2026-09-17 12:30:08 PM | analyzer.ETHRegistrarController | TOD dependency detected in file ETHRegistrarController.sol in contract ETHRegistrarController in by composing functions register and register
+[INFO] | 2026-09-17 12:30:08 PM | analyzer.ETHRegistrarController | Dependency detection finished!
+[INFO] | 2026-09-17 12:30:08 PM | analyzer.ETHRegistrarController | Static Analysis took 12.144502 seconds
+[INFO] | 2026-09-17 12:30:08 PM | analyzer.ETHRegistrarController | Dependency exists
+[INFO] | 2026-09-17 12:30:08 PM | analyzer.ETHRegistrarController | Invoking symbolic executor!

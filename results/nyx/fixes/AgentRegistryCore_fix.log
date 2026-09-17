@@ -1,0 +1,54 @@
+[2m2026-09-17T11:23:43.622511[0m [[32m[1minfo     [0m] [1mCommand-line arguments        [0m [36mfocus[0m=[35m[][0m [36mlog_file[0m=[35mNone[0m [36mname[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m [36mrepos[0m=[35m['/dataset/fixes/AgentRegistryCore_fix/'][0m
+[2m2026-09-17T11:23:43.625063[0m [[32m[1minfo     [0m] [1mAnalysis configuration        [0m [36mfunction_timeout[0m=[35minfs[0m [36mpair_timeout[0m=[35minfs[0m [36msolver_timeout[0m=[35m60.00s[0m
+[2m2026-09-17T11:23:43.625682[0m [[32m[1minfo     [0m] [1mAnalysis started              [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:23:43.625892[0m [[32m[1minfo     [0m] [1mPhase 0 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:23:43.626069[0m [[32m[1minfo     [0m] [1mCompiling and analyzing contracts using Slither...[0m [36mgroup[0m=[35mContracts[0m [36mpath[0m=[35m/dataset/fixes/AgentRegistryCore_fix[0m [36mphase[0m=[35m0[0m [36mrepo[0m=[35mAgentRegistryCore_fix[0m
+Installing solc '0.8.1'...
+Version '0.8.1' installed.
+[2m2026-09-17T11:23:45.732285[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.8.1/solc-0.8.1 --version' running[0m
+[2m2026-09-17T11:23:45.780818[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.8.1/solc-0.8.1 AgentRegistryCore_fix.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --optimize --allow-paths .,/nyx' running[0m
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 581, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nyx/nyx/main.py", line 214, in <module>
+    analyze_one(args)
+  File "/nyx/nyx/main.py", line 84, in analyze_one
+    output = analyze_single(group, observer, config)
+  File "/nyx/nyx/analyze/__init__.py", line 38, in analyze_single
+    _ = repo.slither
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/nyx/nyx/galaxy/ContractRepo.py", line 136, in slither
+    self._slither = Slither(self.crytic_compile)
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/nyx/nyx/galaxy/ContractRepo.py", line 122, in crytic_compile
+    self._crytic_compile = CryticCompile(
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/crytic_compile.py", line 211, in __init__
+    self._compile(**kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/crytic_compile.py", line 633, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 150, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 279, in _get_targets_json
+    return _run_solc(
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 585, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Error: Source file requires different compiler version (current compiler is 0.8.1+commit.df193b15.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+   --> AgentRegistryCore_fix.sol:463:1:
+    |
+463 | pragma solidity ^0.8.2;
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+
+

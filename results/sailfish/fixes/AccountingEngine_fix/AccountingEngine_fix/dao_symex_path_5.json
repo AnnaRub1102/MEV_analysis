@@ -1,0 +1,2419 @@
+{
+    "file": "AccountingEngine_fix.sol",
+    "global_structs": [
+        {
+            "name": "CollateralType",
+            "fields": {
+                "debtAmount": [
+                    "integer"
+                ],
+                "accumulatedRate": [
+                    "integer"
+                ],
+                "safetyPrice": [
+                    "integer"
+                ],
+                "debtCeiling": [
+                    "integer"
+                ],
+                "debtFloor": [
+                    "integer"
+                ],
+                "liquidationPrice": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "SAFE",
+            "fields": {
+                "lockedCollateral": [
+                    "integer"
+                ],
+                "generatedDebt": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x1bb"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x1bc"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x1bd"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "authorizedAccounts",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "safeRights",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "collateralTypes",
+            "type": [
+                "array",
+                "integer",
+                "CollateralType"
+            ],
+            "init": []
+        },
+        {
+            "name": "safes",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "SAFE"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "tokenCollateral",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "coinBalance",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "debtBalance",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "safeDebtCeiling",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "globalDebt",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "globalUnbackedDebt",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "globalDebtCeiling",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "protocolTokenAuthority",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "postSettlementSurplusDrain",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "debtQueue",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "debtPoppers",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalQueuedDebt",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalOnAuctionDebt",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "surplusAuctionDelay",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "popDebtDelay",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialDebtAuctionMintedTokens",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "debtAuctionBidSize",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "surplusAuctionAmountToSell",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "surplusBuffer",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "disableCooldown",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "disableTimestamp",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "contractEnabled",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xe"
+            ]
+        },
+        {
+            "name": "lastSurplusAuctionTime",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "safeEngine",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xa"
+            ]
+        },
+        {
+            "name": "debtAuctionHouse",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "surplusAuctionHouse",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "DebtAuctionHouseLike",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SurplusAuctionHouseLike",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SAFEEngineLike",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ProtocolTokenAuthorityLike",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "AccountingEngine",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_0 = safeRights[msg_sender]",
+                "REF_161 = CLR_0",
+                "CLR_1 = REF_161[U]",
+                "REF_162 = CLR_1",
+                "REF_161[0] = 1",
+                "REF_161[1] = 1",
+                "REF_161[2] = 1",
+                "REF_161[3] = 1",
+                "REF_161[4] = 1",
+                "REF_161[5] = 1",
+                "REF_161[6] = 1",
+                "REF_161[7] = 1",
+                "REF_161[8] = 1",
+                "REF_161[9] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9",
+            "instructions": [
+                "CLR_2 = authorizedAccounts[msg_sender]",
+                "REF_166 = CLR_2",
+                "authorizedAccounts[msg_sender] = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa",
+            "instructions": [
+                "safeEngine = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "surplusAuctionHouse = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "debtAuctionHouse = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "lastSurplusAuctionTime = now"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "contractEnabled = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb3",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb4",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb5",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf5",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf6",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf7",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x135",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x136",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x137",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x179",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x17a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x17b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1bb",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1bc",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1bd",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "safeRights",
+            "addrs": [
+                "0x2",
+                "0x10",
+                "0x12"
+            ]
+        },
+        {
+            "name": "debtAuctionHouse",
+            "addrs": [
+                "0x2",
+                "0x14"
+            ]
+        },
+        {
+            "name": "postSettlementSurplusDrain",
+            "addrs": [
+                "0x2",
+                "0x16"
+            ]
+        },
+        {
+            "name": "protocolTokenAuthority",
+            "addrs": [
+                "0x2",
+                "0x18"
+            ]
+        },
+        {
+            "name": "surplusAuctionHouse",
+            "addrs": [
+                "0x2",
+                "0x1a"
+            ]
+        },
+        {
+            "name": "debtQueue",
+            "addrs": [
+                "0x2",
+                "0x53",
+                "0x59"
+            ]
+        },
+        {
+            "name": "totalQueuedDebt",
+            "addrs": [
+                "0x2",
+                "0x55",
+                "0x56",
+                "0x82"
+            ]
+        },
+        {
+            "name": "debtPoppers",
+            "addrs": [
+                "0x2",
+                "0x58"
+            ]
+        },
+        {
+            "name": "authorizedAccounts",
+            "addrs": [
+                "0x2",
+                "0x5b",
+                "0x5e"
+            ]
+        },
+        {
+            "name": "surplusAuctionDelay",
+            "addrs": [
+                "0x2",
+                "0x60"
+            ]
+        },
+        {
+            "name": "popDebtDelay",
+            "addrs": [
+                "0x2",
+                "0x62"
+            ]
+        },
+        {
+            "name": "surplusAuctionAmountToSell",
+            "addrs": [
+                "0x2",
+                "0x64"
+            ]
+        },
+        {
+            "name": "debtAuctionBidSize",
+            "addrs": [
+                "0x2",
+                "0x66"
+            ]
+        },
+        {
+            "name": "initialDebtAuctionMintedTokens",
+            "addrs": [
+                "0x2",
+                "0x68"
+            ]
+        },
+        {
+            "name": "surplusBuffer",
+            "addrs": [
+                "0x2",
+                "0x6a"
+            ]
+        },
+        {
+            "name": "disableCooldown",
+            "addrs": [
+                "0x2",
+                "0x6c"
+            ]
+        },
+        {
+            "name": "debtBalance",
+            "addrs": [
+                "0x2",
+                "0x6d",
+                "0x73",
+                "0x9d",
+                "0xa3",
+                "0xae"
+            ]
+        },
+        {
+            "name": "coinBalance",
+            "addrs": [
+                "0x2",
+                "0x6e",
+                "0x76",
+                "0x9e",
+                "0xa5",
+                "0xab",
+                "0xad",
+                "0xaf"
+            ]
+        },
+        {
+            "name": "globalUnbackedDebt",
+            "addrs": [
+                "0x2",
+                "0x6f",
+                "0x79",
+                "0x9f",
+                "0xa7",
+                "0xb0"
+            ]
+        },
+        {
+            "name": "globalDebt",
+            "addrs": [
+                "0x2",
+                "0x70",
+                "0x7c",
+                "0xa0",
+                "0xa9",
+                "0xb1"
+            ]
+        },
+        {
+            "name": "totalOnAuctionDebt",
+            "addrs": [
+                "0x2",
+                "0x71",
+                "0x85",
+                "0xb2"
+            ]
+        },
+        {
+            "name": "contractEnabled",
+            "addrs": [
+                "0x2",
+                "0x7f"
+            ]
+        },
+        {
+            "name": "disableTimestamp",
+            "addrs": [
+                "0x2",
+                "0x88"
+            ]
+        },
+        {
+            "name": "lastSurplusAuctionTime",
+            "addrs": [
+                "0x2",
+                "0xa1"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_3 = msg.sender",
+                "CLR_4 = authorizedAccounts[CLR_3]",
+                "REF_167 = CLR_4",
+                "RTMP_399 = REF_167 == 1",
+                "CONDITION RTMP_399 0xf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_5 = msg.sender",
+                "CLR_6 = safeRights[CLR_5]",
+                "REF_163 = CLR_6",
+                "CLR_7 = REF_163[U]",
+                "REF_164 = CLR_7",
+                "REF_163[0] = 0",
+                "REF_163[1] = 0",
+                "REF_163[2] = 0",
+                "REF_163[3] = 0",
+                "REF_163[4] = 0",
+                "REF_163[5] = 0",
+                "REF_163[6] = 0",
+                "REF_163[7] = 0",
+                "REF_163[8] = 0",
+                "REF_163[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = authorizedAccounts[CLR_8]",
+                "REF_168 = CLR_9",
+                "RTMP_400 = REF_168 == 1",
+                "CONDITION RTMP_400 0x11 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_10 = msg.sender",
+                "CLR_11 = safeRights[CLR_10]",
+                "REF_161 = CLR_11",
+                "CLR_12 = REF_161[U]",
+                "REF_162 = CLR_12",
+                "REF_161[0] = 1",
+                "REF_161[1] = 1",
+                "REF_161[2] = 1",
+                "REF_161[3] = 1",
+                "REF_161[4] = 1",
+                "REF_161[5] = 1",
+                "REF_161[6] = 1",
+                "REF_161[7] = 1",
+                "REF_161[8] = 1",
+                "REF_161[9] = 1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_13 = msg.sender",
+                "CLR_14 = authorizedAccounts[CLR_13]",
+                "REF_169 = CLR_14",
+                "RTMP_401 = REF_169 == 1",
+                "CONDITION RTMP_401 0x13 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "debtAuctionHouse = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_15 = msg.sender",
+                "CLR_16 = authorizedAccounts[CLR_15]",
+                "REF_170 = CLR_16",
+                "RTMP_402 = REF_170 == 1",
+                "CONDITION RTMP_402 0x15 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "postSettlementSurplusDrain = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_17 = msg.sender",
+                "CLR_18 = authorizedAccounts[CLR_17]",
+                "REF_171 = CLR_18",
+                "RTMP_403 = REF_171 == 1",
+                "CONDITION RTMP_403 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "protocolTokenAuthority = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_19 = msg.sender",
+                "CLR_20 = authorizedAccounts[CLR_19]",
+                "REF_172 = CLR_20",
+                "RTMP_404 = REF_172 == 1",
+                "CONDITION RTMP_404 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "surplusAuctionHouse = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x53",
+            "instructions": [
+                "CLR_21 = msg.sender",
+                "CLR_22 = authorizedAccounts[CLR_21]",
+                "REF_207 = CLR_22",
+                "RTMP_436 = REF_207 == 1",
+                "CONDITION RTMP_436 0x52 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x52",
+            "instructions": [
+                "debtQueue[now] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x55",
+            "instructions": [
+                "CLR_23 = msg.sender",
+                "CLR_24 = authorizedAccounts[CLR_23]",
+                "REF_208 = CLR_24",
+                "RTMP_437 = REF_208 == 1",
+                "CONDITION RTMP_437 0x54 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x54",
+            "instructions": [
+                "totalQueuedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x56",
+            "instructions": [
+                "totalQueuedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x58",
+            "instructions": [
+                "CLR_25 = debtQueue[U]",
+                "REF_210 = CLR_25",
+                "RTMP_438 = REF_210 > 0",
+                "CONDITION RTMP_438 0x57 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x57",
+            "instructions": [
+                "CLR_26 = debtPoppers[U]",
+                "REF_209 = CLR_26",
+                "CLR_27 = msg.sender",
+                "debtPoppers[0] = CLR_27",
+                "debtPoppers[1] = CLR_27",
+                "debtPoppers[2] = CLR_27",
+                "debtPoppers[3] = CLR_27",
+                "debtPoppers[4] = CLR_27",
+                "debtPoppers[5] = CLR_27",
+                "debtPoppers[6] = CLR_27",
+                "debtPoppers[7] = CLR_27",
+                "debtPoppers[8] = CLR_27",
+                "debtPoppers[9] = CLR_27"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x59",
+            "instructions": [
+                "CLR_28 = debtQueue[U]",
+                "REF_211 = CLR_28",
+                "debtQueue[0] = 0",
+                "debtQueue[1] = 0",
+                "debtQueue[2] = 0",
+                "debtQueue[3] = 0",
+                "debtQueue[4] = 0",
+                "debtQueue[5] = 0",
+                "debtQueue[6] = 0",
+                "debtQueue[7] = 0",
+                "debtQueue[8] = 0",
+                "debtQueue[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5b",
+            "instructions": [
+                "CLR_29 = msg.sender",
+                "CLR_30 = authorizedAccounts[CLR_29]",
+                "REF_213 = CLR_30",
+                "RTMP_439 = REF_213 == 1",
+                "CONDITION RTMP_439 0x5c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5c",
+            "instructions": [
+                "RTMP_440 = contractEnabled == 1",
+                "CONDITION RTMP_440 0x5a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5a",
+            "instructions": [
+                "CLR_31 = authorizedAccounts[U]",
+                "REF_212 = CLR_31",
+                "authorizedAccounts[0] = 1",
+                "authorizedAccounts[1] = 1",
+                "authorizedAccounts[2] = 1",
+                "authorizedAccounts[3] = 1",
+                "authorizedAccounts[4] = 1",
+                "authorizedAccounts[5] = 1",
+                "authorizedAccounts[6] = 1",
+                "authorizedAccounts[7] = 1",
+                "authorizedAccounts[8] = 1",
+                "authorizedAccounts[9] = 1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5e",
+            "instructions": [
+                "CLR_32 = msg.sender",
+                "CLR_33 = authorizedAccounts[CLR_32]",
+                "REF_215 = CLR_33",
+                "RTMP_441 = REF_215 == 1",
+                "CONDITION RTMP_441 0x5d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5d",
+            "instructions": [
+                "CLR_34 = authorizedAccounts[U]",
+                "REF_214 = CLR_34",
+                "authorizedAccounts[0] = 0",
+                "authorizedAccounts[1] = 0",
+                "authorizedAccounts[2] = 0",
+                "authorizedAccounts[3] = 0",
+                "authorizedAccounts[4] = 0",
+                "authorizedAccounts[5] = 0",
+                "authorizedAccounts[6] = 0",
+                "authorizedAccounts[7] = 0",
+                "authorizedAccounts[8] = 0",
+                "authorizedAccounts[9] = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x60",
+            "instructions": [
+                "CLR_35 = msg.sender",
+                "CLR_36 = authorizedAccounts[CLR_35]",
+                "REF_216 = CLR_36",
+                "RTMP_442 = REF_216 == 1",
+                "CONDITION RTMP_442 0x5f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5f",
+            "instructions": [
+                "surplusAuctionDelay = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x62",
+            "instructions": [
+                "CLR_37 = msg.sender",
+                "CLR_38 = authorizedAccounts[CLR_37]",
+                "REF_217 = CLR_38",
+                "RTMP_443 = REF_217 == 1",
+                "CONDITION RTMP_443 0x61 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x61",
+            "instructions": [
+                "popDebtDelay = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x64",
+            "instructions": [
+                "CLR_39 = msg.sender",
+                "CLR_40 = authorizedAccounts[CLR_39]",
+                "REF_218 = CLR_40",
+                "RTMP_444 = REF_218 == 1",
+                "CONDITION RTMP_444 0x63 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x63",
+            "instructions": [
+                "surplusAuctionAmountToSell = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x66",
+            "instructions": [
+                "CLR_41 = msg.sender",
+                "CLR_42 = authorizedAccounts[CLR_41]",
+                "REF_219 = CLR_42",
+                "RTMP_445 = REF_219 == 1",
+                "CONDITION RTMP_445 0x65 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x65",
+            "instructions": [
+                "debtAuctionBidSize = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x68",
+            "instructions": [
+                "CLR_43 = msg.sender",
+                "CLR_44 = authorizedAccounts[CLR_43]",
+                "REF_220 = CLR_44",
+                "RTMP_446 = REF_220 == 1",
+                "CONDITION RTMP_446 0x67 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x67",
+            "instructions": [
+                "initialDebtAuctionMintedTokens = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6a",
+            "instructions": [
+                "CLR_45 = msg.sender",
+                "CLR_46 = authorizedAccounts[CLR_45]",
+                "REF_221 = CLR_46",
+                "RTMP_447 = REF_221 == 1",
+                "CONDITION RTMP_447 0x69 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x69",
+            "instructions": [
+                "surplusBuffer = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6c",
+            "instructions": [
+                "CLR_47 = msg.sender",
+                "CLR_48 = authorizedAccounts[CLR_47]",
+                "REF_222 = CLR_48",
+                "RTMP_448 = REF_222 == 1",
+                "CONDITION RTMP_448 0x6b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6b",
+            "instructions": [
+                "disableCooldown = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6d",
+            "instructions": [
+                "debtBalance[0] = U",
+                "debtBalance[1] = U",
+                "debtBalance[2] = U",
+                "debtBalance[3] = U",
+                "debtBalance[4] = U",
+                "debtBalance[5] = U",
+                "debtBalance[6] = U",
+                "debtBalance[7] = U",
+                "debtBalance[8] = U",
+                "debtBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6e",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6f",
+            "instructions": [
+                "globalUnbackedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x70",
+            "instructions": [
+                "globalDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x71",
+            "instructions": [
+                "totalOnAuctionDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x73",
+            "instructions": [
+                "RTMP_449 = contractEnabled == 1",
+                "CONDITION RTMP_449 0x74 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x74",
+            "instructions": [
+                "CLR_49 = msg.sender",
+                "CLR_50 = authorizedAccounts[CLR_49]",
+                "REF_223 = CLR_50",
+                "RTMP_450 = REF_223 == 1",
+                "CONDITION RTMP_450 0x72 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x72",
+            "instructions": [
+                "debtBalance[0] = U",
+                "debtBalance[1] = U",
+                "debtBalance[2] = U",
+                "debtBalance[3] = U",
+                "debtBalance[4] = U",
+                "debtBalance[5] = U",
+                "debtBalance[6] = U",
+                "debtBalance[7] = U",
+                "debtBalance[8] = U",
+                "debtBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x76",
+            "instructions": [
+                "RTMP_451 = contractEnabled == 1",
+                "CONDITION RTMP_451 0x77 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x77",
+            "instructions": [
+                "CLR_51 = msg.sender",
+                "CLR_52 = authorizedAccounts[CLR_51]",
+                "REF_224 = CLR_52",
+                "RTMP_452 = REF_224 == 1",
+                "CONDITION RTMP_452 0x75 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x75",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x79",
+            "instructions": [
+                "RTMP_453 = contractEnabled == 1",
+                "CONDITION RTMP_453 0x7a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7a",
+            "instructions": [
+                "CLR_53 = msg.sender",
+                "CLR_54 = authorizedAccounts[CLR_53]",
+                "REF_225 = CLR_54",
+                "RTMP_454 = REF_225 == 1",
+                "CONDITION RTMP_454 0x78 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x78",
+            "instructions": [
+                "globalUnbackedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7c",
+            "instructions": [
+                "RTMP_455 = contractEnabled == 1",
+                "CONDITION RTMP_455 0x7d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7d",
+            "instructions": [
+                "CLR_55 = msg.sender",
+                "CLR_56 = authorizedAccounts[CLR_55]",
+                "REF_226 = CLR_56",
+                "RTMP_456 = REF_226 == 1",
+                "CONDITION RTMP_456 0x7b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7b",
+            "instructions": [
+                "globalDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7f",
+            "instructions": [
+                "RTMP_457 = contractEnabled == 1",
+                "CONDITION RTMP_457 0x80 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x80",
+            "instructions": [
+                "CLR_57 = msg.sender",
+                "CLR_58 = authorizedAccounts[CLR_57]",
+                "REF_227 = CLR_58",
+                "RTMP_458 = REF_227 == 1",
+                "CONDITION RTMP_458 0x7e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7e",
+            "instructions": [
+                "contractEnabled = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x82",
+            "instructions": [
+                "RTMP_459 = contractEnabled == 1",
+                "CONDITION RTMP_459 0x83 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x83",
+            "instructions": [
+                "CLR_59 = msg.sender",
+                "CLR_60 = authorizedAccounts[CLR_59]",
+                "REF_228 = CLR_60",
+                "RTMP_460 = REF_228 == 1",
+                "CONDITION RTMP_460 0x81 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x81",
+            "instructions": [
+                "totalQueuedDebt = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x85",
+            "instructions": [
+                "RTMP_461 = contractEnabled == 1",
+                "CONDITION RTMP_461 0x86 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x86",
+            "instructions": [
+                "CLR_61 = msg.sender",
+                "CLR_62 = authorizedAccounts[CLR_61]",
+                "REF_229 = CLR_62",
+                "RTMP_462 = REF_229 == 1",
+                "CONDITION RTMP_462 0x84 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x84",
+            "instructions": [
+                "totalOnAuctionDebt = 0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x88",
+            "instructions": [
+                "RTMP_463 = contractEnabled == 1",
+                "CONDITION RTMP_463 0x89 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x89",
+            "instructions": [
+                "CLR_63 = msg.sender",
+                "CLR_64 = authorizedAccounts[CLR_63]",
+                "REF_230 = CLR_64",
+                "RTMP_464 = REF_230 == 1",
+                "CONDITION RTMP_464 0x87 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x87",
+            "instructions": [
+                "disableTimestamp = now"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9d",
+            "instructions": [
+                "debtBalance[0] = U",
+                "debtBalance[1] = U",
+                "debtBalance[2] = U",
+                "debtBalance[3] = U",
+                "debtBalance[4] = U",
+                "debtBalance[5] = U",
+                "debtBalance[6] = U",
+                "debtBalance[7] = U",
+                "debtBalance[8] = U",
+                "debtBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9e",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9f",
+            "instructions": [
+                "globalUnbackedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa0",
+            "instructions": [
+                "globalDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa1",
+            "instructions": [
+                "lastSurplusAuctionTime = now"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa3",
+            "instructions": [
+                "RTMP_475 = contractEnabled == 0",
+                "CONDITION RTMP_475 0xa2 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa2",
+            "instructions": [
+                "debtBalance[0] = U",
+                "debtBalance[1] = U",
+                "debtBalance[2] = U",
+                "debtBalance[3] = U",
+                "debtBalance[4] = U",
+                "debtBalance[5] = U",
+                "debtBalance[6] = U",
+                "debtBalance[7] = U",
+                "debtBalance[8] = U",
+                "debtBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa5",
+            "instructions": [
+                "RTMP_476 = contractEnabled == 0",
+                "CONDITION RTMP_476 0xa4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa4",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa7",
+            "instructions": [
+                "RTMP_477 = contractEnabled == 0",
+                "CONDITION RTMP_477 0xa6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa6",
+            "instructions": [
+                "globalUnbackedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa9",
+            "instructions": [
+                "RTMP_478 = contractEnabled == 0",
+                "CONDITION RTMP_478 0xa8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa8",
+            "instructions": [
+                "globalDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xab",
+            "instructions": [
+                "RTMP_479 = contractEnabled == 0",
+                "CONDITION RTMP_479 0xaa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xaa",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xad",
+            "instructions": [
+                "RTMP_480 = contractEnabled == 0",
+                "CONDITION RTMP_480 0xac 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xac",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xae",
+            "instructions": [
+                "debtBalance[0] = U",
+                "debtBalance[1] = U",
+                "debtBalance[2] = U",
+                "debtBalance[3] = U",
+                "debtBalance[4] = U",
+                "debtBalance[5] = U",
+                "debtBalance[6] = U",
+                "debtBalance[7] = U",
+                "debtBalance[8] = U",
+                "debtBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xaf",
+            "instructions": [
+                "coinBalance[0] = U",
+                "coinBalance[1] = U",
+                "coinBalance[2] = U",
+                "coinBalance[3] = U",
+                "coinBalance[4] = U",
+                "coinBalance[5] = U",
+                "coinBalance[6] = U",
+                "coinBalance[7] = U",
+                "coinBalance[8] = U",
+                "coinBalance[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb0",
+            "instructions": [
+                "globalUnbackedDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb1",
+            "instructions": [
+                "globalDebt = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb2",
+            "instructions": [
+                "totalOnAuctionDebt = U"
+            ]
+        }
+    ],
+    "root_addr": "0x1be",
+    "dest_addrs": [
+        "0x1f8"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1be",
+            "instructions": [
+                "NOP",
+                "y = NEW_VAL integer",
+                "id = NEW_VAL integer",
+                "rad = NEW_VAL integer",
+                "y = NEW_VAL integer",
+                "z = NEW_VAL integer",
+                "z = NEW_VAL integer",
+                "x = NEW_VAL integer",
+                "x = NEW_VAL integer",
+                "JUMP 0x1bf"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c0",
+            "instructions": [
+                "TMP_280 = debtAuctionBidSize <= TMP_279",
+                "CONDITION TMP_280 0x1c0_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c0_r0",
+            "instructions": [
+                "JUMP 0x1c1"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c1",
+            "instructions": [
+                "TMP_282 = NEW_VAL unknown",
+                "TMP_283 = NEW_VAL integer",
+                "JUMP 0x1c2"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c3",
+            "instructions": [
+                "TMP_285 = NEW_VAL unknown",
+                "TMP_286 = NEW_VAL integer",
+                "JUMP 0x1c4"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c4",
+            "instructions": [
+                "TMP_287 = TMP_286 == 0",
+                "CONDITION TMP_287 0x1c4_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c4_r0",
+            "instructions": [
+                "JUMP 0x1c5"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c5",
+            "instructions": [
+                "TMP_289 = NEW_VAL integer",
+                "JUMP 0x1c6"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c6",
+            "instructions": [
+                "TMP_290 = 0",
+                "TMP_291 = TMP_289 != TMP_290",
+                "CONDITION TMP_291 0x1c6_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c6_r0",
+            "instructions": [
+                "JUMP 0x1c7"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c7",
+            "instructions": [
+                "TMP_293 = NEW_VAL unknown",
+                "ATTACK",
+                "TMP_294 = NEW_VAL integer",
+                "JUMP 0x1c8"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1bf",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1c9"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c9",
+            "instructions": [
+                "TMP_250 = NEW_VAL unknown",
+                "TMP_251 = NEW_VAL integer",
+                "JUMP 0x1ca"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1cb",
+            "instructions": [
+                "TMP_390 = TMP_253",
+                "JUMP 0x1cc"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1cd",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1ce"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1ce",
+            "instructions": [
+                "TMP_223 = x - y",
+                "z = TMP_223",
+                "TMP_224 = z <= x",
+                "CONDITION TMP_224 0x1ce_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1ce_r0",
+            "instructions": [
+                "JUMP 0x1cf"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1cf",
+            "instructions": [
+                "TMP_386 = z",
+                "JUMP 0x1d0"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1ca",
+            "instructions": [
+                "x = TMP_251",
+                "y = totalQueuedDebt",
+                "JUMP 0x1cd"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d0",
+            "instructions": [
+                "TMP_252 = TMP_386",
+                "JUMP 0x1d1"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d2",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1d3"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d3",
+            "instructions": [
+                "TMP_223 = x - y",
+                "z = TMP_223",
+                "TMP_224 = z <= x",
+                "CONDITION TMP_224 0x1d3_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d3_r0",
+            "instructions": [
+                "JUMP 0x1d4"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d4",
+            "instructions": [
+                "TMP_386 = z",
+                "JUMP 0x1d5"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d1",
+            "instructions": [
+                "x = TMP_252",
+                "y = totalOnAuctionDebt",
+                "JUMP 0x1d2"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d5",
+            "instructions": [
+                "TMP_253 = TMP_386",
+                "JUMP 0x1cb"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1cc",
+            "instructions": [
+                "TMP_279 = TMP_390",
+                "JUMP 0x1c0"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d6",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1d7"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d7",
+            "instructions": [
+                "TMP_263 = NEW_VAL unknown",
+                "TMP_264 = NEW_VAL integer",
+                "JUMP 0x1d8"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d8",
+            "instructions": [
+                "TMP_265 = rad <= TMP_264",
+                "CONDITION TMP_265 0x1d8_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d8_r0",
+            "instructions": [
+                "JUMP 0x1d9"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1da",
+            "instructions": [
+                "TMP_268 = rad <= TMP_267",
+                "CONDITION TMP_268 0x1da_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1da_r0",
+            "instructions": [
+                "JUMP 0x1db"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1db",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1c3"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1d9",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1dc"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1dc",
+            "instructions": [
+                "TMP_250 = NEW_VAL unknown",
+                "TMP_251 = NEW_VAL integer",
+                "JUMP 0x1dd"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1de",
+            "instructions": [
+                "TMP_390 = TMP_253",
+                "JUMP 0x1df"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e0",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1e1"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e1",
+            "instructions": [
+                "TMP_223 = x - y",
+                "z = TMP_223",
+                "TMP_224 = z <= x",
+                "CONDITION TMP_224 0x1e1_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e1_r0",
+            "instructions": [
+                "JUMP 0x1e2"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e2",
+            "instructions": [
+                "TMP_386 = z",
+                "JUMP 0x1e3"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1dd",
+            "instructions": [
+                "x = TMP_251",
+                "y = totalQueuedDebt",
+                "JUMP 0x1e0"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e3",
+            "instructions": [
+                "TMP_252 = TMP_386",
+                "JUMP 0x1e4"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e5",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1e6"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e6",
+            "instructions": [
+                "TMP_223 = x - y",
+                "z = TMP_223",
+                "TMP_224 = z <= x",
+                "CONDITION TMP_224 0x1e6_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e6_r0",
+            "instructions": [
+                "JUMP 0x1e7"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e7",
+            "instructions": [
+                "TMP_386 = z",
+                "JUMP 0x1e8"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e4",
+            "instructions": [
+                "x = TMP_252",
+                "y = totalOnAuctionDebt",
+                "JUMP 0x1e5"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1e8",
+            "instructions": [
+                "TMP_253 = TMP_386",
+                "JUMP 0x1de"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1df",
+            "instructions": [
+                "TMP_267 = TMP_390",
+                "JUMP 0x1da"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1c2",
+            "instructions": [
+                "rad = TMP_283",
+                "JUMP 0x1d6"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1c8",
+            "instructions": [
+                "NOP",
+                "data = NEW_VAL integer",
+                "parameter = NEW_VAL integer",
+                "JUMP 0x1e9"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1ea",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1eb"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1eb",
+            "instructions": [
+                "TMP_227 = NEW_VAL unknown",
+                "CONDITION TMP_227 0x1ed 0x1ec"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1ec",
+            "instructions": [
+                "TMP_228 = NEW_VAL unknown",
+                "CONDITION TMP_228 0x1ed 0x1ee"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1ee",
+            "instructions": [
+                "TMP_229 = NEW_VAL unknown",
+                "CONDITION TMP_229 0x1ed 0x1ef"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1ef",
+            "instructions": [
+                "TMP_230 = NEW_VAL unknown",
+                "CONDITION TMP_230 0x1f0 0x1ed"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f0",
+            "instructions": [
+                "debtAuctionBidSize = data",
+                "JUMP 0x1f1"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f1",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1f2"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f2",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1f3"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f3",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1f4"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f4",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1f5"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1e9",
+            "instructions": [
+                "CLR_65 = msg.sender",
+                "CLR_66 = authorizedAccounts[CLR_65]",
+                "REF_160 = CLR_66",
+                "TMP_349 = REF_160 == 1",
+                "CONDITION TMP_349 0x1e9_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1e9_r0",
+            "instructions": [
+                "JUMP 0x1f6"
+            ]
+        },
+        {
+            "scope": "modifyParameters",
+            "addr": "0x1f6",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1ea"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1f5",
+            "instructions": [
+                "TMP_295 = TMP_294 == 1",
+                "CONDITION TMP_295 0x1f5_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1f5_r0",
+            "instructions": [
+                "JUMP 0x1f7"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1f8",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1f7",
+            "instructions": [
+                "x = totalOnAuctionDebt",
+                "y = debtAuctionBidSize",
+                "JUMP 0x1f9"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1fa",
+            "instructions": [
+                "TMP_220 = x + y",
+                "z = TMP_220",
+                "TMP_221 = z >= x",
+                "CONDITION TMP_221 0x1fa_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1fa_r0",
+            "instructions": [
+                "JUMP 0x1f8"
+            ]
+        },
+        {
+            "scope": "auctionDebt",
+            "addr": "0x1f9",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1fa"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x1ed",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

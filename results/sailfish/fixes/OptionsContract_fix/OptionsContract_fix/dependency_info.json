@@ -1,0 +1,395 @@
+{
+    "OptionsContract_fix.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 154\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 157\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 169\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 169\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_65 := TMP_186\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 169\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_62 := TMP_185\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 913\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 990\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 913\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 990\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 906\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 336\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 983\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 336\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 906\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 413\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 983\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 413\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 906\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 414\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_449(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 983\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 414\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_449(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalFee"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 1072\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 1149\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 1065\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 413\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 1142\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 413\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 1065\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 414\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_449(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 1142\nFunction: _exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_390\"",
+                        "\"BlockID: 414\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_449(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalFee"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "issueOTokens"
+            ],
+            "First_function": "issueOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_69 := TMP_191\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_69 := TMP_191\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "issueOTokens"
+            ],
+            "First_function": "issueOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_69 := TMP_191\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "burnOTokens"
+            ],
+            "First_function": "burnOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 467\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 467\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "burnOTokens"
+            ],
+            "First_function": "burnOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 467\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 661\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 267\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 661\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 661\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_72 := TMP_195\"",
+                        "\"BlockID: 344\nFunction: _exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= oTokensToExercise,Not enough oTokens)\nIRS: \nTMP_384 = SOLIDITY_CALL require(bool,string)(TMP_383,Not enough oTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        }
+    ]
+}

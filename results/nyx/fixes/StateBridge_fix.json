@@ -1,0 +1,21 @@
+{
+  "functions": [
+    "FxBaseRootTunnel.setFxChildTunnel(address)",
+    "FxBaseRootTunnel.receiveMessage(bytes)",
+    "Ownable.renounceOwnership()",
+    "Ownable.transferOwnership(address)",
+    "Ownable.renounceOwnership()",
+    "Ownable.transferOwnership(address)",
+    "FxBaseRootTunnel.setFxChildTunnel(address)",
+    "FxBaseRootTunnel.receiveMessage(bytes)",
+    "StateBridge.constructor(address,address,address,address,address)",
+    "StateBridge.sendRootMultichain(uint256)",
+    "StateBridge.transferOwnershipOptimism(address,bool)",
+    "StateBridge.setFxChildTunnel(address)"
+  ],
+  "phase0": 78,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

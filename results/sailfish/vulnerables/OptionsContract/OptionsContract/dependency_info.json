@@ -1,0 +1,966 @@
+{
+    "OptionsContract.sol": [
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transfer"
+            ],
+            "First_function": "transfer",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_48 := TMP_130\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_45 := TMP_129\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "transferFrom"
+            ],
+            "First_function": "transferFrom",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 88\nFunction: _transfer\nNode: \nEXPRESSION _balances[recipient] = _balances[recipient].add(amount)\nIRS: \nREF_48 := TMP_130\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: _transfer\nNode: \nEXPRESSION _balances[sender] = _balances[sender].sub(amount,ERC20: transfer amount exceeds balance)\nIRS: \nREF_45 := TMP_129\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 682\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 732\nFunction: exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_225\"",
+                        "\"BlockID: 239\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 738\nFunction: exercise\nNode: \nEXPRESSION totalExercised = totalExercised.add(amtCollateralToPay).add(amtFee)\nIRS: \ntotalExercised := TMP_227\"",
+                        "\"BlockID: 239\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalExercised"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "issueOTokens"
+            ],
+            "First_function": "issueOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 273\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_52 := TMP_135\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "createETHCollateralOptionNewRepo"
+            ],
+            "First_function": "createETHCollateralOptionNewRepo",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 321\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_52 := TMP_135\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "createETHCollateralOption"
+            ],
+            "First_function": "createETHCollateralOption",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 360\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_52 := TMP_135\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "createERC20CollateralOptionNewRepo"
+            ],
+            "First_function": "createERC20CollateralOptionNewRepo",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 402\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_52 := TMP_135\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "createERC20CollateralOption"
+            ],
+            "First_function": "createERC20CollateralOption",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 442\nFunction: _mint\nNode: \nEXPRESSION _balances[account] = _balances[account].add(amount)\nIRS: \nREF_52 := TMP_135\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "burnOTokens"
+            ],
+            "First_function": "burnOTokens",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 453\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "exercise",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "exercise",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 631\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\"",
+                        "\"BlockID: 172\nFunction: exercise\nNode: \nEXPRESSION require(bool,string)(balanceOf(msg.sender) >= _oTokens,Not enough pTokens)\nIRS: \nTMP_210 = SOLIDITY_CALL require(bool,string)(TMP_209,Not enough pTokens)\""
+                    ],
+                    "state_variable": "_balances"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 617\nFunction: liquidate\nNode: \nEXPRESSION totalFee = totalFee.add(protocolFee)\nIRS: \ntotalFee := TMP_296\"",
+                        "\"BlockID: 239\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "removeCollateral",
+                "openRepo"
+            ],
+            "First_function": "openRepo",
+            "Second_function": "removeCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 462\nFunction: removeCollateral\nNode: \nEXPRESSION require(bool,string)(isSafe(newRepoCollateralAmt,repo.putsOutstanding),Repo is unsafe)\nIRS: \nTMP_271 = SOLIDITY_CALL require(bool,string)(TMP_270,Repo is unsafe)\""
+                    ],
+                    "state_variable": "repos"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "removeCollateral",
+                "createETHCollateralOptionNewRepo"
+            ],
+            "First_function": "createETHCollateralOptionNewRepo",
+            "Second_function": "removeCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 286\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 462\nFunction: removeCollateral\nNode: \nEXPRESSION require(bool,string)(isSafe(newRepoCollateralAmt,repo.putsOutstanding),Repo is unsafe)\nIRS: \nTMP_271 = SOLIDITY_CALL require(bool,string)(TMP_270,Repo is unsafe)\""
+                    ],
+                    "state_variable": "repos"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "removeCollateral",
+                "createERC20CollateralOptionNewRepo"
+            ],
+            "First_function": "createERC20CollateralOptionNewRepo",
+            "Second_function": "removeCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 366\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 462\nFunction: removeCollateral\nNode: \nEXPRESSION require(bool,string)(isSafe(newRepoCollateralAmt,repo.putsOutstanding),Repo is unsafe)\nIRS: \nTMP_271 = SOLIDITY_CALL require(bool,string)(TMP_270,Repo is unsafe)\""
+                    ],
+                    "state_variable": "repos"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "addETHCollateral"
+            ],
+            "First_function": "addETHCollateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "addETHCollateral"
+            ],
+            "First_function": "addETHCollateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "addERC20Collateral"
+            ],
+            "First_function": "addERC20Collateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "addERC20Collateral"
+            ],
+            "First_function": "addERC20Collateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: exercise\nNode: \nEXPRESSION totalExercised = totalExercised.add(amtCollateralToPay).add(amtFee)\nIRS: \ntotalExercised := TMP_227\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalExercised"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: exercise\nNode: \nEXPRESSION totalExercised = totalExercised.add(amtCollateralToPay).add(amtFee)\nIRS: \ntotalExercised := TMP_227\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalExercised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 242\nFunction: exercise\nNode: \nEXPRESSION totalExercised = totalExercised.add(amtCollateralToPay).add(amtFee)\nIRS: \ntotalExercised := TMP_227\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalExercised"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: exercise\nNode: \nEXPRESSION totalUnderlying = totalUnderlying.add(amtUnderlyingToPay)\nIRS: \ntotalUnderlying := TMP_220\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalUnderlying"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createETHCollateralOptionNewRepo"
+            ],
+            "First_function": "createETHCollateralOptionNewRepo",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 289\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createETHCollateralOptionNewRepo"
+            ],
+            "First_function": "createETHCollateralOptionNewRepo",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 289\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 289\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 289\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createETHCollateralOption"
+            ],
+            "First_function": "createETHCollateralOption",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createETHCollateralOption"
+            ],
+            "First_function": "createETHCollateralOption",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createERC20CollateralOptionNewRepo"
+            ],
+            "First_function": "createERC20CollateralOptionNewRepo",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 370\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createERC20CollateralOptionNewRepo"
+            ],
+            "First_function": "createERC20CollateralOptionNewRepo",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 370\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 370\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 370\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createERC20CollateralOption"
+            ],
+            "First_function": "createERC20CollateralOption",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "createERC20CollateralOption"
+            ],
+            "First_function": "createERC20CollateralOption",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "removeCollateral"
+            ],
+            "First_function": "removeCollateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: removeCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtToRemove)\nIRS: \ntotalCollateral := TMP_273\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "removeCollateral"
+            ],
+            "First_function": "removeCollateral",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: removeCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtToRemove)\nIRS: \ntotalCollateral := TMP_273\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: removeCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtToRemove)\nIRS: \ntotalCollateral := TMP_273\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: removeCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtToRemove)\nIRS: \ntotalCollateral := TMP_273\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 632\nFunction: liquidate\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtCollateralToPay.add(protocolFee))\nIRS: \ntotalCollateral := TMP_314\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "claimCollateral",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "claimCollateral",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 632\nFunction: liquidate\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtCollateralToPay.add(protocolFee))\nIRS: \ntotalCollateral := TMP_314\"",
+                        "\"BlockID: 507\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 632\nFunction: liquidate\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtCollateralToPay.add(protocolFee))\nIRS: \ntotalCollateral := TMP_314\"",
+                        "\"BlockID: 508\nFunction: transferCollateral\nNode: \nEXPRESSION collateral.transfer(_addr,_amt)\nIRS: \nTMP_365(bool) = HIGH_LEVEL_CALL, dest:collateral(IERC20), function:transfer, arguments:['_addr', '_amt']  \""
+                    ],
+                    "state_variable": "totalCollateral"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 632\nFunction: liquidate\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtCollateralToPay.add(protocolFee))\nIRS: \ntotalCollateral := TMP_314\"",
+                        "\"BlockID: 511\nFunction: transferUnderlying\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "openRepo"
+            ],
+            "First_function": "openRepo",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 516\nFunction: liquidate\nNode: \nEXPRESSION require(bool,string)(isUnsafe(repoIndex),Repo is safe)\nIRS: \nTMP_288 = SOLIDITY_CALL require(bool,string)(TMP_287,Repo is safe)\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 628\nFunction: _burn\nNode: \nEXPRESSION _totalSupply = _totalSupply.sub(amount)\nIRS: \n_totalSupply := TMP_140\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 155\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 631\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\""
+                    ],
+                    "state_variable": "repos"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "addETHCollateral"
+            ],
+            "First_function": "addETHCollateral",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 159\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "addERC20Collateral"
+            ],
+            "First_function": "addERC20Collateral",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 166\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "exercise"
+            ],
+            "First_function": "exercise",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 236\nFunction: exercise\nNode: \nEXPRESSION totalFee = totalFee.add(amtFee)\nIRS: \ntotalFee := TMP_225\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "createETHCollateralOptionNewRepo"
+            ],
+            "First_function": "createETHCollateralOptionNewRepo",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 286\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 516\nFunction: liquidate\nNode: \nEXPRESSION require(bool,string)(isUnsafe(repoIndex),Repo is safe)\nIRS: \nTMP_288 = SOLIDITY_CALL require(bool,string)(TMP_287,Repo is safe)\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 286\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 628\nFunction: _burn\nNode: \nEXPRESSION _totalSupply = _totalSupply.sub(amount)\nIRS: \n_totalSupply := TMP_140\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 286\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 631\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 289\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "createETHCollateralOption"
+            ],
+            "First_function": "createETHCollateralOption",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 328\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "createERC20CollateralOptionNewRepo"
+            ],
+            "First_function": "createERC20CollateralOptionNewRepo",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 366\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 516\nFunction: liquidate\nNode: \nEXPRESSION require(bool,string)(isUnsafe(repoIndex),Repo is safe)\nIRS: \nTMP_288 = SOLIDITY_CALL require(bool,string)(TMP_287,Repo is safe)\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 366\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 628\nFunction: _burn\nNode: \nEXPRESSION _totalSupply = _totalSupply.sub(amount)\nIRS: \n_totalSupply := TMP_140\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 366\nFunction: openRepo\nNode: \nEXPRESSION repos.push(Repo(0,0,msg.sender))\nIRS: \nPUSH TMP_193 in repos\"",
+                        "\"BlockID: 631\nFunction: _burn\nNode: \nEXPRESSION _balances[account] = _balances[account].sub(amount,ERC20: burn amount exceeds balance)\nIRS: \nREF_55 := TMP_139\""
+                    ],
+                    "state_variable": "repos"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 370\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "createERC20CollateralOption"
+            ],
+            "First_function": "createERC20CollateralOption",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: _addCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.add(_amt)\nIRS: \ntotalCollateral := TMP_322\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "removeCollateral"
+            ],
+            "First_function": "removeCollateral",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 463\nFunction: removeCollateral\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtToRemove)\nIRS: \ntotalCollateral := TMP_273\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        },
+        {
+            "attack_type": "TOD",
+            "composed_functions": [
+                "liquidate",
+                "liquidate"
+            ],
+            "First_function": "liquidate",
+            "Second_function": "liquidate",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 918\nFunction: liquidate\nNode: \nEXPRESSION totalFee = totalFee.add(protocolFee)\nIRS: \ntotalFee := TMP_296\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalFee"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 933\nFunction: liquidate\nNode: \nEXPRESSION totalCollateral = totalCollateral.sub(amtCollateralToPay.add(protocolFee))\nIRS: \ntotalCollateral := TMP_314\"",
+                        "\"BlockID: 634\nFunction: transferCollateral\nNode: \nEXPRESSION _addr.transfer(_amt)\nIRS: \nTransfer dest:_addr value:_amt\""
+                    ],
+                    "state_variable": "totalCollateral"
+                }
+            ]
+        }
+    ]
+}

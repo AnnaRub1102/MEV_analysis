@@ -1,0 +1,504 @@
+{
+    "AccountingEngine_fix.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 195\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionBidSize = data\nIRS: \ndebtAuctionBidSize := data\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "debtAuctionBidSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 195\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionBidSize = data\nIRS: \ndebtAuctionBidSize := data\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "debtAuctionBidSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 197\nFunction: modifyParameters\nNode: \nEXPRESSION initialDebtAuctionMintedTokens = data\nIRS: \ninitialDebtAuctionMintedTokens := data\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "initialDebtAuctionMintedTokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 195\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionBidSize = data\nIRS: \ndebtAuctionBidSize := data\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "debtAuctionBidSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 195\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionBidSize = data\nIRS: \ndebtAuctionBidSize := data\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "debtAuctionBidSize"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 197\nFunction: modifyParameters\nNode: \nEXPRESSION initialDebtAuctionMintedTokens = data\nIRS: \ninitialDebtAuctionMintedTokens := data\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "initialDebtAuctionMintedTokens"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionHouse = DebtAuctionHouseLike(data)\nIRS: \ndebtAuctionHouse := TMP_243\"",
+                        "\"BlockID: 270\nFunction: auctionDebt\nNode: \nEXPRESSION require(bool,string)(protocolTokenAuthority.authorizedAccounts(address(debtAuctionHouse)) == 1,AccountingEngine\/debt-auction-house-cannot-print-prot)\nIRS: \nTMP_294(uint256) = HIGH_LEVEL_CALL, dest:protocolTokenAuthority(ProtocolTokenAuthorityLike), function:authorizedAccounts, arguments:['TMP_293']  \""
+                    ],
+                    "state_variable": "debtAuctionHouse"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionHouse = DebtAuctionHouseLike(data)\nIRS: \ndebtAuctionHouse := TMP_243\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "debtAuctionHouse"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 219\nFunction: modifyParameters\nNode: \nEXPRESSION protocolTokenAuthority = ProtocolTokenAuthorityLike(data)\nIRS: \nprotocolTokenAuthority := TMP_246\"",
+                        "\"BlockID: 270\nFunction: auctionDebt\nNode: \nEXPRESSION require(bool,string)(protocolTokenAuthority.authorizedAccounts(address(debtAuctionHouse)) == 1,AccountingEngine\/debt-auction-house-cannot-print-prot)\nIRS: \nTMP_294(uint256) = HIGH_LEVEL_CALL, dest:protocolTokenAuthority(ProtocolTokenAuthorityLike), function:authorizedAccounts, arguments:['TMP_293']  \""
+                    ],
+                    "state_variable": "protocolTokenAuthority"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionHouse = DebtAuctionHouseLike(data)\nIRS: \ndebtAuctionHouse := TMP_243\"",
+                        "\"BlockID: 273\nFunction: auctionDebt\nNode: \nEXPRESSION id = debtAuctionHouse.startAuction(address(this),initialDebtAuctionMintedTokens,debtAuctionBidSize)\nIRS: \nTMP_299(uint256) = HIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:startAuction, arguments:['TMP_298', 'initialDebtAuctionMintedTokens', 'debtAuctionBidSize']  \""
+                    ],
+                    "state_variable": "debtAuctionHouse"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "unqueuedUnauctionedDebt"
+            ],
+            "from_function": "unqueuedUnauctionedDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 232\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "unqueuedUnauctionedDebt"
+            ],
+            "from_function": "unqueuedUnauctionedDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 232\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "settleDebt"
+            ],
+            "from_function": "settleDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 255\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "settleDebt"
+            ],
+            "from_function": "settleDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 255\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "cancelAuctionedDebtWithSurplus"
+            ],
+            "from_function": "cancelAuctionedDebtWithSurplus",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 260\nFunction: cancelAuctionedDebtWithSurplus\nNode: \nEXPRESSION totalOnAuctionDebt = subtract(totalOnAuctionDebt,rad)\nIRS: \ntotalOnAuctionDebt := TMP_277\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 257\nFunction: cancelAuctionedDebtWithSurplus\nNode: \nEXPRESSION require(bool,string)(rad <= totalOnAuctionDebt,AccountingEngine\/not-enough-debt-being-auctioned)\nIRS: \nTMP_272 = SOLIDITY_CALL require(bool,string)(TMP_271,AccountingEngine\/not-enough-debt-being-auctioned)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 262\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "cancelAuctionedDebtWithSurplus"
+            ],
+            "from_function": "cancelAuctionedDebtWithSurplus",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 260\nFunction: cancelAuctionedDebtWithSurplus\nNode: \nEXPRESSION totalOnAuctionDebt = subtract(totalOnAuctionDebt,rad)\nIRS: \ntotalOnAuctionDebt := TMP_277\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 257\nFunction: cancelAuctionedDebtWithSurplus\nNode: \nEXPRESSION require(bool,string)(rad <= totalOnAuctionDebt,AccountingEngine\/not-enough-debt-being-auctioned)\nIRS: \nTMP_272 = SOLIDITY_CALL require(bool,string)(TMP_271,AccountingEngine\/not-enough-debt-being-auctioned)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 262\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "auctionDebt"
+            ],
+            "from_function": "auctionDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 337\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 343\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 349\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 350\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 351\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "auctionDebt"
+            ],
+            "from_function": "auctionDebt",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 361\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 367\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 373\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 374\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 375\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "auctionSurplus"
+            ],
+            "from_function": "auctionSurplus",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 302\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "auctionSurplus"
+            ],
+            "from_function": "auctionSurplus",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 302\nFunction: subtract\nNode: \nEXPRESSION require(bool)((z = x - y) <= x)\nIRS: \nTMP_225 = SOLIDITY_CALL require(bool)(TMP_224)\"",
+                        "\"BlockID: 272\nFunction: auctionDebt\nNode: \nEXPRESSION totalOnAuctionDebt = addition(totalOnAuctionDebt,debtAuctionBidSize)\nIRS: \ntotalOnAuctionDebt := TMP_297\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "disableContract"
+            ],
+            "from_function": "disableContract",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 306\nFunction: disableContract\nNode: \nEXPRESSION totalOnAuctionDebt = 0\nIRS: \ntotalOnAuctionDebt := 0\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionDebt",
+                "disableContract"
+            ],
+            "from_function": "disableContract",
+            "to_function": "auctionDebt",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 306\nFunction: disableContract\nNode: \nEXPRESSION totalOnAuctionDebt = 0\nIRS: \ntotalOnAuctionDebt := 0\"",
+                        "\"BlockID: 286\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\""
+                    ],
+                    "state_variable": "totalOnAuctionDebt"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionSurplus",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionSurplus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 193\nFunction: modifyParameters\nNode: \nEXPRESSION surplusAuctionAmountToSell = data\nIRS: \nsurplusAuctionAmountToSell := data\"",
+                        "\"BlockID: 296\nFunction: auctionSurplus\nNode: \nEXPRESSION id = surplusAuctionHouse.startAuction(surplusAuctionAmountToSell,0)\nIRS: \nTMP_321(uint256) = HIGH_LEVEL_CALL, dest:surplusAuctionHouse(SurplusAuctionHouseLike), function:startAuction, arguments:['surplusAuctionAmountToSell', '0']  \""
+                    ],
+                    "state_variable": "surplusAuctionAmountToSell"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionSurplus",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "auctionSurplus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 225\nFunction: modifyParameters\nNode: \nEXPRESSION surplusAuctionHouse = SurplusAuctionHouseLike(data)\nIRS: \nsurplusAuctionHouse := TMP_240\"",
+                        "\"BlockID: 296\nFunction: auctionSurplus\nNode: \nEXPRESSION id = surplusAuctionHouse.startAuction(surplusAuctionAmountToSell,0)\nIRS: \nTMP_321(uint256) = HIGH_LEVEL_CALL, dest:surplusAuctionHouse(SurplusAuctionHouseLike), function:startAuction, arguments:['surplusAuctionAmountToSell', '0']  \""
+                    ],
+                    "state_variable": "surplusAuctionHouse"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "auctionSurplus",
+                "auctionSurplus"
+            ],
+            "from_function": "auctionSurplus",
+            "to_function": "auctionSurplus",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 410\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\"",
+                        "\"BlockID: 295\nFunction: auctionSurplus\nNode: \nEXPRESSION lastSurplusAuctionTime = now\nIRS: \nlastSurplusAuctionTime := now\""
+                    ],
+                    "state_variable": "lastSurplusAuctionTime"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 411\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\"",
+                        "\"BlockID: 295\nFunction: auctionSurplus\nNode: \nEXPRESSION lastSurplusAuctionTime = now\nIRS: \nlastSurplusAuctionTime := now\""
+                    ],
+                    "state_variable": "lastSurplusAuctionTime"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 412\nFunction: addition\nNode: \nEXPRESSION require(bool)((z = x + y) >= x)\nIRS: \nTMP_222 = SOLIDITY_CALL require(bool)(TMP_221)\"",
+                        "\"BlockID: 295\nFunction: auctionSurplus\nNode: \nEXPRESSION lastSurplusAuctionTime = now\nIRS: \nlastSurplusAuctionTime := now\""
+                    ],
+                    "state_variable": "lastSurplusAuctionTime"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "disableContract",
+                "modifyParameters"
+            ],
+            "from_function": "modifyParameters",
+            "to_function": "disableContract",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 215\nFunction: modifyParameters\nNode: \nEXPRESSION debtAuctionHouse = DebtAuctionHouseLike(data)\nIRS: \ndebtAuctionHouse := TMP_243\"",
+                        "\"BlockID: 309\nFunction: disableContract\nNode: \nEXPRESSION debtAuctionHouse.disableContract()\nIRS: \nHIGH_LEVEL_CALL, dest:debtAuctionHouse(DebtAuctionHouseLike), function:disableContract, arguments:[]  \""
+                    ],
+                    "state_variable": "debtAuctionHouse"
+                }
+            ]
+        }
+    ]
+}

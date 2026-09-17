@@ -1,0 +1,114 @@
+{
+    "tod_symex_path_1.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 5983\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 5985\nCall context: \nNone\ncommitment := TMP_471\nREF_206 -> commitments[commitment]\nTMP_472 = REF_206 + MIN_COMMITMENT_AGE\nTMP_473 = TMP_472 <= now\nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+        ],
+        "executable_instructions": 57,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_2.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6041\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6045\nCall context: \nTrue\nTransfer dest:msg.sender value:msg.value\""
+        ],
+        "executable_instructions": 146,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_3.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6100\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6102\nCall context: \nNone\ncommitment := TMP_471\nREF_206 -> commitments[commitment]\nTMP_472 = REF_206 + MIN_COMMITMENT_AGE\nTMP_473 = TMP_472 <= now\nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+        ],
+        "executable_instructions": 57,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_4.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6158\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6162\nCall context: \nTrue\nTransfer dest:msg.sender value:msg.value\""
+        ],
+        "executable_instructions": 146,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_5.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6217\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6219\nCall context: \nNone\ncommitment := TMP_471\nREF_206 -> commitments[commitment]\nTMP_472 = REF_206 + MIN_COMMITMENT_AGE\nTMP_473 = TMP_472 <= now\nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+        ],
+        "executable_instructions": 57,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_6.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6275\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6279\nCall context: \nTrue\nTransfer dest:msg.sender value:msg.value\""
+        ],
+        "executable_instructions": 146,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_7.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6334\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6336\nCall context: \nNone\ncommitment := TMP_471\nREF_206 -> commitments[commitment]\nTMP_472 = REF_206 + MIN_COMMITMENT_AGE\nTMP_473 = TMP_472 <= now\nTMP_474 = SOLIDITY_CALL require(bool)(TMP_473)\""
+        ],
+        "executable_instructions": 57,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    },
+    "tod_symex_path_8.json": {
+        "file_name": "",
+        "from_function": "register",
+        "bug_type": "tod_transfer",
+        "src_node": "\"BlockID: 6392\nCall context: \nNone\nENTRY_POINT None\"",
+        "dest_node": [
+            "\"BlockID: 6396\nCall context: \nTrue\nTransfer dest:msg.sender value:msg.value\""
+        ],
+        "executable_instructions": 146,
+        "state_variable": "commitments",
+        "error": "",
+        "result": "",
+        "execution_details": ""
+    }
+}

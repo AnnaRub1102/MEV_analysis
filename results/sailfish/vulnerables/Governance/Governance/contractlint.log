@@ -1,0 +1,772 @@
+[INFO] | 2026-09-17 12:59:59 PM | analyzer.Governance | Analysis started at: 2026-09-17 12:59:59 PM
+[INFO] | 2026-09-17 01:00:03 PM | analyzer.Governance | Version constraints: ['^0.5.8']
+[INFO] | 2026-09-17 01:00:03 PM | analyzer.Governance | solc version: v0.5.8
+[INFO] | 2026-09-17 01:00:06 PM | analyzer.Governance | Callgraph generation started!
+[INFO] | 2026-09-17 01:00:06 PM | analyzer.Governance | Callgraph generation finished!
+[INFO] | 2026-09-17 01:00:06 PM | analyzer.Governance | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 01:00:06 PM | analyzer.Governance | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 01:00:06 PM | analyzer.Governance | Storage dependency graph generation started!
+[WARNING] | 2026-09-17 01:00:06 PM | analyzer.Governance | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 01:00:06 PM | analyzer.Governance | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 01:00:06 PM | analyzer.Governance | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 01:00:06 PM | analyzer.Governance | Issues with getting the high level call destination address
+[WARNING] | 2026-09-17 01:00:06 PM | analyzer.Governance | Issues with getting the high level call destination address
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Value Range Analysis started
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getLast
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getLast
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getLast
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _add192
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _add192
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _add192
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _backwardsLinearSearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _backwardsLinearSearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _backwardsLinearSearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _binarySearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _binarySearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _binarySearch
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for toUint8
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for toUint8
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function toUint8
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for toUint64
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for toUint64
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function toUint64
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isContract
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for sub
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for sub
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function sub
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for mul
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for mul
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function mul
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for div
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for div
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function div
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for mod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for mod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function mod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isContract
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalSupply
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function balanceOf
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function allowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function constructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgSender
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _msgData
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function owner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getContractVersionCount
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getContractVersionCount
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getContractVersionCount
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function onlyOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for token
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for token
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function token
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for supportsHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for supportsHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function supportsHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for lastStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for lastStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function lastStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for lastClaimedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for lastClaimedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function lastClaimedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getGovernanceAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getClaimsManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getServiceProviderFactoryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getDelegateManagerAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isConstructor
+[WARNING] | 2026-09-17 01:00:07 PM | analyzer.Governance | Can there be this kind of variables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isConstructor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _requireIsInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _isInitialized
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for setRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for setRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function setRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getProposalById
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getProposalById
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getProposalById
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getVoteByProposalAndVoter
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getVoteByProposalAndVoter
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getVoteByProposalAndVoter
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getStakingAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getRegistryAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _executeTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _executeTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _executeTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initializer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalStakedFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function add
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getRecent
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getRecent
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getRecent
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for get
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for get
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function get
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function increaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _mint
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function decreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for callOptionalReturn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for callOptionalReturn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function callOptionalReturn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function approve
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function isOwner
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for addContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for addContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function addContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for removeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for removeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function removeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for upgradeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for upgradeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function upgradeContract
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for guardianExecuteTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for guardianExecuteTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function guardianExecuteTransaction
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function renounceOwnership
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for vetoProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for vetoProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function vetoProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferGuardianship
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferGuardianship
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferGuardianship
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getGuardianAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getGuardianAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getGuardianAddress
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getVotingPeriod
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for getVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for getVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function getVotingQuorum
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for submitProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for submitProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function submitProposal
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for updateClaimHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for updateClaimHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function updateClaimHistory
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _modifyStakeBalance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _modifyStakeBalance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _modifyStakeBalance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _modifyTotalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _modifyTotalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _modifyTotalStaked
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalStakedForAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalStakedForAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalStakedForAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for totalStakedAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for totalStakedAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function totalStakedAt
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function transferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function burn
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for safeTransfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for safeTransfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function safeTransfer
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for safeTransferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for safeTransferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function safeTransferFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for safeApprove
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for safeApprove
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function safeApprove
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for safeIncreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for safeIncreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function safeIncreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for safeDecreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for safeDecreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function safeDecreaseAllowance
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function initialize
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for submitProposalVote
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for submitProposalVote
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function submitProposalVote
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function burnFrom
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _burnFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _burnFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _burnFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for _stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for _stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function _stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for slash
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for slash
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Range graph generated
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function slash
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function unstakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for undelegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for undelegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function undelegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for stakeRewards
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for stakeRewards
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function stakeRewards
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function stakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Generating return summary for delegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Return summary generated for delegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | State variable assignement do not exist
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Processed function delegateStakeFor
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Value Range Analysis took 0.448790 seconds
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Value Range Analysis finished
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | Dependency detection started!
+[INFO] | 2026-09-17 01:00:07 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and submitProposal
+[INFO] | 2026-09-17 01:00:11 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and submitProposalVote
+[INFO] | 2026-09-17 01:00:13 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:13 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and vetoProposal
+[INFO] | 2026-09-17 01:00:13 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and getProposalById
+[INFO] | 2026-09-17 01:00:13 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions submitProposal and getVoteByProposalAndVoter
+[INFO] | 2026-09-17 01:00:14 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and initialize
+[INFO] | 2026-09-17 01:00:16 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and submitProposalVote
+[INFO] | 2026-09-17 01:00:16 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and submitProposalVote
+[INFO] | 2026-09-17 01:00:17 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:17 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:17 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and vetoProposal
+[INFO] | 2026-09-17 01:00:17 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and vetoProposal
+[INFO] | 2026-09-17 01:00:18 PM | analyzer.Governance | DAO dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and setVotingQuorum
+[INFO] | 2026-09-17 01:00:18 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and initialize
+[INFO] | 2026-09-17 01:00:20 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and initialize
+[INFO] | 2026-09-17 01:00:21 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and submitProposal
+[INFO] | 2026-09-17 01:00:23 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and submitProposalVote
+[INFO] | 2026-09-17 01:00:23 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and evaluateProposalOutcome
+[INFO] | 2026-09-17 01:00:23 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and vetoProposal
+[INFO] | 2026-09-17 01:00:23 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and setVotingPeriod
+[INFO] | 2026-09-17 01:00:23 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and setVotingQuorum
+[INFO] | 2026-09-17 01:00:25 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions evaluateProposalOutcome and setRegistryAddress
+[INFO] | 2026-09-17 01:00:25 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions guardianExecuteTransaction and initialize
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions guardianExecuteTransaction and initialize
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions guardianExecuteTransaction and setRegistryAddress
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | TOD dependency detected in file Governance.sol in contract Governance in by composing functions guardianExecuteTransaction and transferGuardianship
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | Dependency detection finished!
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | Static Analysis took 27.151981 seconds
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | Dependency exists
+[INFO] | 2026-09-17 01:00:26 PM | analyzer.Governance | Invoking symbolic executor!

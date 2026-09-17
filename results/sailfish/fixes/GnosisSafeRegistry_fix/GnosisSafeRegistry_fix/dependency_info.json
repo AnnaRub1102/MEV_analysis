@@ -1,0 +1,2042 @@
+{
+    "GnosisSafeRegistry_fix.sol": [
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 20\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \nTMP_121(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['Affiliates']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 79\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 81\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 8\nFunction: initialize\nNode: \nEXPRESSION require(bool)(gnosisSafeMasterCopy != address(0))\nIRS: \nTMP_111 = SOLIDITY_CALL require(bool)(TMP_110)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 81\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 16\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_119 = SOLIDITY_CALL keccak256(bytes)(TMP_118)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 81\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 82\nFunction: initialize\nNode: \nEXPRESSION require(bool)(gnosisSafeMasterCopy != address(0))\nIRS: \nTMP_111 = SOLIDITY_CALL require(bool)(TMP_110)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 90\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_119 = SOLIDITY_CALL keccak256(bytes)(TMP_118)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nTMP_114(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyRuntimeCode, arguments:[]  \""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 14\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_116(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyCreationCode, arguments:[]  \""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 84\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 85\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nTMP_114(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyRuntimeCode, arguments:[]  \"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 87\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 88\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_116(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyCreationCode, arguments:[]  \"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 91\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 20\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \nTMP_121(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['Affiliates']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 106\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 16\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_119 = SOLIDITY_CALL keccak256(bytes)(TMP_118)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 108\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 11\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nTMP_114(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyRuntimeCode, arguments:[]  \""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 14\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_116(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyCreationCode, arguments:[]  \""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 111\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 112\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nTMP_114(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyRuntimeCode, arguments:[]  \"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 114\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 115\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_116(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyCreationCode, arguments:[]  \"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 118\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 20\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \nTMP_121(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['Affiliates']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 133\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 135\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 16\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_119 = SOLIDITY_CALL keccak256(bytes)(TMP_118)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 135\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 14\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_116(bytes) = HIGH_LEVEL_CALL, dest:proxyFactory(IProxyFactory), function:proxyCreationCode, arguments:[]  \""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 138\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "proxyFactory"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 20\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \nTMP_121(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['Affiliates']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 160\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 162\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 16\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \nTMP_119 = SOLIDITY_CALL keccak256(bytes)(TMP_118)\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 162\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 20\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \nTMP_121(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['Affiliates']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 187\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 214\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 214\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 22\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nTMP_122(address) = HIGH_LEVEL_CALL, dest:augur(IAugur), function:lookup, arguments:['ShareToken']  \""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 214\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "augur"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 45\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_mastercopy == gnosisSafeMasterCopy,Proxy master contract is not the Gnosis Safe)\nIRS: \nTMP_143 = SOLIDITY_CALL require(bool,string)(TMP_142,Proxy master contract is not the Gnosis Safe)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 7\nFunction: initialize\nNode: \nEXPRESSION gnosisSafeMasterCopy = _augur.lookup(GnosisSafe)\nIRS: \ngnosisSafeMasterCopy := TMP_108\""
+                    ],
+                    "state_variable": "gnosisSafeMasterCopy"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool)(msg.sender == address(proxyFactory))\nIRS: \nTMP_138 = SOLIDITY_CALL require(bool)(TMP_137)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 43\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool)(msg.sender == address(proxyFactory))\nIRS: \nTMP_138 = SOLIDITY_CALL require(bool)(TMP_137)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 44\nFunction: proxyCreated\nNode: \nEXPRESSION require(bool,string)(_codeHash == proxyCodeHash,Safe instance does not match expected code hash of the Proxy contract)\nIRS: \nTMP_141 = SOLIDITY_CALL require(bool,string)(TMP_140,Safe instance does not match expected code hash of the Proxy contract)\"",
+                        "\"BlockID: 13\nFunction: initialize\nNode: \nEXPRESSION proxyCodeHash = keccak256(bytes)(proxyFactory.proxyRuntimeCode())\nIRS: \nproxyCodeHash := TMP_115\""
+                    ],
+                    "state_variable": "proxyCodeHash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\"",
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "initialize",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "initialize",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\"",
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\""
+                    ],
+                    "state_variable": "fillOrder"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "deploymentData"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 52\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _fingerprint = _affilifates.getAccountFingerprint(_proxy)\nIRS: \nTMP_154(bytes32) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getAccountFingerprint, arguments:['_proxy']  \""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "deploymentData"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 53\nFunction: validateSafeCreation\nNode: \nNEW VARIABLE _referralAddress = _affilifates.getReferrer(_proxy)\nIRS: \nTMP_155(address) = HIGH_LEVEL_CALL, dest:_affilifates(IAffiliates), function:getReferrer, arguments:['_proxy']  \""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "deploymentData"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "initialize"
+            ],
+            "from_function": "initialize",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 10\nFunction: initialize\nNode: \nEXPRESSION proxyFactory = IProxyFactory(_augur.lookup(ProxyFactory))\nIRS: \nproxyFactory := TMP_113\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "proxyFactory"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 21\nFunction: initialize\nNode: \nEXPRESSION affiliates = augur.lookup(Affiliates)\nIRS: \naffiliates := TMP_121\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "affiliates"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 19\nFunction: initialize\nNode: \nEXPRESSION cash = _augur.lookup(Cash)\nIRS: \ncash := TMP_120\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "cash"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 23\nFunction: initialize\nNode: \nEXPRESSION shareToken = augur.lookup(ShareToken)\nIRS: \nshareToken := TMP_122\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "shareToken"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 25\nFunction: initialize\nNode: \nEXPRESSION createOrder = _augurTrading.lookup(CreateOrder)\nIRS: \ncreateOrder := TMP_123\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "createOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 27\nFunction: initialize\nNode: \nEXPRESSION fillOrder = _augurTrading.lookup(FillOrder)\nIRS: \nfillOrder := TMP_124\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "fillOrder"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 57\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_163 = SOLIDITY_CALL keccak256(bytes)(_expectedSetupForAugurData)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 5\nFunction: initialize\nNode: \nEXPRESSION augur = _augur\nIRS: \naugur := _augur\"",
+                        "\"BlockID: 58\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_data.length == _expectedSetupForAugurData.length && keccak256(bytes)(_data) == keccak256(bytes)(_expectedSetupForAugurData))\nIRS: \nTMP_166 = SOLIDITY_CALL require(bool)(TMP_165)\""
+                    ],
+                    "state_variable": "augur"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 59\nFunction: validateSafeCreation\nNode: \nEXPRESSION require(bool)(_proxy == _expectedAddress)\nIRS: \nTMP_177 = SOLIDITY_CALL require(bool)(TMP_176)\""
+                    ],
+                    "state_variable": "deploymentData"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 17\nFunction: initialize\nNode: \nEXPRESSION deploymentData = keccak256(bytes)(abi.encodePacked(proxyFactory.proxyCreationCode(),uint256(gnosisSafeMasterCopy)))\nIRS: \ndeploymentData := TMP_119\"",
+                        "\"BlockID: 61\nFunction: generateCreate2\nNode: \nRETURN address(uint160(uint256(keccak256(bytes)(abi.encodePacked(_const,_address,_salt,_hashedInitCode)))))\nIRS: \nTMP_179 = SOLIDITY_CALL keccak256(bytes)(TMP_178)\""
+                    ],
+                    "state_variable": "deploymentData"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_187 = SOLIDITY_CALL require(bool,string)(TMP_186,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_187 = SOLIDITY_CALL require(bool,string)(TMP_186,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_187 = SOLIDITY_CALL require(bool,string)(TMP_186,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 72\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_187 = SOLIDITY_CALL require(bool,string)(TMP_186,Can only deRegister the current account safe)\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "proxyCreated",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "proxyCreated",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "proxyCreated"
+            ],
+            "from_function": "proxyCreated",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\"",
+                        "\"BlockID: 72\nFunction: deRegister\nNode: \nEXPRESSION require(bool,string)(_safe == getSafe(_owner),Can only deRegister the current account safe)\nIRS: \nTMP_187 = SOLIDITY_CALL require(bool,string)(TMP_186,Can only deRegister the current account safe)\""
+                    ],
+                    "state_variable": "accountSafes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 50\nFunction: proxyCreated\nNode: \nEXPRESSION accountSafes[_owner].push(_safe)\nIRS: \nPUSH _safe in REF_141\"",
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\""
+                    ],
+                    "state_variable": "accountSafes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "deRegister"
+            ],
+            "from_function": "deRegister",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 495\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_157 = REF_157 + 1\"",
+                        "\"BlockID: 74\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                },
+                {
+                    "path": [
+                        "\"BlockID: 496\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 73\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_157 = REF_157 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        },
+        {
+            "attack_type": "DAO",
+            "composed_functions": [
+                "deRegister",
+                "getSafe"
+            ],
+            "from_function": "getSafe",
+            "to_function": "deRegister",
+            "dependencies": [
+                {
+                    "path": [
+                        "\"BlockID: 76\nFunction: getSafe\nNode: \nIF accountSafes[_account].length < accountSafeIndex + 1\nIRS: \nCONDITION TMP_189\"",
+                        "\"BlockID: 73\nFunction: deRegister\nNode: \nEXPRESSION accountSafeIndexes[_owner] += 1\nIRS: \nREF_157 = REF_157 + 1\""
+                    ],
+                    "state_variable": "accountSafeIndexes"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+[2m2026-09-17T11:47:38.878832[0m [[32m[1minfo     [0m] [1mCommand-line arguments        [0m [36mfocus[0m=[35m[][0m [36mlog_file[0m=[35mNone[0m [36mname[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m [36mrepos[0m=[35m['/dataset/fixes/RocketTokenRPL_fix/'][0m
+[2m2026-09-17T11:47:38.881486[0m [[32m[1minfo     [0m] [1mAnalysis configuration        [0m [36mfunction_timeout[0m=[35minfs[0m [36mpair_timeout[0m=[35minfs[0m [36msolver_timeout[0m=[35m60.00s[0m
+[2m2026-09-17T11:47:38.882161[0m [[32m[1minfo     [0m] [1mAnalysis started              [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:38.882423[0m [[32m[1minfo     [0m] [1mPhase 0 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:47:38.882698[0m [[32m[1minfo     [0m] [1mCompiling and analyzing contracts using Slither...[0m [36mgroup[0m=[35mContracts[0m [36mpath[0m=[35m/dataset/fixes/RocketTokenRPL_fix[0m [36mphase[0m=[35m0[0m [36mrepo[0m=[35mRocketTokenRPL_fix[0m
+Installing solc '0.6.0'...
+Version '0.6.0' installed.
+[2m2026-09-17T11:47:41.362089[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.6.0/solc-0.6.0 --version' running[0m
+[2m2026-09-17T11:47:41.395360[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.6.0/solc-0.6.0 RocketTokenRPL_fix.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --optimize --allow-paths .,/nyx' running[0m
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 581, in _run_solc
+    ret: Dict = json.loads(stdout)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/nyx/nyx/main.py", line 214, in <module>
+    analyze_one(args)
+  File "/nyx/nyx/main.py", line 84, in analyze_one
+    output = analyze_single(group, observer, config)
+  File "/nyx/nyx/analyze/__init__.py", line 38, in analyze_single
+    _ = repo.slither
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/nyx/nyx/galaxy/ContractRepo.py", line 136, in slither
+    self._slither = Slither(self.crytic_compile)
+  File "/usr/lib/python3.10/functools.py", line 981, in __get__
+    val = self.func(instance)
+  File "/nyx/nyx/galaxy/ContractRepo.py", line 122, in crytic_compile
+    self._crytic_compile = CryticCompile(
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/crytic_compile.py", line 211, in __init__
+    self._compile(**kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/crytic_compile.py", line 633, in _compile
+    self._platform.compile(self, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 150, in compile
+    targets_json = _get_targets_json(compilation_unit, self._target, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 279, in _get_targets_json
+    return _run_solc(
+  File "/usr/local/lib/python3.10/dist-packages/crytic_compile/platform/solc.py", line 585, in _run_solc
+    raise InvalidCompilation(f"Invalid solc compilation {stderr}")
+crytic_compile.platform.exceptions.InvalidCompilation: Invalid solc compilation Error: No visibility specified. Did you intend to add "public"?
+   --> RocketTokenRPL_fix.sol:814:5:
+    |
+814 |     constructor(RocketStorageInterface _rocketStorageAddress) {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Error: No visibility specified. Did you intend to add "public"?
+   --> RocketTokenRPL_fix.sol:933:5:
+    |
+933 |     constructor(RocketStorageInterface  ... 20("Rocket Pool Protocol", "RPL") {
+    |     ^ (Relevant source part starts here and spans across multiple lines).
+
+Error: Data location must be "calldata" for parameter in external function, but "memory" was given.
+   --> RocketTokenRPL_fix.sol:682:24:
+    |
+682 |     function balanceOf(string memory _networkContractName) external view returns (uint256);
+    |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Data location must be "calldata" for parameter in external function, but "memory" was given.
+   --> RocketTokenRPL_fix.sol:685:27:
+    |
+685 |     function depositToken(string memory _networkContractName, IERC20 _tokenAddress, uint256 _amount) external;
+    |                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Data location must be "calldata" for parameter in external function, but "memory" was given.
+   --> RocketTokenRPL_fix.sol:687:29:
+    |
+687 |     function balanceOfToken(string memory _networkContractName, IERC20 _tokenAddress) external view returns (uint256);
+    |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Error: Data location must be "calldata" for parameter in external function, but "memory" was given.
+   --> RocketTokenRPL_fix.sol:688:28:
+    |
+688 |     function transferToken(string memory _networkContractName, IERC20 _tokenAddress, uint256 _amount) external;
+    |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+

@@ -1,0 +1,3093 @@
+{
+    "file": "Governance.sol",
+    "global_structs": [
+        {
+            "name": "struct_Vote",
+            "fields": {
+                "None": [
+                    "integer"
+                ],
+                "No": [
+                    "integer"
+                ],
+                "Yes": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_Outcome",
+            "fields": {
+                "InProgress": [
+                    "integer"
+                ],
+                "No": [
+                    "integer"
+                ],
+                "Yes": [
+                    "integer"
+                ],
+                "Invalid": [
+                    "integer"
+                ],
+                "TxFailed": [
+                    "integer"
+                ],
+                "Evaluating": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Checkpoint",
+            "fields": {
+                "time": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "History",
+            "fields": {
+                "history": [
+                    "array",
+                    "Checkpoint"
+                ]
+            }
+        },
+        {
+            "name": "Account",
+            "fields": {
+                "stakedHistory": [
+                    "History"
+                ],
+                "claimHistory": [
+                    "History"
+                ]
+            }
+        },
+        {
+            "name": "Proposal",
+            "fields": {
+                "proposalId": [
+                    "integer"
+                ],
+                "proposer": [
+                    "integer"
+                ],
+                "startBlockNumber": [
+                    "integer"
+                ],
+                "targetContractRegistryKey": [
+                    "integer"
+                ],
+                "targetContractAddress": [
+                    "integer"
+                ],
+                "callValue": [
+                    "integer"
+                ],
+                "signature": [
+                    "unknown"
+                ],
+                "callData": [
+                    "integer"
+                ],
+                "outcome": [
+                    "integer"
+                ],
+                "voteMagnitudeYes": [
+                    "integer"
+                ],
+                "voteMagnitudeNo": [
+                    "integer"
+                ],
+                "numVotes": [
+                    "integer"
+                ],
+                "votes": [
+                    "array",
+                    "integer",
+                    [
+                        "integer"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "Vote",
+            "type": [
+                "struct_Vote"
+            ],
+            "init": [
+                "0xEnumInit_Vote"
+            ]
+        },
+        {
+            "name": "Outcome",
+            "type": [
+                "struct_Outcome"
+            ],
+            "init": [
+                "0xEnumInit_Outcome"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x18b9"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x18ba"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x18bb"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_NOT_INITIALIZED",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x14"
+            ]
+        },
+        {
+            "name": "ERROR_ALREADY_INITIALIZED",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x15"
+            ]
+        },
+        {
+            "name": "MAX_UINT192",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_VALUE_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_CANNOT_ADD_PAST_VALUE",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_UINT8",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_UINT64",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_UINT8_NUMBER_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_UINT64_NUMBER_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "_balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_allowances",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "_totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialized",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "initializing",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "______gap",
+            "type": [
+                "array",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_owner",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "isInitialized",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "addressStorage",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "addressStorageHistory",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_TOKEN_NOT_CONTRACT",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_AMOUNT_ZERO",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_TOKEN_TRANSFER",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_NOT_ENOUGH_BALANCE",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "stakingToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "accounts",
+            "type": [
+                "array",
+                "integer",
+                "Account"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalStakedHistory",
+            "type": [
+                "History"
+            ],
+            "init": []
+        },
+        {
+            "name": "governanceAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "claimsManagerAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "delegateManagerAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "serviceProviderFactoryAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "registry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "registryAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "stakingAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "votingPeriod",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "votingQuorum",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "guardianAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "proposals",
+            "type": [
+                "array",
+                "integer",
+                "Proposal"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastProposalId",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x28"
+            ]
+        },
+        {
+            "name": "Checkpointing",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Uint256Helpers",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "OpenZeppelinUpgradesAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Address",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20Burnable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Initializable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Context",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Ownable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "InitializableV2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Registry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Staking",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Governance",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Vote",
+            "instructions": [
+                "Vote.None = 0",
+                "Vote.No = 1",
+                "Vote.Yes = 2"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Outcome",
+            "instructions": [
+                "Outcome.InProgress = 0",
+                "Outcome.No = 1",
+                "Outcome.Yes = 2",
+                "Outcome.Invalid = 3",
+                "Outcome.TxFailed = 4",
+                "Outcome.Evaluating = 5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "ERROR_NOT_INITIALIZED = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "ERROR_ALREADY_INITIALIZED = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x28",
+            "instructions": [
+                "lastProposalId = 0"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1cb",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1cc",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1cd",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x204",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x205",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x206",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x242",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x243",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x244",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c4",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c5",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c6",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x346",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x347",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x348",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3ca",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4b8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4b9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4ba",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x57e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x57f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x580",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5df",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5e0",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5e1",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x641",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x642",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x643",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6a9",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6aa",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6ab",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x70b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x70c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x70d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x76e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x76f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x770",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7cf",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7d0",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7d1",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x834",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x835",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x836",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x899",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x89a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x89b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8fe",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8ff",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x900",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x963",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x964",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x965",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9c8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9c9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x9ca",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa2c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa2d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa2e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa8f",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa90",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xa91",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xaf2",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xaf3",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xaf4",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb55",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb56",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb57",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbb8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbb9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbba",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbe0",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbe1",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xbe2",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc04",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc05",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc06",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc28",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc29",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc2a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc80",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc81",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc82",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd28",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd29",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd2a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xda7",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xda8",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xda9",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe21",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe22",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe23",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe9c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe9d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe9e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf15",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf16",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf17",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf90",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf91",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf92",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1009",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x100a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x100b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1083",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1084",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1085",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1129",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x112a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x112b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11b4",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11b5",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11b6",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x123d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x123e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x123f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x128b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x128c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x128d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12d7",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12d8",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x12d9",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x18b9",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x18ba",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x18bb",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "stakingAddress",
+            "addrs": [
+                "0x2",
+                "0x1f"
+            ]
+        },
+        {
+            "name": "votingPeriod",
+            "addrs": [
+                "0x2",
+                "0x21",
+                "0x18e"
+            ]
+        },
+        {
+            "name": "votingQuorum",
+            "addrs": [
+                "0x2",
+                "0x23",
+                "0x192"
+            ]
+        },
+        {
+            "name": "registryAddress",
+            "addrs": [
+                "0x2",
+                "0x25",
+                "0x186"
+            ]
+        },
+        {
+            "name": "registry",
+            "addrs": [
+                "0x2",
+                "0x27",
+                "0x18a"
+            ]
+        },
+        {
+            "name": "proposals",
+            "addrs": [
+                "0x2",
+                "0xb4",
+                "0xd4",
+                "0x19a",
+                "0x19d",
+                "0x1a2",
+                "0x1a8",
+                "0x1ae",
+                "0x1b3",
+                "0x1b7",
+                "0x1bb",
+                "0x1bf",
+                "0x1c1"
+            ]
+        },
+        {
+            "name": "guardianAddress",
+            "addrs": [
+                "0x2",
+                "0xb7",
+                "0x196"
+            ]
+        },
+        {
+            "name": "isInitialized",
+            "addrs": [
+                "0x2",
+                "0xb9",
+                "0x15e"
+            ]
+        },
+        {
+            "name": "initializing",
+            "addrs": [
+                "0x2",
+                "0xc0",
+                "0xc7",
+                "0x165",
+                "0x16c",
+                "0x173",
+                "0x177"
+            ]
+        },
+        {
+            "name": "initialized",
+            "addrs": [
+                "0x2",
+                "0xce",
+                "0x17b",
+                "0x182"
+            ]
+        },
+        {
+            "name": "lastProposalId",
+            "addrs": [
+                "0x2",
+                "0xd5"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_0 = msg.sender",
+                "CLR_1 = this.address",
+                "RTMP_761 = CLR_0 == CLR_1",
+                "CONDITION RTMP_761 0x1e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "stakingAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_2 = msg.sender",
+                "CLR_3 = this.address",
+                "RTMP_762 = CLR_2 == CLR_3",
+                "CONDITION RTMP_762 0x20 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "votingPeriod = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_4 = msg.sender",
+                "CLR_5 = this.address",
+                "RTMP_763 = CLR_4 == CLR_5",
+                "CONDITION RTMP_763 0x22 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "votingQuorum = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_6 = msg.sender",
+                "CLR_7 = this.address",
+                "RTMP_764 = CLR_6 == CLR_7",
+                "CONDITION RTMP_764 0x24 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "registryAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_8 = msg.sender",
+                "CLR_9 = this.address",
+                "RTMP_765 = CLR_8 == CLR_9",
+                "CONDITION RTMP_765 0x26 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "registry = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb4",
+            "instructions": [
+                "CLR_10 = proposals[U]",
+                "REF_354 = CLR_10",
+                "CLR_11 = REF_354.outcome",
+                "REF_355 = CLR_11",
+                "CLR_12 = Outcome.InProgress",
+                "REF_356 = CLR_12",
+                "RTMP_842 = REF_355 == REF_356",
+                "CONDITION RTMP_842 0xb5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb5",
+            "instructions": [
+                "CLR_13 = msg.sender",
+                "RTMP_843 = CLR_13 == guardianAddress",
+                "CONDITION RTMP_843 0xb3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb3",
+            "instructions": [
+                "CLR_14 = proposals[U]",
+                "REF_352 = CLR_14",
+                "CLR_15 = REF_352.outcome",
+                "REF_353 = CLR_15",
+                "REF_352.outcome = 1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb7",
+            "instructions": [
+                "CLR_16 = msg.sender",
+                "RTMP_844 = CLR_16 == guardianAddress",
+                "CONDITION RTMP_844 0xb6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb6",
+            "instructions": [
+                "guardianAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb9",
+            "instructions": [
+                "RTMP_845 = initializing == true",
+                "CONDITION RTMP_845 0xba 0xba"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xba",
+            "instructions": [
+                "RTMP_846 = true",
+                "CONDITION RTMP_846 0xbb 0xbb"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbb",
+            "instructions": [
+                "RTMP_847 = ! initialized",
+                "CONDITION RTMP_847 0xbc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbc",
+            "instructions": [
+                "RTMP_925 = initializing == true",
+                "CONDITION RTMP_925 0xbd 0xbd"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbd",
+            "instructions": [
+                "RTMP_926 = true",
+                "CONDITION RTMP_926 0xbe 0xbe"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbe",
+            "instructions": [
+                "RTMP_927 = ! initialized",
+                "CONDITION RTMP_927 0xb8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb8",
+            "instructions": [
+                "isInitialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc7",
+            "instructions": [
+                "RTMP_854 = initializing == true",
+                "CONDITION RTMP_854 0xc8 0xc8"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc8",
+            "instructions": [
+                "RTMP_855 = true",
+                "CONDITION RTMP_855 0xc9 0xc9"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc9",
+            "instructions": [
+                "RTMP_856 = ! initialized",
+                "CONDITION RTMP_856 0xca 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xca",
+            "instructions": [
+                "RTMP_931 = initializing == true",
+                "CONDITION RTMP_931 0xcb 0xcb"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xcb",
+            "instructions": [
+                "RTMP_932 = true",
+                "CONDITION RTMP_932 0xcc 0xcc"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xcc",
+            "instructions": [
+                "RTMP_933 = ! initialized",
+                "CONDITION RTMP_933 0xc6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc6",
+            "instructions": [
+                "initializing = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xce",
+            "instructions": [
+                "RTMP_851 = initializing == true",
+                "CONDITION RTMP_851 0xcf 0xcf"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xcf",
+            "instructions": [
+                "RTMP_852 = true",
+                "CONDITION RTMP_852 0xd0 0xd0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd0",
+            "instructions": [
+                "RTMP_853 = ! initialized",
+                "CONDITION RTMP_853 0xd1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd1",
+            "instructions": [
+                "RTMP_934 = initializing == true",
+                "CONDITION RTMP_934 0xd2 0xd2"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd2",
+            "instructions": [
+                "RTMP_935 = true",
+                "CONDITION RTMP_935 0xd3 0xd3"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd3",
+            "instructions": [
+                "RTMP_936 = ! initialized",
+                "CONDITION RTMP_936 0xcd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xcd",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd4",
+            "instructions": [
+                "CLR_17 = proposals[U]",
+                "REF_357 = CLR_17",
+                "proposals[0] = U",
+                "proposals[1] = U",
+                "proposals[2] = U",
+                "proposals[3] = U",
+                "proposals[4] = U",
+                "proposals[5] = U",
+                "proposals[6] = U",
+                "proposals[7] = U",
+                "proposals[8] = U",
+                "proposals[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd5",
+            "instructions": [
+                "TMP_857 = lastProposalId + 1",
+                "lastProposalId = TMP_857"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15e",
+            "instructions": [
+                "RTMP_845 = initializing == true",
+                "CONDITION RTMP_845 0x15f 0x15f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15f",
+            "instructions": [
+                "RTMP_846 = true",
+                "CONDITION RTMP_846 0x160 0x160"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x160",
+            "instructions": [
+                "RTMP_847 = ! initialized",
+                "CONDITION RTMP_847 0x161 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x161",
+            "instructions": [
+                "RTMP_925 = initializing == true",
+                "CONDITION RTMP_925 0x162 0x162"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x162",
+            "instructions": [
+                "RTMP_926 = true",
+                "CONDITION RTMP_926 0x163 0x163"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x163",
+            "instructions": [
+                "RTMP_927 = ! initialized",
+                "CONDITION RTMP_927 0x15d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15d",
+            "instructions": [
+                "isInitialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x177",
+            "instructions": [
+                "RTMP_958 = initializing == true",
+                "CONDITION RTMP_958 0x178 0x178"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x178",
+            "instructions": [
+                "RTMP_959 = true",
+                "CONDITION RTMP_959 0x179 0x179"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x179",
+            "instructions": [
+                "RTMP_960 = ! initialized",
+                "CONDITION RTMP_960 0x176 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x176",
+            "instructions": [
+                "initializing = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x182",
+            "instructions": [
+                "RTMP_955 = initializing == true",
+                "CONDITION RTMP_955 0x183 0x183"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x183",
+            "instructions": [
+                "RTMP_956 = true",
+                "CONDITION RTMP_956 0x184 0x184"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x184",
+            "instructions": [
+                "RTMP_957 = ! initialized",
+                "CONDITION RTMP_957 0x181 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x181",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x186",
+            "instructions": [
+                "RTMP_937 = initializing == true",
+                "CONDITION RTMP_937 0x187 0x187"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x187",
+            "instructions": [
+                "RTMP_938 = true",
+                "CONDITION RTMP_938 0x188 0x188"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x188",
+            "instructions": [
+                "RTMP_939 = ! initialized",
+                "CONDITION RTMP_939 0x185 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x185",
+            "instructions": [
+                "registryAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18a",
+            "instructions": [
+                "RTMP_940 = initializing == true",
+                "CONDITION RTMP_940 0x18b 0x18b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18b",
+            "instructions": [
+                "RTMP_941 = true",
+                "CONDITION RTMP_941 0x18c 0x18c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18c",
+            "instructions": [
+                "RTMP_942 = ! initialized",
+                "CONDITION RTMP_942 0x189 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x189",
+            "instructions": [
+                "registry = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18e",
+            "instructions": [
+                "RTMP_943 = initializing == true",
+                "CONDITION RTMP_943 0x18f 0x18f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18f",
+            "instructions": [
+                "RTMP_944 = true",
+                "CONDITION RTMP_944 0x190 0x190"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x190",
+            "instructions": [
+                "RTMP_945 = ! initialized",
+                "CONDITION RTMP_945 0x18d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18d",
+            "instructions": [
+                "votingPeriod = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x192",
+            "instructions": [
+                "RTMP_946 = initializing == true",
+                "CONDITION RTMP_946 0x193 0x193"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x193",
+            "instructions": [
+                "RTMP_947 = true",
+                "CONDITION RTMP_947 0x194 0x194"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x194",
+            "instructions": [
+                "RTMP_948 = ! initialized",
+                "CONDITION RTMP_948 0x191 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x191",
+            "instructions": [
+                "votingQuorum = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x196",
+            "instructions": [
+                "RTMP_949 = initializing == true",
+                "CONDITION RTMP_949 0x197 0x197"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x197",
+            "instructions": [
+                "RTMP_950 = true",
+                "CONDITION RTMP_950 0x198 0x198"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x198",
+            "instructions": [
+                "RTMP_951 = ! initialized",
+                "CONDITION RTMP_951 0x195 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x195",
+            "instructions": [
+                "guardianAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19a",
+            "instructions": [
+                "CLR_18 = proposals[U]",
+                "REF_361 = CLR_18",
+                "CLR_19 = REF_361.outcome",
+                "REF_362 = CLR_19",
+                "CLR_20 = Outcome.InProgress",
+                "REF_363 = CLR_20",
+                "RTMP_961 = REF_362 == REF_363",
+                "CONDITION RTMP_961 0x19b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19b",
+            "instructions": [
+                "CLR_21 = proposals[U]",
+                "REF_364 = CLR_21",
+                "CLR_22 = REF_364.startBlockNumber",
+                "REF_365 = CLR_22",
+                "CLR_23 = block.number",
+                "RTMP_962 = CLR_23 > REF_365",
+                "CONDITION RTMP_962 0x199 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x199",
+            "instructions": [
+                "CLR_24 = proposals[U]",
+                "REF_358 = CLR_24",
+                "CLR_25 = REF_358.votes",
+                "REF_359 = CLR_25",
+                "CLR_26 = REF_359[U]",
+                "REF_360 = CLR_26",
+                "REF_359[0] = U",
+                "REF_359[1] = U",
+                "REF_359[2] = U",
+                "REF_359[3] = U",
+                "REF_359[4] = U",
+                "REF_359[5] = U",
+                "REF_359[6] = U",
+                "REF_359[7] = U",
+                "REF_359[8] = U",
+                "REF_359[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19d",
+            "instructions": [
+                "CLR_27 = proposals[U]",
+                "REF_368 = CLR_27",
+                "CLR_28 = REF_368.votes",
+                "REF_369 = CLR_28",
+                "CLR_29 = REF_369[U]",
+                "REF_370 = CLR_29",
+                "CLR_30 = Vote.None",
+                "REF_371 = CLR_30",
+                "RTMP_963 = REF_370 == REF_371",
+                "CONDITION RTMP_963 0x1 0x19e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19e",
+            "instructions": [
+                "CLR_31 = proposals[U]",
+                "REF_372 = CLR_31",
+                "CLR_32 = REF_372.outcome",
+                "REF_373 = CLR_32",
+                "CLR_33 = Outcome.InProgress",
+                "REF_374 = CLR_33",
+                "RTMP_964 = REF_373 == REF_374",
+                "CONDITION RTMP_964 0x19f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19f",
+            "instructions": [
+                "CLR_34 = proposals[U]",
+                "REF_375 = CLR_34",
+                "CLR_35 = REF_375.votes",
+                "REF_376 = CLR_35",
+                "CLR_36 = REF_376[U]",
+                "REF_377 = CLR_36",
+                "CLR_37 = Vote.Yes",
+                "REF_378 = CLR_37",
+                "RTMP_965 = REF_377 == REF_378",
+                "CONDITION RTMP_965 0x1a0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a0",
+            "instructions": [
+                "CLR_38 = proposals[U]",
+                "REF_379 = CLR_38",
+                "CLR_39 = REF_379.startBlockNumber",
+                "REF_380 = CLR_39",
+                "CLR_40 = block.number",
+                "RTMP_966 = CLR_40 > REF_380",
+                "CONDITION RTMP_966 0x19c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19c",
+            "instructions": [
+                "CLR_41 = proposals[U]",
+                "REF_366 = CLR_41",
+                "CLR_42 = REF_366.voteMagnitudeYes",
+                "REF_367 = CLR_42",
+                "REF_366.voteMagnitudeYes = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a2",
+            "instructions": [
+                "CLR_43 = proposals[U]",
+                "REF_383 = CLR_43",
+                "CLR_44 = REF_383.votes",
+                "REF_384 = CLR_44",
+                "CLR_45 = REF_384[U]",
+                "REF_385 = CLR_45",
+                "CLR_46 = Vote.No",
+                "REF_386 = CLR_46",
+                "RTMP_967 = REF_385 == REF_386",
+                "CONDITION RTMP_967 0x1a3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a3",
+            "instructions": [
+                "CLR_47 = proposals[U]",
+                "REF_387 = CLR_47",
+                "CLR_48 = REF_387.votes",
+                "REF_388 = CLR_48",
+                "CLR_49 = REF_388[U]",
+                "REF_389 = CLR_49",
+                "CLR_50 = Vote.None",
+                "REF_390 = CLR_50",
+                "RTMP_968 = REF_389 == REF_390",
+                "CONDITION RTMP_968 0x1 0x1a4"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a4",
+            "instructions": [
+                "CLR_51 = proposals[U]",
+                "REF_391 = CLR_51",
+                "CLR_52 = REF_391.outcome",
+                "REF_392 = CLR_52",
+                "CLR_53 = Outcome.InProgress",
+                "REF_393 = CLR_53",
+                "RTMP_969 = REF_392 == REF_393",
+                "CONDITION RTMP_969 0x1a5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a5",
+            "instructions": [
+                "CLR_54 = proposals[U]",
+                "REF_394 = CLR_54",
+                "CLR_55 = REF_394.votes",
+                "REF_395 = CLR_55",
+                "CLR_56 = REF_395[U]",
+                "REF_396 = CLR_56",
+                "CLR_57 = Vote.Yes",
+                "REF_397 = CLR_57",
+                "RTMP_970 = REF_396 == REF_397",
+                "CONDITION RTMP_970 0x1 0x1a6"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a6",
+            "instructions": [
+                "CLR_58 = proposals[U]",
+                "REF_398 = CLR_58",
+                "CLR_59 = REF_398.startBlockNumber",
+                "REF_399 = CLR_59",
+                "CLR_60 = block.number",
+                "RTMP_971 = CLR_60 > REF_399",
+                "CONDITION RTMP_971 0x1a1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a1",
+            "instructions": [
+                "CLR_61 = proposals[U]",
+                "REF_381 = CLR_61",
+                "CLR_62 = REF_381.voteMagnitudeYes",
+                "REF_382 = CLR_62",
+                "REF_381.voteMagnitudeYes = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a8",
+            "instructions": [
+                "CLR_63 = proposals[U]",
+                "REF_402 = CLR_63",
+                "CLR_64 = REF_402.votes",
+                "REF_403 = CLR_64",
+                "CLR_65 = REF_403[U]",
+                "REF_404 = CLR_65",
+                "CLR_66 = Vote.No",
+                "REF_405 = CLR_66",
+                "RTMP_972 = REF_404 == REF_405",
+                "CONDITION RTMP_972 0x1a9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a9",
+            "instructions": [
+                "CLR_67 = proposals[U]",
+                "REF_406 = CLR_67",
+                "CLR_68 = REF_406.votes",
+                "REF_407 = CLR_68",
+                "CLR_69 = REF_407[U]",
+                "REF_408 = CLR_69",
+                "CLR_70 = Vote.None",
+                "REF_409 = CLR_70",
+                "RTMP_973 = REF_408 == REF_409",
+                "CONDITION RTMP_973 0x1 0x1aa"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1aa",
+            "instructions": [
+                "CLR_71 = proposals[U]",
+                "REF_410 = CLR_71",
+                "CLR_72 = REF_410.outcome",
+                "REF_411 = CLR_72",
+                "CLR_73 = Outcome.InProgress",
+                "REF_412 = CLR_73",
+                "RTMP_974 = REF_411 == REF_412",
+                "CONDITION RTMP_974 0x1ab 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ab",
+            "instructions": [
+                "CLR_74 = proposals[U]",
+                "REF_413 = CLR_74",
+                "CLR_75 = REF_413.votes",
+                "REF_414 = CLR_75",
+                "CLR_76 = REF_414[U]",
+                "REF_415 = CLR_76",
+                "CLR_77 = Vote.Yes",
+                "REF_416 = CLR_77",
+                "RTMP_975 = REF_415 == REF_416",
+                "CONDITION RTMP_975 0x1 0x1ac"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ac",
+            "instructions": [
+                "CLR_78 = proposals[U]",
+                "REF_417 = CLR_78",
+                "CLR_79 = REF_417.startBlockNumber",
+                "REF_418 = CLR_79",
+                "CLR_80 = block.number",
+                "RTMP_976 = CLR_80 > REF_418",
+                "CONDITION RTMP_976 0x1a7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a7",
+            "instructions": [
+                "CLR_81 = proposals[U]",
+                "REF_400 = CLR_81",
+                "CLR_82 = REF_400.voteMagnitudeNo",
+                "REF_401 = CLR_82",
+                "REF_400.voteMagnitudeNo = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ae",
+            "instructions": [
+                "CLR_83 = proposals[U]",
+                "REF_421 = CLR_83",
+                "CLR_84 = REF_421.votes",
+                "REF_422 = CLR_84",
+                "CLR_85 = REF_422[U]",
+                "REF_423 = CLR_85",
+                "CLR_86 = Vote.None",
+                "REF_424 = CLR_86",
+                "RTMP_977 = REF_423 == REF_424",
+                "CONDITION RTMP_977 0x1 0x1af"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1af",
+            "instructions": [
+                "CLR_87 = proposals[U]",
+                "REF_425 = CLR_87",
+                "CLR_88 = REF_425.outcome",
+                "REF_426 = CLR_88",
+                "CLR_89 = Outcome.InProgress",
+                "REF_427 = CLR_89",
+                "RTMP_978 = REF_426 == REF_427",
+                "CONDITION RTMP_978 0x1b0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b0",
+            "instructions": [
+                "CLR_90 = proposals[U]",
+                "REF_428 = CLR_90",
+                "CLR_91 = REF_428.votes",
+                "REF_429 = CLR_91",
+                "CLR_92 = REF_429[U]",
+                "REF_430 = CLR_92",
+                "CLR_93 = Vote.Yes",
+                "REF_431 = CLR_93",
+                "RTMP_979 = REF_430 == REF_431",
+                "CONDITION RTMP_979 0x1b1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b1",
+            "instructions": [
+                "CLR_94 = proposals[U]",
+                "REF_432 = CLR_94",
+                "CLR_95 = REF_432.startBlockNumber",
+                "REF_433 = CLR_95",
+                "CLR_96 = block.number",
+                "RTMP_980 = CLR_96 > REF_433",
+                "CONDITION RTMP_980 0x1ad 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ad",
+            "instructions": [
+                "CLR_97 = proposals[U]",
+                "REF_419 = CLR_97",
+                "CLR_98 = REF_419.voteMagnitudeNo",
+                "REF_420 = CLR_98",
+                "REF_419.voteMagnitudeNo = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b3",
+            "instructions": [
+                "CLR_99 = proposals[U]",
+                "REF_436 = CLR_99",
+                "CLR_100 = REF_436.votes",
+                "REF_437 = CLR_100",
+                "CLR_101 = REF_437[U]",
+                "REF_438 = CLR_101",
+                "CLR_102 = Vote.None",
+                "REF_439 = CLR_102",
+                "RTMP_981 = REF_438 == REF_439",
+                "CONDITION RTMP_981 0x1b4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b4",
+            "instructions": [
+                "CLR_103 = proposals[U]",
+                "REF_440 = CLR_103",
+                "CLR_104 = REF_440.outcome",
+                "REF_441 = CLR_104",
+                "CLR_105 = Outcome.InProgress",
+                "REF_442 = CLR_105",
+                "RTMP_982 = REF_441 == REF_442",
+                "CONDITION RTMP_982 0x1b5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b5",
+            "instructions": [
+                "CLR_106 = proposals[U]",
+                "REF_443 = CLR_106",
+                "CLR_107 = REF_443.startBlockNumber",
+                "REF_444 = CLR_107",
+                "CLR_108 = block.number",
+                "RTMP_983 = CLR_108 > REF_444",
+                "CONDITION RTMP_983 0x1b2 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b2",
+            "instructions": [
+                "CLR_109 = proposals[U]",
+                "REF_434 = CLR_109",
+                "CLR_110 = REF_434.voteMagnitudeYes",
+                "REF_435 = CLR_110",
+                "REF_434.voteMagnitudeYes = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b7",
+            "instructions": [
+                "CLR_111 = proposals[U]",
+                "REF_447 = CLR_111",
+                "CLR_112 = REF_447.votes",
+                "REF_448 = CLR_112",
+                "CLR_113 = REF_448[U]",
+                "REF_449 = CLR_113",
+                "CLR_114 = Vote.None",
+                "REF_450 = CLR_114",
+                "RTMP_984 = REF_449 == REF_450",
+                "CONDITION RTMP_984 0x1b8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b8",
+            "instructions": [
+                "CLR_115 = proposals[U]",
+                "REF_451 = CLR_115",
+                "CLR_116 = REF_451.outcome",
+                "REF_452 = CLR_116",
+                "CLR_117 = Outcome.InProgress",
+                "REF_453 = CLR_117",
+                "RTMP_985 = REF_452 == REF_453",
+                "CONDITION RTMP_985 0x1b9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b9",
+            "instructions": [
+                "CLR_118 = proposals[U]",
+                "REF_454 = CLR_118",
+                "CLR_119 = REF_454.startBlockNumber",
+                "REF_455 = CLR_119",
+                "CLR_120 = block.number",
+                "RTMP_986 = CLR_120 > REF_455",
+                "CONDITION RTMP_986 0x1b6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b6",
+            "instructions": [
+                "CLR_121 = proposals[U]",
+                "REF_445 = CLR_121",
+                "CLR_122 = REF_445.voteMagnitudeNo",
+                "REF_446 = CLR_122",
+                "REF_445.voteMagnitudeNo = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bb",
+            "instructions": [
+                "CLR_123 = proposals[U]",
+                "REF_458 = CLR_123",
+                "CLR_124 = REF_458.votes",
+                "REF_459 = CLR_124",
+                "CLR_125 = REF_459[U]",
+                "REF_460 = CLR_125",
+                "CLR_126 = Vote.None",
+                "REF_461 = CLR_126",
+                "RTMP_987 = REF_460 == REF_461",
+                "CONDITION RTMP_987 0x1bc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bc",
+            "instructions": [
+                "CLR_127 = proposals[U]",
+                "REF_462 = CLR_127",
+                "CLR_128 = REF_462.outcome",
+                "REF_463 = CLR_128",
+                "CLR_129 = Outcome.InProgress",
+                "REF_464 = CLR_129",
+                "RTMP_988 = REF_463 == REF_464",
+                "CONDITION RTMP_988 0x1bd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bd",
+            "instructions": [
+                "CLR_130 = proposals[U]",
+                "REF_465 = CLR_130",
+                "CLR_131 = REF_465.startBlockNumber",
+                "REF_466 = CLR_131",
+                "CLR_132 = block.number",
+                "RTMP_989 = CLR_132 > REF_466",
+                "CONDITION RTMP_989 0x1ba 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ba",
+            "instructions": [
+                "CLR_133 = proposals[U]",
+                "REF_456 = CLR_133",
+                "CLR_134 = REF_456.numVotes",
+                "REF_457 = CLR_134",
+                "REF_456.numVotes = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bf",
+            "instructions": [
+                "CLR_135 = proposals[U]",
+                "REF_469 = CLR_135",
+                "CLR_136 = REF_469.outcome",
+                "REF_470 = CLR_136",
+                "CLR_137 = Outcome.InProgress",
+                "REF_471 = CLR_137",
+                "RTMP_990 = REF_470 == REF_471",
+                "CONDITION RTMP_990 0x1be 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1be",
+            "instructions": [
+                "CLR_138 = proposals[U]",
+                "REF_467 = CLR_138",
+                "CLR_139 = REF_467.outcome",
+                "REF_468 = CLR_139",
+                "REF_467.outcome = 5"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c1",
+            "instructions": [
+                "CLR_140 = proposals[U]",
+                "REF_476 = CLR_140",
+                "CLR_141 = REF_476.outcome",
+                "REF_477 = CLR_141",
+                "CLR_142 = Outcome.InProgress",
+                "REF_478 = CLR_142",
+                "RTMP_991 = REF_477 == REF_478",
+                "CONDITION RTMP_991 0x1c0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c0",
+            "instructions": [
+                "CLR_143 = Outcome.No",
+                "REF_472 = CLR_143",
+                "CLR_144 = Outcome.TxFailed",
+                "REF_473 = CLR_144",
+                "CLR_145 = Outcome.Yes",
+                "REF_474 = CLR_145",
+                "CLR_146 = Outcome.Invalid",
+                "REF_475 = CLR_146",
+                "CLR_147 = proposals[U]",
+                "CLR_147.outcome = REF_472",
+                "CLR_148 = proposals[U]",
+                "CLR_148.outcome = REF_473",
+                "CLR_149 = proposals[U]",
+                "CLR_149.outcome = REF_474",
+                "CLR_150 = proposals[U]",
+                "CLR_150.outcome = REF_475"
+            ]
+        }
+    ],
+    "root_addr": "0x18bc",
+    "dest_addrs": [
+        "0x18c0"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18bc",
+            "instructions": [
+                "NOP",
+                "length = NEW_VAL integer",
+                "_targetContractAddress = NEW_VAL integer",
+                "lastIndex = NEW_VAL integer",
+                "_callValue = NEW_VAL integer",
+                "_signature = NEW_VAL unknown",
+                "_callData = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "_proposalId = NEW_VAL integer",
+                "_accountAddress = NEW_VAL integer",
+                "startBlockNumber = NEW_VAL integer",
+                "_blockNumber = NEW_VAL integer",
+                "low = NEW_VAL integer",
+                "endBlockNumber = NEW_VAL integer",
+                "high = NEW_VAL integer",
+                "targetContractAddress = NEW_VAL integer",
+                "self = NEW_VAL History",
+                "b = NEW_VAL integer",
+                "_time = NEW_VAL integer",
+                "outcome = NEW_VAL unknown",
+                "mid = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "self = NEW_VAL History",
+                "checkpoint = NEW_VAL Checkpoint",
+                "_time = NEW_VAL integer",
+                "midTime = NEW_VAL integer",
+                "encodedCallData = NEW_VAL integer",
+                "JUMP 0x18bd"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18bd",
+            "instructions": [
+                "NOP",
+                "JUMP 0x18be"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18be",
+            "instructions": [
+                "TMP_393 = isInitialized == true",
+                "CONDITION TMP_393 0x18be_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18be_r0",
+            "instructions": [
+                "JUMP 0x18bf"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18c0",
+            "instructions": [
+                "CLR_151 = proposals[_proposalId]",
+                "REF_264 = CLR_151",
+                "CLR_152 = REF_264.outcome",
+                "REF_265 = CLR_152",
+                "CLR_153 = Outcome.InProgress",
+                "REF_266 = CLR_153",
+                "TMP_464 = REF_265 == REF_266",
+                "CONDITION TMP_464 0x18c0_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18c0_r0",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18bf",
+            "instructions": [
+                "TMP_460 = _proposalId <= lastProposalId",
+                "TMP_461 = _proposalId > 0",
+                "TMP_462 = TMP_460 && TMP_461",
+                "CONDITION TMP_462 0x18bf_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18bf_r0",
+            "instructions": [
+                "JUMP 0x18c0"
+            ]
+        },
+        {
+            "scope": "evaluateProposalOutcome",
+            "addr": "0x18c1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1969 @@
+{
+    "file": "GnosisSafeRegistry.sol",
+    "global_structs": [
+        {
+            "name": "struct_TradeDirections",
+            "fields": {
+                "Long": [
+                    "integer"
+                ],
+                "Short": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_Types",
+            "fields": {
+                "Bid": [
+                    "integer"
+                ],
+                "Ask": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_MarketType",
+            "fields": {
+                "YES_NO": [
+                    "integer"
+                ],
+                "CATEGORICAL": [
+                    "integer"
+                ],
+                "SCALAR": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Data",
+            "fields": {
+                "market": [
+                    "integer"
+                ],
+                "augur": [
+                    "integer"
+                ],
+                "augurTrading": [
+                    "integer"
+                ],
+                "kycToken": [
+                    "integer"
+                ],
+                "shareToken": [
+                    "integer"
+                ],
+                "cash": [
+                    "integer"
+                ],
+                "id": [
+                    "integer"
+                ],
+                "creator": [
+                    "integer"
+                ],
+                "outcome": [
+                    "integer"
+                ],
+                "orderType": [
+                    "integer"
+                ],
+                "amount": [
+                    "integer"
+                ],
+                "price": [
+                    "integer"
+                ],
+                "sharesEscrowed": [
+                    "integer"
+                ],
+                "moneyEscrowed": [
+                    "integer"
+                ],
+                "betterOrderId": [
+                    "integer"
+                ],
+                "worseOrderId": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "TradeDirections",
+            "type": [
+                "struct_TradeDirections"
+            ],
+            "init": [
+                "0xEnumInit_TradeDirections"
+            ]
+        },
+        {
+            "name": "Types",
+            "type": [
+                "struct_Types"
+            ],
+            "init": [
+                "0xEnumInit_Types"
+            ]
+        },
+        {
+            "name": "MarketType",
+            "type": [
+                "struct_MarketType"
+            ],
+            "init": [
+                "0xEnumInit_MarketType"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x448"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x449"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x44a"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_APPROVAL_AMOUNT",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "invalidMarketsTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "validityBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "incorrectDesignatedReportTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialReportBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "designatedReportNoShowsTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "designatedReporterNoShowBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "creationTime",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "marketBalance",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "masterCopy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "accountSafes",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "accountSafeIndexes",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "augur",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "proxyCodeHash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "gnosisSafeMasterCopy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialized",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IStandardToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ITyped",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IReputationToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IV2ReputationToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IOwnable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ICash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC1155",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IShareToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IReportingParticipant",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IInitialReporter",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAffiliateValidator",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IMarket",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IDisputeWindow",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IUniverse",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMathUint256",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAugurTrading",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IOrders",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Order",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAugur",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IGnosisSafe",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IProxyFactory",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Initializable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IProxy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAffiliates",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "GnosisSafeRegistry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_TradeDirections",
+            "instructions": [
+                "TradeDirections.Long = 0",
+                "TradeDirections.Short = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Types",
+            "instructions": [
+                "Types.Bid = 0",
+                "Types.Ask = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_MarketType",
+            "instructions": [
+                "MarketType.YES_NO = 0",
+                "MarketType.CATEGORICAL = 1",
+                "MarketType.SCALAR = 2"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "MAX_APPROVAL_AMOUNT = 115792089237316195423570985008687907853269984665640564039457584007913129639936"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "initialized = false"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2f",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x30",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4d",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4e",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4f",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x89",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x8b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xad",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xae",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xaf",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd3",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd4",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd5",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf9",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xfa",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xfb",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x11f",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x120",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x121",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x136",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x137",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x138",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x182",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x183",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x184",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1a8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1a9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1aa",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1ce",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1cf",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1d0",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f4",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f5",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x1f6",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x21c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x240",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x241",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x242",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x266",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x267",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x268",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x27c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x27d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x27e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x292",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x293",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x294",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2aa",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2be",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2bf",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2c0",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d5",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d6",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2d7",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2fb",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2fc",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2fd",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x31e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x342",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x343",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x344",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x363",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x364",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x365",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x389",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3aa",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3ab",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3ac",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3d0",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3d1",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3d2",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3f1",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3f2",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3f3",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x41a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x41b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x41c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x448",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x449",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x44a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "accountSafes",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0x12"
+            ]
+        },
+        {
+            "name": "accountSafeIndexes",
+            "addrs": [
+                "0x2",
+                "0x8"
+            ]
+        },
+        {
+            "name": "initialized",
+            "addrs": [
+                "0x2",
+                "0xa"
+            ]
+        },
+        {
+            "name": "augur",
+            "addrs": [
+                "0x2",
+                "0xd"
+            ]
+        },
+        {
+            "name": "gnosisSafeMasterCopy",
+            "addrs": [
+                "0x2",
+                "0xf"
+            ]
+        },
+        {
+            "name": "proxyCodeHash",
+            "addrs": [
+                "0x2",
+                "0x11"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_0 = accountSafes[U]",
+                "REF_149 = CLR_0",
+                "accountSafes[0] = U",
+                "accountSafes[1] = U",
+                "accountSafes[2] = U",
+                "accountSafes[3] = U",
+                "accountSafes[4] = U",
+                "accountSafes[5] = U",
+                "accountSafes[6] = U",
+                "accountSafes[7] = U",
+                "accountSafes[8] = U",
+                "accountSafes[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_1 = accountSafes[U]",
+                "REF_151 = CLR_1",
+                "CLR_2 = REF_151[U]",
+                "REF_152 = CLR_2",
+                "CLR_3 = msg.sender",
+                "RTMP_193 = CLR_3 == 0",
+                "CLR_4 = msg.sender",
+                "RTMP_194 = CLR_4 == REF_152",
+                "RTMP_195 = RTMP_193 || RTMP_194",
+                "CONDITION RTMP_195 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_5 = accountSafeIndexes[U]",
+                "REF_150 = CLR_5",
+                "TMP_192 = REF_150 + 1",
+                "accountSafeIndexes[0] = TMP_192",
+                "accountSafeIndexes[1] = TMP_192",
+                "accountSafeIndexes[2] = TMP_192",
+                "accountSafeIndexes[3] = TMP_192",
+                "accountSafeIndexes[4] = TMP_192",
+                "accountSafeIndexes[5] = TMP_192",
+                "accountSafeIndexes[6] = TMP_192",
+                "accountSafeIndexes[7] = TMP_192",
+                "accountSafeIndexes[8] = TMP_192",
+                "accountSafeIndexes[9] = TMP_192"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "RTMP_191 = ! initialized",
+                "CONDITION RTMP_191 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "RTMP_196 = ! initialized",
+                "CONDITION RTMP_196 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "RTMP_197 = ! initialized",
+                "CONDITION RTMP_197 0xc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "augur = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "RTMP_198 = ! initialized",
+                "CONDITION RTMP_198 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "gnosisSafeMasterCopy = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "RTMP_199 = ! initialized",
+                "CONDITION RTMP_199 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "proxyCodeHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_6 = accountSafes[U]",
+                "REF_149 = CLR_6",
+                "accountSafes[0] = U",
+                "accountSafes[1] = U",
+                "accountSafes[2] = U",
+                "accountSafes[3] = U",
+                "accountSafes[4] = U",
+                "accountSafes[5] = U",
+                "accountSafes[6] = U",
+                "accountSafes[7] = U",
+                "accountSafes[8] = U",
+                "accountSafes[9] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x44f",
+    "dest_addrs": [
+        "0x46f"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x44b",
+            "instructions": [
+                "TMP_135 = NEW_VAL unknown",
+                "_safe = TMP_135",
+                "NOP",
+                "NOP",
+                "TMP_136 = _codeHash == proxyCodeHash",
+                "CONDITION TMP_136 0x44b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x44b_r0",
+            "instructions": [
+                "JUMP 0x44c"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x44d",
+            "instructions": [
+                "NOP",
+                "JUMP 0x44b"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x44c",
+            "instructions": [
+                "TMP_138 = NEW_VAL unknown",
+                "ATTACK",
+                "TMP_139 = NEW_VAL integer",
+                "JUMP 0x44e"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x44f",
+            "instructions": [
+                "NOP",
+                "_owners = NEW_COL integer",
+                "_safe = NEW_VAL integer",
+                "_safe = NEW_VAL integer",
+                "_codeHash = NEW_VAL integer",
+                "_account = NEW_VAL integer",
+                "_owners = NEW_COL integer",
+                "_owner = NEW_VAL integer",
+                "accountSafeIndex = NEW_VAL integer",
+                "JUMP 0x44d"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x44e",
+            "instructions": [
+                "NOP",
+                "_owners = NEW_COL integer",
+                "_safe = NEW_VAL integer",
+                "_safe = NEW_VAL integer",
+                "_codeHash = NEW_VAL integer",
+                "_account = NEW_VAL integer",
+                "_owners = NEW_COL integer",
+                "_owner = NEW_VAL integer",
+                "accountSafeIndex = NEW_VAL integer",
+                "JUMP 0x450"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x451",
+            "instructions": [
+                "_safe = TMP_130",
+                "TMP_131 = NEW_VAL unknown",
+                "JUMP 0x452"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x453",
+            "instructions": [
+                "TMP_133 = _safe == TMP_132",
+                "CONDITION TMP_133 0x453_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x453_r0",
+            "instructions": [
+                "JUMP 0x454"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x454",
+            "instructions": [
+                "CLR_7 = accountSafeIndexes[_owner]",
+                "REF_139 = CLR_7",
+                "WRP_0 = REF_139 + 1",
+                "accountSafeIndexes[_owner] = WRP_0",
+                "JUMP 0x455"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x450",
+            "instructions": [
+                "NOP",
+                "JUMP 0x456"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x456",
+            "instructions": [
+                "TMP_135 = NEW_VAL unknown",
+                "_safe = TMP_135",
+                "NOP",
+                "NOP",
+                "TMP_136 = _codeHash == proxyCodeHash",
+                "CONDITION TMP_136 0x456_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x456_r0",
+            "instructions": [
+                "JUMP 0x457"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x457",
+            "instructions": [
+                "TMP_138 = NEW_VAL unknown",
+                "TMP_139 = NEW_VAL integer",
+                "JUMP 0x458"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x458",
+            "instructions": [
+                "TMP_140 = TMP_139 == gnosisSafeMasterCopy",
+                "CONDITION TMP_140 0x458_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x458_r0",
+            "instructions": [
+                "JUMP 0x459"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x459",
+            "instructions": [
+                "TMP_142 = NEW_VAL integer",
+                "JUMP 0x45a"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45a",
+            "instructions": [
+                "TMP_143 = TMP_142 == 1",
+                "CONDITION TMP_143 0x45a_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45a_r0",
+            "instructions": [
+                "JUMP 0x45b"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45b",
+            "instructions": [
+                "TMP_145 = NEW_VAL unknown",
+                "JUMP 0x45c"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45c",
+            "instructions": [
+                "_owners = TMP_145",
+                "REF_143 = LENGTH _owners",
+                "TMP_146 = REF_143 == 1",
+                "CONDITION TMP_146 0x45c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45c_r0",
+            "instructions": [
+                "JUMP 0x45d"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45d",
+            "instructions": [
+                "TMP_186 = _safe",
+                "JUMP 0x45e"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45e",
+            "instructions": [
+                "TMP_130 = TMP_186",
+                "JUMP 0x451"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x45f",
+            "instructions": [
+                "NOP",
+                "JUMP 0x460"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x460",
+            "instructions": [
+                "CLR_8 = accountSafeIndexes[_account]",
+                "REF_144 = CLR_8",
+                "accountSafeIndex = REF_144",
+                "CLR_9 = accountSafes[_account]",
+                "REF_145 = CLR_9",
+                "REF_146 = LENGTH REF_145",
+                "TMP_148 = accountSafeIndex + 1",
+                "TMP_149 = REF_146 < TMP_148",
+                "CONDITION TMP_149 0x461 0x462"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x461",
+            "instructions": [
+                "TMP_150 = 0",
+                "TMP_187 = TMP_150",
+                "JUMP 0x463"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x462",
+            "instructions": [
+                "NOP",
+                "JUMP 0x464"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x464",
+            "instructions": [
+                "CLR_10 = accountSafes[_account]",
+                "REF_147 = CLR_10",
+                "CLR_11 = REF_147[accountSafeIndex]",
+                "REF_148 = CLR_11",
+                "TMP_187 = REF_148",
+                "JUMP 0x463"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x452",
+            "instructions": [
+                "_owners = TMP_131",
+                "CLR_12 = _owners[0]",
+                "REF_138 = CLR_12",
+                "_owner = REF_138",
+                "_account = _owner",
+                "JUMP 0x45f"
+            ]
+        },
+        {
+            "scope": "deRegister_v2",
+            "addr": "0x463",
+            "instructions": [
+                "TMP_132 = TMP_187",
+                "JUMP 0x453"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x465",
+            "instructions": [
+                "_safe = TMP_130",
+                "TMP_131 = NEW_VAL unknown",
+                "JUMP 0x466"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x455",
+            "instructions": [
+                "TMP_140 = TMP_139 == gnosisSafeMasterCopy",
+                "CONDITION TMP_140 0x455_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x455_r0",
+            "instructions": [
+                "JUMP 0x467"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x467",
+            "instructions": [
+                "TMP_142 = NEW_VAL integer",
+                "JUMP 0x468"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x468",
+            "instructions": [
+                "TMP_143 = TMP_142 == 1",
+                "CONDITION TMP_143 0x468_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x468_r0",
+            "instructions": [
+                "JUMP 0x469"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x469",
+            "instructions": [
+                "TMP_145 = NEW_VAL unknown",
+                "JUMP 0x46a"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46a",
+            "instructions": [
+                "_owners = TMP_145",
+                "REF_143 = LENGTH _owners",
+                "TMP_146 = REF_143 == 1",
+                "CONDITION TMP_146 0x46a_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46a_r0",
+            "instructions": [
+                "JUMP 0x46b"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46b",
+            "instructions": [
+                "TMP_186 = _safe",
+                "JUMP 0x46c"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46c",
+            "instructions": [
+                "TMP_130 = TMP_186",
+                "JUMP 0x465"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46d",
+            "instructions": [
+                "NOP",
+                "JUMP 0x46e"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46e",
+            "instructions": [
+                "CLR_13 = accountSafeIndexes[_account]",
+                "REF_144 = CLR_13",
+                "accountSafeIndex = REF_144",
+                "CLR_14 = accountSafes[_account]",
+                "REF_145 = CLR_14",
+                "REF_146 = LENGTH REF_145",
+                "TMP_148 = accountSafeIndex + 1",
+                "TMP_149 = REF_146 < TMP_148",
+                "CONDITION TMP_149 0x46f 0x470"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x46f",
+            "instructions": [
+                "TMP_150 = 0",
+                "TMP_187 = TMP_150"
+            ]
+        },
+        {
+            "scope": "deRegister_v1",
+            "addr": "0x466",
+            "instructions": [
+                "_owners = TMP_131",
+                "CLR_15 = _owners[0]",
+                "REF_138 = CLR_15",
+                "_owner = REF_138",
+                "_account = _owner",
+                "JUMP 0x46d"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x470",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

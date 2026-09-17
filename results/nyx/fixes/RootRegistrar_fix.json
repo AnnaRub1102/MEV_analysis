@@ -1,0 +1,17 @@
+{
+  "functions": [
+    "FxBaseRootTunnel.setFxChildTunnel(address)",
+    "FxBaseRootTunnel.receiveMessage(bytes)",
+    "RootRegistrar.constructor(address,address)",
+    "RootRegistrar.setFxChildTunnel(address)",
+    "RootRegistrar.registerNft(address,uint256,address,uint256,uint256,string)",
+    "RootRegistrar.deRegisterNft(address,uint256)",
+    "FxBaseRootTunnel.setFxChildTunnel(address)",
+    "FxBaseRootTunnel.receiveMessage(bytes)"
+  ],
+  "phase0": 36,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

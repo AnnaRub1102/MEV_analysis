@@ -1,0 +1,1139 @@
+{
+    "file": "GnosisSafeRegistry.sol",
+    "global_structs": [
+        {
+            "name": "struct_TradeDirections",
+            "fields": {
+                "Long": [
+                    "integer"
+                ],
+                "Short": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_Types",
+            "fields": {
+                "Bid": [
+                    "integer"
+                ],
+                "Ask": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_MarketType",
+            "fields": {
+                "YES_NO": [
+                    "integer"
+                ],
+                "CATEGORICAL": [
+                    "integer"
+                ],
+                "SCALAR": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Data",
+            "fields": {
+                "market": [
+                    "integer"
+                ],
+                "augur": [
+                    "integer"
+                ],
+                "augurTrading": [
+                    "integer"
+                ],
+                "kycToken": [
+                    "integer"
+                ],
+                "shareToken": [
+                    "integer"
+                ],
+                "cash": [
+                    "integer"
+                ],
+                "id": [
+                    "integer"
+                ],
+                "creator": [
+                    "integer"
+                ],
+                "outcome": [
+                    "integer"
+                ],
+                "orderType": [
+                    "integer"
+                ],
+                "amount": [
+                    "integer"
+                ],
+                "price": [
+                    "integer"
+                ],
+                "sharesEscrowed": [
+                    "integer"
+                ],
+                "moneyEscrowed": [
+                    "integer"
+                ],
+                "betterOrderId": [
+                    "integer"
+                ],
+                "worseOrderId": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "TradeDirections",
+            "type": [
+                "struct_TradeDirections"
+            ],
+            "init": [
+                "0xEnumInit_TradeDirections"
+            ]
+        },
+        {
+            "name": "Types",
+            "type": [
+                "struct_Types"
+            ],
+            "init": [
+                "0xEnumInit_Types"
+            ]
+        },
+        {
+            "name": "MarketType",
+            "type": [
+                "struct_MarketType"
+            ],
+            "init": [
+                "0xEnumInit_MarketType"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x13"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x14"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x15"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_APPROVAL_AMOUNT",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x3"
+            ]
+        },
+        {
+            "name": "invalidMarketsTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "validityBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "incorrectDesignatedReportTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialReportBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "designatedReportNoShowsTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "designatedReporterNoShowBondTotal",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "creationTime",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "marketBalance",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "masterCopy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "accountSafes",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "accountSafeIndexes",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "augur",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "proxyCodeHash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "gnosisSafeMasterCopy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "initialized",
+            "type": [
+                "boolean"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IStandardToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ITyped",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IReputationToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IV2ReputationToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IOwnable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ICash",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC1155",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IShareToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IReportingParticipant",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IInitialReporter",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAffiliateValidator",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IMarket",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IDisputeWindow",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IUniverse",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMathUint256",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAugurTrading",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IOrders",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Order",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAugur",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IGnosisSafe",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IProxyFactory",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Initializable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IProxy",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IAffiliates",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "GnosisSafeRegistry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_TradeDirections",
+            "instructions": [
+                "TradeDirections.Long = 0",
+                "TradeDirections.Short = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Types",
+            "instructions": [
+                "Types.Bid = 0",
+                "Types.Ask = 1"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_MarketType",
+            "instructions": [
+                "MarketType.YES_NO = 0",
+                "MarketType.CATEGORICAL = 1",
+                "MarketType.SCALAR = 2"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3",
+            "instructions": [
+                "MAX_APPROVAL_AMOUNT = 115792089237316195423570985008687907853269984665640564039457584007913129639936"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "initialized = false"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x13",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x14",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x15",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "accountSafes",
+            "addrs": [
+                "0x2",
+                "0x6",
+                "0x12"
+            ]
+        },
+        {
+            "name": "accountSafeIndexes",
+            "addrs": [
+                "0x2",
+                "0x8"
+            ]
+        },
+        {
+            "name": "initialized",
+            "addrs": [
+                "0x2",
+                "0xa"
+            ]
+        },
+        {
+            "name": "augur",
+            "addrs": [
+                "0x2",
+                "0xd"
+            ]
+        },
+        {
+            "name": "gnosisSafeMasterCopy",
+            "addrs": [
+                "0x2",
+                "0xf"
+            ]
+        },
+        {
+            "name": "proxyCodeHash",
+            "addrs": [
+                "0x2",
+                "0x11"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x6",
+            "instructions": [
+                "CLR_0 = accountSafes[U]",
+                "REF_149 = CLR_0",
+                "accountSafes[0] = U",
+                "accountSafes[1] = U",
+                "accountSafes[2] = U",
+                "accountSafes[3] = U",
+                "accountSafes[4] = U",
+                "accountSafes[5] = U",
+                "accountSafes[6] = U",
+                "accountSafes[7] = U",
+                "accountSafes[8] = U",
+                "accountSafes[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x8",
+            "instructions": [
+                "CLR_1 = accountSafes[U]",
+                "REF_151 = CLR_1",
+                "CLR_2 = REF_151[U]",
+                "REF_152 = CLR_2",
+                "CLR_3 = msg.sender",
+                "RTMP_193 = CLR_3 == 0",
+                "CLR_4 = msg.sender",
+                "RTMP_194 = CLR_4 == REF_152",
+                "RTMP_195 = RTMP_193 || RTMP_194",
+                "CONDITION RTMP_195 0x7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x7",
+            "instructions": [
+                "CLR_5 = accountSafeIndexes[U]",
+                "REF_150 = CLR_5",
+                "TMP_192 = REF_150 + 1",
+                "accountSafeIndexes[0] = TMP_192",
+                "accountSafeIndexes[1] = TMP_192",
+                "accountSafeIndexes[2] = TMP_192",
+                "accountSafeIndexes[3] = TMP_192",
+                "accountSafeIndexes[4] = TMP_192",
+                "accountSafeIndexes[5] = TMP_192",
+                "accountSafeIndexes[6] = TMP_192",
+                "accountSafeIndexes[7] = TMP_192",
+                "accountSafeIndexes[8] = TMP_192",
+                "accountSafeIndexes[9] = TMP_192"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa",
+            "instructions": [
+                "RTMP_191 = ! initialized",
+                "CONDITION RTMP_191 0xb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb",
+            "instructions": [
+                "RTMP_196 = ! initialized",
+                "CONDITION RTMP_196 0x9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x9",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xd",
+            "instructions": [
+                "RTMP_197 = ! initialized",
+                "CONDITION RTMP_197 0xc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc",
+            "instructions": [
+                "augur = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "RTMP_198 = ! initialized",
+                "CONDITION RTMP_198 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "gnosisSafeMasterCopy = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "RTMP_199 = ! initialized",
+                "CONDITION RTMP_199 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "proxyCodeHash = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_6 = accountSafes[U]",
+                "REF_149 = CLR_6",
+                "accountSafes[0] = U",
+                "accountSafes[1] = U",
+                "accountSafes[2] = U",
+                "accountSafes[3] = U",
+                "accountSafes[4] = U",
+                "accountSafes[5] = U",
+                "accountSafes[6] = U",
+                "accountSafes[7] = U",
+                "accountSafes[8] = U",
+                "accountSafes[9] = U"
+            ]
+        }
+    ],
+    "root_addr": "0x1a",
+    "dest_addrs": [
+        "0x24"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "initialize",
+            "addr": "0x16",
+            "instructions": [
+                "NOP",
+                "JUMP 0x17"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x18",
+            "instructions": [
+                "augur = _augur",
+                "ATTACK",
+                "TMP_108 = NEW_VAL integer",
+                "JUMP 0x19"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1a",
+            "instructions": [
+                "NOP",
+                "_augur = NEW_VAL integer",
+                "_proxyFactory = NEW_VAL integer",
+                "JUMP 0x1b"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1b",
+            "instructions": [
+                "TMP_153 = ! initialized",
+                "CONDITION TMP_153 0x1b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1b_r0",
+            "instructions": [
+                "JUMP 0x1c"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1c",
+            "instructions": [
+                "NOP",
+                "JUMP 0x16"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1d",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1e"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1e",
+            "instructions": [
+                "initialized = true",
+                "JUMP 0x18"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x17",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1f"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1f",
+            "instructions": [
+                "TMP_153 = ! initialized",
+                "CONDITION TMP_153 0x1f_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x1f_r0",
+            "instructions": [
+                "JUMP 0x20"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x20",
+            "instructions": [
+                "NOP",
+                "JUMP 0x1d"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x19",
+            "instructions": [
+                "NOP",
+                "_owners = NEW_COL integer",
+                "_safe = NEW_VAL integer",
+                "_safe = NEW_VAL integer",
+                "_codeHash = NEW_VAL integer",
+                "_owners = NEW_COL integer",
+                "_owner = NEW_VAL integer",
+                "JUMP 0x21"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x22",
+            "instructions": [
+                "_safe = TMP_126",
+                "TMP_127 = NEW_VAL unknown",
+                "JUMP 0x23"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x23",
+            "instructions": [
+                "_owners = TMP_127",
+                "CLR_7 = _owners[0]",
+                "REF_132 = CLR_7",
+                "_owner = REF_132",
+                "CLR_8 = accountSafes[_owner]",
+                "REF_133 = CLR_8",
+                "NOP",
+                "TMP_128 = LENGTH REF_133",
+                "CLR_9 = accountSafes[_owner]",
+                "REF_135 = CLR_9",
+                "CLR_10 = REF_135[0]",
+                "REF_136 = CLR_10",
+                "NOP",
+                "JUMP 0x24"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x21",
+            "instructions": [
+                "NOP",
+                "JUMP 0x25"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x25",
+            "instructions": [
+                "TMP_135 = NEW_VAL unknown",
+                "_safe = TMP_135",
+                "NOP",
+                "NOP",
+                "TMP_136 = _codeHash == proxyCodeHash",
+                "CONDITION TMP_136 0x25_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x25_r0",
+            "instructions": [
+                "JUMP 0x26"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x26",
+            "instructions": [
+                "TMP_138 = NEW_VAL unknown",
+                "TMP_139 = NEW_VAL integer",
+                "JUMP 0x27"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x27",
+            "instructions": [
+                "TMP_140 = TMP_139 == gnosisSafeMasterCopy",
+                "CONDITION TMP_140 0x27_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x27_r0",
+            "instructions": [
+                "JUMP 0x28"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x28",
+            "instructions": [
+                "TMP_142 = NEW_VAL integer",
+                "JUMP 0x29"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x29",
+            "instructions": [
+                "TMP_143 = TMP_142 == 1",
+                "CONDITION TMP_143 0x29_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x29_r0",
+            "instructions": [
+                "JUMP 0x2a"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x2a",
+            "instructions": [
+                "TMP_145 = NEW_VAL unknown",
+                "JUMP 0x2b"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x2b",
+            "instructions": [
+                "_owners = TMP_145",
+                "REF_143 = LENGTH _owners",
+                "TMP_146 = REF_143 == 1",
+                "CONDITION TMP_146 0x2b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x2b_r0",
+            "instructions": [
+                "JUMP 0x2c"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x2c",
+            "instructions": [
+                "TMP_186 = _safe",
+                "JUMP 0x2d"
+            ]
+        },
+        {
+            "scope": "register",
+            "addr": "0x2d",
+            "instructions": [
+                "TMP_126 = TMP_186",
+                "JUMP 0x22"
+            ]
+        },
+        {
+            "scope": "initialize",
+            "addr": "0x24",
+            "instructions": [
+                "gnosisSafeMasterCopy = TMP_108",
+                "TMP_109 = NEW_VAL integer"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x2e",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

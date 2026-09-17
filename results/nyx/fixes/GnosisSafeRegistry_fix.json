@@ -1,0 +1,13 @@
+{
+  "functions": [
+    "GnosisSafeRegistry.initialize(IAugur,IAugurTrading)",
+    "GnosisSafeRegistry.setupForAugur(address,address,address,IERC20,IERC1155,IAffiliates,bytes32,address)",
+    "GnosisSafeRegistry.proxyCreated(address,address,bytes,uint256)",
+    "GnosisSafeRegistry.deRegister()"
+  ],
+  "phase0": 10,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

@@ -1,0 +1,22 @@
+services:
+  nyx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nyx
+    platform: linux/amd64
+    environment:
+      - RESULTS_DIR=/results
+    volumes:
+      - ./results/nyx:/results
+
+  sailfish:
+    build:
+      context: .
+      dockerfile: Dockerfile.sailfish
+    platform: linux/amd64
+    environment:
+      - SAILFISH_ANALYSIS_DIR=${SAILFISH_ANALYSIS_DIR:-}
+      - RESULTS_DIR=/results
+      - TIMEOUT_SECONDS=${TIMEOUT_SECONDS:-600}
+    volumes:
+      - ./results/sailfish:/results

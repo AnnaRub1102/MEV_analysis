@@ -1,0 +1,4928 @@
+{
+    "file": "Funds_fix.sol",
+    "global_structs": [
+        {
+            "name": "Sale",
+            "fields": {
+                "loani": [
+                    "integer"
+                ],
+                "bid": [
+                    "integer"
+                ],
+                "bidr": [
+                    "integer"
+                ],
+                "bor": [
+                    "integer"
+                ],
+                "lend": [
+                    "integer"
+                ],
+                "agent": [
+                    "integer"
+                ],
+                "salex": [
+                    "integer"
+                ],
+                "setex": [
+                    "integer"
+                ],
+                "pbkh": [
+                    "integer"
+                ],
+                "set": [
+                    "boolean"
+                ],
+                "taken": [
+                    "boolean"
+                ],
+                "off": [
+                    "boolean"
+                ]
+            }
+        },
+        {
+            "name": "Bsig",
+            "fields": {
+                "rsig": [
+                    "integer"
+                ],
+                "ssig": [
+                    "integer"
+                ],
+                "rbsig": [
+                    "integer"
+                ],
+                "sbsig": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Lsig",
+            "fields": {
+                "rsig": [
+                    "integer"
+                ],
+                "ssig": [
+                    "integer"
+                ],
+                "rbsig": [
+                    "integer"
+                ],
+                "sbsig": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Asig",
+            "fields": {
+                "rsig": [
+                    "integer"
+                ],
+                "ssig": [
+                    "integer"
+                ],
+                "rbsig": [
+                    "integer"
+                ],
+                "sbsig": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Sech",
+            "fields": {
+                "sechA": [
+                    "integer"
+                ],
+                "secA": [
+                    "integer"
+                ],
+                "sechB": [
+                    "integer"
+                ],
+                "secB": [
+                    "integer"
+                ],
+                "sechC": [
+                    "integer"
+                ],
+                "secC": [
+                    "integer"
+                ],
+                "sechD": [
+                    "integer"
+                ],
+                "secD": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Loan",
+            "fields": {
+                "bor": [
+                    "integer"
+                ],
+                "lend": [
+                    "integer"
+                ],
+                "agent": [
+                    "integer"
+                ],
+                "born": [
+                    "integer"
+                ],
+                "loex": [
+                    "integer"
+                ],
+                "prin": [
+                    "integer"
+                ],
+                "lint": [
+                    "integer"
+                ],
+                "lpen": [
+                    "integer"
+                ],
+                "lfee": [
+                    "integer"
+                ],
+                "col": [
+                    "integer"
+                ],
+                "rat": [
+                    "integer"
+                ],
+                "bpubk": [
+                    "integer"
+                ],
+                "lpubk": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Sechs",
+            "fields": {
+                "sechA1": [
+                    "integer"
+                ],
+                "sechAS": [
+                    "array",
+                    "integer"
+                ],
+                "sechB1": [
+                    "integer"
+                ],
+                "sechBS": [
+                    "array",
+                    "integer"
+                ],
+                "sechC1": [
+                    "integer"
+                ],
+                "sechCS": [
+                    "array",
+                    "integer"
+                ],
+                "set": [
+                    "boolean"
+                ]
+            }
+        },
+        {
+            "name": "Bools",
+            "fields": {
+                "pushed": [
+                    "boolean"
+                ],
+                "marked": [
+                    "boolean"
+                ],
+                "taken": [
+                    "boolean"
+                ],
+                "sale": [
+                    "boolean"
+                ],
+                "paid": [
+                    "boolean"
+                ],
+                "off": [
+                    "boolean"
+                ]
+            }
+        },
+        {
+            "name": "Fund",
+            "fields": {
+                "lend": [
+                    "integer"
+                ],
+                "mila": [
+                    "integer"
+                ],
+                "mala": [
+                    "integer"
+                ],
+                "mild": [
+                    "integer"
+                ],
+                "mald": [
+                    "integer"
+                ],
+                "lint": [
+                    "integer"
+                ],
+                "lpen": [
+                    "integer"
+                ],
+                "lfee": [
+                    "integer"
+                ],
+                "rat": [
+                    "integer"
+                ],
+                "agent": [
+                    "integer"
+                ],
+                "bal": [
+                    "integer"
+                ],
+                "tok": [
+                    "integer"
+                ],
+                "cur": [
+                    "integer"
+                ],
+                "vars": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x816"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x817"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x818"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "WAD",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x5"
+            ]
+        },
+        {
+            "name": "RAY",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x6"
+            ]
+        },
+        {
+            "name": "_balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_allowances",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "_totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "sales",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tokes",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "vares",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "bsigs",
+            "type": [
+                "array",
+                "integer",
+                "Bsig"
+            ],
+            "init": []
+        },
+        {
+            "name": "lsigs",
+            "type": [
+                "array",
+                "integer",
+                "Lsig"
+            ],
+            "init": []
+        },
+        {
+            "name": "asigs",
+            "type": [
+                "array",
+                "integer",
+                "Asig"
+            ],
+            "init": []
+        },
+        {
+            "name": "sechs",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "salei",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "salel",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "funds",
+            "type": [
+                "array",
+                "integer",
+                "Fund"
+            ],
+            "init": []
+        },
+        {
+            "name": "bools",
+            "type": [
+                "array",
+                "integer",
+                "Bools"
+            ],
+            "init": []
+        },
+        {
+            "name": "fundi",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "cures",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "backs",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "asaex",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "loani",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tokas",
+            "type": [
+                "array",
+                "integer",
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "on",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "sechi",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "pubks",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "med",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "loans",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "own",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "Context",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Medianizer",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "DSMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Vars",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Sales",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Currency",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Loans",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Funds",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5",
+            "instructions": [
+                "WAD = 1000000000000000000"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6",
+            "instructions": [
+                "RAY = 1000000000000000013287555072"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "own = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "loans = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "med = U"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x528",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x529",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x52a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x584",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x585",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x586",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5e2",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5e3",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5e4",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x640",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x641",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x642",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x69e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x69f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6a0",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6fc",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6fd",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x6fe",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x75a",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x75b",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x75c",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7b8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7b9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x7ba",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x816",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x817",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x818",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "bsigs",
+            "addrs": [
+                "0x2",
+                "0xf",
+                "0x3f",
+                "0x43",
+                "0x47"
+            ]
+        },
+        {
+            "name": "lsigs",
+            "addrs": [
+                "0x2",
+                "0x13",
+                "0x30",
+                "0x35",
+                "0x3a"
+            ]
+        },
+        {
+            "name": "asigs",
+            "addrs": [
+                "0x2",
+                "0x18",
+                "0x1e",
+                "0x24",
+                "0x2a"
+            ]
+        },
+        {
+            "name": "sechs",
+            "addrs": [
+                "0x2",
+                "0x4b",
+                "0x4d",
+                "0x4f",
+                "0x51",
+                "0xbb",
+                "0xbd",
+                "0xbf",
+                "0x1f0"
+            ]
+        },
+        {
+            "name": "salei",
+            "addrs": [
+                "0x2",
+                "0xa7"
+            ]
+        },
+        {
+            "name": "sales",
+            "addrs": [
+                "0x2",
+                "0xa9",
+                "0xab",
+                "0xad",
+                "0xaf",
+                "0xb1",
+                "0xb3",
+                "0xb9",
+                "0x172",
+                "0x1e6",
+                "0x1eb",
+                "0x1f5",
+                "0x493"
+            ]
+        },
+        {
+            "name": "tokes",
+            "addrs": [
+                "0x2",
+                "0xb5"
+            ]
+        },
+        {
+            "name": "vares",
+            "addrs": [
+                "0x2",
+                "0xb7"
+            ]
+        },
+        {
+            "name": "salel",
+            "addrs": [
+                "0x2",
+                "0xc1"
+            ]
+        },
+        {
+            "name": "_balances",
+            "addrs": [
+                "0x2",
+                "0x13c",
+                "0x149",
+                "0x157",
+                "0x164",
+                "0x1a9",
+                "0x1b6",
+                "0x1c2",
+                "0x1cf",
+                "0x425",
+                "0x431",
+                "0x43d",
+                "0x44a",
+                "0x456",
+                "0x462",
+                "0x46e",
+                "0x47b"
+            ]
+        },
+        {
+            "name": "_allowances",
+            "addrs": [
+                "0x2",
+                "0x1db",
+                "0x487"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf",
+            "instructions": [
+                "CLR_0 = sales[U]",
+                "REF_657 = CLR_0",
+                "CLR_1 = REF_657.bor",
+                "REF_658 = CLR_1",
+                "CLR_2 = msg.sender",
+                "RTMP_850 = CLR_2 == REF_658",
+                "CONDITION RTMP_850 0x10 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10",
+            "instructions": [
+                "CLR_3 = sales[U]",
+                "REF_659 = CLR_3",
+                "CLR_4 = REF_659.set",
+                "REF_660 = CLR_4",
+                "RTMP_851 = REF_660 == true",
+                "CONDITION RTMP_851 0x11 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11",
+            "instructions": [
+                "CLR_5 = sales[U]",
+                "REF_661 = CLR_5",
+                "CLR_6 = REF_661.setex",
+                "REF_662 = CLR_6",
+                "RTMP_852 = now < REF_662",
+                "CONDITION RTMP_852 0xe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xe",
+            "instructions": [
+                "CLR_7 = bsigs[U]",
+                "REF_655 = CLR_7",
+                "CLR_8 = REF_655.rsig",
+                "REF_656 = CLR_8",
+                "REF_655.rsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x13",
+            "instructions": [
+                "CLR_9 = sales[U]",
+                "REF_665 = CLR_9",
+                "CLR_10 = REF_665.lend",
+                "REF_666 = CLR_10",
+                "CLR_11 = msg.sender",
+                "RTMP_853 = CLR_11 == REF_666",
+                "CONDITION RTMP_853 0x14 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14",
+            "instructions": [
+                "CLR_12 = sales[U]",
+                "REF_667 = CLR_12",
+                "CLR_13 = REF_667.bor",
+                "REF_668 = CLR_13",
+                "CLR_14 = msg.sender",
+                "RTMP_854 = CLR_14 == REF_668",
+                "CONDITION RTMP_854 0x1 0x15"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x15",
+            "instructions": [
+                "CLR_15 = sales[U]",
+                "REF_669 = CLR_15",
+                "CLR_16 = REF_669.set",
+                "REF_670 = CLR_16",
+                "RTMP_855 = REF_670 == true",
+                "CONDITION RTMP_855 0x16 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16",
+            "instructions": [
+                "CLR_17 = sales[U]",
+                "REF_671 = CLR_17",
+                "CLR_18 = REF_671.setex",
+                "REF_672 = CLR_18",
+                "RTMP_856 = now < REF_672",
+                "CONDITION RTMP_856 0x12 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x12",
+            "instructions": [
+                "CLR_19 = lsigs[U]",
+                "REF_663 = CLR_19",
+                "CLR_20 = REF_663.rsig",
+                "REF_664 = CLR_20",
+                "REF_663.rsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x18",
+            "instructions": [
+                "CLR_21 = sales[U]",
+                "REF_675 = CLR_21",
+                "CLR_22 = REF_675.agent",
+                "REF_676 = CLR_22",
+                "CLR_23 = msg.sender",
+                "RTMP_857 = CLR_23 == REF_676",
+                "CONDITION RTMP_857 0x19 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x19",
+            "instructions": [
+                "CLR_24 = sales[U]",
+                "REF_677 = CLR_24",
+                "CLR_25 = REF_677.set",
+                "REF_678 = CLR_25",
+                "RTMP_858 = REF_678 == true",
+                "CONDITION RTMP_858 0x1a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1a",
+            "instructions": [
+                "CLR_26 = sales[U]",
+                "REF_679 = CLR_26",
+                "CLR_27 = REF_679.lend",
+                "REF_680 = CLR_27",
+                "CLR_28 = msg.sender",
+                "RTMP_859 = CLR_28 == REF_680",
+                "CONDITION RTMP_859 0x1 0x1b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b",
+            "instructions": [
+                "CLR_29 = sales[U]",
+                "REF_681 = CLR_29",
+                "CLR_30 = REF_681.bor",
+                "REF_682 = CLR_30",
+                "CLR_31 = msg.sender",
+                "RTMP_860 = CLR_31 == REF_682",
+                "CONDITION RTMP_860 0x1 0x1c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c",
+            "instructions": [
+                "CLR_32 = sales[U]",
+                "REF_683 = CLR_32",
+                "CLR_33 = REF_683.setex",
+                "REF_684 = CLR_33",
+                "RTMP_861 = now < REF_684",
+                "CONDITION RTMP_861 0x17 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x17",
+            "instructions": [
+                "CLR_34 = asigs[U]",
+                "REF_673 = CLR_34",
+                "CLR_35 = REF_673.rsig",
+                "REF_674 = CLR_35",
+                "REF_673.rsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e",
+            "instructions": [
+                "CLR_36 = sales[U]",
+                "REF_687 = CLR_36",
+                "CLR_37 = REF_687.agent",
+                "REF_688 = CLR_37",
+                "CLR_38 = msg.sender",
+                "RTMP_862 = CLR_38 == REF_688",
+                "CONDITION RTMP_862 0x1f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f",
+            "instructions": [
+                "CLR_39 = sales[U]",
+                "REF_689 = CLR_39",
+                "CLR_40 = REF_689.set",
+                "REF_690 = CLR_40",
+                "RTMP_863 = REF_690 == true",
+                "CONDITION RTMP_863 0x20 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x20",
+            "instructions": [
+                "CLR_41 = sales[U]",
+                "REF_691 = CLR_41",
+                "CLR_42 = REF_691.lend",
+                "REF_692 = CLR_42",
+                "CLR_43 = msg.sender",
+                "RTMP_864 = CLR_43 == REF_692",
+                "CONDITION RTMP_864 0x1 0x21"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x21",
+            "instructions": [
+                "CLR_44 = sales[U]",
+                "REF_693 = CLR_44",
+                "CLR_45 = REF_693.bor",
+                "REF_694 = CLR_45",
+                "CLR_46 = msg.sender",
+                "RTMP_865 = CLR_46 == REF_694",
+                "CONDITION RTMP_865 0x1 0x22"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x22",
+            "instructions": [
+                "CLR_47 = sales[U]",
+                "REF_695 = CLR_47",
+                "CLR_48 = REF_695.setex",
+                "REF_696 = CLR_48",
+                "RTMP_866 = now < REF_696",
+                "CONDITION RTMP_866 0x1d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d",
+            "instructions": [
+                "CLR_49 = asigs[U]",
+                "REF_685 = CLR_49",
+                "CLR_50 = REF_685.ssig",
+                "REF_686 = CLR_50",
+                "REF_685.ssig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x24",
+            "instructions": [
+                "CLR_51 = sales[U]",
+                "REF_699 = CLR_51",
+                "CLR_52 = REF_699.agent",
+                "REF_700 = CLR_52",
+                "CLR_53 = msg.sender",
+                "RTMP_867 = CLR_53 == REF_700",
+                "CONDITION RTMP_867 0x25 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x25",
+            "instructions": [
+                "CLR_54 = sales[U]",
+                "REF_701 = CLR_54",
+                "CLR_55 = REF_701.set",
+                "REF_702 = CLR_55",
+                "RTMP_868 = REF_702 == true",
+                "CONDITION RTMP_868 0x26 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x26",
+            "instructions": [
+                "CLR_56 = sales[U]",
+                "REF_703 = CLR_56",
+                "CLR_57 = REF_703.lend",
+                "REF_704 = CLR_57",
+                "CLR_58 = msg.sender",
+                "RTMP_869 = CLR_58 == REF_704",
+                "CONDITION RTMP_869 0x1 0x27"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x27",
+            "instructions": [
+                "CLR_59 = sales[U]",
+                "REF_705 = CLR_59",
+                "CLR_60 = REF_705.bor",
+                "REF_706 = CLR_60",
+                "CLR_61 = msg.sender",
+                "RTMP_870 = CLR_61 == REF_706",
+                "CONDITION RTMP_870 0x1 0x28"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x28",
+            "instructions": [
+                "CLR_62 = sales[U]",
+                "REF_707 = CLR_62",
+                "CLR_63 = REF_707.setex",
+                "REF_708 = CLR_63",
+                "RTMP_871 = now < REF_708",
+                "CONDITION RTMP_871 0x23 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x23",
+            "instructions": [
+                "CLR_64 = asigs[U]",
+                "REF_697 = CLR_64",
+                "CLR_65 = REF_697.rbsig",
+                "REF_698 = CLR_65",
+                "REF_697.rbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2a",
+            "instructions": [
+                "CLR_66 = sales[U]",
+                "REF_711 = CLR_66",
+                "CLR_67 = REF_711.agent",
+                "REF_712 = CLR_67",
+                "CLR_68 = msg.sender",
+                "RTMP_872 = CLR_68 == REF_712",
+                "CONDITION RTMP_872 0x2b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2b",
+            "instructions": [
+                "CLR_69 = sales[U]",
+                "REF_713 = CLR_69",
+                "CLR_70 = REF_713.set",
+                "REF_714 = CLR_70",
+                "RTMP_873 = REF_714 == true",
+                "CONDITION RTMP_873 0x2c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2c",
+            "instructions": [
+                "CLR_71 = sales[U]",
+                "REF_715 = CLR_71",
+                "CLR_72 = REF_715.lend",
+                "REF_716 = CLR_72",
+                "CLR_73 = msg.sender",
+                "RTMP_874 = CLR_73 == REF_716",
+                "CONDITION RTMP_874 0x1 0x2d"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2d",
+            "instructions": [
+                "CLR_74 = sales[U]",
+                "REF_717 = CLR_74",
+                "CLR_75 = REF_717.bor",
+                "REF_718 = CLR_75",
+                "CLR_76 = msg.sender",
+                "RTMP_875 = CLR_76 == REF_718",
+                "CONDITION RTMP_875 0x1 0x2e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2e",
+            "instructions": [
+                "CLR_77 = sales[U]",
+                "REF_719 = CLR_77",
+                "CLR_78 = REF_719.setex",
+                "REF_720 = CLR_78",
+                "RTMP_876 = now < REF_720",
+                "CONDITION RTMP_876 0x29 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x29",
+            "instructions": [
+                "CLR_79 = asigs[U]",
+                "REF_709 = CLR_79",
+                "CLR_80 = REF_709.sbsig",
+                "REF_710 = CLR_80",
+                "REF_709.sbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x30",
+            "instructions": [
+                "CLR_81 = sales[U]",
+                "REF_723 = CLR_81",
+                "CLR_82 = REF_723.lend",
+                "REF_724 = CLR_82",
+                "CLR_83 = msg.sender",
+                "RTMP_877 = CLR_83 == REF_724",
+                "CONDITION RTMP_877 0x31 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x31",
+            "instructions": [
+                "CLR_84 = sales[U]",
+                "REF_725 = CLR_84",
+                "CLR_85 = REF_725.bor",
+                "REF_726 = CLR_85",
+                "CLR_86 = msg.sender",
+                "RTMP_878 = CLR_86 == REF_726",
+                "CONDITION RTMP_878 0x1 0x32"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x32",
+            "instructions": [
+                "CLR_87 = sales[U]",
+                "REF_727 = CLR_87",
+                "CLR_88 = REF_727.set",
+                "REF_728 = CLR_88",
+                "RTMP_879 = REF_728 == true",
+                "CONDITION RTMP_879 0x33 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x33",
+            "instructions": [
+                "CLR_89 = sales[U]",
+                "REF_729 = CLR_89",
+                "CLR_90 = REF_729.setex",
+                "REF_730 = CLR_90",
+                "RTMP_880 = now < REF_730",
+                "CONDITION RTMP_880 0x2f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2f",
+            "instructions": [
+                "CLR_91 = lsigs[U]",
+                "REF_721 = CLR_91",
+                "CLR_92 = REF_721.ssig",
+                "REF_722 = CLR_92",
+                "REF_721.ssig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x35",
+            "instructions": [
+                "CLR_93 = sales[U]",
+                "REF_733 = CLR_93",
+                "CLR_94 = REF_733.lend",
+                "REF_734 = CLR_94",
+                "CLR_95 = msg.sender",
+                "RTMP_881 = CLR_95 == REF_734",
+                "CONDITION RTMP_881 0x36 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x36",
+            "instructions": [
+                "CLR_96 = sales[U]",
+                "REF_735 = CLR_96",
+                "CLR_97 = REF_735.bor",
+                "REF_736 = CLR_97",
+                "CLR_98 = msg.sender",
+                "RTMP_882 = CLR_98 == REF_736",
+                "CONDITION RTMP_882 0x1 0x37"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x37",
+            "instructions": [
+                "CLR_99 = sales[U]",
+                "REF_737 = CLR_99",
+                "CLR_100 = REF_737.set",
+                "REF_738 = CLR_100",
+                "RTMP_883 = REF_738 == true",
+                "CONDITION RTMP_883 0x38 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x38",
+            "instructions": [
+                "CLR_101 = sales[U]",
+                "REF_739 = CLR_101",
+                "CLR_102 = REF_739.setex",
+                "REF_740 = CLR_102",
+                "RTMP_884 = now < REF_740",
+                "CONDITION RTMP_884 0x34 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x34",
+            "instructions": [
+                "CLR_103 = lsigs[U]",
+                "REF_731 = CLR_103",
+                "CLR_104 = REF_731.rbsig",
+                "REF_732 = CLR_104",
+                "REF_731.rbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3a",
+            "instructions": [
+                "CLR_105 = sales[U]",
+                "REF_743 = CLR_105",
+                "CLR_106 = REF_743.lend",
+                "REF_744 = CLR_106",
+                "CLR_107 = msg.sender",
+                "RTMP_885 = CLR_107 == REF_744",
+                "CONDITION RTMP_885 0x3b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3b",
+            "instructions": [
+                "CLR_108 = sales[U]",
+                "REF_745 = CLR_108",
+                "CLR_109 = REF_745.bor",
+                "REF_746 = CLR_109",
+                "CLR_110 = msg.sender",
+                "RTMP_886 = CLR_110 == REF_746",
+                "CONDITION RTMP_886 0x1 0x3c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3c",
+            "instructions": [
+                "CLR_111 = sales[U]",
+                "REF_747 = CLR_111",
+                "CLR_112 = REF_747.set",
+                "REF_748 = CLR_112",
+                "RTMP_887 = REF_748 == true",
+                "CONDITION RTMP_887 0x3d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3d",
+            "instructions": [
+                "CLR_113 = sales[U]",
+                "REF_749 = CLR_113",
+                "CLR_114 = REF_749.setex",
+                "REF_750 = CLR_114",
+                "RTMP_888 = now < REF_750",
+                "CONDITION RTMP_888 0x39 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x39",
+            "instructions": [
+                "CLR_115 = lsigs[U]",
+                "REF_741 = CLR_115",
+                "CLR_116 = REF_741.sbsig",
+                "REF_742 = CLR_116",
+                "REF_741.sbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3f",
+            "instructions": [
+                "CLR_117 = sales[U]",
+                "REF_753 = CLR_117",
+                "CLR_118 = REF_753.bor",
+                "REF_754 = CLR_118",
+                "CLR_119 = msg.sender",
+                "RTMP_889 = CLR_119 == REF_754",
+                "CONDITION RTMP_889 0x40 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x40",
+            "instructions": [
+                "CLR_120 = sales[U]",
+                "REF_755 = CLR_120",
+                "CLR_121 = REF_755.set",
+                "REF_756 = CLR_121",
+                "RTMP_890 = REF_756 == true",
+                "CONDITION RTMP_890 0x41 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x41",
+            "instructions": [
+                "CLR_122 = sales[U]",
+                "REF_757 = CLR_122",
+                "CLR_123 = REF_757.setex",
+                "REF_758 = CLR_123",
+                "RTMP_891 = now < REF_758",
+                "CONDITION RTMP_891 0x3e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x3e",
+            "instructions": [
+                "CLR_124 = bsigs[U]",
+                "REF_751 = CLR_124",
+                "CLR_125 = REF_751.ssig",
+                "REF_752 = CLR_125",
+                "REF_751.ssig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x43",
+            "instructions": [
+                "CLR_126 = sales[U]",
+                "REF_761 = CLR_126",
+                "CLR_127 = REF_761.bor",
+                "REF_762 = CLR_127",
+                "CLR_128 = msg.sender",
+                "RTMP_892 = CLR_128 == REF_762",
+                "CONDITION RTMP_892 0x44 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44",
+            "instructions": [
+                "CLR_129 = sales[U]",
+                "REF_763 = CLR_129",
+                "CLR_130 = REF_763.set",
+                "REF_764 = CLR_130",
+                "RTMP_893 = REF_764 == true",
+                "CONDITION RTMP_893 0x45 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x45",
+            "instructions": [
+                "CLR_131 = sales[U]",
+                "REF_765 = CLR_131",
+                "CLR_132 = REF_765.setex",
+                "REF_766 = CLR_132",
+                "RTMP_894 = now < REF_766",
+                "CONDITION RTMP_894 0x42 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x42",
+            "instructions": [
+                "CLR_133 = bsigs[U]",
+                "REF_759 = CLR_133",
+                "CLR_134 = REF_759.rbsig",
+                "REF_760 = CLR_134",
+                "REF_759.rbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47",
+            "instructions": [
+                "CLR_135 = sales[U]",
+                "REF_769 = CLR_135",
+                "CLR_136 = REF_769.bor",
+                "REF_770 = CLR_136",
+                "CLR_137 = msg.sender",
+                "RTMP_895 = CLR_137 == REF_770",
+                "CONDITION RTMP_895 0x48 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48",
+            "instructions": [
+                "CLR_138 = sales[U]",
+                "REF_771 = CLR_138",
+                "CLR_139 = REF_771.set",
+                "REF_772 = CLR_139",
+                "RTMP_896 = REF_772 == true",
+                "CONDITION RTMP_896 0x49 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x49",
+            "instructions": [
+                "CLR_140 = sales[U]",
+                "REF_773 = CLR_140",
+                "CLR_141 = REF_773.setex",
+                "REF_774 = CLR_141",
+                "RTMP_897 = now < REF_774",
+                "CONDITION RTMP_897 0x46 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x46",
+            "instructions": [
+                "CLR_142 = bsigs[U]",
+                "REF_767 = CLR_142",
+                "CLR_143 = REF_767.sbsig",
+                "REF_768 = CLR_143",
+                "REF_767.sbsig = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4b",
+            "instructions": [
+                "CLR_144 = sales[U]",
+                "REF_777 = CLR_144",
+                "CLR_145 = REF_777.set",
+                "REF_778 = CLR_145",
+                "RTMP_898 = REF_778 == true",
+                "CONDITION RTMP_898 0x4a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4a",
+            "instructions": [
+                "CLR_146 = sechs[U]",
+                "REF_775 = CLR_146",
+                "CLR_147 = REF_775.secA",
+                "REF_776 = CLR_147",
+                "REF_775.secA = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4d",
+            "instructions": [
+                "CLR_148 = sales[U]",
+                "REF_781 = CLR_148",
+                "CLR_149 = REF_781.set",
+                "REF_782 = CLR_149",
+                "RTMP_899 = REF_782 == true",
+                "CONDITION RTMP_899 0x4c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4c",
+            "instructions": [
+                "CLR_150 = sechs[U]",
+                "REF_779 = CLR_150",
+                "CLR_151 = REF_779.secB",
+                "REF_780 = CLR_151",
+                "REF_779.secB = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4f",
+            "instructions": [
+                "CLR_152 = sales[U]",
+                "REF_785 = CLR_152",
+                "CLR_153 = REF_785.set",
+                "REF_786 = CLR_153",
+                "RTMP_900 = REF_786 == true",
+                "CONDITION RTMP_900 0x4e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4e",
+            "instructions": [
+                "CLR_154 = sechs[U]",
+                "REF_783 = CLR_154",
+                "CLR_155 = REF_783.secC",
+                "REF_784 = CLR_155",
+                "REF_783.secC = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x51",
+            "instructions": [
+                "CLR_156 = sales[U]",
+                "REF_789 = CLR_156",
+                "CLR_157 = REF_789.set",
+                "REF_790 = CLR_157",
+                "RTMP_901 = REF_790 == true",
+                "CONDITION RTMP_901 0x50 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x50",
+            "instructions": [
+                "CLR_158 = sechs[U]",
+                "REF_787 = CLR_158",
+                "CLR_159 = REF_787.secD",
+                "REF_788 = CLR_159",
+                "REF_787.secD = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa7",
+            "instructions": [
+                "CLR_160 = msg.sender",
+                "RTMP_943 = CLR_160 == own",
+                "CONDITION RTMP_943 0xa6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa6",
+            "instructions": [
+                "TMP_942 = salei + 1",
+                "salei = TMP_942"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa9",
+            "instructions": [
+                "CLR_161 = msg.sender",
+                "RTMP_944 = CLR_161 == own",
+                "CONDITION RTMP_944 0xa8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xa8",
+            "instructions": [
+                "CLR_162 = sales[U]",
+                "REF_862 = CLR_162",
+                "CLR_163 = REF_862.loani",
+                "REF_863 = CLR_163",
+                "REF_862.loani = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xab",
+            "instructions": [
+                "CLR_164 = msg.sender",
+                "RTMP_945 = CLR_164 == own",
+                "CONDITION RTMP_945 0xaa 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xaa",
+            "instructions": [
+                "CLR_165 = sales[U]",
+                "REF_864 = CLR_165",
+                "CLR_166 = REF_864.bor",
+                "REF_865 = CLR_166",
+                "REF_864.bor = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xad",
+            "instructions": [
+                "CLR_167 = msg.sender",
+                "RTMP_946 = CLR_167 == own",
+                "CONDITION RTMP_946 0xac 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xac",
+            "instructions": [
+                "CLR_168 = sales[U]",
+                "REF_866 = CLR_168",
+                "CLR_169 = REF_866.lend",
+                "REF_867 = CLR_169",
+                "REF_866.lend = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xaf",
+            "instructions": [
+                "CLR_170 = msg.sender",
+                "RTMP_947 = CLR_170 == own",
+                "CONDITION RTMP_947 0xae 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xae",
+            "instructions": [
+                "CLR_171 = sales[U]",
+                "REF_868 = CLR_171",
+                "CLR_172 = REF_868.agent",
+                "REF_869 = CLR_172",
+                "REF_868.agent = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb1",
+            "instructions": [
+                "CLR_173 = msg.sender",
+                "RTMP_948 = CLR_173 == own",
+                "CONDITION RTMP_948 0xb0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb0",
+            "instructions": [
+                "CLR_174 = sales[U]",
+                "REF_870 = CLR_174",
+                "CLR_175 = REF_870.salex",
+                "REF_871 = CLR_175",
+                "REF_870.salex = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb3",
+            "instructions": [
+                "CLR_176 = msg.sender",
+                "RTMP_949 = CLR_176 == own",
+                "CONDITION RTMP_949 0xb2 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb2",
+            "instructions": [
+                "CLR_177 = sales[U]",
+                "REF_872 = CLR_177",
+                "CLR_178 = REF_872.setex",
+                "REF_873 = CLR_178",
+                "REF_872.setex = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb5",
+            "instructions": [
+                "CLR_179 = msg.sender",
+                "RTMP_950 = CLR_179 == own",
+                "CONDITION RTMP_950 0xb4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb4",
+            "instructions": [
+                "CLR_180 = tokes[U]",
+                "REF_874 = CLR_180",
+                "tokes[0] = U",
+                "tokes[1] = U",
+                "tokes[2] = U",
+                "tokes[3] = U",
+                "tokes[4] = U",
+                "tokes[5] = U",
+                "tokes[6] = U",
+                "tokes[7] = U",
+                "tokes[8] = U",
+                "tokes[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb7",
+            "instructions": [
+                "CLR_181 = msg.sender",
+                "RTMP_951 = CLR_181 == own",
+                "CONDITION RTMP_951 0xb6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb6",
+            "instructions": [
+                "CLR_182 = vares[U]",
+                "REF_875 = CLR_182",
+                "vares[0] = U",
+                "vares[1] = U",
+                "vares[2] = U",
+                "vares[3] = U",
+                "vares[4] = U",
+                "vares[5] = U",
+                "vares[6] = U",
+                "vares[7] = U",
+                "vares[8] = U",
+                "vares[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb9",
+            "instructions": [
+                "CLR_183 = msg.sender",
+                "RTMP_952 = CLR_183 == own",
+                "CONDITION RTMP_952 0xb8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xb8",
+            "instructions": [
+                "CLR_184 = sales[U]",
+                "REF_876 = CLR_184",
+                "CLR_185 = REF_876.set",
+                "REF_877 = CLR_185",
+                "REF_876.set = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbb",
+            "instructions": [
+                "CLR_186 = msg.sender",
+                "RTMP_953 = CLR_186 == own",
+                "CONDITION RTMP_953 0xba 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xba",
+            "instructions": [
+                "CLR_187 = sechs[U]",
+                "REF_878 = CLR_187",
+                "CLR_188 = REF_878.sechA",
+                "REF_879 = CLR_188",
+                "REF_878.sechA = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbd",
+            "instructions": [
+                "CLR_189 = msg.sender",
+                "RTMP_954 = CLR_189 == own",
+                "CONDITION RTMP_954 0xbc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbc",
+            "instructions": [
+                "CLR_190 = sechs[U]",
+                "REF_880 = CLR_190",
+                "CLR_191 = REF_880.sechB",
+                "REF_881 = CLR_191",
+                "REF_880.sechB = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbf",
+            "instructions": [
+                "CLR_192 = msg.sender",
+                "RTMP_955 = CLR_192 == own",
+                "CONDITION RTMP_955 0xbe 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xbe",
+            "instructions": [
+                "CLR_193 = sechs[U]",
+                "REF_882 = CLR_193",
+                "CLR_194 = REF_882.sechC",
+                "REF_883 = CLR_194",
+                "REF_882.sechC = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc1",
+            "instructions": [
+                "CLR_195 = msg.sender",
+                "RTMP_956 = CLR_195 == own",
+                "CONDITION RTMP_956 0xc0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xc0",
+            "instructions": [
+                "CLR_196 = salel[U]",
+                "REF_884 = CLR_196",
+                "salel[0] = salei",
+                "salel[1] = salei",
+                "salel[2] = salei",
+                "salel[3] = salei",
+                "salel[4] = salei",
+                "salel[5] = salei",
+                "salel[6] = salei",
+                "salel[7] = salei",
+                "salel[8] = salei",
+                "salel[9] = salei"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x149",
+            "instructions": [
+                "CLR_197 = sales[U]",
+                "REF_1082 = CLR_197",
+                "CLR_198 = REF_1082.bor",
+                "REF_1083 = CLR_198",
+                "CLR_199 = msg.sender",
+                "RTMP_1018 = CLR_199 != REF_1083",
+                "CONDITION RTMP_1018 0x14a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14a",
+            "instructions": [
+                "CLR_200 = sales[U]",
+                "REF_1084 = CLR_200",
+                "CLR_201 = REF_1084.lend",
+                "REF_1085 = CLR_201",
+                "CLR_202 = msg.sender",
+                "RTMP_1019 = CLR_202 != REF_1085",
+                "CONDITION RTMP_1019 0x14b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14b",
+            "instructions": [
+                "CLR_203 = loans[U]",
+                "REF_1364 = CLR_203",
+                "CLR_204 = REF_1364.lend",
+                "REF_1365 = CLR_204",
+                "CLR_205 = msg.sender",
+                "RTMP_1161 = CLR_205 == REF_1365",
+                "CONDITION RTMP_1161 0x14c 0x14c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14c",
+            "instructions": [
+                "CLR_206 = loans[U]",
+                "REF_1366 = CLR_206",
+                "CLR_207 = REF_1366.agent",
+                "REF_1367 = CLR_207",
+                "CLR_208 = msg.sender",
+                "RTMP_1162 = CLR_208 == REF_1367",
+                "CONDITION RTMP_1162 0x14d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14d",
+            "instructions": [
+                "CLR_209 = bools[U]",
+                "REF_1368 = CLR_209",
+                "CLR_210 = REF_1368.taken",
+                "REF_1369 = CLR_210",
+                "RTMP_1163 = REF_1369 == false",
+                "CONDITION RTMP_1163 0x14e 0x14e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14e",
+            "instructions": [
+                "CLR_211 = bools[U]",
+                "REF_1370 = CLR_211",
+                "CLR_212 = REF_1370.paid",
+                "REF_1371 = CLR_212",
+                "RTMP_1164 = REF_1371 == true",
+                "CONDITION RTMP_1164 0x14f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x14f",
+            "instructions": [
+                "CLR_213 = fundi[U]",
+                "REF_1306 = CLR_213",
+                "RTMP_1126 = REF_1306 == 0",
+                "CONDITION RTMP_1126 0x150 0x150"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x150",
+            "instructions": [
+                "RTMP_1127 = ! U",
+                "CONDITION RTMP_1127 0x1 0x151"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x151",
+            "instructions": [
+                "CLR_214 = sales[U]",
+                "REF_1004 = CLR_214",
+                "CLR_215 = REF_1004.taken",
+                "REF_1005 = CLR_215",
+                "RTMP_980 = ! REF_1005",
+                "CONDITION RTMP_980 0x152 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x152",
+            "instructions": [
+                "CLR_216 = sales[U]",
+                "REF_1006 = CLR_216",
+                "CLR_217 = REF_1006.setex",
+                "REF_1007 = CLR_217",
+                "RTMP_981 = now > REF_1007",
+                "CONDITION RTMP_981 0x153 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x153",
+            "instructions": [
+                "CLR_218 = sales[U]",
+                "REF_1008 = CLR_218",
+                "CLR_219 = REF_1008.off",
+                "REF_1009 = CLR_219",
+                "RTMP_982 = ! REF_1009",
+                "CONDITION RTMP_982 0x154 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x154",
+            "instructions": [
+                "REF_1010 = NEW_VAL integer",
+                "RTMP_983 = REF_1010 == 3",
+                "CONDITION RTMP_983 0x155 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x155",
+            "instructions": [
+                "CLR_220 = sales[U]",
+                "REF_1011 = CLR_220",
+                "CLR_221 = REF_1011.bid",
+                "REF_1012 = CLR_221",
+                "RTMP_984 = REF_1012 > 0",
+                "CONDITION RTMP_984 0x148 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x148",
+            "instructions": [
+                "CLR_222 = _balances[U]",
+                "REF_859 = CLR_222",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x164",
+            "instructions": [
+                "CLR_223 = sales[U]",
+                "REF_1092 = CLR_223",
+                "CLR_224 = REF_1092.bor",
+                "REF_1093 = CLR_224",
+                "CLR_225 = msg.sender",
+                "RTMP_1023 = CLR_225 != REF_1093",
+                "CONDITION RTMP_1023 0x165 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x165",
+            "instructions": [
+                "CLR_226 = sales[U]",
+                "REF_1094 = CLR_226",
+                "CLR_227 = REF_1094.lend",
+                "REF_1095 = CLR_227",
+                "CLR_228 = msg.sender",
+                "RTMP_1024 = CLR_228 != REF_1095",
+                "CONDITION RTMP_1024 0x166 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x166",
+            "instructions": [
+                "CLR_229 = loans[U]",
+                "REF_1380 = CLR_229",
+                "CLR_230 = REF_1380.lend",
+                "REF_1381 = CLR_230",
+                "CLR_231 = msg.sender",
+                "RTMP_1169 = CLR_231 == REF_1381",
+                "CONDITION RTMP_1169 0x167 0x167"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x167",
+            "instructions": [
+                "CLR_232 = loans[U]",
+                "REF_1382 = CLR_232",
+                "CLR_233 = REF_1382.agent",
+                "REF_1383 = CLR_233",
+                "CLR_234 = msg.sender",
+                "RTMP_1170 = CLR_234 == REF_1383",
+                "CONDITION RTMP_1170 0x168 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x168",
+            "instructions": [
+                "CLR_235 = bools[U]",
+                "REF_1384 = CLR_235",
+                "CLR_236 = REF_1384.taken",
+                "REF_1385 = CLR_236",
+                "RTMP_1171 = REF_1385 == false",
+                "CONDITION RTMP_1171 0x169 0x169"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x169",
+            "instructions": [
+                "CLR_237 = bools[U]",
+                "REF_1386 = CLR_237",
+                "CLR_238 = REF_1386.paid",
+                "REF_1387 = CLR_238",
+                "RTMP_1172 = REF_1387 == true",
+                "CONDITION RTMP_1172 0x16a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16a",
+            "instructions": [
+                "CLR_239 = fundi[U]",
+                "REF_1323 = CLR_239",
+                "RTMP_1136 = REF_1323 == 0",
+                "CONDITION RTMP_1136 0x16b 0x16b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16b",
+            "instructions": [
+                "RTMP_1137 = ! U",
+                "CONDITION RTMP_1137 0x1 0x16c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16c",
+            "instructions": [
+                "CLR_240 = sales[U]",
+                "REF_1013 = CLR_240",
+                "CLR_241 = REF_1013.taken",
+                "REF_1014 = CLR_241",
+                "RTMP_985 = ! REF_1014",
+                "CONDITION RTMP_985 0x16d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16d",
+            "instructions": [
+                "CLR_242 = sales[U]",
+                "REF_1015 = CLR_242",
+                "CLR_243 = REF_1015.setex",
+                "REF_1016 = CLR_243",
+                "RTMP_986 = now > REF_1016",
+                "CONDITION RTMP_986 0x16e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16e",
+            "instructions": [
+                "CLR_244 = sales[U]",
+                "REF_1017 = CLR_244",
+                "CLR_245 = REF_1017.off",
+                "REF_1018 = CLR_245",
+                "RTMP_987 = ! REF_1018",
+                "CONDITION RTMP_987 0x16f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x16f",
+            "instructions": [
+                "REF_1019 = NEW_VAL integer",
+                "RTMP_988 = REF_1019 == 3",
+                "CONDITION RTMP_988 0x170 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x170",
+            "instructions": [
+                "CLR_246 = sales[U]",
+                "REF_1020 = CLR_246",
+                "CLR_247 = REF_1020.bid",
+                "REF_1021 = CLR_247",
+                "RTMP_989 = REF_1021 > 0",
+                "CONDITION RTMP_989 0x163 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x163",
+            "instructions": [
+                "CLR_248 = _balances[U]",
+                "REF_860 = CLR_248",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x172",
+            "instructions": [
+                "CLR_249 = sales[U]",
+                "REF_1024 = CLR_249",
+                "CLR_250 = REF_1024.setex",
+                "REF_1025 = CLR_250",
+                "RTMP_990 = now > REF_1025",
+                "CONDITION RTMP_990 0x173 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x173",
+            "instructions": [
+                "CLR_251 = sales[U]",
+                "REF_1026 = CLR_251",
+                "CLR_252 = REF_1026.taken",
+                "REF_1027 = CLR_252",
+                "RTMP_991 = ! REF_1027",
+                "CONDITION RTMP_991 0x174 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x174",
+            "instructions": [
+                "CLR_253 = sales[U]",
+                "REF_1028 = CLR_253",
+                "CLR_254 = REF_1028.bid",
+                "REF_1029 = CLR_254",
+                "RTMP_992 = REF_1029 > 0",
+                "CONDITION RTMP_992 0x175 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x175",
+            "instructions": [
+                "CLR_255 = sales[U]",
+                "REF_1030 = CLR_255",
+                "CLR_256 = REF_1030.off",
+                "REF_1031 = CLR_256",
+                "RTMP_993 = ! REF_1031",
+                "CONDITION RTMP_993 0x171 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x171",
+            "instructions": [
+                "CLR_257 = sales[U]",
+                "REF_1022 = CLR_257",
+                "CLR_258 = REF_1022.off",
+                "REF_1023 = CLR_258",
+                "REF_1022.off = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b6",
+            "instructions": [
+                "CLR_259 = sales[U]",
+                "REF_1082 = CLR_259",
+                "CLR_260 = REF_1082.bor",
+                "REF_1083 = CLR_260",
+                "CLR_261 = msg.sender",
+                "RTMP_1018 = CLR_261 != REF_1083",
+                "CONDITION RTMP_1018 0x1b7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b7",
+            "instructions": [
+                "CLR_262 = sales[U]",
+                "REF_1084 = CLR_262",
+                "CLR_263 = REF_1084.lend",
+                "REF_1085 = CLR_263",
+                "CLR_264 = msg.sender",
+                "RTMP_1019 = CLR_264 != REF_1085",
+                "CONDITION RTMP_1019 0x1b8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b8",
+            "instructions": [
+                "CLR_265 = loans[U]",
+                "REF_1364 = CLR_265",
+                "CLR_266 = REF_1364.lend",
+                "REF_1365 = CLR_266",
+                "CLR_267 = msg.sender",
+                "RTMP_1161 = CLR_267 == REF_1365",
+                "CONDITION RTMP_1161 0x1b9 0x1b9"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b9",
+            "instructions": [
+                "CLR_268 = loans[U]",
+                "REF_1366 = CLR_268",
+                "CLR_269 = REF_1366.agent",
+                "REF_1367 = CLR_269",
+                "CLR_270 = msg.sender",
+                "RTMP_1162 = CLR_270 == REF_1367",
+                "CONDITION RTMP_1162 0x1ba 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ba",
+            "instructions": [
+                "CLR_271 = bools[U]",
+                "REF_1368 = CLR_271",
+                "CLR_272 = REF_1368.taken",
+                "REF_1369 = CLR_272",
+                "RTMP_1163 = REF_1369 == false",
+                "CONDITION RTMP_1163 0x1bb 0x1bb"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bb",
+            "instructions": [
+                "CLR_273 = bools[U]",
+                "REF_1370 = CLR_273",
+                "CLR_274 = REF_1370.paid",
+                "REF_1371 = CLR_274",
+                "RTMP_1164 = REF_1371 == true",
+                "CONDITION RTMP_1164 0x1bc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bc",
+            "instructions": [
+                "CLR_275 = fundi[U]",
+                "REF_1306 = CLR_275",
+                "RTMP_1126 = REF_1306 == 0",
+                "CONDITION RTMP_1126 0x1bd 0x1bd"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bd",
+            "instructions": [
+                "RTMP_1127 = ! U",
+                "CONDITION RTMP_1127 0x1 0x1be"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1be",
+            "instructions": [
+                "CLR_276 = sales[U]",
+                "REF_1086 = CLR_276",
+                "CLR_277 = REF_1086.bid",
+                "REF_1087 = CLR_277",
+                "RTMP_1020 = REF_1087 > 0",
+                "CONDITION RTMP_1020 0x1bf 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1bf",
+            "instructions": [
+                "CLR_278 = sales[U]",
+                "REF_1088 = CLR_278",
+                "CLR_279 = REF_1088.salex",
+                "REF_1089 = CLR_279",
+                "RTMP_1021 = now < REF_1089",
+                "CONDITION RTMP_1021 0x1c0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1c0",
+            "instructions": [
+                "CLR_280 = sales[U]",
+                "REF_1090 = CLR_280",
+                "CLR_281 = REF_1090.set",
+                "REF_1091 = CLR_281",
+                "RTMP_1022 = REF_1091 == true",
+                "CONDITION RTMP_1022 0x1b5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1b5",
+            "instructions": [
+                "CLR_282 = _balances[U]",
+                "REF_859 = CLR_282",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1cf",
+            "instructions": [
+                "CLR_283 = sales[U]",
+                "REF_1092 = CLR_283",
+                "CLR_284 = REF_1092.bor",
+                "REF_1093 = CLR_284",
+                "CLR_285 = msg.sender",
+                "RTMP_1023 = CLR_285 != REF_1093",
+                "CONDITION RTMP_1023 0x1d0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d0",
+            "instructions": [
+                "CLR_286 = sales[U]",
+                "REF_1094 = CLR_286",
+                "CLR_287 = REF_1094.lend",
+                "REF_1095 = CLR_287",
+                "CLR_288 = msg.sender",
+                "RTMP_1024 = CLR_288 != REF_1095",
+                "CONDITION RTMP_1024 0x1d1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d1",
+            "instructions": [
+                "CLR_289 = loans[U]",
+                "REF_1380 = CLR_289",
+                "CLR_290 = REF_1380.lend",
+                "REF_1381 = CLR_290",
+                "CLR_291 = msg.sender",
+                "RTMP_1169 = CLR_291 == REF_1381",
+                "CONDITION RTMP_1169 0x1d2 0x1d2"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d2",
+            "instructions": [
+                "CLR_292 = loans[U]",
+                "REF_1382 = CLR_292",
+                "CLR_293 = REF_1382.agent",
+                "REF_1383 = CLR_293",
+                "CLR_294 = msg.sender",
+                "RTMP_1170 = CLR_294 == REF_1383",
+                "CONDITION RTMP_1170 0x1d3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d3",
+            "instructions": [
+                "CLR_295 = bools[U]",
+                "REF_1384 = CLR_295",
+                "CLR_296 = REF_1384.taken",
+                "REF_1385 = CLR_296",
+                "RTMP_1171 = REF_1385 == false",
+                "CONDITION RTMP_1171 0x1d4 0x1d4"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d4",
+            "instructions": [
+                "CLR_297 = bools[U]",
+                "REF_1386 = CLR_297",
+                "CLR_298 = REF_1386.paid",
+                "REF_1387 = CLR_298",
+                "RTMP_1172 = REF_1387 == true",
+                "CONDITION RTMP_1172 0x1d5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d5",
+            "instructions": [
+                "CLR_299 = fundi[U]",
+                "REF_1323 = CLR_299",
+                "RTMP_1136 = REF_1323 == 0",
+                "CONDITION RTMP_1136 0x1d6 0x1d6"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d6",
+            "instructions": [
+                "RTMP_1137 = ! U",
+                "CONDITION RTMP_1137 0x1 0x1d7"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d7",
+            "instructions": [
+                "CLR_300 = sales[U]",
+                "REF_1096 = CLR_300",
+                "CLR_301 = REF_1096.bid",
+                "REF_1097 = CLR_301",
+                "RTMP_1025 = REF_1097 > 0",
+                "CONDITION RTMP_1025 0x1d8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d8",
+            "instructions": [
+                "CLR_302 = sales[U]",
+                "REF_1098 = CLR_302",
+                "CLR_303 = REF_1098.salex",
+                "REF_1099 = CLR_303",
+                "RTMP_1026 = now < REF_1099",
+                "CONDITION RTMP_1026 0x1d9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1d9",
+            "instructions": [
+                "CLR_304 = sales[U]",
+                "REF_1100 = CLR_304",
+                "CLR_305 = REF_1100.set",
+                "REF_1101 = CLR_305",
+                "RTMP_1027 = REF_1101 == true",
+                "CONDITION RTMP_1027 0x1ce 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ce",
+            "instructions": [
+                "CLR_306 = _balances[U]",
+                "REF_860 = CLR_306",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1db",
+            "instructions": [
+                "CLR_307 = sales[U]",
+                "REF_1074 = CLR_307",
+                "CLR_308 = REF_1074.bor",
+                "REF_1075 = CLR_308",
+                "CLR_309 = msg.sender",
+                "RTMP_1014 = CLR_309 != REF_1075",
+                "CONDITION RTMP_1014 0x1dc 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1dc",
+            "instructions": [
+                "CLR_310 = sales[U]",
+                "REF_1076 = CLR_310",
+                "CLR_311 = REF_1076.lend",
+                "REF_1077 = CLR_311",
+                "CLR_312 = msg.sender",
+                "RTMP_1015 = CLR_312 != REF_1077",
+                "CONDITION RTMP_1015 0x1dd 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1dd",
+            "instructions": [
+                "CLR_313 = loans[U]",
+                "REF_1330 = CLR_313",
+                "CLR_314 = REF_1330.lend",
+                "REF_1331 = CLR_314",
+                "CLR_315 = msg.sender",
+                "RTMP_1141 = CLR_315 == REF_1331",
+                "CONDITION RTMP_1141 0x1de 0x1de"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1de",
+            "instructions": [
+                "CLR_316 = loans[U]",
+                "REF_1332 = CLR_316",
+                "CLR_317 = REF_1332.agent",
+                "REF_1333 = CLR_317",
+                "CLR_318 = msg.sender",
+                "RTMP_1142 = CLR_318 == REF_1333",
+                "CONDITION RTMP_1142 0x1df 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1df",
+            "instructions": [
+                "CLR_319 = bools[U]",
+                "REF_1334 = CLR_319",
+                "CLR_320 = REF_1334.taken",
+                "REF_1335 = CLR_320",
+                "RTMP_1143 = REF_1335 == false",
+                "CONDITION RTMP_1143 0x1e0 0x1e0"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e0",
+            "instructions": [
+                "CLR_321 = bools[U]",
+                "REF_1336 = CLR_321",
+                "CLR_322 = REF_1336.paid",
+                "REF_1337 = CLR_322",
+                "RTMP_1144 = REF_1337 == true",
+                "CONDITION RTMP_1144 0x1e1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e1",
+            "instructions": [
+                "CLR_323 = fundi[U]",
+                "REF_1340 = CLR_323",
+                "RTMP_1146 = REF_1340 == 0",
+                "CONDITION RTMP_1146 0x1e2 0x1e2"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e2",
+            "instructions": [
+                "RTMP_1147 = ! U",
+                "CONDITION RTMP_1147 0x1 0x1e3"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e3",
+            "instructions": [
+                "CLR_324 = sales[U]",
+                "REF_1078 = CLR_324",
+                "CLR_325 = REF_1078.salex",
+                "REF_1079 = CLR_325",
+                "RTMP_1016 = now < REF_1079",
+                "CONDITION RTMP_1016 0x1e4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e4",
+            "instructions": [
+                "CLR_326 = sales[U]",
+                "REF_1080 = CLR_326",
+                "CLR_327 = REF_1080.set",
+                "REF_1081 = CLR_327",
+                "RTMP_1017 = REF_1081 == true",
+                "CONDITION RTMP_1017 0x1da 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1da",
+            "instructions": [
+                "CLR_328 = _allowances[U]",
+                "REF_653 = CLR_328",
+                "CLR_329 = REF_653[U]",
+                "REF_654 = CLR_329",
+                "REF_653[0] = U",
+                "REF_653[1] = U",
+                "REF_653[2] = U",
+                "REF_653[3] = U",
+                "REF_653[4] = U",
+                "REF_653[5] = U",
+                "REF_653[6] = U",
+                "REF_653[7] = U",
+                "REF_653[8] = U",
+                "REF_653[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e6",
+            "instructions": [
+                "CLR_330 = sales[U]",
+                "REF_1104 = CLR_330",
+                "CLR_331 = REF_1104.bor",
+                "REF_1105 = CLR_331",
+                "CLR_332 = msg.sender",
+                "RTMP_1028 = CLR_332 != REF_1105",
+                "CONDITION RTMP_1028 0x1e7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e7",
+            "instructions": [
+                "CLR_333 = sales[U]",
+                "REF_1106 = CLR_333",
+                "CLR_334 = REF_1106.lend",
+                "REF_1107 = CLR_334",
+                "CLR_335 = msg.sender",
+                "RTMP_1029 = CLR_335 != REF_1107",
+                "CONDITION RTMP_1029 0x1e8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e8",
+            "instructions": [
+                "CLR_336 = sales[U]",
+                "REF_1108 = CLR_336",
+                "CLR_337 = REF_1108.salex",
+                "REF_1109 = CLR_337",
+                "RTMP_1030 = now < REF_1109",
+                "CONDITION RTMP_1030 0x1e9 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e9",
+            "instructions": [
+                "CLR_338 = sales[U]",
+                "REF_1110 = CLR_338",
+                "CLR_339 = REF_1110.set",
+                "REF_1111 = CLR_339",
+                "RTMP_1031 = REF_1111 == true",
+                "CONDITION RTMP_1031 0x1e5 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1e5",
+            "instructions": [
+                "CLR_340 = sales[U]",
+                "REF_1102 = CLR_340",
+                "CLR_341 = REF_1102.bidr",
+                "REF_1103 = CLR_341",
+                "CLR_342 = msg.sender",
+                "REF_1102.bidr = CLR_342"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1eb",
+            "instructions": [
+                "CLR_343 = sales[U]",
+                "REF_1114 = CLR_343",
+                "CLR_344 = REF_1114.bor",
+                "REF_1115 = CLR_344",
+                "CLR_345 = msg.sender",
+                "RTMP_1032 = CLR_345 != REF_1115",
+                "CONDITION RTMP_1032 0x1ec 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ec",
+            "instructions": [
+                "CLR_346 = sales[U]",
+                "REF_1116 = CLR_346",
+                "CLR_347 = REF_1116.lend",
+                "REF_1117 = CLR_347",
+                "CLR_348 = msg.sender",
+                "RTMP_1033 = CLR_348 != REF_1117",
+                "CONDITION RTMP_1033 0x1ed 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ed",
+            "instructions": [
+                "CLR_349 = sales[U]",
+                "REF_1118 = CLR_349",
+                "CLR_350 = REF_1118.salex",
+                "REF_1119 = CLR_350",
+                "RTMP_1034 = now < REF_1119",
+                "CONDITION RTMP_1034 0x1ee 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ee",
+            "instructions": [
+                "CLR_351 = sales[U]",
+                "REF_1120 = CLR_351",
+                "CLR_352 = REF_1120.set",
+                "REF_1121 = CLR_352",
+                "RTMP_1035 = REF_1121 == true",
+                "CONDITION RTMP_1035 0x1ea 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ea",
+            "instructions": [
+                "CLR_353 = sales[U]",
+                "REF_1112 = CLR_353",
+                "CLR_354 = REF_1112.bid",
+                "REF_1113 = CLR_354",
+                "REF_1112.bid = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f0",
+            "instructions": [
+                "CLR_355 = sales[U]",
+                "REF_1124 = CLR_355",
+                "CLR_356 = REF_1124.bor",
+                "REF_1125 = CLR_356",
+                "CLR_357 = msg.sender",
+                "RTMP_1036 = CLR_357 != REF_1125",
+                "CONDITION RTMP_1036 0x1f1 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f1",
+            "instructions": [
+                "CLR_358 = sales[U]",
+                "REF_1126 = CLR_358",
+                "CLR_359 = REF_1126.lend",
+                "REF_1127 = CLR_359",
+                "CLR_360 = msg.sender",
+                "RTMP_1037 = CLR_360 != REF_1127",
+                "CONDITION RTMP_1037 0x1f2 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f2",
+            "instructions": [
+                "CLR_361 = sales[U]",
+                "REF_1128 = CLR_361",
+                "CLR_362 = REF_1128.salex",
+                "REF_1129 = CLR_362",
+                "RTMP_1038 = now < REF_1129",
+                "CONDITION RTMP_1038 0x1f3 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f3",
+            "instructions": [
+                "CLR_363 = sales[U]",
+                "REF_1130 = CLR_363",
+                "CLR_364 = REF_1130.set",
+                "REF_1131 = CLR_364",
+                "RTMP_1039 = REF_1131 == true",
+                "CONDITION RTMP_1039 0x1ef 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1ef",
+            "instructions": [
+                "CLR_365 = sechs[U]",
+                "REF_1122 = CLR_365",
+                "CLR_366 = REF_1122.sechD",
+                "REF_1123 = CLR_366",
+                "REF_1122.sechD = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f5",
+            "instructions": [
+                "CLR_367 = sales[U]",
+                "REF_1134 = CLR_367",
+                "CLR_368 = REF_1134.bor",
+                "REF_1135 = CLR_368",
+                "CLR_369 = msg.sender",
+                "RTMP_1040 = CLR_369 != REF_1135",
+                "CONDITION RTMP_1040 0x1f6 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f6",
+            "instructions": [
+                "CLR_370 = sales[U]",
+                "REF_1136 = CLR_370",
+                "CLR_371 = REF_1136.lend",
+                "REF_1137 = CLR_371",
+                "CLR_372 = msg.sender",
+                "RTMP_1041 = CLR_372 != REF_1137",
+                "CONDITION RTMP_1041 0x1f7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f7",
+            "instructions": [
+                "CLR_373 = sales[U]",
+                "REF_1138 = CLR_373",
+                "CLR_374 = REF_1138.salex",
+                "REF_1139 = CLR_374",
+                "RTMP_1042 = now < REF_1139",
+                "CONDITION RTMP_1042 0x1f8 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f8",
+            "instructions": [
+                "CLR_375 = sales[U]",
+                "REF_1140 = CLR_375",
+                "CLR_376 = REF_1140.set",
+                "REF_1141 = CLR_376",
+                "RTMP_1043 = REF_1141 == true",
+                "CONDITION RTMP_1043 0x1f4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1f4",
+            "instructions": [
+                "CLR_377 = sales[U]",
+                "REF_1132 = CLR_377",
+                "CLR_378 = REF_1132.pbkh",
+                "REF_1133 = CLR_378",
+                "REF_1132.pbkh = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44a",
+            "instructions": [
+                "CLR_379 = sales[U]",
+                "REF_1082 = CLR_379",
+                "CLR_380 = REF_1082.bor",
+                "REF_1083 = CLR_380",
+                "CLR_381 = msg.sender",
+                "RTMP_1018 = CLR_381 != REF_1083",
+                "CONDITION RTMP_1018 0x44b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44b",
+            "instructions": [
+                "CLR_382 = sales[U]",
+                "REF_1084 = CLR_382",
+                "CLR_383 = REF_1084.lend",
+                "REF_1085 = CLR_383",
+                "CLR_384 = msg.sender",
+                "RTMP_1019 = CLR_384 != REF_1085",
+                "CONDITION RTMP_1019 0x44c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44c",
+            "instructions": [
+                "CLR_385 = loans[U]",
+                "REF_1364 = CLR_385",
+                "CLR_386 = REF_1364.lend",
+                "REF_1365 = CLR_386",
+                "CLR_387 = msg.sender",
+                "RTMP_1161 = CLR_387 == REF_1365",
+                "CONDITION RTMP_1161 0x44d 0x44d"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44d",
+            "instructions": [
+                "CLR_388 = loans[U]",
+                "REF_1366 = CLR_388",
+                "CLR_389 = REF_1366.agent",
+                "REF_1367 = CLR_389",
+                "CLR_390 = msg.sender",
+                "RTMP_1162 = CLR_390 == REF_1367",
+                "CONDITION RTMP_1162 0x44e 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44e",
+            "instructions": [
+                "CLR_391 = bools[U]",
+                "REF_1368 = CLR_391",
+                "CLR_392 = REF_1368.taken",
+                "REF_1369 = CLR_392",
+                "RTMP_1163 = REF_1369 == false",
+                "CONDITION RTMP_1163 0x44f 0x44f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44f",
+            "instructions": [
+                "CLR_393 = bools[U]",
+                "REF_1370 = CLR_393",
+                "CLR_394 = REF_1370.paid",
+                "REF_1371 = CLR_394",
+                "RTMP_1164 = REF_1371 == true",
+                "CONDITION RTMP_1164 0x450 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x450",
+            "instructions": [
+                "CLR_395 = fundi[U]",
+                "REF_1306 = CLR_395",
+                "RTMP_1126 = REF_1306 == 0",
+                "CONDITION RTMP_1126 0x451 0x451"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x451",
+            "instructions": [
+                "RTMP_1127 = ! U",
+                "CONDITION RTMP_1127 0x1 0x452"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x452",
+            "instructions": [
+                "CLR_396 = sales[U]",
+                "REF_1524 = CLR_396",
+                "CLR_397 = REF_1524.taken",
+                "REF_1525 = CLR_397",
+                "RTMP_1239 = ! REF_1525",
+                "CONDITION RTMP_1239 0x453 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x453",
+            "instructions": [
+                "CLR_398 = sales[U]",
+                "REF_1526 = CLR_398",
+                "CLR_399 = REF_1526.salex",
+                "REF_1527 = CLR_399",
+                "RTMP_1240 = now > REF_1527",
+                "CONDITION RTMP_1240 0x454 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x454",
+            "instructions": [
+                "CLR_400 = sales[U]",
+                "REF_1528 = CLR_400",
+                "CLR_401 = REF_1528.off",
+                "REF_1529 = CLR_401",
+                "RTMP_1241 = ! REF_1529",
+                "CONDITION RTMP_1241 0x449 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x449",
+            "instructions": [
+                "CLR_402 = _balances[U]",
+                "REF_859 = CLR_402",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47b",
+            "instructions": [
+                "CLR_403 = sales[U]",
+                "REF_1092 = CLR_403",
+                "CLR_404 = REF_1092.bor",
+                "REF_1093 = CLR_404",
+                "CLR_405 = msg.sender",
+                "RTMP_1023 = CLR_405 != REF_1093",
+                "CONDITION RTMP_1023 0x47c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47c",
+            "instructions": [
+                "CLR_406 = sales[U]",
+                "REF_1094 = CLR_406",
+                "CLR_407 = REF_1094.lend",
+                "REF_1095 = CLR_407",
+                "CLR_408 = msg.sender",
+                "RTMP_1024 = CLR_408 != REF_1095",
+                "CONDITION RTMP_1024 0x47d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47d",
+            "instructions": [
+                "CLR_409 = loans[U]",
+                "REF_1380 = CLR_409",
+                "CLR_410 = REF_1380.lend",
+                "REF_1381 = CLR_410",
+                "CLR_411 = msg.sender",
+                "RTMP_1169 = CLR_411 == REF_1381",
+                "CONDITION RTMP_1169 0x47e 0x47e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47e",
+            "instructions": [
+                "CLR_412 = loans[U]",
+                "REF_1382 = CLR_412",
+                "CLR_413 = REF_1382.agent",
+                "REF_1383 = CLR_413",
+                "CLR_414 = msg.sender",
+                "RTMP_1170 = CLR_414 == REF_1383",
+                "CONDITION RTMP_1170 0x47f 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47f",
+            "instructions": [
+                "CLR_415 = bools[U]",
+                "REF_1384 = CLR_415",
+                "CLR_416 = REF_1384.taken",
+                "REF_1385 = CLR_416",
+                "RTMP_1171 = REF_1385 == false",
+                "CONDITION RTMP_1171 0x480 0x480"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x480",
+            "instructions": [
+                "CLR_417 = bools[U]",
+                "REF_1386 = CLR_417",
+                "CLR_418 = REF_1386.paid",
+                "REF_1387 = CLR_418",
+                "RTMP_1172 = REF_1387 == true",
+                "CONDITION RTMP_1172 0x481 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x481",
+            "instructions": [
+                "CLR_419 = fundi[U]",
+                "REF_1323 = CLR_419",
+                "RTMP_1136 = REF_1323 == 0",
+                "CONDITION RTMP_1136 0x482 0x482"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x482",
+            "instructions": [
+                "RTMP_1137 = ! U",
+                "CONDITION RTMP_1137 0x1 0x483"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x483",
+            "instructions": [
+                "CLR_420 = sales[U]",
+                "REF_1530 = CLR_420",
+                "CLR_421 = REF_1530.taken",
+                "REF_1531 = CLR_421",
+                "RTMP_1242 = ! REF_1531",
+                "CONDITION RTMP_1242 0x484 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x484",
+            "instructions": [
+                "CLR_422 = sales[U]",
+                "REF_1532 = CLR_422",
+                "CLR_423 = REF_1532.salex",
+                "REF_1533 = CLR_423",
+                "RTMP_1243 = now > REF_1533",
+                "CONDITION RTMP_1243 0x485 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x485",
+            "instructions": [
+                "CLR_424 = sales[U]",
+                "REF_1534 = CLR_424",
+                "CLR_425 = REF_1534.off",
+                "REF_1535 = CLR_425",
+                "RTMP_1244 = ! REF_1535",
+                "CONDITION RTMP_1244 0x47a 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47a",
+            "instructions": [
+                "CLR_426 = _balances[U]",
+                "REF_860 = CLR_426",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x487",
+            "instructions": [
+                "CLR_427 = sales[U]",
+                "REF_1074 = CLR_427",
+                "CLR_428 = REF_1074.bor",
+                "REF_1075 = CLR_428",
+                "CLR_429 = msg.sender",
+                "RTMP_1014 = CLR_429 != REF_1075",
+                "CONDITION RTMP_1014 0x488 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x488",
+            "instructions": [
+                "CLR_430 = sales[U]",
+                "REF_1076 = CLR_430",
+                "CLR_431 = REF_1076.lend",
+                "REF_1077 = CLR_431",
+                "CLR_432 = msg.sender",
+                "RTMP_1015 = CLR_432 != REF_1077",
+                "CONDITION RTMP_1015 0x489 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x489",
+            "instructions": [
+                "CLR_433 = loans[U]",
+                "REF_1330 = CLR_433",
+                "CLR_434 = REF_1330.lend",
+                "REF_1331 = CLR_434",
+                "CLR_435 = msg.sender",
+                "RTMP_1141 = CLR_435 == REF_1331",
+                "CONDITION RTMP_1141 0x48a 0x48a"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48a",
+            "instructions": [
+                "CLR_436 = loans[U]",
+                "REF_1332 = CLR_436",
+                "CLR_437 = REF_1332.agent",
+                "REF_1333 = CLR_437",
+                "CLR_438 = msg.sender",
+                "RTMP_1142 = CLR_438 == REF_1333",
+                "CONDITION RTMP_1142 0x48b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48b",
+            "instructions": [
+                "CLR_439 = bools[U]",
+                "REF_1334 = CLR_439",
+                "CLR_440 = REF_1334.taken",
+                "REF_1335 = CLR_440",
+                "RTMP_1143 = REF_1335 == false",
+                "CONDITION RTMP_1143 0x48c 0x48c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48c",
+            "instructions": [
+                "CLR_441 = bools[U]",
+                "REF_1336 = CLR_441",
+                "CLR_442 = REF_1336.paid",
+                "REF_1337 = CLR_442",
+                "RTMP_1144 = REF_1337 == true",
+                "CONDITION RTMP_1144 0x48d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48d",
+            "instructions": [
+                "CLR_443 = fundi[U]",
+                "REF_1340 = CLR_443",
+                "RTMP_1146 = REF_1340 == 0",
+                "CONDITION RTMP_1146 0x48e 0x48e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48e",
+            "instructions": [
+                "RTMP_1147 = ! U",
+                "CONDITION RTMP_1147 0x1 0x48f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48f",
+            "instructions": [
+                "CLR_444 = sales[U]",
+                "REF_1518 = CLR_444",
+                "CLR_445 = REF_1518.taken",
+                "REF_1519 = CLR_445",
+                "RTMP_1236 = ! REF_1519",
+                "CONDITION RTMP_1236 0x490 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x490",
+            "instructions": [
+                "CLR_446 = sales[U]",
+                "REF_1520 = CLR_446",
+                "CLR_447 = REF_1520.salex",
+                "REF_1521 = CLR_447",
+                "RTMP_1237 = now > REF_1521",
+                "CONDITION RTMP_1237 0x491 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x491",
+            "instructions": [
+                "CLR_448 = sales[U]",
+                "REF_1522 = CLR_448",
+                "CLR_449 = REF_1522.off",
+                "REF_1523 = CLR_449",
+                "RTMP_1238 = ! REF_1523",
+                "CONDITION RTMP_1238 0x486 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x486",
+            "instructions": [
+                "CLR_450 = _allowances[U]",
+                "REF_653 = CLR_450",
+                "CLR_451 = REF_653[U]",
+                "REF_654 = CLR_451",
+                "REF_653[0] = U",
+                "REF_653[1] = U",
+                "REF_653[2] = U",
+                "REF_653[3] = U",
+                "REF_653[4] = U",
+                "REF_653[5] = U",
+                "REF_653[6] = U",
+                "REF_653[7] = U",
+                "REF_653[8] = U",
+                "REF_653[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x493",
+            "instructions": [
+                "CLR_452 = sales[U]",
+                "REF_1538 = CLR_452",
+                "CLR_453 = REF_1538.taken",
+                "REF_1539 = CLR_453",
+                "RTMP_1245 = ! REF_1539",
+                "CONDITION RTMP_1245 0x494 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x494",
+            "instructions": [
+                "CLR_454 = sales[U]",
+                "REF_1540 = CLR_454",
+                "CLR_455 = REF_1540.salex",
+                "REF_1541 = CLR_455",
+                "RTMP_1246 = now > REF_1541",
+                "CONDITION RTMP_1246 0x495 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x495",
+            "instructions": [
+                "CLR_456 = sales[U]",
+                "REF_1542 = CLR_456",
+                "CLR_457 = REF_1542.off",
+                "REF_1543 = CLR_457",
+                "RTMP_1247 = ! REF_1543",
+                "CONDITION RTMP_1247 0x492 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x492",
+            "instructions": [
+                "CLR_458 = sales[U]",
+                "REF_1536 = CLR_458",
+                "CLR_459 = REF_1536.taken",
+                "REF_1537 = CLR_459",
+                "REF_1536.taken = true"
+            ]
+        }
+    ],
+    "root_addr": "0x819",
+    "dest_addrs": [
+        "0x873"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "open",
+            "addr": "0x819",
+            "instructions": [
+                "NOP",
+                "sechC = NEW_VAL integer",
+                "z = NEW_VAL integer",
+                "lend = NEW_VAL integer",
+                "x = NEW_VAL integer",
+                "tok = NEW_VAL integer",
+                "agent = NEW_VAL integer",
+                "vars = NEW_VAL integer",
+                "bor = NEW_VAL integer",
+                "loani = NEW_VAL integer",
+                "sechA = NEW_VAL integer",
+                "sechB = NEW_VAL integer",
+                "y = NEW_VAL integer",
+                "sale = NEW_VAL integer",
+                "JUMP 0x81a"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81a",
+            "instructions": [
+                "CLR_460 = msg.sender",
+                "TMP_154 = CLR_460 == own",
+                "CONDITION TMP_154 0x81a_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81a_r0",
+            "instructions": [
+                "JUMP 0x81b"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81c",
+            "instructions": [
+                "salei = TMP_156",
+                "TMP_157 = NEW_VAL unknown",
+                "sale = TMP_157",
+                "CLR_461 = sales[sale]",
+                "REF_69 = CLR_461",
+                "CLR_462 = REF_69.loani",
+                "REF_70 = CLR_462",
+                "REF_69.loani = loani",
+                "CLR_463 = sales[sale]",
+                "REF_71 = CLR_463",
+                "CLR_464 = REF_71.bor",
+                "REF_72 = CLR_464",
+                "REF_71.bor = bor",
+                "CLR_465 = sales[sale]",
+                "REF_73 = CLR_465",
+                "CLR_466 = REF_73.lend",
+                "REF_74 = CLR_466",
+                "REF_73.lend = lend",
+                "CLR_467 = sales[sale]",
+                "REF_75 = CLR_467",
+                "CLR_468 = REF_75.agent",
+                "REF_76 = CLR_468",
+                "REF_75.agent = agent",
+                "CLR_469 = sales[sale]",
+                "REF_77 = CLR_469",
+                "CLR_470 = REF_77.salex",
+                "REF_78 = CLR_470",
+                "TMP_158 = NEW_VAL integer",
+                "JUMP 0x81d"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81d",
+            "instructions": [
+                "TMP_159 = now + TMP_158",
+                "REF_77.salex = TMP_159",
+                "CLR_471 = sales[sale]",
+                "REF_80 = CLR_471",
+                "CLR_472 = REF_80.setex",
+                "REF_81 = CLR_472",
+                "ATTACK",
+                "TMP_160 = NEW_VAL integer",
+                "JUMP 0x81e"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81f",
+            "instructions": [
+                "NOP",
+                "JUMP 0x820"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x820",
+            "instructions": [
+                "TMP_110 = x + y",
+                "z = TMP_110",
+                "TMP_111 = z >= x",
+                "CONDITION TMP_111 0x820_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x820_r0",
+            "instructions": [
+                "JUMP 0x821"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x821",
+            "instructions": [
+                "TMP_713 = z",
+                "JUMP 0x822"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x81b",
+            "instructions": [
+                "x = salei",
+                "y = 1",
+                "JUMP 0x81f"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x822",
+            "instructions": [
+                "TMP_156 = TMP_713",
+                "JUMP 0x81c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x81e",
+            "instructions": [
+                "NOP",
+                "z = NEW_VAL integer",
+                "owner = NEW_VAL integer",
+                "sale = NEW_VAL integer",
+                "spender = NEW_VAL integer",
+                "amount = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "errorMessage = NEW_VAL unknown",
+                "x = NEW_VAL integer",
+                "y = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "sender = NEW_VAL integer",
+                "z = NEW_VAL integer",
+                "recipient = NEW_VAL integer",
+                "sale = NEW_VAL integer",
+                "amount = NEW_VAL integer",
+                "amt = NEW_VAL integer",
+                "x = NEW_VAL integer",
+                "sech = NEW_VAL integer",
+                "c = NEW_VAL integer",
+                "y = NEW_VAL integer",
+                "pbkh = NEW_VAL integer",
+                "a = NEW_VAL integer",
+                "sender = NEW_VAL integer",
+                "z = NEW_VAL integer",
+                "b = NEW_VAL integer",
+                "recipient = NEW_VAL integer",
+                "amount = NEW_VAL integer",
+                "x = NEW_VAL integer",
+                "account = NEW_VAL integer",
+                "sale = NEW_VAL integer",
+                "y = NEW_VAL integer",
+                "JUMP 0x823"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x824",
+            "instructions": [
+                "CLR_473 = msg.sender",
+                "TMP_168 = CLR_473 != TMP_167",
+                "TMP_169 = TMP_166 && TMP_168",
+                "CONDITION TMP_169 0x824_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x824_r0",
+            "instructions": [
+                "JUMP 0x825"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x825",
+            "instructions": [
+                "CLR_474 = sales[sale]",
+                "REF_96 = CLR_474",
+                "CLR_475 = REF_96.set",
+                "REF_97 = CLR_475",
+                "CONDITION REF_97 0x825_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x825_r0",
+            "instructions": [
+                "JUMP 0x826"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x826",
+            "instructions": [
+                "CLR_476 = sales[sale]",
+                "REF_98 = CLR_476",
+                "CLR_477 = REF_98.salex",
+                "REF_99 = CLR_477",
+                "TMP_172 = now < REF_99",
+                "CONDITION TMP_172 0x826_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x826_r0",
+            "instructions": [
+                "JUMP 0x827"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x827",
+            "instructions": [
+                "CLR_478 = sales[sale]",
+                "REF_100 = CLR_478",
+                "CLR_479 = REF_100.bid",
+                "REF_101 = CLR_479",
+                "TMP_174 = amt > REF_101",
+                "CONDITION TMP_174 0x827_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x827_r0",
+            "instructions": [
+                "JUMP 0x828"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x829",
+            "instructions": [
+                "TMP_177 = TMP_176 >= amt",
+                "CONDITION TMP_177 0x829_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x829_r0",
+            "instructions": [
+                "JUMP 0x82a"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x82a",
+            "instructions": [
+                "CLR_480 = sales[sale]",
+                "REF_104 = CLR_480",
+                "CLR_481 = REF_104.bid",
+                "REF_105 = CLR_481",
+                "TMP_179 = REF_105 > 0",
+                "CONDITION TMP_179 0x82b 0x82c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x82b",
+            "instructions": [
+                "CLR_482 = sales[sale]",
+                "REF_106 = CLR_482",
+                "CLR_483 = REF_106.bid",
+                "REF_107 = CLR_483",
+                "CLR_484 = vares[sale]",
+                "REF_108 = CLR_484",
+                "TMP_180 = NEW_VAL integer",
+                "JUMP 0x82d"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x82e",
+            "instructions": [
+                "NOP",
+                "JUMP 0x82f"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x830",
+            "instructions": [
+                "CONDITION TMP_185 0x830_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x830_r0",
+            "instructions": [
+                "JUMP 0x831"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x831",
+            "instructions": [
+                "CLR_485 = sales[sale]",
+                "REF_112 = CLR_485",
+                "CLR_486 = REF_112.bid",
+                "REF_113 = CLR_486",
+                "TMP_187 = REF_113 > 0",
+                "CONDITION TMP_187 0x832 0x82c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x832",
+            "instructions": [
+                "CLR_487 = tokes[sale]",
+                "REF_114 = CLR_487",
+                "CLR_488 = sales[sale]",
+                "REF_116 = CLR_488",
+                "CLR_489 = REF_116.bidr",
+                "REF_117 = CLR_489",
+                "CLR_490 = sales[sale]",
+                "REF_118 = CLR_490",
+                "CLR_491 = REF_118.bid",
+                "REF_119 = CLR_491",
+                "TMP_188 = NEW_VAL boolean",
+                "JUMP 0x833"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x834",
+            "instructions": [
+                "NOP",
+                "JUMP 0x835"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x835",
+            "instructions": [
+                "CLR_492 = sales[sale]",
+                "REF_120 = CLR_492",
+                "CLR_493 = REF_120.bidr",
+                "REF_121 = CLR_493",
+                "CLR_494 = msg.sender",
+                "REF_120.bidr = CLR_494",
+                "CLR_495 = sales[sale]",
+                "REF_122 = CLR_495",
+                "CLR_496 = REF_122.bid",
+                "REF_123 = CLR_496",
+                "REF_122.bid = amt",
+                "CLR_497 = sechs[sale]",
+                "REF_124 = CLR_497",
+                "CLR_498 = REF_124.sechD",
+                "REF_125 = CLR_498",
+                "REF_124.sechD = sech",
+                "CLR_499 = sales[sale]",
+                "REF_126 = CLR_499",
+                "CLR_500 = REF_126.pbkh",
+                "REF_127 = CLR_500",
+                "REF_126.pbkh = pbkh",
+                "JUMP 0x836"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x833",
+            "instructions": [
+                "CONDITION TMP_188 0x833_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x833_r0",
+            "instructions": [
+                "JUMP 0x834"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x837",
+            "instructions": [
+                "TMP_182 = amt > TMP_181",
+                "CONDITION TMP_182 0x837_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x837_r0",
+            "instructions": [
+                "JUMP 0x82e"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x838",
+            "instructions": [
+                "NOP",
+                "JUMP 0x839"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x839",
+            "instructions": [
+                "CLR_501 = sales[sale]",
+                "REF_35 = CLR_501",
+                "CLR_502 = REF_35.bor",
+                "REF_36 = CLR_502",
+                "TMP_728 = REF_36",
+                "JUMP 0x83a"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x823",
+            "instructions": [
+                "sale = sale",
+                "JUMP 0x838"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83a",
+            "instructions": [
+                "TMP_165 = TMP_728",
+                "JUMP 0x83b"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83c",
+            "instructions": [
+                "NOP",
+                "JUMP 0x83d"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83d",
+            "instructions": [
+                "CLR_503 = sales[sale]",
+                "REF_37 = CLR_503",
+                "CLR_504 = REF_37.lend",
+                "REF_38 = CLR_504",
+                "TMP_729 = REF_38",
+                "JUMP 0x83e"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83b",
+            "instructions": [
+                "CLR_505 = msg.sender",
+                "TMP_166 = CLR_505 != TMP_165",
+                "sale = sale",
+                "JUMP 0x83c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83e",
+            "instructions": [
+                "TMP_167 = TMP_729",
+                "JUMP 0x824"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x83f",
+            "instructions": [
+                "NOP",
+                "JUMP 0x840"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x840",
+            "instructions": [
+                "CLR_506 = _balances[account]",
+                "REF_0 = CLR_506",
+                "TMP_687 = REF_0",
+                "JUMP 0x841"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x828",
+            "instructions": [
+                "CLR_507 = tokes[sale]",
+                "REF_102 = CLR_507",
+                "CLR_508 = msg.sender",
+                "account = CLR_508",
+                "JUMP 0x83f"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x841",
+            "instructions": [
+                "TMP_176 = TMP_687",
+                "JUMP 0x829"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x842",
+            "instructions": [
+                "NOP",
+                "JUMP 0x843"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x844",
+            "instructions": [
+                "TMP_136 = TMP_135 \/ RAY",
+                "z = TMP_136",
+                "JUMP 0x845"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x846",
+            "instructions": [
+                "NOP",
+                "JUMP 0x847"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x847",
+            "instructions": [
+                "TMP_116 = y == 0",
+                "TMP_117 = x * y",
+                "z = TMP_117",
+                "TMP_118 = z \/ y",
+                "TMP_119 = TMP_118 == x",
+                "TMP_120 = TMP_116 || TMP_119",
+                "CONDITION TMP_120 0x847_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x847_r0",
+            "instructions": [
+                "JUMP 0x848"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x848",
+            "instructions": [
+                "TMP_715 = z",
+                "JUMP 0x849"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x843",
+            "instructions": [
+                "x = x",
+                "y = y",
+                "JUMP 0x846"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x849",
+            "instructions": [
+                "TMP_133 = TMP_715",
+                "JUMP 0x84a"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84b",
+            "instructions": [
+                "NOP",
+                "JUMP 0x84c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84c",
+            "instructions": [
+                "TMP_110 = x + y",
+                "z = TMP_110",
+                "TMP_111 = z >= x",
+                "CONDITION TMP_111 0x84c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84c_r0",
+            "instructions": [
+                "JUMP 0x84d"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84d",
+            "instructions": [
+                "TMP_713 = z",
+                "JUMP 0x84e"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84a",
+            "instructions": [
+                "TMP_134 = RAY \/ 2",
+                "x = TMP_133",
+                "y = TMP_134",
+                "JUMP 0x84b"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84e",
+            "instructions": [
+                "TMP_135 = TMP_713",
+                "JUMP 0x844"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x845",
+            "instructions": [
+                "TMP_722 = z",
+                "JUMP 0x84f"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x82d",
+            "instructions": [
+                "x = REF_107",
+                "y = TMP_180",
+                "JUMP 0x842"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x84f",
+            "instructions": [
+                "TMP_181 = TMP_722",
+                "JUMP 0x837"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x850",
+            "instructions": [
+                "NOP",
+                "JUMP 0x851"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x852",
+            "instructions": [
+                "TMP_691 = true",
+                "JUMP 0x853"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x854",
+            "instructions": [
+                "NOP",
+                "JUMP 0x855"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x855",
+            "instructions": [
+                "TMP_37 = 0",
+                "TMP_38 = sender != TMP_37",
+                "CONDITION TMP_38 0x855_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x855_r0",
+            "instructions": [
+                "JUMP 0x856"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x856",
+            "instructions": [
+                "TMP_40 = 0",
+                "TMP_41 = recipient != TMP_40",
+                "CONDITION TMP_41 0x856_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x856_r0",
+            "instructions": [
+                "JUMP 0x857"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x858",
+            "instructions": [
+                "_balances[recipient] = TMP_44",
+                "JUMP 0x859"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85a",
+            "instructions": [
+                "NOP",
+                "JUMP 0x85b"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85b",
+            "instructions": [
+                "TMP_4 = b <= a",
+                "CONDITION TMP_4 0x85b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85b_r0",
+            "instructions": [
+                "JUMP 0x85c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85c",
+            "instructions": [
+                "TMP_6 = a - b",
+                "c = TMP_6",
+                "TMP_677 = c",
+                "JUMP 0x85d"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x857",
+            "instructions": [
+                "CLR_509 = _balances[sender]",
+                "REF_12 = CLR_509",
+                "CLR_510 = _balances[sender]",
+                "REF_13 = CLR_510",
+                "a = REF_13",
+                "b = amount",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0x85a"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85d",
+            "instructions": [
+                "TMP_43 = TMP_677",
+                "JUMP 0x85e"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85f",
+            "instructions": [
+                "NOP",
+                "JUMP 0x860"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x860",
+            "instructions": [
+                "TMP_0 = a + b",
+                "c = TMP_0",
+                "TMP_1 = c >= a",
+                "CONDITION TMP_1 0x860_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x860_r0",
+            "instructions": [
+                "JUMP 0x861"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x861",
+            "instructions": [
+                "TMP_675 = c",
+                "JUMP 0x862"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x85e",
+            "instructions": [
+                "_balances[sender] = TMP_43",
+                "CLR_511 = _balances[recipient]",
+                "REF_15 = CLR_511",
+                "CLR_512 = _balances[recipient]",
+                "REF_16 = CLR_512",
+                "a = REF_16",
+                "b = amount",
+                "JUMP 0x85f"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x862",
+            "instructions": [
+                "TMP_44 = TMP_675",
+                "JUMP 0x858"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x851",
+            "instructions": [
+                "sender = sender",
+                "recipient = recipient",
+                "amount = amount",
+                "JUMP 0x854"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x859",
+            "instructions": [
+                "NOP",
+                "JUMP 0x863"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x863",
+            "instructions": [
+                "CLR_513 = msg.sender",
+                "TMP_684 = CLR_513",
+                "JUMP 0x864"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x864",
+            "instructions": [
+                "TMP_25 = TMP_684",
+                "JUMP 0x865"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x866",
+            "instructions": [
+                "NOP",
+                "JUMP 0x867"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x867",
+            "instructions": [
+                "CLR_514 = msg.sender",
+                "TMP_684 = CLR_514",
+                "JUMP 0x868"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x865",
+            "instructions": [
+                "CLR_515 = _allowances[sender]",
+                "REF_3 = CLR_515",
+                "JUMP 0x866"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x868",
+            "instructions": [
+                "TMP_26 = TMP_684",
+                "JUMP 0x869"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86a",
+            "instructions": [
+                "NOP",
+                "JUMP 0x86b"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86b",
+            "instructions": [
+                "TMP_4 = b <= a",
+                "CONDITION TMP_4 0x86b_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86b_r0",
+            "instructions": [
+                "JUMP 0x86c"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86c",
+            "instructions": [
+                "TMP_6 = a - b",
+                "c = TMP_6",
+                "TMP_677 = c",
+                "JUMP 0x86d"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x869",
+            "instructions": [
+                "CLR_516 = REF_3[TMP_26]",
+                "REF_4 = CLR_516",
+                "a = REF_4",
+                "b = amount",
+                "errorMessage = NEW_VAL unknown",
+                "JUMP 0x86a"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86d",
+            "instructions": [
+                "TMP_27 = TMP_677",
+                "JUMP 0x86e"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86f",
+            "instructions": [
+                "NOP",
+                "JUMP 0x870"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x870",
+            "instructions": [
+                "TMP_55 = 0",
+                "TMP_56 = owner != TMP_55",
+                "CONDITION TMP_56 0x870_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x870_r0",
+            "instructions": [
+                "JUMP 0x871"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x871",
+            "instructions": [
+                "TMP_58 = 0",
+                "TMP_59 = spender != TMP_58",
+                "CONDITION TMP_59 0x871_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x871_r0",
+            "instructions": [
+                "JUMP 0x872"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x872",
+            "instructions": [
+                "CLR_517 = _allowances[owner]",
+                "REF_26 = CLR_517",
+                "CLR_518 = REF_26[spender]",
+                "REF_27 = CLR_518",
+                "REF_26[spender] = amount",
+                "JUMP 0x852"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x86e",
+            "instructions": [
+                "owner = sender",
+                "spender = TMP_25",
+                "amount = TMP_27",
+                "JUMP 0x86f"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x82f",
+            "instructions": [
+                "CLR_519 = tokes[sale]",
+                "REF_110 = CLR_519",
+                "TMP_184 = NEW_VAL unknown",
+                "CLR_520 = msg.sender",
+                "sender = CLR_520",
+                "recipient = TMP_184",
+                "amount = amt",
+                "JUMP 0x850"
+            ]
+        },
+        {
+            "scope": "push",
+            "addr": "0x853",
+            "instructions": [
+                "TMP_185 = TMP_691",
+                "JUMP 0x830"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x873",
+            "instructions": [
+                "TMP_163 = TMP_161 + TMP_162",
+                "REF_80.setex = TMP_163",
+                "CLR_521 = tokes[sale]",
+                "REF_84 = CLR_521",
+                "tokes[sale] = tok",
+                "CLR_522 = vares[sale]",
+                "REF_85 = CLR_522",
+                "vares[sale] = vars",
+                "CLR_523 = sales[sale]",
+                "REF_86 = CLR_523",
+                "CLR_524 = REF_86.set",
+                "REF_87 = CLR_524",
+                "REF_86.set = true",
+                "CLR_525 = sechs[sale]",
+                "REF_88 = CLR_525",
+                "CLR_526 = REF_88.sechA",
+                "REF_89 = CLR_526",
+                "REF_88.sechA = sechA",
+                "CLR_527 = sechs[sale]",
+                "REF_90 = CLR_527",
+                "CLR_528 = REF_90.sechB",
+                "REF_91 = CLR_528",
+                "REF_90.sechB = sechB",
+                "CLR_529 = sechs[sale]",
+                "REF_92 = CLR_529",
+                "CLR_530 = REF_92.sechC",
+                "REF_93 = CLR_530",
+                "REF_92.sechC = sechC",
+                "CLR_531 = salel[loani]",
+                "REF_94 = CLR_531",
+                "NOP",
+                "TMP_164 = LENGTH REF_94"
+            ]
+        },
+        {
+            "scope": "open",
+            "addr": "0x836",
+            "instructions": [
+                "TMP_161 = now + TMP_160",
+                "TMP_162 = NEW_VAL integer",
+                "JUMP 0x873"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x82c",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}

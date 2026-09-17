@@ -1,0 +1,19 @@
+[2m2026-09-17T11:37:28.370812[0m [[32m[1minfo     [0m] [1mCommand-line arguments        [0m [36mfocus[0m=[35m[][0m [36mlog_file[0m=[35mNone[0m [36mname[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m [36mrepos[0m=[35m['/dataset/fixes/GnosisSafeRegistry_fix/'][0m
+[2m2026-09-17T11:37:28.375308[0m [[32m[1minfo     [0m] [1mAnalysis configuration        [0m [36mfunction_timeout[0m=[35minfs[0m [36mpair_timeout[0m=[35minfs[0m [36msolver_timeout[0m=[35m60.00s[0m
+[2m2026-09-17T11:37:28.377318[0m [[32m[1minfo     [0m] [1mAnalysis started              [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:37:28.377921[0m [[32m[1minfo     [0m] [1mPhase 0 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:37:28.378088[0m [[32m[1minfo     [0m] [1mCompiling and analyzing contracts using Slither...[0m [36mgroup[0m=[35mContracts[0m [36mpath[0m=[35m/dataset/fixes/GnosisSafeRegistry_fix[0m [36mphase[0m=[35m0[0m [36mrepo[0m=[35mGnosisSafeRegistry_fix[0m
+Installing solc '0.5.10'...
+Version '0.5.10' installed.
+[2m2026-09-17T11:37:29.772230[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.5.10/solc-0.5.10 --version' running[0m
+[2m2026-09-17T11:37:29.801321[0m [[32m[1minfo     [0m] [1m'/root/.solc-select/artifacts/solc-0.5.10/solc-0.5.10 GnosisSafeRegistry_fix.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --optimize --allow-paths .,/nyx' running[0m
+[2m2026-09-17T11:37:30.717208[0m [[32m[1minfo     [0m] [1mPhase 0 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m10[0m [36mtime[0m=[35m2.34s[0m
+[2m2026-09-17T11:37:30.718908[0m [[32m[1minfo     [0m] [1mPhase 1 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:37:30.755684[0m [[32m[1minfo     [0m] [1mHybrid flow graph built       [0m [36mgroup[0m=[35mContracts[0m [36mphase[0m=[35m1[0m [36mtime[0m=[35m0.04s[0m
+[2m2026-09-17T11:37:30.819876[0m [[32m[1minfo     [0m] [1mPotential vulnerable function pairs collected[0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mphase[0m=[35m1[0m [36mtime[0m=[35m0.06s[0m
+[2m2026-09-17T11:37:30.820113[0m [[32m[1minfo     [0m] [1mPhase 1 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mtime[0m=[35m0.10s[0m
+[2m2026-09-17T11:37:30.820291[0m [[32m[1minfo     [0m] [1mPhase 2 analysis started      [0m [36mgroup[0m=[35mContracts[0m
+[2m2026-09-17T11:37:30.840556[0m [[32m[1minfo     [0m] [1mPhase 2 analysis finished     [0m [36mgroup[0m=[35mContracts[0m [36mnegatives[0m=[35m0[0m [36mpositives[0m=[35m0[0m [36mtime[0m=[35m0.02s[0m [36munknowns[0m=[35m0[0m
+[2m2026-09-17T11:37:30.841754[0m [[32m[1minfo     [0m] [1mAnalysis result written       [0m [36mgroup[0m=[35mContracts[0m [36moutput[0m=[35mresult.json[0m
+[2m2026-09-17T11:37:30.842005[0m [[32m[1minfo     [0m] [1mAnalysis finished             [0m [36mgroup[0m=[35mContracts[0m [36mpairs[0m=[35m0[0m [36mtime[0m=[35m2.464714765548706[0m
+[2m2026-09-17T11:37:30.844784[0m [[32m[1minfo     [0m] [1mProfiling result              [0m [36mresult[0m=[35m'{"total_time": 2.466557741165161, "phase0_time": 2.338646411895752, "phase1_time": 0.1010122299194336, "phase2_time": 0.02005934715270996, "hfg_time": 0.036817073822021484, "prune_time": 0.06419062614440918, "summarization_time": 0, "application_time": 0, "solving_time": 0, "full_pairs": 10, "candidate_pairs": 0, "positives": 0, "negatives": 0, "unknowns": 0}'[0m

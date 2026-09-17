@@ -1,0 +1,24 @@
+{
+  "functions": [
+    "RocketStorage.constructor()",
+    "RocketStorage.setAddress(bytes32,address)",
+    "RocketStorage.setUint(bytes32,uint256)",
+    "RocketStorage.setString(bytes32,string)",
+    "RocketStorage.setBytes(bytes32,bytes)",
+    "RocketStorage.setBool(bytes32,bool)",
+    "RocketStorage.setInt(bytes32,int256)",
+    "RocketStorage.setBytes32(bytes32,bytes32)",
+    "RocketStorage.deleteAddress(bytes32)",
+    "RocketStorage.deleteUint(bytes32)",
+    "RocketStorage.deleteString(bytes32)",
+    "RocketStorage.deleteBytes(bytes32)",
+    "RocketStorage.deleteBool(bytes32)",
+    "RocketStorage.deleteInt(bytes32)",
+    "RocketStorage.deleteBytes32(bytes32)"
+  ],
+  "phase0": 120,
+  "phase1": [],
+  "phase2": [],
+  "result": [],
+  "interrupted": false
+}

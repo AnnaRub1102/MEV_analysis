@@ -1,0 +1,692 @@
+[INFO] | 2026-09-17 12:07:34 PM | analyzer.OptionsContract_fix | Analysis started at: 2026-09-17 12:07:34 PM
+[INFO] | 2026-09-17 12:07:39 PM | analyzer.OptionsContract_fix | Version constraints: ['0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10', '0.5.10']
+[INFO] | 2026-09-17 12:07:39 PM | analyzer.OptionsContract_fix | solc version: v0.5.10
+[INFO] | 2026-09-17 12:07:44 PM | analyzer.OptionsContract_fix | Callgraph generation started!
+[INFO] | 2026-09-17 12:07:44 PM | analyzer.OptionsContract_fix | Callgraph generation finished!
+[INFO] | 2026-09-17 12:07:44 PM | analyzer.OptionsContract_fix | Interprocedural CFG generation started!
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Interprocedural CFG generation finished!
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Storage dependency graph generation started!
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Storage dependency graph generation finished!
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Value Range Analysis started
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function slitherConstructorConstantVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for factoryAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for factoryAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function factoryAddress
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for addLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for addLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function addLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for removeLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for removeLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function removeLiquidity
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getEthToTokenInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getEthToTokenInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getEthToTokenInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getEthToTokenOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getEthToTokenOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getEthToTokenOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getTokenToEthInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getTokenToEthInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getTokenToEthInputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getTokenToEthOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getTokenToEthOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getTokenToEthOutputPrice
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for ethToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for ethToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function ethToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for ethToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for ethToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function ethToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for ethToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for ethToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function ethToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for ethToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for ethToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function ethToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToEthSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToEthSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToEthSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToEthTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToEthTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToEthTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToEthSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToEthSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToEthSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToEthTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToEthTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToEthTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToTokenSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToTokenTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToTokenSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToTokenTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToExchangeSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToExchangeSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToExchangeSwapInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToExchangeTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToExchangeTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToExchangeTransferInput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToExchangeSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToExchangeSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToExchangeSwapOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for tokenToExchangeTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for tokenToExchangeTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function tokenToExchangeTransferOutput
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for setup
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for setup
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function setup
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for createExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for createExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function createExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getExchange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getToken
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getToken
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getToken
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getTokenWithId
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getTokenWithId
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getTokenWithId
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for initializeFactory
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for initializeFactory
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function initializeFactory
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for fallback
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for fallback
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function fallback
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for add
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for add
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function add
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for sub
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for sub
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function sub
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for mul
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for mul
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function mul
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for div
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for div
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function div
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for mod
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for mod
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function mod
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function onlyOwner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgSender
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _msgData
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function totalSupply
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function balanceOf
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function allowance
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _approve
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function owner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function _transferOwnership
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for hasVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for hasVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function hasVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for hasExpired
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for hasExpired
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function hasExpired
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getVault
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function isETH
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for isWithinExponentRange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for isWithinExponentRange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function isWithinExponentRange
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getCollateral
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getCollateral
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getCollateral
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for getOTokensIssued
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for getOTokensIssued
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function getOTokensIssued
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function slitherConstructorVariables
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Generating return summary for onlyOwner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Return summary generated for onlyOwner
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:45 PM | analyzer.OptionsContract_fix | Processed function onlyOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for notExpired
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for notExpired
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function notExpired
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for getPrice
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for getPrice
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function getPrice
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function getExchange
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function increaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _mint
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _addCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _addCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _addCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for sub
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for sub
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function sub
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function decreaseAllowance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for underlyingToTransfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for underlyingToTransfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function underlyingToTransfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for div
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for div
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function div
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for mod
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for mod
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function mod
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function approve
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function isOwner
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for getVaultOwners
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | We should not consider this kind of return values!
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for getVaultOwners
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function getVaultOwners
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for openVault
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for openVault
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function openVault
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function constructor
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function renounceOwnership
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for updateParameters
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for updateParameters
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function updateParameters
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for premiumReceived
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for premiumReceived
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function premiumReceived
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for premiumToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for premiumToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function premiumToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for uniswapSellOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for uniswapSellOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function uniswapSellOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferFee
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferFee
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferFee
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for removeUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for removeUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function removeUnderlying
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for redeemVaultBalance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for redeemVaultBalance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function redeemVaultBalance
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transfer
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function transferFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for addETHCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for addETHCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function addETHCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for addERC20Collateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for addERC20Collateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function addERC20Collateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _burn
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for isExerciseWindow
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for isExerciseWindow
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function isExerciseWindow
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for isSafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for isSafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function isSafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for calculateCollateralToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for calculateCollateralToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function calculateCollateralToPay
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for uniswapBuyOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for uniswapBuyOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function uniswapBuyOToken
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for sellOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for sellOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function sellOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _burnFrom
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for burnOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for burnOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function burnOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for issueOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for issueOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function issueOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for removeCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for removeCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function removeCollateral
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for isUnsafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for isUnsafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function isUnsafe
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for _exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for _exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function _exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for buyOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for buyOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function buyOTokens
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for maxCollateralLiquidatable
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for maxCollateralLiquidatable
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | State variable assignement do not exist
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function maxCollateralLiquidatable
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function exercise
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Generating return summary for liquidate
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Return summary generated for liquidate
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Range graph generated
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Processed function liquidate
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Value Range Analysis took 0.613985 seconds
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Value Range Analysis finished
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Storage dependency graph compostion started!
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Storage dependency graph compostion finished!
+[INFO] | 2026-09-17 12:07:46 PM | analyzer.OptionsContract_fix | Dependency detection started!
+[INFO] | 2026-09-17 12:07:49 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and transfer
+[INFO] | 2026-09-17 12:07:51 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and transfer
+[INFO] | 2026-09-17 12:07:54 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and transferFrom
+[INFO] | 2026-09-17 12:07:55 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and transferFrom
+[INFO] | 2026-09-17 12:08:08 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and exercise
+[INFO] | 2026-09-17 12:08:15 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and exercise
+[INFO] | 2026-09-17 12:08:16 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and issueOTokens
+[INFO] | 2026-09-17 12:08:17 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and issueOTokens
+[INFO] | 2026-09-17 12:08:18 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and burnOTokens
+[INFO] | 2026-09-17 12:08:18 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and burnOTokens
+[INFO] | 2026-09-17 12:08:19 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and liquidate
+[INFO] | 2026-09-17 12:08:20 PM | analyzer.OptionsContract_fix | TOD dependency detected in file OptionsContract_fix.sol in contract OptionsContract in by composing functions exercise and liquidate
+[INFO] | 2026-09-17 12:08:20 PM | analyzer.OptionsContract_fix | Dependency detection finished!
+[INFO] | 2026-09-17 12:08:20 PM | analyzer.OptionsContract_fix | Static Analysis took 45.637941 seconds
+[INFO] | 2026-09-17 12:08:20 PM | analyzer.OptionsContract_fix | Dependency exists
+[INFO] | 2026-09-17 12:08:20 PM | analyzer.OptionsContract_fix | Invoking symbolic executor!

@@ -1,0 +1,2638 @@
+{
+    "file": "Governance_fix.sol",
+    "global_structs": [
+        {
+            "name": "struct_Vote",
+            "fields": {
+                "None": [
+                    "integer"
+                ],
+                "No": [
+                    "integer"
+                ],
+                "Yes": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_Outcome",
+            "fields": {
+                "InProgress": [
+                    "integer"
+                ],
+                "Rejected": [
+                    "integer"
+                ],
+                "ApprovedExecuted": [
+                    "integer"
+                ],
+                "QuorumNotMet": [
+                    "integer"
+                ],
+                "ApprovedExecutionFailed": [
+                    "integer"
+                ],
+                "Evaluating": [
+                    "integer"
+                ],
+                "Vetoed": [
+                    "integer"
+                ],
+                "TargetContractAddressChanged": [
+                    "integer"
+                ],
+                "TargetContractCodeHashChanged": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "Checkpoint",
+            "fields": {
+                "time": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "History",
+            "fields": {
+                "history": [
+                    "array",
+                    "Checkpoint"
+                ]
+            }
+        },
+        {
+            "name": "Account",
+            "fields": {
+                "stakedHistory": [
+                    "History"
+                ],
+                "claimHistory": [
+                    "History"
+                ]
+            }
+        },
+        {
+            "name": "Proposal",
+            "fields": {
+                "proposalId": [
+                    "integer"
+                ],
+                "proposer": [
+                    "integer"
+                ],
+                "submissionBlockNumber": [
+                    "integer"
+                ],
+                "targetContractRegistryKey": [
+                    "integer"
+                ],
+                "targetContractAddress": [
+                    "integer"
+                ],
+                "callValue": [
+                    "integer"
+                ],
+                "functionSignature": [
+                    "unknown"
+                ],
+                "callData": [
+                    "integer"
+                ],
+                "outcome": [
+                    "integer"
+                ],
+                "voteMagnitudeYes": [
+                    "integer"
+                ],
+                "voteMagnitudeNo": [
+                    "integer"
+                ],
+                "numVotes": [
+                    "integer"
+                ],
+                "votes": [
+                    "array",
+                    "integer",
+                    [
+                        "integer"
+                    ]
+                ],
+                "description": [
+                    "unknown"
+                ],
+                "contractHash": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_block",
+            "fields": {
+                "coinbase": [
+                    "integer"
+                ],
+                "difficulty": [
+                    "integer"
+                ],
+                "gaslimit": [
+                    "integer"
+                ],
+                "number": [
+                    "integer"
+                ],
+                "timestamp": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_msg",
+            "fields": {
+                "data": [
+                    "integer"
+                ],
+                "sender": [
+                    "integer"
+                ],
+                "sig": [
+                    "integer"
+                ],
+                "value": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_tx",
+            "fields": {
+                "gasprice": [
+                    "integer"
+                ],
+                "origin": [
+                    "integer"
+                ]
+            }
+        },
+        {
+            "name": "struct_this",
+            "fields": {
+                "balance": [
+                    "integer"
+                ],
+                "address": [
+                    "integer"
+                ]
+            }
+        }
+    ],
+    "global_variables": [
+        {
+            "name": "Vote",
+            "type": [
+                "struct_Vote"
+            ],
+            "init": [
+                "0xEnumInit_Vote"
+            ]
+        },
+        {
+            "name": "Outcome",
+            "type": [
+                "struct_Outcome"
+            ],
+            "init": [
+                "0xEnumInit_Outcome"
+            ]
+        },
+        {
+            "name": "block",
+            "type": [
+                "struct_block"
+            ],
+            "init": []
+        },
+        {
+            "name": "msg",
+            "type": [
+                "struct_msg"
+            ],
+            "init": [
+                "0x662"
+            ]
+        },
+        {
+            "name": "now",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "tx",
+            "type": [
+                "struct_tx"
+            ],
+            "init": []
+        },
+        {
+            "name": "this",
+            "type": [
+                "struct_this"
+            ],
+            "init": [
+                "0x663"
+            ]
+        },
+        {
+            "name": "msg_sender",
+            "type": [
+                "integer"
+            ],
+            "init": [
+                "0x664"
+            ]
+        },
+        {
+            "name": "addmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "mulmod",
+            "type": [
+                "function3"
+            ],
+            "init": []
+        },
+        {
+            "name": "keccak",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha256",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "sha3",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ripemd160",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ecrecover",
+            "type": [
+                "function4"
+            ],
+            "init": []
+        },
+        {
+            "name": "blockhash",
+            "type": [
+                "function1"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_NOT_INITIALIZED",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xb"
+            ]
+        },
+        {
+            "name": "ERROR_TOKEN_NOT_CONTRACT",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0x10"
+            ]
+        },
+        {
+            "name": "ERROR_AMOUNT_ZERO",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xf"
+            ]
+        },
+        {
+            "name": "ERROR_ONLY_GOVERNANCE",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xe"
+            ]
+        },
+        {
+            "name": "ERROR_ONLY_DELEGATE_MANAGER",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xd"
+            ]
+        },
+        {
+            "name": "ERROR_ONLY_SERVICE_PROVIDER_FACTORY",
+            "type": [
+                "unknown"
+            ],
+            "init": [
+                "0xc"
+            ]
+        },
+        {
+            "name": "initialized",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "initializing",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "______gap",
+            "type": [
+                "array",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_owner",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_balances",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "_allowances",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "_totalSupply",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_UINT192",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_VALUE_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_CANNOT_ADD_PAST_VALUE",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_UINT8",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "MAX_UINT64",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_UINT8_NUMBER_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_UINT64_NUMBER_TOO_BIG",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "isInitialized",
+            "type": [
+                "boolean"
+            ],
+            "init": []
+        },
+        {
+            "name": "governanceAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "claimsManagerAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "delegateManagerAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "serviceProviderFactoryAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "stakingToken",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "accounts",
+            "type": [
+                "array",
+                "integer",
+                "Account"
+            ],
+            "init": []
+        },
+        {
+            "name": "totalStakedHistory",
+            "type": [
+                "History"
+            ],
+            "init": []
+        },
+        {
+            "name": "addressStorage",
+            "type": [
+                "array",
+                "integer",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "addressStorageHistory",
+            "type": [
+                "array",
+                "integer",
+                [
+                    "array",
+                    "integer"
+                ]
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_INVALID_PROPOSAL",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_INVALID_VOTING_PERIOD",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_INVALID_REGISTRY",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERROR_INVALID_VOTING_QUORUM",
+            "type": [
+                "unknown"
+            ],
+            "init": []
+        },
+        {
+            "name": "registry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "stakingAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "votingPeriod",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "executionDelay",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "votingQuorumPercent",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "maxInProgressProposals",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "maxDescriptionLength",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "guardianAddress",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "lastProposalId",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "proposals",
+            "type": [
+                "array",
+                "integer",
+                "Proposal"
+            ],
+            "init": []
+        },
+        {
+            "name": "inProgressProposals",
+            "type": [
+                "array",
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeMath",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Initializable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Context",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Ownable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "IERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Address",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "SafeERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "ERC20Burnable",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Checkpointing",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Uint256Helpers",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "InitializableV2",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Staking",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Registry",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        },
+        {
+            "name": "Governance",
+            "type": [
+                "integer"
+            ],
+            "init": []
+        }
+    ],
+    "global_blocks": [
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Vote",
+            "instructions": [
+                "Vote.None = 0",
+                "Vote.No = 1",
+                "Vote.Yes = 2"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xEnumInit_Outcome",
+            "instructions": [
+                "Outcome.InProgress = 0",
+                "Outcome.Rejected = 1",
+                "Outcome.ApprovedExecuted = 2",
+                "Outcome.QuorumNotMet = 3",
+                "Outcome.ApprovedExecutionFailed = 4",
+                "Outcome.Evaluating = 5",
+                "Outcome.Vetoed = 6",
+                "Outcome.TargetContractAddressChanged = 7",
+                "Outcome.TargetContractCodeHashChanged = 8"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xb",
+            "instructions": [
+                "ERROR_NOT_INITIALIZED = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xc",
+            "instructions": [
+                "ERROR_ONLY_SERVICE_PROVIDER_FACTORY = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xd",
+            "instructions": [
+                "ERROR_ONLY_DELEGATE_MANAGER = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xe",
+            "instructions": [
+                "ERROR_ONLY_GOVERNANCE = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0xf",
+            "instructions": [
+                "ERROR_AMOUNT_ZERO = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x10",
+            "instructions": [
+                "ERROR_TOKEN_NOT_CONTRACT = NEW_VAL unknown"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x208",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x209",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x20a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x23f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x240",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x274",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x275",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x276",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a0",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a1",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2a2",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2cc",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2cd",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2ce",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2f9",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2fa",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x2fb",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x326",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x327",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x328",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x359",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x35a",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x35b",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38c",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38d",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x38e",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c2",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c3",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3c4",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3ef",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3f0",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x3f1",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x422",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x423",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x424",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x458",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x459",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x45a",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x485",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x486",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x487",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4b8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4b9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4ba",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4ee",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4ef",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x4f0",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x51d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x54e",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x54f",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x550",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x57b",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x57c",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x57d",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5c8",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5c9",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x5ca",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x615",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x616",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x617",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x662",
+            "instructions": [
+                "msg.sender = 0x6"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x663",
+            "instructions": [
+                "this.address = 0x5"
+            ]
+        },
+        {
+            "scope": "__GLOBAL__",
+            "addr": "0x664",
+            "instructions": [
+                "msg_sender = 0x4"
+            ]
+        }
+    ],
+    "range_variables": [
+        {
+            "name": "claimsManagerAddress",
+            "addrs": [
+                "0x2",
+                "0x42"
+            ]
+        },
+        {
+            "name": "serviceProviderFactoryAddress",
+            "addrs": [
+                "0x2",
+                "0x44"
+            ]
+        },
+        {
+            "name": "delegateManagerAddress",
+            "addrs": [
+                "0x2",
+                "0x46"
+            ]
+        },
+        {
+            "name": "isInitialized",
+            "addrs": [
+                "0x2",
+                "0x48",
+                "0xf1"
+            ]
+        },
+        {
+            "name": "initializing",
+            "addrs": [
+                "0x2",
+                "0x4f",
+                "0x56",
+                "0xf9",
+                "0x101",
+                "0x109",
+                "0x10d"
+            ]
+        },
+        {
+            "name": "initialized",
+            "addrs": [
+                "0x2",
+                "0x5d",
+                "0x112",
+                "0x11a"
+            ]
+        },
+        {
+            "name": "governanceAddress",
+            "addrs": [
+                "0x2",
+                "0xec",
+                "0x123"
+            ]
+        },
+        {
+            "name": "stakingToken",
+            "addrs": [
+                "0x2",
+                "0x11e"
+            ]
+        },
+        {
+            "name": "_balances",
+            "addrs": [
+                "0x2",
+                "0x203"
+            ]
+        },
+        {
+            "name": "_totalSupply",
+            "addrs": [
+                "0x2",
+                "0x206"
+            ]
+        }
+    ],
+    "range_blocks": [
+        {
+            "scope": "__RANGE__",
+            "addr": "0x1",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x2",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x42",
+            "instructions": [
+                "RTMP_1028 = ERROR_ONLY_GOVERNANCE == true",
+                "CONDITION RTMP_1028 0x41 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x41",
+            "instructions": [
+                "claimsManagerAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x44",
+            "instructions": [
+                "RTMP_1029 = ERROR_ONLY_GOVERNANCE == true",
+                "CONDITION RTMP_1029 0x43 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x43",
+            "instructions": [
+                "serviceProviderFactoryAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x46",
+            "instructions": [
+                "RTMP_1030 = ERROR_ONLY_GOVERNANCE == true",
+                "CONDITION RTMP_1030 0x45 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x45",
+            "instructions": [
+                "delegateManagerAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x48",
+            "instructions": [
+                "RTMP_1031 = initializing == true",
+                "CONDITION RTMP_1031 0x49 0x49"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x49",
+            "instructions": [
+                "RTMP_1032 = true",
+                "CONDITION RTMP_1032 0x4a 0x4a"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4a",
+            "instructions": [
+                "RTMP_1033 = ! initialized",
+                "CONDITION RTMP_1033 0x4b 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4b",
+            "instructions": [
+                "RTMP_1106 = initializing == true",
+                "CONDITION RTMP_1106 0x4c 0x4c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4c",
+            "instructions": [
+                "RTMP_1107 = true",
+                "CONDITION RTMP_1107 0x4d 0x4d"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x4d",
+            "instructions": [
+                "RTMP_1108 = ! initialized",
+                "CONDITION RTMP_1108 0x47 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x47",
+            "instructions": [
+                "isInitialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x56",
+            "instructions": [
+                "RTMP_1040 = initializing == true",
+                "CONDITION RTMP_1040 0x57 0x57"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x57",
+            "instructions": [
+                "RTMP_1041 = true",
+                "CONDITION RTMP_1041 0x58 0x58"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x58",
+            "instructions": [
+                "RTMP_1042 = ! initialized",
+                "CONDITION RTMP_1042 0x59 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x59",
+            "instructions": [
+                "RTMP_1114 = initializing == true",
+                "CONDITION RTMP_1114 0x5a 0x5a"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5a",
+            "instructions": [
+                "RTMP_1115 = true",
+                "CONDITION RTMP_1115 0x5b 0x5b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5b",
+            "instructions": [
+                "RTMP_1116 = ! initialized",
+                "CONDITION RTMP_1116 0x55 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x55",
+            "instructions": [
+                "initializing = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5d",
+            "instructions": [
+                "RTMP_1037 = initializing == true",
+                "CONDITION RTMP_1037 0x5e 0x5e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5e",
+            "instructions": [
+                "RTMP_1038 = true",
+                "CONDITION RTMP_1038 0x5f 0x5f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5f",
+            "instructions": [
+                "RTMP_1039 = ! initialized",
+                "CONDITION RTMP_1039 0x60 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x60",
+            "instructions": [
+                "RTMP_1118 = initializing == true",
+                "CONDITION RTMP_1118 0x61 0x61"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x61",
+            "instructions": [
+                "RTMP_1119 = true",
+                "CONDITION RTMP_1119 0x62 0x62"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x62",
+            "instructions": [
+                "RTMP_1120 = ! initialized",
+                "CONDITION RTMP_1120 0x5c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x5c",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xec",
+            "instructions": [
+                "RTMP_1102 = initializing == true",
+                "CONDITION RTMP_1102 0xed 0xed"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xed",
+            "instructions": [
+                "RTMP_1103 = true",
+                "CONDITION RTMP_1103 0xee 0xee"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xee",
+            "instructions": [
+                "RTMP_1104 = ! initialized",
+                "CONDITION RTMP_1104 0xef 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xef",
+            "instructions": [
+                "RTMP_1105 = ERROR_TOKEN_NOT_CONTRACT == true",
+                "CONDITION RTMP_1105 0xeb 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xeb",
+            "instructions": [
+                "governanceAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf1",
+            "instructions": [
+                "RTMP_1031 = initializing == true",
+                "CONDITION RTMP_1031 0xf2 0xf2"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf2",
+            "instructions": [
+                "RTMP_1032 = true",
+                "CONDITION RTMP_1032 0xf3 0xf3"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf3",
+            "instructions": [
+                "RTMP_1033 = ! initialized",
+                "CONDITION RTMP_1033 0xf4 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf4",
+            "instructions": [
+                "RTMP_1106 = initializing == true",
+                "CONDITION RTMP_1106 0xf5 0xf5"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf5",
+            "instructions": [
+                "RTMP_1107 = true",
+                "CONDITION RTMP_1107 0xf6 0xf6"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf6",
+            "instructions": [
+                "RTMP_1108 = ! initialized",
+                "CONDITION RTMP_1108 0xf7 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf7",
+            "instructions": [
+                "RTMP_1109 = ERROR_TOKEN_NOT_CONTRACT == true",
+                "CONDITION RTMP_1109 0xf0 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0xf0",
+            "instructions": [
+                "isInitialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10d",
+            "instructions": [
+                "RTMP_1132 = initializing == true",
+                "CONDITION RTMP_1132 0x10e 0x10e"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10e",
+            "instructions": [
+                "RTMP_1133 = true",
+                "CONDITION RTMP_1133 0x10f 0x10f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10f",
+            "instructions": [
+                "RTMP_1134 = ! initialized",
+                "CONDITION RTMP_1134 0x110 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x110",
+            "instructions": [
+                "RTMP_1135 = ERROR_TOKEN_NOT_CONTRACT == true",
+                "CONDITION RTMP_1135 0x10c 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x10c",
+            "instructions": [
+                "initializing = false"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11a",
+            "instructions": [
+                "RTMP_1129 = initializing == true",
+                "CONDITION RTMP_1129 0x11b 0x11b"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11b",
+            "instructions": [
+                "RTMP_1130 = true",
+                "CONDITION RTMP_1130 0x11c 0x11c"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11c",
+            "instructions": [
+                "RTMP_1131 = ! initialized",
+                "CONDITION RTMP_1131 0x119 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x119",
+            "instructions": [
+                "initialized = true"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11e",
+            "instructions": [
+                "RTMP_1122 = initializing == true",
+                "CONDITION RTMP_1122 0x11f 0x11f"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11f",
+            "instructions": [
+                "RTMP_1123 = true",
+                "CONDITION RTMP_1123 0x120 0x120"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x120",
+            "instructions": [
+                "RTMP_1124 = ! initialized",
+                "CONDITION RTMP_1124 0x121 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x121",
+            "instructions": [
+                "RTMP_1125 = ERROR_TOKEN_NOT_CONTRACT == true",
+                "CONDITION RTMP_1125 0x11d 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x11d",
+            "instructions": [
+                "stakingToken = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x123",
+            "instructions": [
+                "RTMP_1102 = initializing == true",
+                "CONDITION RTMP_1102 0x124 0x124"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x124",
+            "instructions": [
+                "RTMP_1103 = true",
+                "CONDITION RTMP_1103 0x125 0x125"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x125",
+            "instructions": [
+                "RTMP_1104 = ! initialized",
+                "CONDITION RTMP_1104 0x126 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x126",
+            "instructions": [
+                "RTMP_1136 = ERROR_ONLY_GOVERNANCE == true",
+                "CONDITION RTMP_1136 0x122 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x122",
+            "instructions": [
+                "governanceAddress = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x203",
+            "instructions": [
+                "RTMP_1250 = ERROR_AMOUNT_ZERO == true",
+                "CONDITION RTMP_1250 0x204 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x204",
+            "instructions": [
+                "RTMP_1284 = ERROR_ONLY_DELEGATE_MANAGER == true",
+                "CONDITION RTMP_1284 0x202 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x202",
+            "instructions": [
+                "CLR_0 = _balances[U]",
+                "REF_399 = CLR_0",
+                "_balances[0] = U",
+                "_balances[1] = U",
+                "_balances[2] = U",
+                "_balances[3] = U",
+                "_balances[4] = U",
+                "_balances[5] = U",
+                "_balances[6] = U",
+                "_balances[7] = U",
+                "_balances[8] = U",
+                "_balances[9] = U"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x206",
+            "instructions": [
+                "RTMP_1251 = ERROR_AMOUNT_ZERO == true",
+                "CONDITION RTMP_1251 0x207 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x207",
+            "instructions": [
+                "RTMP_1285 = ERROR_ONLY_DELEGATE_MANAGER == true",
+                "CONDITION RTMP_1285 0x205 0x1"
+            ]
+        },
+        {
+            "scope": "__RANGE__",
+            "addr": "0x205",
+            "instructions": [
+                "_totalSupply = U"
+            ]
+        }
+    ],
+    "root_addr": "0x674",
+    "dest_addrs": [
+        "0x6a2"
+    ],
+    "normal_blocks": [
+        {
+            "scope": "initialize_v1",
+            "addr": "0x665",
+            "instructions": [
+                "TMP_281 = TMP_785",
+                "JUMP 0x666"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x667",
+            "instructions": [
+                "NOP",
+                "JUMP 0x668"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x669",
+            "instructions": [
+                "initializing = true",
+                "initialized = true",
+                "JUMP 0x66a"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x66b",
+            "instructions": [
+                "NOP",
+                "JUMP 0x66c"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x666",
+            "instructions": [
+                "CONDITION TMP_281 0x666_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x666_r0",
+            "instructions": [
+                "JUMP 0x66d"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x668",
+            "instructions": [
+                "TMP_275 = NEW_VAL unknown",
+                "self = TMP_275",
+                "NOP",
+                "NOP",
+                "TMP_276 = cs == 0",
+                "TMP_754 = TMP_276",
+                "JUMP 0x66e"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x66c",
+            "instructions": [
+                "TMP_399 = NEW_VAL unknown",
+                "ATTACK",
+                "TMP_400 = NEW_VAL boolean",
+                "JUMP 0x66f"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x670",
+            "instructions": [
+                "TMP_413 = initializing || TMP_412",
+                "TMP_414 = ! initialized",
+                "TMP_415 = TMP_413 || TMP_414",
+                "CONDITION TMP_415 0x670_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x670_r0",
+            "instructions": [
+                "JUMP 0x671"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x66e",
+            "instructions": [
+                "TMP_412 = TMP_754",
+                "JUMP 0x670"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x66a",
+            "instructions": [
+                "NOP",
+                "JUMP 0x672"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x672",
+            "instructions": [
+                "NOP",
+                "JUMP 0x673"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x674",
+            "instructions": [
+                "NOP",
+                "_tokenAddress = NEW_VAL integer",
+                "isTopLevelCall = NEW_VAL boolean",
+                "_governanceAddress = NEW_VAL integer",
+                "codehash = NEW_VAL integer",
+                "_governanceAddress = NEW_VAL integer",
+                "accountHash = NEW_VAL integer",
+                "cs = NEW_VAL integer",
+                "JUMP 0x667"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x66d",
+            "instructions": [
+                "TMP_283 = NEW_VAL unknown",
+                "stakingToken = TMP_283",
+                "_governanceAddress = _governanceAddress",
+                "JUMP 0x66b"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x671",
+            "instructions": [
+                "TMP_417 = ! initializing",
+                "isTopLevelCall = TMP_417",
+                "CONDITION isTopLevelCall 0x669 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x676",
+            "instructions": [
+                "NOP",
+                "JUMP 0x677"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x677",
+            "instructions": [
+                "NOP",
+                "accountHash = 89477152217924674838424037953991966239322087453347756267410168184682657981552",
+                "NOP",
+                "TMP_59 = codehash != accountHash",
+                "TMP_60 = codehash != 0",
+                "TMP_61 = TMP_59 && TMP_60",
+                "TMP_785 = TMP_61",
+                "JUMP 0x665"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x673",
+            "instructions": [
+                "NOP",
+                "JUMP 0x678"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x678",
+            "instructions": [
+                "account = _tokenAddress",
+                "JUMP 0x676"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x66f",
+            "instructions": [
+                "NOP",
+                "_tokenAddress = NEW_VAL integer",
+                "isTopLevelCall = NEW_VAL boolean",
+                "_governanceAddress = NEW_VAL integer",
+                "codehash = NEW_VAL integer",
+                "_governanceAddress = NEW_VAL integer",
+                "accountHash = NEW_VAL integer",
+                "cs = NEW_VAL integer",
+                "JUMP 0x679"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67a",
+            "instructions": [
+                "NOP",
+                "JUMP 0x67b"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67c",
+            "instructions": [
+                "CONDITION TMP_281 0x67c_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67c_r0",
+            "instructions": [
+                "JUMP 0x67d"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67e",
+            "instructions": [
+                "TMP_413 = initializing || TMP_412",
+                "TMP_414 = ! initialized",
+                "TMP_415 = TMP_413 || TMP_414",
+                "CONDITION TMP_415 0x67e_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67e_r0",
+            "instructions": [
+                "JUMP 0x67f"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67f",
+            "instructions": [
+                "TMP_417 = ! initializing",
+                "isTopLevelCall = TMP_417",
+                "CONDITION isTopLevelCall 0x680 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x680",
+            "instructions": [
+                "initializing = true",
+                "initialized = true",
+                "JUMP 0x681"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x681",
+            "instructions": [
+                "NOP",
+                "JUMP 0x682"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x683",
+            "instructions": [
+                "CONDITION isTopLevelCall 0x684 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x684",
+            "instructions": [
+                "initializing = false",
+                "JUMP 0x685"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x685",
+            "instructions": [
+                "NOP",
+                "JUMP 0x686"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x679",
+            "instructions": [
+                "NOP",
+                "JUMP 0x687"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x687",
+            "instructions": [
+                "TMP_275 = NEW_VAL unknown",
+                "self = TMP_275",
+                "NOP",
+                "NOP",
+                "TMP_276 = cs == 0",
+                "TMP_754 = TMP_276",
+                "JUMP 0x688"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x688",
+            "instructions": [
+                "TMP_412 = TMP_754",
+                "JUMP 0x67e"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x682",
+            "instructions": [
+                "NOP",
+                "JUMP 0x67a"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x689",
+            "instructions": [
+                "NOP",
+                "JUMP 0x68a"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68a",
+            "instructions": [
+                "NOP",
+                "accountHash = 89477152217924674838424037953991966239322087453347756267410168184682657981552",
+                "NOP",
+                "TMP_59 = codehash != accountHash",
+                "TMP_60 = codehash != 0",
+                "TMP_61 = TMP_59 && TMP_60",
+                "TMP_785 = TMP_61",
+                "JUMP 0x68b"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67b",
+            "instructions": [
+                "account = _tokenAddress",
+                "JUMP 0x689"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68b",
+            "instructions": [
+                "TMP_281 = TMP_785",
+                "JUMP 0x67c"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68c",
+            "instructions": [
+                "NOP",
+                "JUMP 0x68d"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68d",
+            "instructions": [
+                "TMP_399 = NEW_VAL unknown",
+                "TMP_400 = NEW_VAL boolean",
+                "JUMP 0x68e"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68e",
+            "instructions": [
+                "TMP_401 = TMP_400 == true",
+                "CONDITION TMP_401 0x68e_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68e_r0",
+            "instructions": [
+                "JUMP 0x68f"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x68f",
+            "instructions": [
+                "governanceAddress = _governanceAddress",
+                "JUMP 0x690"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x67d",
+            "instructions": [
+                "TMP_283 = NEW_VAL unknown",
+                "stakingToken = TMP_283",
+                "_governanceAddress = _governanceAddress",
+                "JUMP 0x68c"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x691",
+            "instructions": [
+                "NOP",
+                "JUMP 0x692"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x692",
+            "instructions": [
+                "isInitialized = true",
+                "JUMP 0x693"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x690",
+            "instructions": [
+                "NOP",
+                "JUMP 0x694"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x695",
+            "instructions": [
+                "TMP_413 = initializing || TMP_412",
+                "TMP_414 = ! initialized",
+                "TMP_415 = TMP_413 || TMP_414",
+                "CONDITION TMP_415 0x695_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x695_r0",
+            "instructions": [
+                "JUMP 0x696"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x696",
+            "instructions": [
+                "TMP_417 = ! initializing",
+                "isTopLevelCall = TMP_417",
+                "CONDITION isTopLevelCall 0x697 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x697",
+            "instructions": [
+                "initializing = true",
+                "initialized = true",
+                "JUMP 0x698"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x698",
+            "instructions": [
+                "NOP",
+                "JUMP 0x699"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x693",
+            "instructions": [
+                "CONDITION isTopLevelCall 0x69a 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x69a",
+            "instructions": [
+                "initializing = false",
+                "JUMP 0x69b"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x69b",
+            "instructions": [
+                "NOP",
+                "JUMP 0x683"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x694",
+            "instructions": [
+                "NOP",
+                "JUMP 0x69c"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x69c",
+            "instructions": [
+                "TMP_275 = NEW_VAL unknown",
+                "self = TMP_275",
+                "NOP",
+                "NOP",
+                "TMP_276 = cs == 0",
+                "TMP_754 = TMP_276",
+                "JUMP 0x69d"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x69d",
+            "instructions": [
+                "TMP_412 = TMP_754",
+                "JUMP 0x695"
+            ]
+        },
+        {
+            "scope": "initialize_v2",
+            "addr": "0x699",
+            "instructions": [
+                "NOP",
+                "JUMP 0x691"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x69e",
+            "instructions": [
+                "NOP",
+                "JUMP 0x69f"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a0",
+            "instructions": [
+                "NOP",
+                "JUMP 0x6a1"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a2",
+            "instructions": [
+                "initializing = false"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a1",
+            "instructions": [
+                "isInitialized = true",
+                "JUMP 0x6a3"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a4",
+            "instructions": [
+                "NOP",
+                "JUMP 0x6a5"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a6",
+            "instructions": [
+                "NOP",
+                "JUMP 0x6a4"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x69f",
+            "instructions": [
+                "CONDITION isTopLevelCall 0x6a2 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a5",
+            "instructions": [
+                "TMP_275 = NEW_VAL unknown",
+                "self = TMP_275",
+                "NOP",
+                "NOP",
+                "TMP_276 = cs == 0",
+                "TMP_754 = TMP_276",
+                "JUMP 0x6a7"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a8",
+            "instructions": [
+                "TMP_413 = initializing || TMP_412",
+                "TMP_414 = ! initialized",
+                "TMP_415 = TMP_413 || TMP_414",
+                "CONDITION TMP_415 0x6a8_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a8_r0",
+            "instructions": [
+                "JUMP 0x6a9"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a7",
+            "instructions": [
+                "TMP_412 = TMP_754",
+                "JUMP 0x6a8"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a9",
+            "instructions": [
+                "TMP_417 = ! initializing",
+                "isTopLevelCall = TMP_417",
+                "CONDITION isTopLevelCall 0x6aa 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6ab",
+            "instructions": [
+                "governanceAddress = _governanceAddress",
+                "JUMP 0x6a6"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6ac",
+            "instructions": [
+                "NOP",
+                "JUMP 0x6a0"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6aa",
+            "instructions": [
+                "initializing = true",
+                "initialized = true",
+                "JUMP 0x6ad"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6ad",
+            "instructions": [
+                "NOP",
+                "JUMP 0x6ac"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x686",
+            "instructions": [
+                "TMP_401 = TMP_400 == true",
+                "CONDITION TMP_401 0x686_r0 0xRequireTrap"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x686_r0",
+            "instructions": [
+                "JUMP 0x6ab"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6a3",
+            "instructions": [
+                "CONDITION isTopLevelCall 0x6ae 0x675"
+            ]
+        },
+        {
+            "scope": "initialize_v1",
+            "addr": "0x6ae",
+            "instructions": [
+                "initializing = false",
+                "JUMP 0x69e"
+            ]
+        },
+        {
+            "scope": "trap",
+            "addr": "0x675",
+            "instructions": [
+                "NOP"
+            ]
+        },
+        {
+            "scope": "RequireTrap",
+            "addr": "0xRequireTrap",
+            "instructions": [
+                "NOP"
+            ]
+        }
+    ]
+}
