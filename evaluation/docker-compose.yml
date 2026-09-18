@@ -1,8 +1,8 @@
 services:
   nyx:
     build:
-      context: .
-      dockerfile: Dockerfile.nyx
+      context: ..
+      dockerfile: evaluation/Dockerfile.nyx
     platform: linux/amd64
     environment:
       - RESULTS_DIR=/results
@@ -11,8 +11,8 @@ services:
 
   sailfish:
     build:
-      context: .
-      dockerfile: Dockerfile.sailfish
+      context: ..
+      dockerfile: evaluation/Dockerfile.sailfish
     platform: linux/amd64
     environment:
       - SAILFISH_ANALYSIS_DIR=${SAILFISH_ANALYSIS_DIR:-}

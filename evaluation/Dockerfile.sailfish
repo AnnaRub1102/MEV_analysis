@@ -6,7 +6,7 @@ ENV RESULTS_DIR=/results
 
 COPY contracts_dataset/dataset_sailfish/ /dataset/
 
-COPY run_sailfish.sh /usr/local/bin/run_sailfish.sh
+COPY evaluation/run_sailfish.sh /usr/local/bin/run_sailfish.sh
 RUN chmod +x /usr/local/bin/run_sailfish.sh
 
 ENTRYPOINT ["/usr/local/bin/run_sailfish.sh"]

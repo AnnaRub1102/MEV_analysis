@@ -12,8 +12,8 @@ This repository provides the State-of-the-art Evaluation (SOTA-Eval) for the Sta
 | --- | --- |
 | [Audits & Frontrunning Vulnerabilities](#audits--frontrunning-vulnerabilities) | `audits_dataset/`  |
 | [Smart Contracts Dataset](#smart-contracts-dataset) | `contracts_dataset/` |
-| [Dynamic Frontrunning analysis: MEV](#dynamic-frontrunning-analysis) | `analysis.ipynb`, `audits_dataset/mev_examples.md` |
-| [Static Frontrunning analysis: Sailfish & Nyx](#static-frontrunning-analysis) | `docker-compose.yml`, `analysis.ipynb` |
+| [Dynamic Frontrunning analysis: MEV](#dynamic-frontrunning-analysis) | `evaluation/analysis.ipynb`, `evaluation/mev_examples.md` |
+| [Static Frontrunning analysis: Sailfish & Nyx](#static-frontrunning-analysis) | `evaluation/docker-compose.yml`, `evaluation/analysis.ipynb` |
 
 ---
 
@@ -45,7 +45,7 @@ We assembled a total collection of 287 smart contract audits with frontrunning i
 
 *Note:* the audit inclusion deadline is 2023-12-24, so some of the links may no longer be available.
 
-We report the complete list of audits and the corresponding frontrunning vulnerabilities identified in each of them in the file [audit_dataset.xlsx](./audits_dataset/audit_dataset.xlsx). For further details, please refer to [audits.md](./audits_dataset/audits.md).
+We report the complete list of audits and the corresponding frontrunning vulnerabilities identified in each of them in the file [audit_dataset.xlsx](./evaluation/audit_dataset.xlsx). For further details, please refer to [audits.md](./evaluation/audits.md).
 
 ---
 
@@ -55,34 +55,34 @@ From the full dataset of 393 vulnerabilities (D_full), we additionally curated a
 
 In total, we collected two datasets of 24 contracts each: the vulnerable dataset (D_aval) and the fixes dataset (D_fixes).
 
-The contract dataset list is reported in [contracts_dataset.xlsx](./contracts_dataset/contracts_dataset.xlsx). For further details, please refer to [contracts.md](./contracts_dataset/contracts.md).
+The contract dataset list is reported in [contracts_dataset.xlsx](./evaluation/contracts_dataset.xlsx). For further details, please refer to [contracts.md](./evaluation/contracts.md).
 
-To replicate Table 1 in the paper, which reports the number of identified vulnerabilities and the contracts, we provide the corresponding script in the Jupyter notebook [analysis.ipynb](./analysis.ipynb).
+To replicate Table 1 in the paper, which reports the number of identified vulnerabilities and the contracts, we provide the corresponding script in the Jupyter notebook [analysis.ipynb](./evaluation/analysis.ipynb).
 
 ### Running the analysis notebook
 
 **Requirements:**
   - Python 3.9+
   - [Jupyter](https://jupyter.org/) (or the VS Code Jupyter extension)
-  - Python packages listed in `requirements.txt`: `pandas`, `openpyxl`, `jupyter`, `ipykernel`
+  - Python packages listed in `evaluation/requirements.txt`: `pandas`, `openpyxl`, `jupyter`, `ipykernel`
 
 *Note*: The notebook can also be executed on [Google Colab](https://colab.research.google.com/). If you'd prefer not to install the requirements locally, simply upload this repository there. Instructions are provided in [Google Colab usage](#google-colab-usage).
 
 **Install the dependencies:**
 
 ```bash
-pip install -r requirements.txt
+pip install -r evaluation/requirements.txt
 ```
 
-Then open [analysis.ipynb](./analysis.ipynb) in Jupyter or in VS Code with the Jupyter extension (select the Python environment where the requirements above are installed as the kernel), and run the cells under the **'Audits and Smart Contracts'** section to replicate Table 1.
+Then open [analysis.ipynb](./evaluation/analysis.ipynb) in Jupyter or in VS Code with the Jupyter extension (select the Python environment where the requirements above are installed as the kernel), and run the cells under the **'Audits and Smart Contracts'** section to replicate Table 1.
 
 ---
 
 ## Dynamic Frontrunning Analysis
 
-To validate the MEV dynamic analysis reported in Section 2.2.3 of the paper, run the **'MEV analysis'** cell in the [analysis.ipynb](./analysis.ipynb) notebook, which checks all the MEV results reported in [audit_dataset.xlsx](./audits_dataset/audit_dataset.xlsx).
+To validate the MEV dynamic analysis reported in Section 2.2.3 of the paper, run the **'MEV analysis'** cell in the [analysis.ipynb](./evaluation/analysis.ipynb) notebook, which checks all the MEV results reported in [audit_dataset.xlsx](./evaluation/audit_dataset.xlsx).
 
-We report in [mev_examples.md](./audits_dataset/mev_examples.md) examples showing how we applied the definition of MEV, including a case for each of the limitations we identify in the paper: (1) MEV cannot capture non-monetary attacks, and (2) MEV cannot capture eventual attacks.
+We report in [mev_examples.md](./evaluation/mev_examples.md) examples showing how we applied the definition of MEV, including a case for each of the limitations we identify in the paper: (1) MEV cannot capture non-monetary attacks, and (2) MEV cannot capture eventual attacks.
 
 ---
 
@@ -100,9 +100,9 @@ In what follows, we provide instructions on how to use the tools with our datase
 
   - The dataset for Sailfish is under [contracts_dataset/dataset_sailfish/fixes](contracts_dataset/dataset_sailfish/fixes/) and [contracts_dataset/dataset_sailfish/vulnerables](contracts_dataset/dataset_sailfish/vulnerables/), as plain `.sol` files.
 
-The results of both tools are written to the [results](results) folder, as described below.
+The results of both tools are written to the [evaluation/results](evaluation/results) folder, as described below.
 
-*Note*: To aid evaluation, we already provide the results of our last execution of both Nyx and Sailfish in the [results](results) folder, ready to be used in [analysis.ipynb](./analysis.ipynb), in case you do not wish to build/run the containers from scratch (see [Results](#results) below).
+*Note*: To aid evaluation, we already provide the results of our last execution of both Nyx and Sailfish in the [evaluation/results](evaluation/results) folder, ready to be used in [analysis.ipynb](./evaluation/analysis.ipynb), in case you do not wish to build/run the containers from scratch (see [Results](#results) below).
 
 ### Requirements
 
@@ -120,7 +120,10 @@ The results of both tools are written to the [results](results) folder, as descr
 
 ### Build & Run
 
+The Docker setup lives under [evaluation/](evaluation/), so run these commands from there:
+
 ```bash
+cd evaluation
 docker compose build
 docker compose up -d
 ```
@@ -159,7 +162,7 @@ docker compose run --rm --entrypoint python3 nyx nyx/main.py ./examples/HashPuzz
 
 ### Quick sanity check (Sailfish)
 
-To quickly check that the Sailfish container works, without running the full dataset, you can run `contractlint.py` directly against one of the tool's own bundled test cases. This test command is taken from [Sailfish's own documentation](https://github.com/ucsb-seclab/sailfish). Since its exact location inside the prebuilt image isn't guaranteed (cf. [run_sailfish.sh](run_sailfish.sh)), we locate it here the same way, via `find`:
+To quickly check that the Sailfish container works, without running the full dataset, you can run `contractlint.py` directly against one of the tool's own bundled test cases. This test command is taken from [Sailfish's own documentation](https://github.com/ucsb-seclab/sailfish). Since its exact location inside the prebuilt image isn't guaranteed (cf. [run_sailfish.sh](evaluation/run_sailfish.sh)), we locate it here the same way, via `find`:
 
 ```bash
 docker compose run --rm --entrypoint bash sailfish -c '
@@ -174,9 +177,9 @@ docker compose run --rm --entrypoint bash sailfish -c '
 
 ### Results
 
-After the containers are done, you should find the results for Nyx in `results/nyx` and for Sailfish in `results/sailfish`.
+After the containers are done, you should find the results for Nyx in `evaluation/results/nyx` and for Sailfish in `evaluation/results/sailfish`.
 
-To evaluate the results as reported in Section 2.2.3 of the paper, i.e. to validate that the function pairs identified by the tools match those mentioned in the audit and reported in the `Function 1` and `Function 2` columns of [contracts_dataset.xlsx](./contracts_dataset/contracts_dataset.xlsx), run the cells under the **'Nyx & Sailfish results'** section of the [analysis.ipynb](./analysis.ipynb) notebook.
+To evaluate the results as reported in Section 2.2.3 of the paper, i.e. to validate that the function pairs identified by the tools match those mentioned in the audit and reported in the `Function 1` and `Function 2` columns of [contracts_dataset.xlsx](./evaluation/contracts_dataset.xlsx), run the cells under the **'Nyx & Sailfish results'** section of the [analysis.ipynb](./evaluation/analysis.ipynb) notebook.
 
 ---
 
@@ -185,13 +188,13 @@ To evaluate the results as reported in Section 2.2.3 of the paper, i.e. to valid
 If you decide not to install the required dependencies locally and instead use Google Colab, follow these steps:
 
 1. Access [Google Colab](https://colab.research.google.com/).
-2. Upload the notebook [analysis.ipynb](./analysis.ipynb).
+2. Upload the notebook [analysis.ipynb](./evaluation/analysis.ipynb).
 3. In the new tab, click the Folder icon on the left and upload:
-   - [audit_dataset.xlsx](./audits_dataset/audit_dataset.xlsx)
-   - [contracts_dataset.xlsx](./contracts_dataset/contracts_dataset.xlsx)
-   - [summarize_nyx_results.py](./summarize_nyx_results.py)
-   - [summarize_sailfish_results.py](./summarize_sailfish_results.py)
-   - [results.zip](./results.zip) (or zip the new results folder after running Nyx and Sailfish)
+   - [audit_dataset.xlsx](./evaluation/audit_dataset.xlsx)
+   - [contracts_dataset.xlsx](./evaluation/contracts_dataset.xlsx)
+   - [summarize_nyx_results.py](./evaluation/summarize_nyx_results.py)
+   - [summarize_sailfish_results.py](./evaluation/summarize_sailfish_results.py)
+   - [results.zip](./evaluation/results.zip) (or zip the new results folder after running Nyx and Sailfish)
 4. Execute the **'Audits and Smart Contracts'** cell for MEV analysis, and the **'Nyx & Sailfish results'** cell for Static Frontrunning analysis.
 
 ---
@@ -200,13 +203,13 @@ If you decide not to install the required dependencies locally and instead use G
 
 Please note the following:
 
-1. After changing the dataset or scripts, please re-run the docker containers with the following command:
+1. After changing the dataset or scripts, please re-run the docker containers with the following command (from [evaluation/](evaluation/)):
 
 ```bash
 docker compose build --no-cache
 ```
 
-2. Sailfish: [run_sailfish.sh](run_sailfish.sh) locates `contractlint.py` at runtime via find, since the exact path inside the prebuilt image isn't guaranteed.
+2. Sailfish: [run_sailfish.sh](evaluation/run_sailfish.sh) locates `contractlint.py` at runtime via find, since the exact path inside the prebuilt image isn't guaranteed.
 If that search fails, or you already know the path, set it explicitly:
 
 ```bash

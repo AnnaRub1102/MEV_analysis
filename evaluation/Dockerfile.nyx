@@ -22,7 +22,7 @@ RUN python3 -m pip install --upgrade pip && pip install -e .
 
 COPY contracts_dataset/dataset_nyx/ /dataset/
 
-COPY run_nyx.sh /usr/local/bin/run_nyx.sh
+COPY evaluation/run_nyx.sh /usr/local/bin/run_nyx.sh
 RUN chmod +x /usr/local/bin/run_nyx.sh
 
 ENTRYPOINT ["/usr/local/bin/run_nyx.sh"]
