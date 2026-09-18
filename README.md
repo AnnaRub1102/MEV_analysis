@@ -34,14 +34,14 @@ We assembled a total collection of 287 smart contract audits with frontrunning i
 
 | Audit Company | Frontrunning | Public | Link | Commit | Format |
 |---|---|---|---|---|---|
-| ConsensysDiligence  | 49 | 130 | [Webpage](https://consensys.io/diligence/audits/) | - | HTML,MD |
-| Trail of Bits | 56 | 234 | [GitHub](https://github.com/trailofbits/publications) | ff1a0f64 | PDF |
+| ConsensysDiligence  | 49 | 133 | [Webpage](https://consensys.io/diligence/audits/) | - | HTML,MD |
+| Trail of Bits | 56 | 223 | [GitHub](https://github.com/trailofbits/publications) | ff1a0f64 | PDF |
 | RuntimeVerification | 15 | 60 | [GitHub](https://github.com/runtimeverification/publications/tree/main/reports/smart-contracts) | e6b3162e | PDF |
 | Nethermind | 9 | 40 | [GitHub](https://github.com/NethermindEth/PublicAuditReports) | e826295c | PDF |
 | HashEx | 32 | 158 | [GitHub](https://github.com/HashEx/public_audits) | 4e72943f | PDF | 
-| OpenZeppelin | 45 | 239 | [Blog](https://blog.openzeppelin.com/tag/security-audits/) | - | HTML |
+| OpenZeppelin | 45 | 189 | [Blog](https://blog.openzeppelin.com/tag/security-audits/) | - | HTML |
 | Hacken | 27 | 648 | [Webpage](https://hacken.io/audits/) | - | PDF |
-| QuantStamp | 54 | 147 | [Webpage](https://certificate.quantstamp.com/) | - | HTML,PDF |
+| QuantStamp | 54 | 221 | [Webpage](https://certificate.quantstamp.com/) | - | HTML,PDF |
 
 *Note:* the audit inclusion deadline is 2023-12-24, so some of the links may no longer be available.
 
@@ -82,7 +82,7 @@ Then open [analysis.ipynb](./evaluation/analysis.ipynb) in Jupyter or in VS Code
 
 To validate the MEV dynamic analysis reported in Section 2.2.3 of the paper, run the **'MEV analysis'** cell in the [analysis.ipynb](./evaluation/analysis.ipynb) notebook, which checks all the MEV results reported in [audit_dataset.xlsx](./evaluation/audit_dataset.xlsx).
 
-We report in [mev_examples.md](./evaluation/mev_examples.md) examples showing how we applied the definition of MEV, including a case for each of the limitations we identify in the paper: (1) MEV cannot capture non-monetary attacks, and (2) MEV cannot capture eventual attacks.
+We report in [mev_examples.md](./evaluation/mev_examples.md) examples showing how we applied the definition of MEV, including a case for each of the limitations we identify in the paper: (1) MEV cannot capture eventual attacks, and (2) MEV cannot capture non-monetary attacks.
 
 ---
 
